@@ -4,15 +4,17 @@ var db = require('../db/queries');
 
 router.use(express.static('public'))
 
-router.get('/', (req, res, next) => {
-  db.getAllPlayers()
+router.get('/all', (req, res, next) => {
+  db.getAllMoney()
     .then((data) => {
       res.send({data});
+      console.log("RIGHT PLACE")
     })
     .catch((err) => {
       return next(err);
     });
 });
+
 router.get('/home', (req, res, next) => {
   db.getAllPlayers()
     .then((data) => {

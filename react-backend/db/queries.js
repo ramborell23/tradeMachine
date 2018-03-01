@@ -3,23 +3,11 @@ const pgp = require('pg-promise')({});
 const db = pgp("postgres://localhost/nba");
 var word ;
 
-// function nameCheck(next) {
-//     var next = location.split(' ')
-//     var copy = location
-//     var word;
-//     if (next.length === 2) {
-//         var beginning = next[0][0].toUpperCase() + next[0].slice(1)
-//         var ending = next[1][0].toUpperCase() + next[1].slice(1)
-//         word = `${beginning} ${ending}`
-//     }else {
-//         next.join('')
-//         word = copy[0].toUpperCase() + copy.slice(1).toLowerCase()
-//     }
-// }
-
-//PLAYERS
 function getAllPlayers() {
     return db.any('select * from players')
+}
+function getAllMoney() {
+    return db.any('select * from player_salaries')
 }
 
 function getPlayerByFirstName(firstname) {
@@ -85,5 +73,6 @@ module.exports = {
     getTeamByCityName,
     getPlayersByTeam,
     getTeamByTeamName,
+    getAllMoney,
 
 };

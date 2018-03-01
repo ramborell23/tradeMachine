@@ -4,10 +4,10 @@ import React, { Component } from 'react';
 import { Route, Link, Switch } from "react-router-dom";
 // import FanDuel from './FanDuel'
 // import DraftKings from './DraftKings'
+// import NBA from './NBA'
 import TeamBoard from './teamBoard'
 import TeamBoard2 from './teamBoard2'
 import TradeList from './tradeList'
-// import NBA from './NBA'
 import './calc.css';
 
 const axios = require("axios");
@@ -98,13 +98,23 @@ class Calc extends React.Component {
             playerSelect: '',
             teamTradeArr: [],
             teamTradeArr2: [],
+            users: [],
         }
         this.teamsArray2 = this.teamsArray
     }
 
     componentDidMount() {
-        // this.getTeamRoster()
-    }
+        fetch('http://localhost:3100/players/all')
+          .then(res => res.json())
+          .then((users) => {
+              console.log(users.data)
+            let data = users.data;
+            this.setState({ users: data })}
+            
+          );
+        //   console.log("Right Place")
+          console.log("BIG FUCKING PROBLEM 1")
+      }
     handleInput = e => {
         this.setState({
             [e.target.name]: e.target.value
@@ -132,7 +142,7 @@ class Calc extends React.Component {
         // console.log(teamTradeArr2)
 
         if (teamTradeArr) {
-            console.log('popopoopopopopopop')
+            console.log('76t8tfghjvkgjkg8yi')
           
             console.log(teamTradeArr, "<======== JUST CHECKING ")
             this.setState({
@@ -199,10 +209,11 @@ class Calc extends React.Component {
     };
 
     render() {
-        const { modeState, teamState, teamArraySelect, teamArraySelect2, playerSelect, teamState2, teamTradeArr, teamTradeArr2 } = this.state
+        const { modeState, teamState, teamArraySelect, teamArraySelect2, playerSelect, teamState2, teamTradeArr, teamTradeArr2,users } = this.state
         console.log(modeState)
         console.log('Trade Bait     ', teamTradeArr)
         console.log("Team  ARR ", teamState)
+        console.log("Users ==>>>>", users)
 
         return (
             <div className='page'>
