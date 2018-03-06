@@ -43,7 +43,7 @@ const teams = {
     Philedelphia76ers: 1610612755,
     PhoenixSuns: 1610612756,
     PortlandTrailBlazers: 1610612757,
-    SacrementoKings: 1610612756,
+    SacramentoKings: 1610612756,
     SanAntonioSpurs: 1610612759,
     TorontoRaptors: 1610612761,
     UtahJazz: 1610612762,
@@ -72,11 +72,11 @@ class Calc extends React.Component {
             'Miami Heat',
             'Milwaukee Bucks',
             'Minniesota Timberwolves',
-            'New Orleans Pelicans	',
+            'New Orleans Pelicans',
             'New York Knicks',
             'Oklahoma City Thunder',
             'Orlando Magic',
-            'Philadelphia 76ers',
+            'Philedelphia 76ers',
             'Phoenix Suns',
             'Portland Trail Blazers',
             'Sacramento Kings',
@@ -112,7 +112,6 @@ class Calc extends React.Component {
             this.setState({ users: data })}
             
           );
-        //   console.log("Right Place")
           console.log("BIG FUCKING PROBLEM 1")
       }
     handleInput = e => {
@@ -179,6 +178,7 @@ class Calc extends React.Component {
 
     getTeamRoster = () => {
         const { teamArraySelect } = this.state
+        console.log(nameJoinForFetch(teamArraySelect))
         axios
             .get(`https://stats.nba.com/stats/commonteamroster/?Season=2017-18&TeamID=${teams[nameJoinForFetch(teamArraySelect)]}`)
             .then(response => {
@@ -214,6 +214,14 @@ class Calc extends React.Component {
         console.log('Trade Bait     ', teamTradeArr)
         console.log("Team  ARR ", teamState)
         console.log("Users ==>>>>", users)
+        let cavs = users.filter(person =>{
+            return person.tm === 'CLE'
+        })
+        let gsw = users.filter(person =>{
+            return person.tm === 'GSW'
+        })
+        console.log("CAVS TEAM "  , cavs)
+        console.log("GSW TEAM "  , gsw)
 
         return (
             <div className='page'>

@@ -20,7 +20,7 @@ const TeamBoard2 = ({ teamsArr, tradeArr,teamTradeArr2, value , handleChange,tea
                 Players<br />
                 {/* <ul> */}
                     {teamState.map((item, index) => (
-                        <li>
+                        // <li>
                             <button 
                             value={index} 
                             onClick={handleChange2}>
@@ -30,7 +30,7 @@ const TeamBoard2 = ({ teamsArr, tradeArr,teamTradeArr2, value , handleChange,tea
                                 {item[5]}<br />
                                 {item[6]}<br />
                             </button>
-                        </li>
+                        // </li>
                         
                     ))}<br/>
                
