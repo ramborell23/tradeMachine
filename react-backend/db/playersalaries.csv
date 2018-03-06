@@ -1,550 +1,399 @@
-,,,Salary,Salary,Salary,Salary,Salary,Salary,,
-1,Stephen Curry,GSW,$34682550,$37457154,$40231758,$43006362,$45780966,,Bird Rights,$201158790
-2,LeBron James,CLE,$33285709,$35607968,,,,,Early Bird,$33285709
-3,Paul Millsap,DEN,$31269231,$29730769,$30500000,,,,Cap space,$61000000
-4,Gordon Hayward,BOS,$29727900,$31214295,$32700690,$34187085,,,Cap space,$93642885
-5,Blake Griffin,DET,$29512900,$31873932,$34234964,$36595996,$38957028,,Bird Rights,$132217792
-6,Kyle Lowry,TOR,$28703704,$31000000,$33296296,,,,Bird Rights,$93000000
-7,Russell Westbrook,OKC,$28530608,$35350000,$38178000,$41006000,$43848000,,Bird Rights,$186912608
-8,Mike Conley,MEM,$28530608,$30521115,$32511623,$34504132,,,Cap Space,$113989729
-9,James Harden,HOU,$28299399,$30431854,$37800000,$40824000,$43848000,,Bird Rights,$181203253
-10,DeMar DeRozan,TOR,$27739975,$27739975,$27739975,$27739975,,,Cap Space,$83219925
-11,Al Horford,BOS,$27734405,$28928710,$30123015,,,,Cap Space,$56663115
-12,Carmelo Anthony,OKC,$26243760,$27928140,,,,,Bird Rights,$26243760
-13,Damian Lillard,POR,$26153057,$27977689,$29802321,$31626953,,,1st Round Pick,$115560020
-14,Jrue Holiday,NOP,$25686667,$26131111,$26131111,$26131111,$27020000,,Bird Rights,$104080000
-15,Chris Bosh,MIA,$25289390,$26837720,,,,,,$52127110
-16,Kevin Durant,GSW,$25000000,$26250000,,,,,Non-Bird Rights,$25000000
-17,Otto Porter,WAS,$24773250,$26011913,$27250576,$28489239,,,Bird Rights,$78035739
-18,Chris Paul,HOU,$24599495,,,,,,Bird Rights,$24599495
-19,C.J. McCollum,POR,$23962573,$25759766,$27556959,$29354152,,,1st Round Pick,$106633450
-20,Bradley Beal,WAS,$23775506,$25434263,$27093019,$28751775,,,Cap Space,$105054563
-21,Anthony Davis,NOP,$23775506,$25434263,$27093019,$28751775,,,1st Round Pick,$76302788
-22,Andre Drummond,DET,$23775506,$25434263,$27093019,$28751775,,,Cap Space,$76302788
-23,Hassan Whiteside,MIA,$23775506,$25434263,$27093018,,,,Cap Space,$49209769
-24,Dwight Howard,CHO,$23500000,$23819725,,,,,Cap Space,$47319725
-25,Chandler Parsons,MEM,$23112004,$24107258,$25102511,,,,Cap Space,$72321773
-26,Harrison Barnes,DAL,$23112004,$24107258,$25102512,,,,Cap Space,$47219262
-27,J.J. Redick,PHI,$23000000,,,,,,Cap space,$23000000
-28,Marc Gasol,MEM,$22642350,$24119025,$25595700,,,,Bird Rights,$46761375
-29,Kevin Love,CLE,$22642350,$24119025,$25595700,,,,Bird Rights,$46761375
-30,Brook Lopez,LAL,$22642350,,,,,,Bird Rights,$22642350
-31,DeAndre Jordan,LAC,$22642350,$24119025,,,,,Bird Rights,$22642350
-32,Steven Adams,OKC,$22471910,$24157303,$25842697,$27528090,,,1st Round Pick,$100000000
-33,Giannis Antetokounmpo,MIL,$22471910,$24157303,$25842697,$27528090,,,1st Round Pick,$100000000
-34,Nicolas Batum,CHO,$22434783,$24000000,$25565217,$27130434,,,Cap Space,$72000000
-35,Rudy Gobert,UTA,$21974719,$23491573,$25008427,$26525281,,,1st Round Pick,$97000000
-36,LaMarcus Aldridge,SAS,$21461010,$22347015,$26000000,,,,Cap Space,$69808025
-37,Victor Oladipo,IND,$21000000,$21000000,$21000000,$21000000,,,1st Round Pick,$84000000
-38,Enes Kanter,NYK,$20566802,$18622514,,,,,Bird Rights,$20566802
-39,Danilo Gallinari,LAC,$20559599,$21587579,$22615559,,,,Sign and Trade,$64762737
-40,Serge Ibaka,TOR,$20061729,$21666667,$23271604,,,,Cap space,$65000000
-41,George Hill,CLE,$20000000,$19000000,$18000000,,,,Cap space,$40000000
-42,Ryan Anderson,HOU,$19578455,$20421546,$21264635,,,,Cap Space,$61264636
-43,Paul George,OKC,$19508958,$20703384,,,,,1st Round Pick,$19508958
-44,Allen Crabbe,BRK,$19332500,$18500000,$18500000,,,,Cap Space,$37832500
-45,Jimmy Butler,MIN,$19301070,$20445779,$19841627,,,,Bird Rights,$39746849
-46,Jeff Teague,MIN,$19000000,$19000000,$19000000,,,,Cap space,$38000000
-47,Kawhi Leonard,SAS,$18868625,$20099189,$21329752,,,,Bird Rights,$38967814
-48,Kyrie Irving,BOS,$18868625,$20099188,$21329750,,,,Bird Rights,$38967813
-49,John Wall,WAS,$18063850,$19169800,$37800000,$40824000,$43848000,,Bird Rights,$159705650
-50,DeMarcus Cousins,NOP,$18063850,,,,,,1st Round Pick,$18063850
-51,Greg Monroe,PHO,$17884176,,,,,,,$17884176
-52,Wesley Matthews,DAL,$17884176,$18622514,,,,,Cap Space,$17884176
-53,Klay Thompson,GSW,$17826150,$18988725,,,,,1st Round Pick,$36814875
-54,Joakim Noah,NYK,$17765000,$18530000,$19295000,,,,Cap Space,$55590000
-55,Kentavious Caldwell-Pope,LAL,$17745894,,,,,,Cap space,$17745894
-56,Luol Deng,LAL,$17190000,$18000000,$18810000,,,,Cap Space,$54000000
-57,Evan Turner,POR,$17131148,$17868852,$18606557,,,,Cap Space,$53606557
-58,Goran Dragic,MIA,$17000450,$18109175,$19217900,,,,Bird Rights,$35109625
-59,Evan Fournier,ORL,$17000000,$17000000,$17000000,$17000000,,,Cap Space,$51000000
-60,Bismack Biyombo,ORL,$17000000,$17000000,$17000000,,,,Cap Space,$34000000
-61,Kent Bazemore,ATL,$16910113,$18089887,$19269662,,,,Cap Space,$35000000
-62,Robert Covington,PHI,$16698103,$10464092,$11301219,$12138345,$12975471,,Cap Space,$63577230
-63,Ian Mahinmi,WAS,$16661641,$15944154,$15450051,,,,Cap Space,$48055846
-64,Tim Hardaway,NYK,$16500000,$17325000,$18150000,$18975000,,,Cap space,$51975000
-65,Draymond Green,GSW,$16400000,$17469565,$18539130,,,,Bird Rights,$52408695
-66,Tristan Thompson,CLE,$16400000,$17469565,$18539130,,,,Bird Rights,$52408695
-67,Reggie Jackson,DET,$16000000,$17043478,$18086956,,,,Bird Rights,$51130434
-68,Pau Gasol,SAS,$16000000,$16000000,$16000000,,,,,$38700000
-69,Tobias Harris,LAC,$16000000,$14800000,,,,,Bird Rights,$30800000
-70,Dwyane Wade,CHI,$15550000,,,,,,,$15550000
-71,Dennis Schroder,ATL,$15500000,$15500000,$15500000,$15500000,,,1st Round Pick,$62000000
-72,Jonas Valanciunas,TOR,$15460675,$16539326,$17617977,,,,1st Round Pick,$32000001
-73,Tony Parker,SAS,$15453126,,,,,,Bird Rights,$15453126
-74,Timofey Mozgov,BRK,$15280000,$16000000,$16720000,,,,Cap Space,$48000000
-75,Andre Iguodala,GSW,$14814815,$16000000,$17185185,,,,Bird Rights,$48000000
-76,DeMarre Carroll,BRK,$14800000,$15400000,,,,,Cap Space,$30200000
-77,Thaddeus Young,IND,$14796348,$13764045,,,,,Bird Rights,$14796348
-78,Eric Bledsoe,MIL,$14500000,$15000000,,,,,Bird Rights,$29500000
-79,Ricky Rubio,UTA,$14275000,$14975000,,,,,1st Round Pick,$29250000
-80,Joe Ingles,UTA,$14136364,$13045455,$11954546,$10863637,,,Bird Rights,$50000002
-81,Gorgui Dieng,MIN,$14112360,$15170787,$16229213,$17287640,,,1st Round Pick,$62800000
-82,Khris Middleton,MIL,$14100000,$13000000,$13000000,,,,Bird Rights,$27100000
-83,Mason Plumlee,DEN,$14041096,$12917808,$14041096,,,,Cap space,$41000000
-84,Taj Gibson,MIN,$14000000,$14000000,,,,,Cap space,$28000000
-85,James Johnson,MIA,$13954000,$14651700,$15349400,,,,Cap space,$43955100
-86,Robin Lopez,CHI,$13788500,$14357750,,,,,Cap Space,$28146250
-87,J.R. Smith,CLE,$13760000,$14720000,$15680000,,,,Bird Rights,$32350000
-88,Brandon Knight,PHO,$13618750,$14631250,$15643750,,,,,$43893750
-89,Marvin Williams,CHO,$13168750,$14087500,$15006250,,,,Cap Space,$27256250
-90,Tyson Chandler,PHO,$13000000,$13585000,,,,,Cap Space,$26585000
-91,Michael Kidd-Gilchrist,CHO,$13000000,$13000000,$13000000,,,,1st Round Pick,$26000000
-92,Eric Gordon,HOU,$12943020,$13500375,$14057730,,,,Cap Space,$40501125
-93,Kenneth Faried,DEN,$12921348,$13764045,,,,,1st Round Pick,$26685393
-94,Marcin Gortat,WAS,$12782609,$13565218,,,,,Bird Rights,$26347827
-95,Cody Zeller,CHO,$12584270,$13528090,$14471910,$15415730,,,1st Round Pick,$56000000
-96,Miles Plumlee,ATL,$12500000,$12500000,$12500000,,,,Bird Rights,$37500000
-97,Nikola Mirotic,NOP,$12500000,$12500000,,,,,Cap space,$25000000
-98,Zach Randolph,SAC,$12307692,$11692308,,,,,Cap space,$24000000
-99,Nikola Vucevic,ORL,$12250000,$12750000,,,,,Bird Rights,$25000000
-100,Solomon Hill,NOP,$12236535,$12752928,$13258781,,,,Cap Space,$38248244
-101,Wilson Chandler,DEN,$12016854,$12800562,,,,,,$12016854
-102,Jeremy Lin,BRK,$12000000,$12516746,,,,,Cap Space,$24516746
-103,Kemba Walker,CHO,$12000000,$12000000,,,,,1st Round Pick,$24000000
-104,Derrick Favors,UTA,$12000000,,,,,,1st Round Pick,$12000000
-105,Austin Rivers,LAC,$11825000,$12650000,,,,,Cap Space,$11825000
-106,Courtney Lee,NYK,$11747890,$12253780,$12759670,,,,Cap Space,$36761340
-107,Nikola Pekovic,MIN,$11600000,,,,,,,$11600000
-108,Jordan Clarkson,CLE,$11562500,$12500000,$13437500,,,,Cap Space,$37500000
-109,John Henson,MIL,$11422536,$10577466,$9732396,,,,1st Round Pick,$31732398
-110,Dion Waiters,MIA,$11000000,$11550000,$12100000,$12650000,,,Cap space,$47300000
-111,Amir Johnson,PHI,$11000000,,,,,,Cap space,$11000000
-112,Jamal Crawford,ATL,$10942762,$2304226,,,,,,$13246988
-113,Alec Burks,UTA,$10845506,$11536515,,,,,1st Round Pick,$22382021
-114,Patty Mills,SAS,$10714286,$11571429,$12428571,$13285714,,,Bird Rights,$48000000
-115,Kelly Olynyk,MIA,$10607169,$11137527,$11667885,$12198243,,,Cap space,$33412581
-116,Omer Asik,CHI,$10595505,$11286516,$11977527,,,,Bird Rights,$24882021
-117,Terrence Ross,ORL,$10500000,$10500000,,,,,Rookie scale extension,$21000000
-118,Mirza Teletovic,MIL,$10500000,$10500000,,,,,Cap Space,$21000000
-119,Bojan Bogdanovic,IND,$10500000,$10500000,,,,,Cap space,$12000000
-120,Jon Leuer,DET,$10497319,$10002681,$9508043,,,,Cap Space,$30008043
-121,Iman Shumpert,SAC,$10337079,$11011234,,,,,Bird Rights,$10337079
-122,Maurice Harkless,POR,$10162922,$10837079,$11511234,,,,Cap Space,$32511235
-123,Jared Dudley,PHO,$10000000,$9530000,,,,,Cap Space,$19530000
-124,Darren Collison,IND,$10000000,$10000000,,,,,Cap space,$12000000
-125,Danny Green,SAS,$10000000,$10000000,,,,,Bird Rights,$10000000
-126,Meyers Leonard,POR,$9904495,$10595506,$11286515,,,,Cap Space,$31786516
-127,Tony Snell,MIL,$9821429,$10607143,$11392857,$12178571,,,Cap space,$31821429
-128,Al Jefferson,IND,$9769821,$10000000,,,,,Cap Space,$13769821
-129,Matthew Dellavedova,MIL,$9607500,$9607500,$9607500,,,,Cap Space,$28822500
-130,Joe Johnson,SAC,$9505000,,,,,,,$9505000
-131,Bogdan Bogdanovic,SAC,$9470614,$9000000,$8529386,,,,Cap space,$27000000
-132,Andre Roberson,OKC,$9259259,$10000000,$10740741,,,,Bird Rights,$30000000
-133,Trevor Booker,PHI,$9125000,,,,,,Cap Space,$9125000
-134,Dwight Powell,DAL,$9003125,$9631250,$10259375,,,,Cap Space,$18634375
-135,Jerryd Bayless,PHI,$9000000,$8575916,,,,,Cap Space,$17575916
-136,Avery Bradley,LAC,$8808989,,,,,,Bird Rights,$8808989
-137,JaMychal Green,MEM,$8533333,$7866667,,,,,Bird Rights,$16400000
-138,E'Twaun Moore,NOP,$8445024,$8808685,$8664928,,,,Cap Space,$25918637
-139,Rudy Gay,SAS,$8406000,$8826300,,,,,MLE,$8406000
-140,Kosta Koufos,SAC,$8393000,$8739500,,,,,Cap Space,$8393000
-141,Markieff Morris,WAS,$8000000,$8600000,,,,,Bird Rights,$16600000
-142,Vince Carter,SAC,$8000000,,,,,,Cap space,$8000000
-143,Garrett Temple,SAC,$8000000,$8000000,,,,,Cap Space,$8000000
-144,C.J. Miles,TOR,$7936509,$8333333,$8730158,,,,MLE,$16269842
-145,Cristiano Felicio,CHI,$7843500,$8470980,$8156500,$7529020,,,Cap space,$32000000
-146,Shaun Livingston,GSW,$7692308,$8307692,$7692308,,,,Bird Rights,$18000000
-147,Cory Joseph,IND,$7630000,$7945000,,,,,Cap Space,$7630000
-148,P.J. Tucker,HOU,$7590035,$7969537,$8349039,$7969537,,,MLE,$26477799
-149,Corey Brewer,LAL,$7579366,,,,,,Cap Space,$7579366
-150,Andrew Wiggins,MIN,$7574322,$25250000,$27270000,$29290000,$31310000,,1st Round Pick,$154024322
-151,Darrell Arthur,DEN,$7464912,$7464912,,,,,Cap Space,$7464912
-152,Channing Frye,LAL,$7420912,,,,,,Cap Space,$7420912
-153,Trevor Ariza,HOU,$7420912,,,,,,Bird Rights,$7420912
-154,Al-Farouq Aminu,POR,$7319035,$6957105,,,,,Cap Space,$14276140
-155,Cole Aldrich,MIN,$7300000,$6956021,,,,,Cap Space,$9356021
-156,D.J. Augustin,ORL,$7250000,$7250000,$7250000,,,,Cap Space,$21750000
-157,Markelle Fultz,PHI,$7026240,$8339880,$9745200,$12288697,,,1st Round Pick,$15366120
-158,Lou Williams,LAC,$7000000,$8000000,$8000000,$1500000,,,Cap Space,$23000000
-159,Kyle Korver,CLE,$7000000,$7560000,$7500000,,,,Bird Rights,$18000000
-160,Jeremy Lamb,CHO,$7000000,$7488372,,,,,Rookie scale extension,$14488372
-161,Boban Marjanovic,LAC,$7000000,$7000000,,,,,Cap Space,$14000000
-162,Jae Crowder,UTA,$6796117,$7305825,$7815533,,,,Bird Rights,$21917475
-163,Jabari Parker,MIL,$6782392,,,,,,1st Round Pick,$6782392
-164,Langston Galloway,DET,$6666667,$7000000,$7333333,,,,MLE,$21000000
-165,Lance Thomas,NYK,$6655325,$7119650,$7583975,,,,Cap Space,$13774975
-166,Ed Davis,POR,$6352531,,,,,,Cap Space,$6352531
-167,Marco Belinelli,ATL,$6306060,,,,,,,$6306060
-168,Jonathon Simmons,ORL,$6300000,$6000000,$5700000,,,,Cap space,$13300000
-169,Lonzo Ball,LAL,$6286560,$7461960,$8719320,$11003782,,,1st Round Pick,$13748520
-170,Wayne Ellington,MIA,$6270000,,,,,,Cap Space,$6270000
-171,Isaiah Thomas,LAL,$6261395,,,,,,,$6261395
-172,Karl-Anthony Towns,MIN,$6216840,$7839435,,,,,1st round pick,$6216840
-173,Ben Simmons,PHI,$6168840,$6434520,$8113930,,,,1st Round pick,$12603360
-174,Joel Embiid,PHI,$6100266,$25250000,$27270000,$29290000,$31310000,,1st Round Pick,$6100266
-175,Spencer Hawes,MIL,$6021175,,,,,,,$6021175
-176,Josh McRoberts,DAL,$6021175,,,,,,,$6021175
-177,Ish Smith,DET,$6000000,$6000000,,,,,Cap Space,$12000000
-178,Alan Williams,PHO,$6000000,$5520000,$5520000,,,,Cap space,$6000000
-179,Shelvin Mack,ORL,$6000000,$6000000,,,,,Cap space,$6000000
-180,Milos Teodosic,LAC,$6000000,$6300000,,,,,MLE,$6000000
-181,Dewayne Dedmon,ATL,$6000000,$6300000,,,,,Cap space,$6000000
-182,Ersan Ilyasova,ATL,$6000000,,,,,,Cap space,$6000000
-183,Tyler Johnson,MIA,$5881260,$19245370,$19245370,,,,Cap Space,$25126630
-184,Wesley Johnson,LAC,$5881260,$6134000,,,,,Cap Space,$5881260
-185,Alex Abrines,OKC,$5725000,$5455236,,,,,Cap Space,$11180236
-186,Jayson Tatum,BOS,$5645400,$6700800,$7830000,$9897120,,,1st Round Pick,$12346200
-187,D'Angelo Russell,BRK,$5562360,$7019698,,,,,1st round pick,$12582058
-188,Brandon Ingram,LAL,$5519400,$5757120,$7265485,,,,1st Round pick,$11276520
-189,Patrick Beverley,LAC,$5513514,$5027028,,,,,Bird Rights,$5513514
-190,Aaron Gordon,ORL,$5504420,,,,,,1st Round Pick,$5504420
-191,Deron Williams,BRK,$5500000,$5500000,$5500000,,,,,$16500000
-192,Josh Smith,DET,$5400000,$5400000,$5400000,,,,,$16200000
-193,Thabo Sefolosha,UTA,$5250000,$5250000,,,,,Cap space,$5250000
-194,Jason Smith,WAS,$5225000,$5450000,,,,,Cap Space,$5225000
-195,Ben McLemore,MEM,$5200000,$5460000,,,,,MLE,$10660000
-196,Patrick Patterson,OKC,$5192000,$5451600,$5711200,,,,MLE,$10643600
-197,Nick Young,GSW,$5192000,,,,,,MLE,$5192000
-198,Brandan Wright,MEM,$5179760,,,,,,,$5179760
-199,Josh Jackson,PHO,$5090040,$6041520,$7059480,$8930242,,,1st Round Pick,$11131560
-200,Marcus Morris,BOS,$5000000,$5375000,,,,,Bird Rights,$10375000
-201,Dirk Nowitzki,DAL,$5000000,$5000000,,,,,Cap space,$5000000
-202,Greg Monroe,BOS,$5000000,,,,,,Disabled Player Exception,$5000000
-203,Mike Muscala,ATL,$5000000,$5000000,,,,,Cap space,$5000000
-204,Jahlil Okafor,BRK,$4995120,,,,,,1st round pick,$4995120
-205,Dante Exum,UTA,$4992385,,,,,,1st Round Pick,$4992385
-206,Alexis Ajinca,NOP,$4961798,$5285394,,,,,Early Bird Rights,$10247192
-207,Jaylen Brown,BOS,$4956480,$5169960,$6534829,,,,1st Rd pick,$10126440
-208,Jameer Nelson,DEN,$4736050,,,,,,,$4736050
-209,Kyle Singler,OKC,$4666500,$4996000,$5333500,,,,Bird Rights,$9662500
-210,Justin Holiday,CHI,$4615385,$4384616,,,,,MLE,$9000001
-211,De Aaron Fox,SAC,$4609200,$5407920,$6392760,$8099627,,,1st Round Pick,$10017120
-212,Marcus Smart,BOS,$4538020,,,,,,1st Round Pick,$4538020
-213,Kristaps Porzingis,NYK,$4503600,$5697054,,,,,1st round pick,$10200654
-214,Dragan Bender,PHO,$4468800,$4661280,$5896519,,,,1st Round pick,$9130080
-215,Devin Harris,DEN,$4402546,,,,,,Cap Space,$4402546
-216,Ron Baker,NYK,$4328000,$4544400,,,,,Room Exception,$4328000
-217,Jamal Crawford,MIN,$4328000,$4544400,,,,,Room Exception,$4328000
-218,Aron Baynes,BOS,$4328000,,,,,,Room Exception,$4328000
-219,Alex Len,PHO,$4187599,,,,,,1st Round Pick,$4187599
-220,Nerlens Noel,DAL,$4187599,,,,,,1st Round Pick,$4187599
-221,Jonathan Isaac,ORL,$4186320,$4969080,$5806440,$7362566,,,1st Round Pick,$9155400
-222,Lance Stephenson,IND,$4180000,$4360000,,,,,Cap space,$4180000
-223,Julius Randle,LAL,$4149242,,,,,,1st Round Pick,$4149242
-224,Kyle O'Quinn,NYK,$4087500,$4256250,,,,,Bird Rights,$4087500
-225,Mario Hezonja,ORL,$4078320,,,,,,1st round pick,$4078320
-226,Kris Dunn,CHI,$4046760,$4221000,$5348007,,,,1st Round pick,$8267760
-227,Jonas Jerebko,UTA,$4000000,$4200000,,,,,Cap space,$4000000
-228,Nemanja Bjelica,MIN,$3949999,,,,,,MLE,$3949999
-229,J.J. Barea,DAL,$3903900,$3710850,,,,,Cap Space,$7614750
-230,Quincy Pondexter,CHI,$3853931,,,,,,,$3853931
-231,Lauri Markkanen,CHI,$3821640,$4536120,$5300400,$6731508,,,1st Round Pick,$8357760
-232,Nik Stauskas,BRK,$3807146,,,,,,1st Round Pick,$3807146
-233,Willie Cauley-Stein,SAC,$3704160,$4696875,,,,,1st round pick,$8401035
-234,Buddy Hield,SAC,$3675480,$3833760,$4861208,,,,1st Round pick,$7509240
-235,Will Barton,DEN,$3533333,,,,,,Bird Rights,$3533333
-236,Noah Vonleh,CHI,$3505233,,,,,,1st Round Pick,$3505233
-237,Frank Ntilikina,NYK,$3501120,$4155720,$4855800,$6176578,,,1st Round Pick,$7656840
-238,Nene Hilario,HOU,$3477600,$3651480,$3825360,,,,Non-Bird Rights,$10954440
-239,Zaza Pachulia,GSW,$3477600,,,,,,,$3477600
-240,Troy Daniels,PHO,$3408520,$3258540,,,,,Cap Space,$6667060
-241,Emmanuel Mudiay,NYK,$3381480,$4294480,,,,,1st round pick,$7675960
-242,Jamal Murray,DEN,$3355320,$3499800,$4444746,,,,1st Round pick,$6855120
-243,Elfrid Payton,PHO,$3332340,,,,,,1st Round Pick,$3332340
-244,Rajon Rondo,NOP,$3300000,,,,,,MLE,$3300000
-245,Doug McDermott,DAL,$3294994,,,,,,1st Round Pick,$3294994
-246,Jodie Meeks,WAS,$3290000,$3454500,,,,,Bi-annual Exception,$3290000
-247,Tyreke Evans,MEM,$3290000,,,,,,Bi-annual Exception,$3290000
-248,Tarik Black,HOU,$3290000,,,,,,Bi-annual Exception,$3290000
-249,Anthony Tolliver,DET,$3290000,,,,,,Bi-annual Exception,$3290000
-250,Dennis Smith,DAL,$3218280,$3819960,$4463640,$5686677,,,1st Round Pick,$7038240
-251,Zach LaVine,CHI,$3202217,,,,,,1st Round Pick,$3202217
-252,Ekpe Udoh,UTA,$3200000,$3360000,,,,,Room Exception,$3200000
-253,T.J. Warren,PHO,$3152931,$11750000,$10810000,$11750000,$12690000,,1st Round Pick,$50152931
-254,Stanley Johnson,DET,$3097800,$3940402,,,,,1st round pick,$7038202
-255,Marquese Chriss,PHO,$3073800,$3206160,$4078236,,,,1st Rd pick,$6279960
-256,Zach Collins,POR,$3057240,$3628920,$4240200,$5406255,,,1st Round Pick,$6686160
-257,James Ennis,DET,$3028410,,,,,,Room exception,$3028410
-258,Seth Curry,DAL,$3028410,,,,,,Room exception,$3028410
-259,Mindaugas Kuzminskas,NYK,$3025035,,,,,,,$3025035
-260,Tomas Satoransky,WAS,$3000000,$3129187,,,,,Cap Space,$6129187
-261,Rajon Rondo,CHI,$3000000,,,,,,,$3000000
-262,Lucas Nogueira,TOR,$2947305,,,,,,1st Round Pick,$2947305
-263,Jusuf Nurkic,POR,$2947305,,,,,,1st Round Pick,$2947305
-264,Malik Monk,CHO,$2904480,$3447480,$4028400,$5345687,,,1st Round Pick,$6351960
-265,Frank Kaminsky,CHO,$2847600,$3627842,,,,,1st round pick,$6475442
-266,Andrew Nicholson,POR,$2844429,$2844429,$2844429,$2844429,$2844429,,,$19911003
-267,Jakob Poeltl,TOR,$2825640,$2947320,$3754886,,,,1st Round pick,$5772960
-268,Luke Kennard,DET,$2759280,$3275280,$3827160,$5273826,,,1st Round Pick,$6034560
-269,Justise Winslow,MIA,$2705040,$3448926,,,,,1st round pick,$6153966
-270,Michael Carter-Williams,CHO,$2700000,,,,,,Bi-annual Exception,$2700000
-271,Thon Maker,MIL,$2684160,$2799720,$3569643,,,,1st Round pick,$5483880
-272,Cedi Osman,CLE,$2642857,$2775000,$2907143,,,,MLE,$8325000
-273,Donovan Mitchell,UTA,$2621280,$3111480,$3635760,$5195501,,,1st Round Pick,$5732760
-274,Myles Turner,IND,$2569920,$3410284,,,,,1st round pick,$5980204
-275,Gary Harris,DEN,$2550055,$16517857,$17839286,$19160714,$20482143,,1st Round Pick,$76550055
-276,Domantas Sabonis,IND,$2550000,$2659800,$3529555,,,,1st Round pick,$5209800
-277,Manu Ginobili,SAS,$2500000,$2500000,,,,,,$5000000
-278,Reggie Bullock,DET,$2500000,$2500000,,,,,Cap space,$2500000
-279,Richard Jefferson,ATL,$2500000,,,,,,,$2500000
-280,Malcolm Delaney,ATL,$2500000,,,,,,Room Exception,$2500000
-281,Bam Adebayo,MIA,$2490360,$2955840,$3454080,$5115492,,,1st Round Pick,$5446200
-282,Bruno Caboclo,SAC,$2451225,,,,,,1st Round Pick,$2451225
-283,Ronnie Price,OKC,$2442455,,,,,,,$2442455
-284,Trey Lyles,DEN,$2441400,$3364249,,,,,1st round pick,$5805649
-285,Dario Saric,PHI,$2422560,$2526840,$3481986,,,,1st Round pick,$4949400
-286,Taurean Waller-Prince,ATL,$2422560,$2526840,$3481986,,,,1st Round pick,$4949400
-287,Rodney Hood,CLE,$2386864,,,,,,1st Round Pick,$2386864
-288,Justin Jackson,SAC,$2365560,$2807880,$3280920,$5029650,,,1st Round Pick,$5173440
-289,Shabazz Napier,POR,$2361360,,,,,,1st Round Pick,$2361360
-290,Clint Capela,HOU,$2334520,,,,,,1st Round Pick,$2334520
-291,Arron Afflalo,ORL,$2328652,,,,,,Minimum Salary,$2328652
-292,Nick Collison,OKC,$2328652,,,,,,Minimum Salary,$2328652
-293,Raymond Felton,OKC,$2328652,,,,,,Minimum Salary,$2328652
-294,Ramon Sessions,NYK,$2328652,,,,,,,$2328652
-295,Jarrett Jack,NYK,$2328652,,,,,,Minimum Salary,$2328652
-296,Jason Terry,MIL,$2328652,,,,,,Minimum Salary,$2328652
-297,Udonis Haslem,MIA,$2328652,,,,,,Minimum Salary,$2328652
-298,Dwyane Wade,MIA,$2328652,,,,,,Minimum Salary,$2328652
-299,David West,GSW,$2328652,,,,,,Minimum Salary,$2328652
-300,Richard Jefferson,DEN,$2328652,,,,,,Minimum Salary,$2328652
-301,Jose Calderon,CLE,$2328652,,,,,,Minimum Salary,$2328652
-302,Andrew Bogut,LAL,$2328652,,,,,,,
-303,Devin Booker,PHO,$2319360,$3314365,,,,,1st round pick,$5633725
-304,Georgios Papagiannis,SAC,$2301360,$2400480,$3430288,,,,,$4701840
-305,Dante Cunningham,BRK,$2300000,,,,,,MLE,$2300000
-306,Jameer Nelson,DET,$2262871,,,,,,,$2262871
-307,Justin Patton,MIN,$2247480,$2667600,$3117240,$4781846,,,1st Round Pick,$4915080
-308,Guerschon Yabusele,BOS,$2247480,$2667600,$3117240,$4781846,,,1st Round Pick,$4915080
-309,Monta Ellis,IND,$2245400,$2245400,$2245400,$2245400,$2245400,,,$11227000
-310,Cameron Payne,CHI,$2203440,$3263295,,,,,1st round pick,$5466735
-311,Denzel Valentine,CHI,$2186400,$2280600,$3377569,,,,1st Round pick,$4467000
-312,Josh Smith,NOP,$2183934,,,,,,,
-313,Kyle Anderson,SAS,$2151704,,,,,,1st Round Pick,$2151704
-314,D.J. Wilson,MIL,$2135040,$2534280,$2961120,$4548280,,,1st Round Pick,$4669320
-315,Matt Barnes,SAC,$2133542,$2133542,$2133541,,,,,$6400625
-316,Derrick Rose,UTA,$2116955,,,,,,,$2116955
-317,Marreese Speights,ORL,$2116955,,,,,,Minimum Salary,$2116955
-318,Michael Beasley,NYK,$2116955,,,,,,Minimum Salary,$2116955
-319,Aaron Brooks,MIN,$2116955,,,,,,,$2116955
-320,Luc Mbah a Moute,HOU,$2116955,,,,,,Minimum Salary,$2116955
-321,JaVale McGee,GSW,$2116955,,,,,,,$2116955
-322,Jeff Green,CLE,$2116955,,,,,,Minimum Salary,$2116955
-323,Tony Allen,CHI,$2116955,,,,,,,$2116955
-324,Damien Wilkins,IND,$2116955,,,,,,,$25000
-325,Omri Casspi,GSW,$2106470,,,,,,Minimum Salary,$2106470
-326,Mario Chalmers,MEM,$2106407,,,,,,Minimum Salary,$2106407
-327,Darius Miller,NOP,$2100000,$2205000,,,,,MLE,$2100000
-328,Kelly Oubre,WAS,$2093040,$3208630,,,,,1st round pick,$5301670
-329,Juan Hernangomez,DEN,$2076840,$2166360,$3321030,,,,1st Round pick,$4243200
-330,T.J. Leaf,IND,$2028360,$2407560,$2813280,$4326825,,,1st Round Pick,$4435920
-331,Tim Frazier,WAS,$2000000,,,,,,Room exception,$2000000
-332,Anthony Tolliver,SAC,$2000000,,,,,,,$2000000
-333,Terry Rozier,BOS,$1988520,$3050390,,,,,1st round pick,$5038910
-334,Luke Babbitt,MIA,$1974159,,,,,,Minimum Salary,$987080
-335,John Collins,ATL,$1936920,$2299080,$2686560,$4137302,,,1st Round Pick,$4236000
-336,Anderson Varejao,POR,$1913345,$1913345,$1913345,$1913345,,,,$7653380
-337,Rashad Vaughn,NOP,$1889040,,,,,,,$1889040
-338,Tim Duncan,SAS,$1881250,$1881250,,,,,,$3762500
-339,Wade Baldwin,MEM,$1874400,,,,,,,$1874400
-340,Larry Sanders,MIL,$1865547,$1865547,$1865547,$1865547,$1865547,,,$9327735
-341,Harry Giles,SAC,$1859400,$2207040,$2578800,$3976510,,,1st Round Pick,$4066440
-342,Sam Dekker,LAC,$1794600,$2760095,,,,,1st Round pick,$4554695
-343,Terrance Ferguson,OKC,$1785000,$2118840,$2475840,$3944013,,,1st Round Pick,$3903840
-344,Henry Ellenson,DET,$1780800,$1857480,$2856804,,,,1st Round pick,$3638280
-345,Eric Moreland,DET,$1739333,$1826300,$1913267,,,,MLE,$1739333
-346,Jerian Grant,CHI,$1713840,$2639314,,,,,1st Round pick,$4353154
-347,Jarrett Allen,BRK,$1713720,$2034120,$2376840,$3909902,,,1st Round Pick,$3747840
-348,Mike Scott,WAS,$1709538,,,,,,Minimum Salary,$1709538
-349,Tyler Zeller,MIL,$1709538,$1933941,,,,,,$1709538
-350,Quincy Acy,BRK,$1709538,,,,,,,
-351,Malik Beasley,DEN,$1700640,$1773840,$2731714,,,,1st Round pick,$3474480
-352,Mike Dunleavy,ATL,$1662500,,,,,,,$1662500
-353,Delon Wright,TOR,$1645200,$2536898,,,,,1st Round pick,$4182098
-354,OG Anunoby,TOR,$1645200,$1952760,$2281800,$3872215,,,1st Round Pick,$3597960
-355,Ante Zizic,CLE,$1645200,$1952760,$2281800,$3872215,,,1st Round Pick,$3597960
-356,Caris LeVert,BRK,$1632480,$1702800,$2625718,,,,1st Round pick,$3335280
-357,Justin Anderson,PHI,$1579440,$2516048,,,,,1st Round pick,$4095488
-358,Tyler Lydon,DEN,$1579440,$1874640,$2190720,,,,1st Round Pick,$3454080
-359,Jeff Withey,DAL,$1577320,$1795015,,,,,,$350000
-360,Ian Clark,NOP,$1577230,,,,,,Minimum Salary,$1577230
-361,Shabazz Muhammad,MIN,$1577230,$1795015,,,,,Minimum Salary,$1577230
-362,Willie Reed,CHI,$1577230,,,,,,,$1577230
-363,DeAndre Liggins,MIL,$1577230,,,,,,,
-364,DeAndre' Bembry,ATL,$1567200,$1634640,$2603982,,,,1st Round pick,$3201840
-365,Joffrey Lauvergne,SAS,$1524305,$1656092,,,,,,$1524305
-366,Jerami Grant,OKC,$1524305,,,,,,Draft Pick,$1524305
-367,Johnny O'Bryant,NYK,$1524305,,,,,,,$1524305
-368,Tyler Ennis,LAL,$1524305,$1656092,,,,,Minimum Salary,$1524305
-369,Julyan Stone,CHO,$1524305,$1656092,,,,,Minimum Salary,$1524305
-370,Sean Kilpatrick,BRK,$1524305,,,,,,,$1524305
-371,Spencer Dinwiddie ,BRK,$1524305,$1656092,,,,,Minimum Salary,$1524305
-372,Joe Harris,BRK,$1524305,,,,,,Minimum Salary,$1524305
-373,Shane Larkin,BOS,$1524305,,,,,,Minimum Salary,$1524305
-374,Glenn Robinson,IND,$1524305,,,,,,,
-375,Bobby Brown,HOU,$1524305,,,,,,,
-376,Bobby Portis,CHI,$1516320,$2494346,,,,,1st Round pick,$4010666
-377,Malachi Richardson,TOR,$1504560,$1569360,$2581597,,,,1st Round pick,$3073920
-378,Arron Afflalo,SAC,$1500000,,,,,,,$1500000
-379,Norman Powell,TOR,$1471382,$9367200,$10116576,$10865952,$11615328,,Cap Space,$31821110
-380,Josh Richardson,MIA,$1471382,$9300000,$10100000,$10800000,$11600000,,Minimum Salary,$31671382
-381,Rondae Hollis-Jefferson,BRK,$1471382,$2470357,,,,,1st Round pick,$3941739
-382,Tyus Jones,MIN,$1471382,$2444053,,,,,1st Round pick,$3915435
-383,Jarell Martin,MEM,$1471382,$2416222,,,,,1st Round pick,$3887604
-384,Larry Nance,CLE,$1471382,$2272391,,,,,1st Round pick,$3743773
-385,Troy Williams,HOU,$1471382,$1544951,$1676735,,,,,$2085087
-386,Chris McCullough,WAS,$1471382,,,,,,1st Round pick,$1471382
-387,Raul Neto,UTA,$1471382,,,,,,,$1471382
-388,Pat Connaughton,POR,$1471382,,,,,,Minimum Salary,$1471382
-389,Richaun Holmes,PHI,$1471382,$1600520,,,,,Cap Space,$1471382
-390,T.J. McConnell,PHI,$1471382,$1600520,,,,,Minimum Salary,$1471382
-391,Josh Huestis,OKC,$1471382,,,,,,,$1471382
-392,Jordan Mickey,MIA,$1471382,$1600520,,,,,Minimum Salary,$1471382
-393,Montrezl Harrell,LAC,$1471382,,,,,,,$1471382
-394,Joe Young,IND,$1471382,$1600520,,,,,Cap Space,$1471382
-395,Kevon Looney,GSW,$1471382,,,,,,1st Round pick,$1471382
-396,Nikola Jokic,DEN,$1471382,$1600520,,,,,,$1471382
-397,Salah Mejri,DAL,$1471382,,,,,,Minimum Salary,$1471382
-398,Caleb Swanigan,POR,$1465920,$1740000,$2033160,$3665787,,,1st Round Pick,$3205920
-399,Furkan Korkmaz,PHI,$1465920,$1740000,$2033160,$3665787,,,1st Round Pick,$3205920
-400,Willy Hernangomez,CHO,$1435750,$1544951,$1701735,,,,Cap Space,$2980701
-401,Kyle Kuzma,LAL,$1423560,$1689840,$1974600,$3562178,,,1st Round Pick,$3113400
-402,Tony Bradley,UTA,$1414920,$1679520,$1962360,$3542060,,,1st Round Pick,$3094440
-403,Derrick White,SAS,$1404600,$1667160,$1948080,$3516284,,,1st Round Pick,$3071760
-404,Josh Hart,LAL,$1394520,$1655160,$1934160,$3491159,,,1st Round Pick,$3049680
-405,Timothe Luwawu-Cabarrot,PHI,$1386600,$1544951,$2529684,,,,1st Round pick,$2931551
-406,Kevin Martin,MIN,$1360305,$1360305,,,,,,$2720610
-407,Brice Johnson,MEM,$1331160,,,,,,1st Round pick,$1331160
-408,Pascal Siakam,TOR,$1312611,$1544951,$2351839,,,,1st Round pick,$2857562
-409,Dejounte Murray,SAS,$1312611,$1544951,$2321735,,,,1st Round pick,$2857562
-410,Skal Labissiere,SAC,$1312611,$1544951,$2338847,,,,1st Round pick,$2857562
-411,A.J. Hammons,MIA,$1312611,$1544951,,,,,,$2857562
-412,Deyonta Davis,MEM,$1312611,$1544951,,,,,Cap Space,$2857562
-413,Chinanu Onuaku,HOU,$1312611,$1544951,,,,,Minimum Salary,$2857562
-414,Damian Jones,GSW,$1312611,$1544951,$2305057,,,,1st Round pick,$2857562
-415,Wayne Selden,MEM,$1312611,$1544951,,,,,,$2085087
-416,Cheick Diallo,NOP,$1312611,$1544951,,,,,Minimum Salary,$1812611
-417,Joel Bolomboy,UTA,$1312611,,,,,,,$1312611
-418,Davis Bertans,SAS,$1312611,,,,,,Minimum Salary,$1312611
-419,Bryn Forbes,SAS,$1312611,,,,,,Minimum Salary,$1312611
-420,Jake Layman,POR,$1312611,$1544951,,,,,Cap Space,$1312611
-421,Tyler Ulis,PHO,$1312611,$1544951,$1676735,,,,Cap Space,$1312611
-422,Marcus Georges-Hunt,MIN,$1312611,,,,,,Minimum Salary,$1312611
-423,Malcolm Brogdon,MIL,$1312611,$1544951,,,,,Cap Space,$1312611
-424,Rodney McGruder,MIA,$1312611,$1544951,,,,,Minimum Salary,$1312611
-425,Andrew Harrison,MEM,$1312611,$1544951,,,,,Cap Space,$1312611
-426,Ivica Zubac,LAL,$1312611,$1544951,,,,,Cap Space,$1312611
-427,Patrick McCaw,GSW,$1312611,,,,,,Minimum Salary,$1312611
-428,Dorian Finney-Smith,DAL,$1312611,$1544951,,,,,Minimum Salary,$1312611
-429,Yogi Ferrell,DAL,$1312611,,,,,,Minimum Salary,$1312611
-430,Treveon Graham,CHO,$1312611,,,,,,Minimum Salary,$1312611
-431,David Nwaba,CHI,$1312611,,,,,,Minimum Salary,$1312611
-432,Paul Zipser,CHI,$1312611,$1544951,$1676735,,,,Cap Space,$1312611
-433,Isaiah Whitehead,BRK,$1312611,$1544951,$1676735,,,,Cap Space,$1312611
-434,Sheldon Mac,ATL,$1312611,,,,,,,$1312611
-435,Okaro White,ATL,$1312611,,,,,,,$1312611
-436,Nicolas Brussino,ATL,$1312611,,,,,,,$1312611
-437,Diamond Stone,ATL,$1312611,,,,,,,$1312611
-438,Isaiah Taylor,ATL,$1312611,$1544951,,,,,Minimum Salary,$1312611
-439,Kay Felder,CHI,$1312611,$1544951,,,,,,$456529
-440,Fred VanVleet,TOR,$1312611,,,,,,,
-441,Derrick Jones,PHO,$1312611,,,,,,,
-442,Chasson Randle,NYK,$1312611,,,,,,,
-443,Stephen Zimmerman,LAL,$1312611,,,,,,,
-444,Semi Ojeleye,BOS,$1291892,$1378242,$1618520,$1752950,,,,$2193857
-445,Frank Mason,SAC,$1184385,$1378242,$1618520,,,,,$2562627
-446,Abdel Nader,BOS,$1167333,$1378242,$1618520,$1752950,,,,$1617333
-447,Damyean Dotson,NYK,$1100000,$1378242,$1618520,,,,Minimum Salary,$2478242
-448,Paul Pierce,LAC,$1096080,,,,,,,$1096080
-449,Isaiah Canaan,PHO,$1069308,,,,,,,$1069308
-450,Wesley Iwundu,ORL,$1050000,$1378242,$1618520,,,,,$2428242
-451,Livio Jean-Charles,SAS,$1035200,,,,,,,$1035200
-452,Justin Hamilton,TOR,$1000000,$1000000,$1000000,,,,,$3000000
-453,Gerald Henderson,PHI,$1000000,,,,,,,$1000000
-454,Rade Zagorac,MEM,$950000,$1378242,,,,,,$2328242
-455,Ivan Rabb,MEM,$950000,$1378242,$1618520,,,,MLE,$2328242
-456,Ike Anigbogu,IND,$950000,$1378242,$1618520,,,,Cap space,$1640000
-457,Gerald Green,HOU,$947248,,,,,,Minimum Salary,$947248
-458,Jason Thompson,GSW,$945126,$945126,,,,,,$1890252
-459,Martell Webster,WAS,$830000,$830000,,,,,,$1660000
-460,Frank Jackson,NOP,$815615,$1378242,$1618520,,,,MLE,$2699857
-461,Jordan Bell,GSW,$815615,$1378252,,,,,Minimum Salary,$2193867
-462,Dakari Johnson,OKC,$815615,$1378242,,,,,,$2193857
-463,Sterling Brown,MIL,$815615,$1378242,$1618520,,,,MLE,$2193857
-464,Dillon Brooks,MEM,$815615,$1378242,$1618520,,,,MLE,$2193857
-465,Sindarius Thornwell,LAC,$815615,$1378242,$1618520,,,,MLE,$2193857
-466,Jawun Evans,LAC,$815615,$1378242,$1618520,,,,MLE,$2193857
-467,Dwayne Bacon,CHO,$815615,$1378242,$1618520,,,,MLE,$2193857
-468,Tyler Dorsey,ATL,$815615,$1378242,,,,,Minimum Salary,$2193857
-469,Davon Reed,PHO,$815615,$1378242,$1618520,,,,Minimum Salary,$1504736
-470,Royce O'Neale,UTA,$815615,$1378242,$1618520,,,,Cap space,$815615
-471,Alfonzo McKinnie,TOR,$815615,$1378242,,,,,Minimum Salary,$815615
-472,Brandon Paul,SAS,$815615,$1378242,,,,,Minimum Salary,$815615
-473,Khem Birch,ORL,$815615,$1378242,,,,,Minimum Salary,$815615
-474,Thomas Bryant,LAL,$815615,$1378242,,,,,Minimum Salary,$815615
-475,Zhou Qi,HOU,$815615,$1378242,$1618520,$1752950,,,MLE,$815615
-476,Maxi Kleber,DAL,$815615,$1378242,,,,,Minimum Salary,$815615
-477,Daniel Theis,BOS,$815615,$1378242,,,,,Minimum Salary,$815615
-478,Sean Kilpatrick,MIL,$789725,,,,,,Two-Way Converted,$789725
-479,Trey Burke,NYK,$784160,$1795015,,,,,Minimum Salary,$784160
-480,Alex Poythress,IND,$778668,$1544951,,,,,Two-Way Converted,$778668
-481,Joe Johnson,HOU,$749905,,,,,,,
-482,Dwight Buycks,DET,$748160,$1600520,,,,,Two-Way Converted,$748160
-483,Tyler Cavanaugh,ATL,$679919,$1378242,,,,,Two-Way Converted,$729919
-484,Carlos Delfino,LAC,$650000,$650000,,,,,,$1300000
-485,Caron Butler,SAC,$517220,$517220,,,,,,$1034440
-486,Jordan Farmar,LAC,$510921,,,,,,,$510921
-487,Leandro Barbosa,PHO,$500000,,,,,,,$500000
-488,Tibor Pleiss,PHI,$500000,,,,,,,$500000
-489,Michael Gbinije,DET,$500000,,,,,,,$500000
-490,Aaron Gray,DET,$452059,,,,,,,$452059
-491,Festus Ezeli,POR,$333334,$333333,$333333,,,,,$1000000
-492,C.J. Watson,ORL,$333334,$333333,$333333,,,,,$1000000
-493,Gal Mekel,DAL,$315760,,,,,,,$315760
-494,Miroslav Raduljica,LAC,$300000,$300000,,,,,,$600000
-495,Cameron Oliver,HOU,$300000,,,,,,,$300000
-496,Jordan Crawford,NOP,$250000,,,,,,,$250000
-497,Emeka Okafor,NOP,$239204,,,,,,10-Day Contract,$239204
-498,Isaiah Canaan,CHI,$200000,,,,,,,$200000
-499,Rakeem Christmas,IND,$172552,,,,,,,$172552
-500,DeAndre Liggins,NOP,$172238,,,,,,,$172238
-501,Carrick Felix,WAS,$140902,,,,,,,$140902
-502,Brandon Rush,POR,$119602,,,,,,,
-503,K.J. McDaniels,TOR,$100000,,,,,,,$100000
-504,Marshall Plumlee,NYK,$100000,,,,,,,$100000
-505,Georges Niang,IND,$100000,,,,,,,$100000
-506,Quinn Cook,ATL,$100000,,,,,,,$100000
-507,Demetrius Jackson,BOS,$92858,$92857,$92857,$92857,$92857,,,$650000
-508,Kyle Collinsworth,DAL,$92160,,,,,,,$142160
-509,Josh Gray,PHO,$92160,,,,,,,$92160
-510,Mike James,PHO,$87552,,,,,,,$87552
-511,Jarell Eddie,BOS,$83129,,,,,,,$83129
-512,Rashad Vaughn,ORL,$83129,,,,,,,
-513,Demetrius Jackson,HOU,$74159,,,,,,,$124159
-514,Isaiah Canaan,HOU,$53465,,,,,,,$53465
-515,Tyler Cavanaugh,ATL,$50000,,,,,,,$729919
-516,Kyle Collinsworth,DAL,$50000,,,,,,,$142160
-517,Demetrius Jackson,HOU,$50000,,,,,,,$124159
-518,Naz Mitrou-Long,UTA,$50000,,,,,,,$96080
-519,Daniel Ochefu,WAS,$50000,,,,,,,$50000
-520,Michael Young,WAS,$50000,,,,,,,$50000
-521,Eric Griffin,UTA,$50000,,,,,,,$50000
-522,Nate Wolters,UTA,$50000,,,,,,,$50000
-523,James Michael McAdoo,PHI,$50000,,,,,,,$50000
-524,Jacob Pullen,PHI,$50000,,,,,,,$50000
-525,Nigel Hayes,NYK,$50000,,,,,,,$50000
-526,Jalen Moore,MIL,$50000,,,,,,,$50000
-527,Gary Payton,MIL,$50000,,,,,,,$50000
-528,Matt Williams,MIA,$50000,,,,,,,$50000
-529,Vince Hunter,MEM,$50000,,,,,,,$50000
-530,V.J. Beachem,LAL,$50000,,,,,,,$50000
-531,Briante Weber,LAL,$50000,,,,,,,$50000
-532,Vander Blue,LAL,$50000,,,,,,,$50000
-533,Jamil Wilson,LAC,$50000,,,,,,,$50000
-534,Briante Weber,HOU,$50000,,,,,,,$50000
-535,Luis Montero,DET,$50000,,,,,,,$50000
-536,Antonius Cleveland,DAL,$50000,,,,,,,$50000
-537,Gian Clavell,DAL,$50000,,,,,,,$50000
-538,Diamond Stone,CHI,$50000,,,,,,,$50000
-539,Yakuba Ouattara,BRK,$50000,,,,,,,$50000
-540,Jeremy Evans,ATL,$50000,,,,,,,$50000
-541,Naz Mitrou-Long,UTA,$46080,,,,,,10-Day Contract,$96080
-542,Nigel Hayes,LAL,$46080,,,,,,,$46080
-543,DeAndre Liggins,ATL,$26773,,,,,,,$26773
-544,Axel Toupane,NOP,$25000,,,,,,,$25000
-545,Quinn Cook,NOP,$25000,,,,,,,$25000
-546,Chris Johnson,HOU,$25000,,,,,,,$25000
-547,Beno Udrih,DET,$25000,,,,,,,$25000
-548,Joel Bolomboy,MIL,$22248,,,,,,,$22248
-549,Jarell Eddie,CHI,$17224,,,,,,,$17224
+Rk,Player,Position,Team,Salary,Salary,Salary,Salary,Salary,Salary,Signed Using,Option,Option Year,Guaranteed
+1,Stephen Curry,PG,GSW,$34682550,$37457154,$40231758,$43006362,$45780966,,Bird Rights,,,$201158790
+2,LeBron James,SF,CLE,$33285709,$35607968,,,,,Early Bird,Player,2018,$33285709
+3,Paul Millsap,PF,DEN,$31269231,$29730769,$30500000,,,,Cap space,Team,2019,$61000000
+4,Gordon Hayward,SF,BOS,$29727900,$31214295,$32700690,$34187085,,,Cap space,Player,2020,$93642885
+5,Blake Griffin,PF,DET,$29512900,$31873932,$34234964,$36595996,$38957028,,Bird Rights,Player,2021,$132217792
+6,Kyle Lowry,PG,TOR,$28703704,$31000000,$33296296,,,,Bird Rights,,,$93000000
+7,Russell Westbrook,PG,OKC,$28530608,$35350000,$38178000,$41006000,$43848000,,Bird Rights,,,$186912608
+8,Mike Conley,PG,MEM,$28530608,$30521115,$32511623,$34504132,,,Cap Space,Player,2020,$113989729
+9,James Harden,SG,HOU,$28299399,$30431854,$37800000,$40824000,$43848000,,Bird Rights,,,$181203253
+10,DeMar DeRozan,SG,TOR,$27739975,$27739975,$27739975,$27739975,,,Cap Space,Player,2020,$83219925
+11,Al Horford,PF,BOS,$27734405,$28928710,$30123015,,,,Cap Space,Player,2019,$56663115
+12,Carmelo Anthony,SF,OKC,$26243760,$27928140,,,,,Bird Rights,Player,2018,$26243760
+13,Damian Lillard,PG,POR,$26153057,$27977689,$29802321,$31626953,,,1st Round Pick,,,$115560020
+14,Jrue Holiday,PG,NOP,$25686667,$26131111,$26131111,$26131111,$27020000,,Bird Rights,Player,2021,$104080000
+15,Chris Bosh,PF,MIA,$25289390,$26837720,,,,,,,,$52127110
+16,Kevin Durant,SF,GSW,$25000000,$26250000,,,,,Non-Bird Rights,Player,2018,$25000000
+17,Otto Porter,SF,WAS,$24773250,$26011913,$27250576,$28489239,,,Bird Rights,Player,2020,$78035739
+18,Chris Paul,PG,HOU,$24599495,,,,,,Bird Rights,,,$24599495
+19,C.J. McCollum,SG,POR,$23962573,$25759766,$27556959,$29354152,,,1st Round Pick,,,$106633450
+20,Bradley Beal,SG,WAS,$23775506,$25434263,$27093019,$28751775,,,Cap Space,,,$105054563
+21,Anthony Davis,PF,NOP,$23775506,$25434263,$27093019,$28751775,,,1st Round Pick,,,$76302788
+22,Andre Drummond,C,DET,$23775506,$25434263,$27093019,$28751775,,,Cap Space,Player,2020,$76302788
+23,Hassan Whiteside,C,MIA,$23775506,$25434263,$27093018,,,,Cap Space,Player,2019,$49209769
+24,Dwight Howard,C,CHO,$23500000,$23819725,,,,,Cap Space,,,$47319725
+25,Chandler Parsons,SF,MEM,$23112004,$24107258,$25102511,,,,Cap Space,,,$72321773
+26,Harrison Barnes,SF,DAL,$23112004,$24107258,$25102512,,,,Cap Space,Player,2019,$47219262
+27,J.J. Redick,SG,PHI,$23000000,,,,,,Cap space,,,$23000000
+28,Marc Gasol,C,MEM,$22642350,$24119025,$25595700,,,,Bird Rights,Player,2019,$46761375
+29,Kevin Love,PF,CLE,$22642350,$24119025,$25595700,,,,Bird Rights,,,$46761375
+30,Brook Lopez,C,LAL,$22642350,,,,,,Bird Rights,,,$22642350
+31,DeAndre Jordan,C,LAC,$22642350,$24119025,,,,,Bird Rights,Player,2018,$22642350
+32,Steven Adams,C,OKC,$22471910,$24157303,$25842697,$27528090,,,1st Round Pick,,,$100000000
+33,Giannis Antetokounmpo,SF,MIL,$22471910,$24157303,$25842697,$27528090,,,1st Round Pick,,,$100000000
+34,Nicolas Batum,SF,CHO,$22434783,$24000000,$25565217,$27130434,,,Cap Space,Player,2020,$72000000
+35,Rudy Gobert,C,UTA,$21974719,$23491573,$25008427,$26525281,,,1st Round Pick,,,$97000000
+36,LaMarcus Aldridge,PF,SAS,$21461010,$22347015,$26000000,,,,Cap Space,,,$69808025
+37,Victor Oladipo,SG,IND,$21000000,$21000000,$21000000,$21000000,,,1st Round Pick,,,$84000000
+38,Enes Kanter,C,NYK,$20566802,$18622514,,,,,Bird Rights,Player,2018,$20566802
+39,Danilo Gallinari,SF,LAC,$20559599,$21587579,$22615559,,,,Sign and Trade,,,$64762737
+40,Serge Ibaka,PF,TOR,$20061729,$21666667,$23271604,,,,Cap space,,,$65000000
+41,George Hill,PG,CLE,$20000000,$19000000,$18000000,,,,Cap space,,,$40000000
+42,Ryan Anderson,PF,HOU,$19578455,$20421546,$21264635,,,,Cap Space,,,$61264636
+43,Paul George,SG,OKC,$19508958,$20703384,,,,,1st Round Pick,Player,2018,$19508958
+44,Allen Crabbe,SG,BRK,$19332500,$18500000,$18500000,,,,Cap Space,Player,2019,$37832500
+45,Jimmy Butler,SG,MIN,$19301070,$20445779,$19841627,,,,Bird Rights,Player,2019,$39746849
+46,Jeff Teague,PG,MIN,$19000000,$19000000,$19000000,,,,Cap space,Player,2019,$38000000
+47,Kawhi Leonard,SF,SAS,$18868625,$20099189,$21329752,,,,Bird Rights,Player,2019,$38967814
+48,Kyrie Irving,PG,BOS,$18868625,$20099188,$21329750,,,,Bird Rights,Player,2019,$38967813
+49,John Wall,PG,WAS,$18063850,$19169800,$37800000,$40824000,$43848000,,Bird Rights,,,$159705650
+50,DeMarcus Cousins,C,NOP,$18063850,,,,,,1st Round Pick,,,$18063850
+51,Greg Monroe,C,PHO,$17884176,,,,,,,,,$17884176
+52,Wesley Matthews,SG,DAL,$17884176,$18622514,,,,,Cap Space,Player,2018,$17884176
+53,Klay Thompson,SG,GSW,$17826150,$18988725,,,,,1st Round Pick,,,$36814875
+54,Joakim Noah,C,NYK,$17765000,$18530000,$19295000,,,,Cap Space,,,$55590000
+55,Kentavious Caldwell-Pope,SG,LAL,$17745894,,,,,,Cap space,,,$17745894
+56,Luol Deng,SF,LAL,$17190000,$18000000,$18810000,,,,Cap Space,,,$54000000
+57,Evan Turner,SF,POR,$17131148,$17868852,$18606557,,,,Cap Space,,,$53606557
+58,Goran Dragic,PG,MIA,$17000450,$18109175,$19217900,,,,Bird Rights,Player,2019,$35109625
+59,Evan Fournier,SG,ORL,$17000000,$17000000,$17000000,$17000000,,,Cap Space,Player,2020,$51000000
+60,Bismack Biyombo,C,ORL,$17000000,$17000000,$17000000,,,,Cap Space,Player,2019,$34000000
+61,Kent Bazemore,SG,ATL,$16910113,$18089887,$19269662,,,,Cap Space,Player,2019,$35000000
+62,Robert Covington,SF,PHI,$16698103,$10464092,$11301219,$12138345,$12975471,,Cap Space,,,$63577230
+63,Ian Mahinmi,C,WAS,$16661641,$15944154,$15450051,,,,Cap Space,,,$48055846
+64,Tim Hardaway,SG,NYK,$16500000,$17325000,$18150000,$18975000,,,Cap space,Player,2020,$51975000
+65,Draymond Green,SF,GSW,$16400000,$17469565,$18539130,,,,Bird Rights,,,$52408695
+66,Tristan Thompson,C,CLE,$16400000,$17469565,$18539130,,,,Bird Rights,,,$52408695
+67,Reggie Jackson,PG,DET,$16000000,$17043478,$18086956,,,,Bird Rights,,,$51130434
+68,Pau Gasol,C,SAS,$16000000,$16000000,$16000000,,,,,,,$38700000
+69,Tobias Harris,SF,LAC,$16000000,$14800000,,,,,Bird Rights,,,$30800000
+70,Dwyane Wade,SG,CHI,$15550000,,,,,,,,,$15550000
+71,Dennis Schroder,PG,ATL,$15500000,$15500000,$15500000,$15500000,,,1st Round Pick,,,$62000000
+72,Jonas Valanciunas,C,TOR,$15460675,$16539326,$17617977,,,,1st Round Pick,Player,2019,$32000001
+73,Tony Parker,PG,SAS,$15453126,,,,,,Bird Rights,,,$15453126
+74,Timofey Mozgov,C,BRK,$15280000,$16000000,$16720000,,,,Cap Space,,,$48000000
+75,Andre Iguodala,SF,GSW,$14814815,$16000000,$17185185,,,,Bird Rights,,,$48000000
+76,DeMarre Carroll,SF,BRK,$14800000,$15400000,,,,,Cap Space,,,$30200000
+77,Thaddeus Young,SF,IND,$14796348,$13764045,,,,,Bird Rights,Player,2018,$14796348
+78,Eric Bledsoe,PG,MIL,$14500000,$15000000,,,,,Bird Rights,,,$29500000
+79,Ricky Rubio,PG,UTA,$14275000,$14975000,,,,,1st Round Pick,,,$29250000
+80,Joe Ingles,SF,UTA,$14136364,$13045455,$11954546,$10863637,,,Bird Rights,,,$50000002
+81,Gorgui Dieng,PF,MIN,$14112360,$15170787,$16229213,$17287640,,,1st Round Pick,,,$62800000
+82,Khris Middleton,SF,MIL,$14100000,$13000000,$13000000,,,,Bird Rights,Player,2019,$27100000
+83,Mason Plumlee,C,DEN,$14041096,$12917808,$14041096,,,,Cap space,,,$41000000
+84,Taj Gibson,PF,MIN,$14000000,$14000000,,,,,Cap space,,,$28000000
+85,James Johnson,PF,MIA,$13954000,$14651700,$15349400,,,,Cap space,Player,2020,$43955100
+86,Robin Lopez,C,CHI,$13788500,$14357750,,,,,Cap Space,,,$28146250
+87,J.R. Smith,SG,CLE,$13760000,$14720000,$15680000,,,,Bird Rights,,,$32350000
+88,Brandon Knight,PG,PHO,$13618750,$14631250,$15643750,,,,,,,$43893750
+89,Marvin Williams,SF,CHO,$13168750,$14087500,$15006250,,,,Cap Space,Player,2019,$27256250
+90,Tyson Chandler,C,PHO,$13000000,$13585000,,,,,Cap Space,,,$26585000
+91,Michael Kidd-Gilchrist,SF,CHO,$13000000,$13000000,$13000000,,,,1st Round Pick,Player,2019,$26000000
+92,Eric Gordon,SG,HOU,$12943020,$13500375,$14057730,,,,Cap Space,,,$40501125
+93,Kenneth Faried,PF,DEN,$12921348,$13764045,,,,,1st Round Pick,,,$26685393
+94,Marcin Gortat,C,WAS,$12782609,$13565218,,,,,Bird Rights,,,$26347827
+95,Cody Zeller,PF,CHO,$12584270,$13528090,$14471910,$15415730,,,1st Round Pick,,,$56000000
+96,Miles Plumlee,C,ATL,$12500000,$12500000,$12500000,,,,Bird Rights,,,$37500000
+97,Nikola Mirotic,PF,NOP,$12500000,$12500000,,,,,Cap space,,,$25000000
+98,Zach Randolph,PF,SAC,$12307692,$11692308,,,,,Cap space,,,$24000000
+99,Nikola Vucevic,C,ORL,$12250000,$12750000,,,,,Bird Rights,,,$25000000
+100,Solomon Hill,SF,NOP,$12236535,$12752928,$13258781,,,,Cap Space,,,$38248244
+101,Wilson Chandler,SF,DEN,$12016854,$12800562,,,,,,Player,2018,$12016854
+102,Jeremy Lin,PG,BRK,$12000000,$12516746,,,,,Cap Space,,,$24516746
+103,Kemba Walker,PG,CHO,$12000000,$12000000,,,,,1st Round Pick,,,$24000000
+104,Derrick Favors,PF,UTA,$12000000,,,,,,1st Round Pick,,,$12000000
+105,Austin Rivers,SG,LAC,$11825000,$12650000,,,,,Cap Space,Player,2018,$11825000
+106,Courtney Lee,SG,NYK,$11747890,$12253780,$12759670,,,,Cap Space,,,$36761340
+107,Nikola Pekovic,C,MIN,$11600000,,,,,,,,,$11600000
+108,Jordan Clarkson,PG,CLE,$11562500,$12500000,$13437500,,,,Cap Space,,,$37500000
+109,John Henson,C,MIL,$11422536,$10577466,$9732396,,,,1st Round Pick,,,$31732398
+110,Dion Waiters,SG,MIA,$11000000,$11550000,$12100000,$12650000,,,Cap space,,,$47300000
+111,Amir Johnson,PF,PHI,$11000000,,,,,,Cap space,,,$11000000
+112,Jamal Crawford,SG,MIN,$4328000,$4544400,,,,,,,,$4328000
+113,Alec Burks,SG,UTA,$10845506,$11536515,,,,,1st Round Pick,,,$22382021
+114,Patty Mills,PG,SAS,$10714286,$11571429,$12428571,$13285714,,,Bird Rights,,,$48000000
+115,Kelly Olynyk,C,MIA,$10607169,$11137527,$11667885,$12198243,,,Cap space,Player,2020,$33412581
+116,Omer Asik,C,CHI,$10595505,$11286516,$11977527,,,,Bird Rights,Player,2019,$24882021
+117,Terrence Ross,SG,ORL,$10500000,$10500000,,,,,Rookie scale extension,,,$21000000
+118,Mirza Teletovic,SF,MIL,$10500000,$10500000,,,,,Cap Space,,,$21000000
+119,Bojan Bogdanovic,SF,IND,$10500000,$10500000,,,,,Cap space,,,$12000000
+120,Jon Leuer,PF,DET,$10497319,$10002681,$9508043,,,,Cap Space,,,$30008043
+121,Iman Shumpert,SG,SAC,$10337079,$11011234,,,,,Bird Rights,Player,2018,$10337079
+122,Maurice Harkless,SF,POR,$10162922,$10837079,$11511234,,,,Cap Space,,,$32511235
+123,Jared Dudley,SF,PHO,$10000000,$9530000,,,,,Cap Space,,,$19530000
+124,Darren Collison,PG,IND,$10000000,$10000000,,,,,Cap space,,,$12000000
+125,Danny Green,SG,SAS,$10000000,$10000000,,,,,Bird Rights,Player,2018,$10000000
+126,Meyers Leonard,C,POR,$9904495,$10595506,$11286515,,,,Cap Space,,,$31786516
+127,Tony Snell,SF,MIL,$9821429,$10607143,$11392857,$12178571,,,Cap space,Player,2020,$31821429
+128,Al Jefferson,C,IND,$9769821,$10000000,,,,,Cap Space,,,$13769821
+129,Matthew Dellavedov,SG,MIL,$9607500,$9607500,$9607500,,,,Cap Space,,,$28822500
+130,Joe Johnson,SF,HOU,$749905,,,,,,,,,$749905
+131,Bogdan Bogdanovic,SG,SAC,$9470614,$9000000,$8529386,,,,Cap space,Team,2020,$27000000
+132,Andre Roberson,SG,OKC,$9259259,$10000000,$10740741,,,,Bird Rights,,,$30000000
+133,Trevor Booker,PF,PHI,$9125000,,,,,,Cap Space,,,$9125000
+134,Dwight Powell,PF,DAL,$9003125,$9631250,$10259375,,,,Cap Space,Player,2019,$18634375
+135,Jerryd Bayless,SG,PHI,$9000000,$8575916,,,,,Cap Space,,,$17575916
+136,Avery Bradley,SG,LAC,$8808989,,,,,,Bird Rights,,,$8808989
+137,JaMychal Green,PF,MEM,$8533333,$7866667,,,,,Bird Rights,,,$16400000
+138,E'Twaun Moore,SG,NOP,$8445024,$8808685,$8664928,,,,Cap Space,,,$25918637
+139,Rudy Gay,SF,SAS,$8406000,$8826300,,,,,MLE,Player,2018,$8406000
+140,Kosta Koufos,C,SAC,$8393000,$8739500,,,,,Cap Space,Player,2018,$8393000
+141,Markieff Morris,PF,WAS,$8000000,$8600000,,,,,Bird Rights,,,$16600000
+142,Vince Carter,SG,SAC,$8000000,,,,,,Cap space,,,$8000000
+143,Garrett Temple,SG,SAC,$8000000,$8000000,,,,,Cap Space,Player,2018,$8000000
+144,C.J. ,SF,TOR,$7936509,$8333333,$8730158,,,,MLE,Player,2018,$16269842
+145,Cristiano Felicio,C,CHI,$7843500,$8470980,$8156500,$7529020,,,Cap space,,,$32000000
+146,Shaun Livingston,PG,GSW,$7692308,$8307692,$7692308,,,,Bird Rights,,,$18000000
+147,Cory Joseph,PG,IND,$7630000,$7945000,,,,,Cap Space,Player,2018,$7630000
+148,P.J. Tucker,SF,HOU,$7590035,$7969537,$8349039,$7969537,,,MLE,,,$26477799
+149,Corey Brewer,SG,LAL,$7579366,,,,,,Cap Space,,,$7579366
+150,Andrew Wiggins,SF,MIN,$7574322,$25250000,$27270000,$29290000,$31310000,,1st Round Pick,,,$154024322
+151,Darrell Arthur,PF,DEN,$7464912,$7464912,,,,,Cap Space,Player,2018,$7464912
+152,Channing Frye,PF,LAL,$7420912,,,,,,Cap Space,,,$7420912
+153,Trevor Ariza,SF,HOU,$7420912,,,,,,Bird Rights,,,$7420912
+154,Al-Farouq Aminu,SF,POR,$7319035,$6957105,,,,,Cap Space,,,$14276140
+155,Cole Aldrich,C,MIN,$7300000,$6956021,,,,,Cap Space,,,$9356021
+156,D.J. Augustin,PG,ORL,$7250000,$7250000,$7250000,,,,Cap Space,,,$21750000
+157,Markelle Fultz,PG,PHI,$7026240,$8339880,$9745200,$12288697,,,1st Round Pick,Team,2019,$15366120
+158,Lou Williams,SG,LAC,$7000000,$8000000,$8000000,$8000000,,,Cap Space,,,$23000000
+159,Kyle Korver,SF,CLE,$7000000,$7560000,$7500000,,,,Bird Rights,,,$18000000
+160,Jeremy Lamb,SG,CHO,$7000000,$7488372,,,,,Rookie scale extension,,,$14488372
+161,Boban Marjanovic,C,LAC,$7000000,$7000000,,,,,Cap Space,,,$14000000
+162,Jae Crowder,SF,UTA,$6796117,$7305825,$7815533,,,,Bird Rights,,,$21917475
+163,Jabari Parker,SF,MIL,$6782392,$8851021,,,,,1st Round Pick,Team,2018,$6782392
+164,Langston Galloway,PG,DET,$6666667,$7000000,$7333333,,,,MLE,,,$21000000
+165,Lance Thomas,SF,NYK,$6655325,$7119650,$7583975,,,,Cap Space,,,$13774975
+166,Ed Davis,PF,POR,$6352531,,,,,,Cap Space,,,$6352531
+167,Marco Belinelli,SG,ATL,$815686,,,,,,,,,$815686
+168,Jonathon Simmons,SF,ORL,$6300000,$6000000,$5700000,,,,Cap space,,,$13300000
+169,Lonzo Ball,PG,LAL,$6286560,$7461960,$8719320,$11003782,,,1st Round Pick,Team,2019,$13748520
+170,Wayne Ellington,SG,MIA,$6270000,,,,,,Cap Space,,,$6270000
+171,Isaiah Thomas,PG,LAL,$6261395,,,,,,,,,$6261395
+172,Karl-Anthony Towns,C,MIN,$6216840,$7839435,,,,,1st round pick,Team,2019,$6216840
+173,Ben Simmons,PG,PHI,$6168840,$6434520,$8113930,,,,1st Round pick,Team,2019,$12603360
+174,Joel Embiid,C,PHI,$6100266,$25250000,$27270000,$29290000,$31310000,,1st Round Pick,,,$6100266
+175,Spencer Hawes,C,MIL,$6021175,,,,,,,,,$6021175
+176,Josh McRoberts,PF,DAL,$6021175,,,,,,,,,$6021175
+177,Ish Smith,PG,DET,$6000000,$6000000,,,,,Cap Space,,,$12000000
+178,Alan Williams,PF,PHO,$6000000,$5520000,$5520000,,,,Cap space,,,$6000000
+179,Shelvin Mack,PG,ORL,$6000000,$6000000,,,,,Cap space,,,$6000000
+180,Milos Teodosic,PG,LAC,$6000000,$6300000,,,,,MLE,Player,2018,$6000000
+181,Dewayne Dedmon,C,ATL,$6000000,$6300000,,,,,Cap space,Player,2018,$6000000
+182,Ersan Ilyasova,PF,ATL,$6000000,,,,,,Cap space,,,$6000000
+183,Tyler Johnson,SG,MIA,$5881260,$19245370,$19245370,,,,Cap Space,,,$25126630
+184,Wesley Johnson,SF,LAC,$5881260,$6134000,,,,,Cap Space,Player,2018,$5881260
+185,Alex Abrines,SG,OKC,$5725000,$5455236,,,,,Cap Space,,,$11180236
+186,Jayson Tatum,SF,BOS,$5645400,$6700800,$7830000,$9897120,,,1st Round Pick,Team,2019,$12346200
+187,D'Angelo Russell,PG,BRK,$5562360,$7019698,,,,,1st round pick,Team,2019,$12582058
+188,Brandon Ingram,SF,LAL,$5519400,$5757120,$7265485,,,,1st Round pick,Team,2019,$11276520
+189,Patrick Beverley,PG,LAC,$5513514,$5027028,,,,,Bird Rights,,,$5513514
+190,Aaron Gordon,PF,ORL,$5504420,,,,,,1st Round Pick,Team,2018,$5504420
+191,Deron Williams,PG,BRK,$5500000,$5500000,$5500000,,,,,,,$16500000
+192,Josh Smith,SF,DET,$5400000,$5400000,$5400000,,,,,,,$16200000
+193,Thabo Sefolosha,SF,UTA,$5250000,$5250000,,,,,Cap space,,,$5250000
+194,Jason Smith,C,WAS,$5225000,$5450000,,,,,Cap Space,Player,2018,$5225000
+195,Ben McLemore,SG,MEM,$5200000,$5460000,,,,,MLE,,,$10660000
+196,Patrick Patterson,PF,OKC,$5192000,$5451600,$5711200,,,,MLE,Player,2019,$10643600
+197,Nick Young,SG,GSW,$5192000,,,,,,MLE,,,$5192000
+198,Brandan Wright,C,HOU,$705652,,,,,,,,,$705652
+199,Josh Jackson,SF,PHO,$5090040,$6041520,$7059480,$8930242,,,1st Round Pick,Team,2019,$11131560
+200,Marcus Morris,SF,BOS,$5000000,$5375000,,,,,Bird Rights,,,$10375000
+201,Dirk Nowitzki,PF,DAL,$5000000,$5000000,,,,,Cap space,Team,2018,$5000000
+202,Greg Monroe,C,BOS,$5000000,,,,,,Disabled Player Exception,,,$5000000
+203,Mike Muscala,PF,ATL,$5000000,$5000000,,,,,Cap space,Player,2018,$5000000
+204,Jahlil Okafor,C,BRK,$4995120,,,,,,1st round pick,,,$4995120
+205,Dante Exum,PG,UTA,$4992385,,,,,,1st Round Pick,Team,2018,$4992385
+206,Alexis Ajinca,C,NOP,$4961798,$5285394,,,,,Early Bird Rights,,,$10247192
+207,Jaylen ,SF,BOS,$4956480,$5169960,$6534829,,,,1st Rd pick,Team,2019,$10126440
+208,Jameer Nelson,PG,DEN,$4736050,,,,,,,,,$4736050
+209,Kyle Singler,SF,OKC,$4666500,$4996000,$5333500,,,,Bird Rights,Team,2019,$9662500
+210,Justin Holiday,SG,CHI,$4615385,$4384616,,,,,MLE,,,$9000001
+211,De Aaron Fox,PG,SAC,$4609200,$5407920,$6392760,$8099627,,,1st Round Pick,Team,2019,$10017120
+212,Marcus Smart,PG,BOS,$4538020,,,,,,1st Round Pick,Team,2018,$4538020
+213,Kristaps Porzingis,PF,NYK,$4503600,$5697054,,,,,1st round pick,Team,2019,$10200654
+214,Dragan Bender,PF,PHO,$4468800,$4661280,$5896519,,,,1st Round pick,Team,2019,$9130080
+215,Devin Harris,PG,DEN,$4402546,,,,,,Cap Space,,,$4402546
+216,Ron Baker,PG,NYK,$4328000,$4544400,,,,,Room Exception,Player,2018,$4328000
+217,Jamal Crawford,SG,MIN,$4328000,$4544400,,,,,Room Exception,Team,2018,$4328000
+218,Aron Baynes,C,BOS,$4328000,,,,,,Room Exception,,,$4328000
+219,Alex Len,C,PHO,$4187599,,,,,,1st Round Pick,,,$4187599
+220,Nerlens Noel,C,DAL,$4187599,,,,,,1st Round Pick,,,$4187599
+221,Jonathan Isaac,SF,ORL,$4186320,$4969080,$5806440,$7362566,,,1st Round Pick,Team,2019,$9155400
+222,Lance Stephenson,SG,IND,$4180000,$4360000,,,,,Cap space,Team,2018,$4180000
+223,Julius Randle,PF,LAL,$4149242,,,,,,1st Round Pick,Team,2018,$4149242
+224,Kyle O'Quinn,C,NYK,$4087500,$4256250,,,,,Bird Rights,Player,2018,$4087500
+225,Mario Hezonja,SG,ORL,$4078320,,,,,,1st round pick,,,$4078320
+226,Kris Dunn,PG,CHI,$4046760,$4221000,$5348007,,,,1st Round pick,Team,2019,$8267760
+227,Jonas Jerebko,PF,UTA,$4000000,$4200000,,,,,Cap space,,,$4000000
+228,Nemanja Bjelica,,MIN,$3949999,,,,,,MLE,Team,2018,$3949999
+229,J.J. Barea,PG,DAL,$3903900,$3710850,,,,,Cap Space,,,$7614750
+230,Quincy Pondexter,SF,CHI,$3853931,,,,,,,,,$3853931
+231,Lauri Markkanen,PF,CHI,$3821640,$4536120,$5300400,$6731508,,,1st Round Pick,Team,2019,$8357760
+232,Nik Stauskas,SG,BRK,$3807146,,,,,,1st Round Pick,Team,2018,$3807146
+233,Willie Cauley-Stein,C,SAC,$3704160,$4696875,,,,,1st round pick,Team,2019,$8401035
+234,Buddy Hield,SG,SAC,$3675480,$3833760,$4861208,,,,1st Round pick,Team,2019,$7509240
+235,Will Barton,SG,DEN,$3533333,,,,,,Bird Rights,,,$3533333
+236,Noah Vonleh,PF,CHI,$3505233,,,,,,1st Round Pick,Team,2018,$3505233
+237,Frank Ntilikina,PG,NYK,$3501120,$4155720,$4855800,$6176578,,,1st Round Pick,Team,2019,$7656840
+238,Nene Hilario,C,HOU,$3477600,$3651480,$3825360,,,,Non-Bird Rights,,,$10954440
+239,Zaza Pachulia,C,GSW,$3477600,,,,,,,,,$3477600
+240,Troy Daniels,PG,PHO,$3408520,$3258540,,,,,Cap Space,,,$6667060
+241,Emmanuel Mudiay,PG,NYK,$3381480,$4294480,,,,,1st round pick,Team,2019,$7675960
+242,Jamal Murray,PG,DEN,$3355320,$3499800,$4444746,,,,1st Round pick,Team,2019,$6855120
+243,Elfrid Payton,PG,PHO,$3332340,,,,,,1st Round Pick,Team,2018,$3332340
+244,Rajon Rondo,PG,NOP,$3300000,,,,,,MLE,,,$3300000
+245,Doug McDermott,SF,DAL,$3294994,,,,,,1st Round Pick,Team,2018,$3294994
+246,Jodie Meeks,SG,WAS,$3290000,$3454500,,,,,Bi-annual Exception,Player,2018,$3290000
+247,Tyreke Evans,SG,MEM,$3290000,,,,,,Bi-annual Exception,,,$3290000
+248,Tarik Black,C,HOU,$3290000,,,,,,Bi-annual Exception,,,$3290000
+249,Anthony Tolliver,PF,DET,$3290000,,,,,,Bi-annual Exception,,,$3290000
+250,Dennis Smith,PG,DAL,$3218280,$3819960,$4463640,$5686677,,,1st Round Pick,Team,2019,$7038240
+251,Zach LaVine,PG,CHI,$3202217,,,,,,1st Round Pick,Team,2018,$3202217
+252,Ekpe Udoh,PF,UTA,$3200000,$3360000,,,,,Room Exception,,,$3200000
+253,T.J. Warren,SF,PHO,$3152931,$11750000,$10810000,$11750000,$12690000,,1st Round Pick,,,$50152931
+254,Stanley Johnson,SF,DET,$3097800,$3940402,,,,,1st round pick,Team,2019,$7038202
+255,Marquese Chriss,PF,PHO,$3073800,$3206160,$4078236,,,,1st Rd pick,Team,2019,$6279960
+256,Zach Collins,PF,POR,$3057240,$3628920,$4240200,$5406255,,,1st Round Pick,Team,2019,$6686160
+257,James Ennis,SF,DET,$3028410,,,,,,Room exception,,,$3028410
+258,Seth Curry,PG,DAL,$3028410,,,,,,Room exception,,,$3028410
+259,Mindaugas Kuzminskas,SF,NYK,$3025035,,,,,,,,,$3025035
+260,Tomas Satoransky,PG,WAS,$3000000,$3129187,,,,,Cap Space,Team,2019,$6129187
+262,Lucas Nogueira,C,TOR,$2947305,,,,,,1st Round Pick,Team,2018,$2947305
+263,Jusuf Nurkic,C,POR,$2947305,,,,,,1st Round Pick,Team,2018,$2947305
+264,Malik Monk,SG,CHO,$2904480,$3447480,$4028400,$5345687,,,1st Round Pick,Team,2019,$6351960
+265,Frank Kaminsky,PF,CHO,$2847600,$3627842,,,,,1st round pick,Team,2019,$6475442
+266,Andrew Nicholson,PF,POR,$2844429,$2844429,$2844429,$2844429,$2844429,,,,,$19911003
+267,Jakob Poeltl,C,TOR,$2825640,$2947320,$3754886,,,,1st Round pick,Team,2019,$5772960
+268,Luke Kennard,SG,DET,$2759280,$3275280,$3827160,$5273826,,,1st Round Pick,Team,2019,$6034560
+269,Justise Winslow,SF,MIA,$2705040,$3448926,,,,,1st round pick,RFA,2019,$6153966
+270,Michael Carter-Williams,PG,CHO,$2700000,,,,,,Bi-annual Exception,,,$2700000
+271,Thon Maker,C,MIL,$2684160,$2799720,$3569643,,,,1st Round pick,Team,2019,$5483880
+272,Cedi ,SF,CLE,$2642857,$2775000,$2907143,,,,MLE,RFA,2020,$8325000
+273,Donovan Mitchell,PG,UTA,$2621280,$3111480,$3635760,$5195501,,,1st Round Pick,Team,2019,$5732760
+274,Myles Turner,C,IND,$2569920,$3410284,,,,,1st round pick,RFA,2019,$5980204
+275,Gary Harris,SG,DEN,$2550055,$16517857,$17839286,$19160714,$20482143,,1st Round Pick,,,$76550055
+276,Domantas Sabonis,PF,IND,$2550000,$2659800,$3529555,,,,1st Round pick,Team,2019,$5209800
+277,Manu Ginobili,SG,SAS,$2500000,$2500000,,,,,,,,$5000000
+278,Reggie Bullock,SF,DET,$2500000,$2500000,,,,,Cap space,,,$2500000
+280,Malcolm Delaney,SG,ATL,$2500000,,,,,,Room Exception,RFA,2018,$2500000
+281,Bam Adebayo,C,MIA,$2490360,$2955840,$3454080,$5115492,,,1st Round Pick,Team,2019,$5446200
+282,Bruno Caboclo,SF,SAC,$2451225,,,,,,1st Round Pick,RFA,2018,$2451225
+283,Ronnie Price,PG,OKC,$2442455,,,,,,,,,$2442455
+284,Trey ,PF,DEN,$2441400,$3364249,,,,,1st round pick,RFA,2019,$5805649
+285,Dario Saric,SF,PHI,$2422560,$2526840,$3481986,,,,1st Round pick,Team,2019,$4949400
+286,Taurean Waller-Prince,SF,ATL,$2422560,$2526840,$3481986,,,,1st Round pick,Team,2019,$4949400
+287,Rodney Hood,SG,CLE,$2386864,,,,,,1st Round Pick,RFA,2018,$2386864
+288,Justin Jackson,SF,SAC,$2365560,$2807880,$3280920,$5029650,,,1st Round Pick,Team,2019,$5173440
+289,Shabazz Napier,PG,POR,$2361360,,,,,,1st Round Pick,RFA,2018,$2361360
+290,Clint Capela,C,HOU,$2334520,,,,,,1st Round Pick,RFA,2018,$2334520
+291,Arron Afflalo,SG,ORL,$2328652,,,,,,Minimum Salary,,,$2328652
+292,Nick Collison,PF,OKC,$2328652,,,,,,Minimum Salary,,,$2328652
+293,Raymond Felton,PG,OKC,$2328652,,,,,,Minimum Salary,,,$2328652
+294,Ramon Sessions,PG,NYK,$131562,,,,,,10 Day Contract,,,$131562
+295,Jarrett Jack,PG,NYK,$2328652,,,,,,Minimum Salary,,,$2328652
+296,Jason Terry,PG,MIL,$2328652,,,,,,Minimum Salary,,,$2328652
+297,Udonis Haslem,PF,MIA,$2328652,,,,,,Minimum Salary,,,$2328652
+298,Dwyane Wade,SG,MIA,$2328652,,,,,,Minimum Salary,,,$2328652
+299,David West,PF,GSW,$2328652,,,,,,Minimum Salary,,,$2328652
+300,Richard Jefferson,SF,DEN,$2328652,,,,,,Minimum Salary,,,$2328652
+301,Jose Calderon,PG,CLE,$2328652,,,,,,Minimum Salary,,,$2328652
+302,Andrew Bogut,C,LAL,$1105123,,,,,,,,,$1105123
+303,Devin Booker,SG,PHO,$2319360,$3314365,,,,,1st round pick,RFA,2019,$5633725
+304,Georgios Papagiannis,C,SAC,$2301360,$2400480,$3430288,,,,,,,$4701840
+305,Dante Cunningham,PF,BRK,$2300000,,,,,,MLE,,,$2300000
+306,Jameer Nelson,PG,DET,$2262871,,,,,,,,,$2262871
+307,Justin Patton,C,MIN,$2247480,$2667600,$3117240,$4781846,,,1st Round Pick,Team,2019,$4915080
+308,Guerschon Yabusele,PF,BOS,$2247480,$2667600,$3117240,$4781846,,,1st Round Pick,Team,2019,$4915080
+309,Monta Ellis,SG,IND,$2245400,$2245400,$2245400,$2245400,$2245400,,,,,$11227000
+310,Cameron Payne,PG,CHI,$2203440,$3263295,,,,,1st round pick,Team,2019,$5466735
+311,Denzel Valentine,SG,CHI,$2186400,$2280600,$3377569,,,,1st Round pick,Team,2019,$4467000
+312,Josh Smith,SF,NOP,$2183934,,,,,,,,,$2183934
+313,Kyle Anderson,SF,SAS,$2151704,,,,,,1st Round Pick,RFA,2018,$2151704
+314,D.J. Wilson,PF,MIL,$2135040,$2534280,$2961120,$4548280,,,1st Round Pick,Team,2019,$4669320
+315,Matt Barnes,SF,SAC,$2133542,$2133542,$2133541,,,,,,,$6400625
+316,Derrick Rose,PG,UTA,$2116955,,,,,,,,,
+317,Marreese Speights,PF,ORL,$2116955,,,,,,Minimum Salary,,,$2116955
+318,Michael Beasley,SF,NYK,$2116955,,,,,,Minimum Salary,,,$2116955
+319,Aaron Brooks,PG,MIN,$2116955,,,,,,,,,$2116955
+320,Luc Mbah a Moute,PF,HOU,$2116955,,,,,,Minimum Salary,,,$2116955
+321,JaVale McGee,C,GSW,$2116955,,,,,,,,,$2116955
+322,Jeff Green,SF,CLE,$2116955,,,,,,Minimum Salary,,,$2116955
+323,Tony Allen,SG,CHI,$2116955,,,,,,,,,$2116955
+324,Damien Wilkins,SF,IND,$2116955,,,,,,,,,$25000
+325,Omri Casspi,SF,GSW,$2106470,,,,,,Minimum Salary,,,$2106470
+326,Mario Chalmers,PG,MEM,$2106407,,,,,,Minimum Salary,,,$2106407
+327,Darius Miller,SF,NOP,$2100000,$2205000,,,,,MLE,,,$2100000
+328,Kelly Oubre,SF,WAS,$2093040,$3208630,,,,,1st round pick,RFA,2019,$5301670
+329,Juan Hernangomez,PF,DEN,$2076840,$2166360,$3321030,,,,1st Round pick,Team,2019,$4243200
+330,T.J. Leaf,PF,IND,$2028360,$2407560,$2813280,$4326825,,,1st Round Pick,Team,2019,$4435920
+331,Tim Frazier,PG,WAS,$2000000,,,,,,Room exception,,,$2000000
+332,Anthony Tolliver,PF,SAC,$3290000,,,,,,,,,$3290000
+333,Terry Rozier,PG,BOS,$1988520,$3050390,,,,,1st round pick,RFA,2019,$5038910
+334,Luke Babbitt,SF,MIA,$1974159,,,,,,Minimum Salary,,,$987080
+335,John Collins,PF,ATL,$1936920,$2299080,$2686560,$4137302,,,1st Round Pick,Team,2019,$4236000
+336,Anderson Varejao,C,POR,$1913345,$1913345,$1913345,$1913345,,,,,,$7653380
+337,Rashad Vaughn,PG,NOP,$1889040,,,,,,,,,$1889040
+338,Tim Duncan,PF,SAS,$1881250,$1881250,,,,,,,,$3762500
+339,Wade Baldwin,PG,MEM,$1874400,,,,,,Two-Way Contract,,,$1874400
+340,Larry Sanders,C,MIL,$1865547,$1865547,$1865547,$1865547,$1865547,,,,,$9327735
+341,Harry Giles,PF,SAC,$1859400,$2207040,$2578800,$3976510,,,1st Round Pick,Team,2019,$4066440
+342,Sam Dekker,SF,LAC,$1794600,$2760095,,,,,1st Round pick,RFA,2019,$4554695
+343,Terrance Ferguson,SG,OKC,$1785000,$2118840,$2475840,$3944013,,,1st Round Pick,Team,2019,$3903840
+344,Henry Ellenson,C,DET,$1780800,$1857480,$2856804,,,,1st Round pick,Team,2019,$3638280
+345,Eric Moreland,PF,DET,$1739333,$1826300,$1913267,,,,MLE,,,$1739333
+346,Jerian Grant,PG,CHI,$1713840,$2639314,,,,,1st Round pick,RFA,2019,$4353154
+347,Jarrett Allen,C,BRK,$1713720,$2034120,$2376840,$3909902,,,1st Round Pick,Team,2019,$3747840
+348,Mike Scott,PF,WAS,$1709538,,,,,,Minimum Salary,,,$1709538
+349,Tyler Zeller,C,MIL,$1709538,$1933941,,,,,,,,$1709538
+350,Quincy Acy,PF,BRK,$1709538,,,,,,,,,$1709538
+351,Malik Beasley,SG,DEN,$1700640,$1773840,$2731714,,,,1st Round pick,,2020,$3474480
+352,Mike Dunleavy,SF,ATL,$1662500,,,,,,,,,$1662500
+353,Delon Wright,PG,TOR,$1645200,$2536898,,,,,1st Round pick,RFA,2019,$4182098
+354,OG Anunoby,SF,TOR,$1645200,$1952760,$2281800,$3872215,,,1st Round Pick,Team,2019,$3597960
+355,Ante Zizic,C,CLE,$1645200,$1952760,$2281800,$3872215,,,1st Round Pick,Team,2019,$3597960
+356,Caris LeVert,SG,BRK,$1632480,$1702800,$2625718,,,,1st Round pick,Team,2019,$3335280
+357,Justin Anderson,SG,PHI,$1579440,$2516048,,,,,1st Round pick,Team,2019,$4095488
+358,Tyler Lydon,PF,DEN,$1579440,$1874640,$2190720,,,,1st Round Pick,Team,2019,$3454080
+359,Jeff Withey,C,DAL,$1577320,$1795015,,,,,,,,$350000
+360,Ian Clark,SG,NOP,$1577230,,,,,,Minimum Salary,,,$1577230
+361,Shabazz Muhammad,SF,MIN,$1577230,$1795015,,,,,Minimum Salary,,,$1577230
+362,Willie Reed,C,CHI,$1577230,,,,,,,,,$1577230
+363,DeAndre Liggins,PG,MIL,$1577230,,,,,,,,,
+364,DeAndre' Bembry,SG,ATL,$1567200,$1634640,$2603982,,,,1st Round pick,Team,2019,$3201840
+365,Joffrey Lauvergne,C,SAS,$1524305,$1656092,,,,,,Player,2018,$1524305
+366,Jerami Grant,SF,OKC,$1524305,,,,,,Draft Pick,,,$1524305
+367,Johnny O'Bryant,C,NYK,$1524305,,,,,,,,,$1524305
+368,Tyler Ennis,PG,LAL,$1524305,$1656092,,,,,Minimum Salary,,,$1524305
+369,Julyan Stone,PG,CHO,$1524305,$1656092,,,,,Minimum Salary,,,$1524305
+370,Sean Kilpatrick,SG,BRK,$1524305,,,,,,,,,$1524305
+371,Spencer Dinwiddie,PG,BRK,$1524305,$1656092,,,,,Minimum Salary,,,$1524305
+372,Joe Harris,SG,BRK,$1524305,,,,,,Minimum Salary,,,$1524305
+373,Shane Larkin,PG,BOS,$1524305,,,,,,Minimum Salary,,,$1524305
+374,Glenn Robinson,SF,IND,$1524305,,,,,,,,,
+375,Bobby Brown,PG,HOU,$1524305,,,,,,,,,
+376,Bobby Portis,PF,CHI,$1516320,$2494346,,,,,1st Round pick,RFA,2019,$4010666
+377,Malachi Richardson,SG,TOR,$1504560,$1569360,$2581597,,,,1st Round pick,Team,2019,$3073920
+378,Arron Afflalo,SG,SAC,$1500000,,,,,,,,,$1500000
+379,Norman Powell,SG,TOR,$1471382,$9367200,$10116576,$10865952,$11615328,,Cap Space,,,$31821110
+380,Josh Richardson,SG,MIA,$1471382,$9300000,$10100000,$10800000,$11600000,,Minimum Salary,,,$31671382
+381,Rondae Hollis-Jefferson,SF,BRK,$1471382,$2470357,,,,,1st Round pick,RFA,2019,$3941739
+382,Tyus Jones,PG,MIN,$1471382,$2444053,,,,,1st Round pick,RFA,2019,$3915435
+383,Jarell Martin,PF,MEM,$1471382,$2416222,,,,,1st Round pick,RFA,2019,$3887604
+384,Larry Nance,PF,CLE,$1471382,$2272391,,,,,1st Round pick,RFA,2019,$3743773
+385,Troy Williams,SF,NYK,$74159,,,,,,,,,$74159
+386,Chris McCullough,PF,WAS,$1471382,,,,,,1st Round pick,,,$1471382
+387,Raul Neto,PG,UTA,$1471382,,,,,,,Team,2018,$1471382
+388,Pat Connaughton,SG,POR,$1471382,,,,,,Minimum Salary,RFA,2018,$1471382
+389,Richaun Holmes,PF,PHI,$1471382,$1600520,,,,,Cap Space,Team,2018,$1471382
+390,T.J. McConnell,PG,PHI,$1471382,$1600520,,,,,Minimum Salary,Team,2018,$1471382
+391,Josh Huestis,SF,OKC,$1471382,,,,,,,,,$1471382
+392,Jordan Mickey,PF,MIA,$1471382,$1600520,,,,,Minimum Salary,Team,2018,$1471382
+393,Montrezl Harrell,PF,LAC,$1471382,,,,,,,RFA,2018,$1471382
+394,Joe Young,PG,IND,$1471382,$1600520,,,,,Cap Space,Team,2018,$1471382
+395,Kevon Looney,PF,GSW,$1471382,,,,,,1st Round pick,,,$1471382
+396,Nikola Jokic,C,DEN,$1471382,$1600520,,,,,,Team,2018,$1471382
+397,Salah Mejri,C,DAL,$1471382,,,,,,Minimum Salary,RFA,2018,$1471382
+398,Caleb Swanigan,PF,POR,$1465920,$1740000,$2033160,$3665787,,,1st Round Pick,Team,2019,$3205920
+399,Furkan Korkmaz,SG,PHI,$1465920,$1740000,$2033160,$3665787,,,1st Round Pick,Team,2019,$3205920
+400,Willy Hernangomez,C,CHO,$1435750,$1544951,$1701735,,,,Cap Space,,,$2980701

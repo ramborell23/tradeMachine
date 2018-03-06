@@ -568,19 +568,25 @@ CREATE TABLE player_salaries
 (
     Rk VARCHAR(3),
     Player VARCHAR(51),
+    Position VARCHAR(51),
     Tm VARCHAR(13),
-    "2017-18" VARCHAR(13),
+    "2017-18" Decimal(13),
     "2018-19" VARCHAR(13),
     "2019-20" VARCHAR(13),
     "2020-21" VARCHAR(13),
     "2021-22" VARCHAR(13),
     "2022-23" VARCHAR(13),
     "Signed Using" VARCHAR(43),
+    Option_ VARCHAR(13),
+    Option_Year VARCHAR(13),
     Guaranteed VARCHAR(13)
 );
 
+
+
+-- Please GO back and check from 1- 250 of players who are RFA and not list as so
 COPY player_salaries
-(Rk ,Player,Tm,"2017-18","2018-19","2019-20","2020-21","2021-22","2022-23","Signed Using",Guaranteed) 
+(Rk ,Player,Position,Tm,"2017-18","2018-19","2019-20","2020-21","2021-22","2022-23","Signed Using",Option_, Option_Year,Guaranteed) 
 FROM '/Users/c4q/Documents/tradeMachine/react-backend/db/playersalaries.csv' DELIMITER ',' CSV HEADER;
 -- ALTER TABLE players
 --   ADD contracts INT;
