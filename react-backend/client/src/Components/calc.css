@@ -93,3 +93,9 @@ ul li:hover {
 .close:hover {
     background: #bbb;
 }
+
+
+.teamLogo{
+    height: 4wem;
+    width:5em ;
+  }

@@ -13,15 +13,17 @@ router.get('/', (req, res, next) => {
       return next(err);
     });
 });
-router.get('/home', (req, res, next) => {
-  db.getAllTeams()
-    .then((data) => {
-      res.send(homepage);
-    })
-    .catch((err) => {
-      return next(err);
-    });
-});
+
+
+// router.get('/home', (req, res, next) => {
+//   db.getAllTeams()
+//     .then((data) => {
+//       res.send(homepage);
+//     })
+//     .catch((err) => {
+//       return next(err);
+//     });
+// });
 
 
 router.get('/location/:firstname', (req, res, next) => {
@@ -35,6 +37,7 @@ router.get('/location/:firstname', (req, res, next) => {
     return next(err);
   });
 });
+
 router.get('/teamname/:name', (req, res, next) => {
   var name = req.params.name  
   db.getTeamByTeamName(name)

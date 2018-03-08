@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react';
 import { Route, Link, Switch } from "react-router-dom";
-
+import moneyFunctions from './moneyFunctions'
 
 const TeamBoard2 = ({ teamsArr, tradeArr,teamTradeArr2, value , handleChange,teamState,handleChange2 }) => {
     return (
@@ -13,26 +13,29 @@ const TeamBoard2 = ({ teamsArr, tradeArr,teamTradeArr2, value , handleChange,tea
                     name='teamArraySelect2'
                     onChange={handleChange}>
                     {teamsArr.map(option => (
-                        <option value={option}>{option}</option>
+                        <option value={option.abbreviation}>{option.teamname}</option>
                     ))}
                 </select>
                 <br/>   
                 Players<br />
                 {/* <ul> */}
-                    {teamState.map((item, index) => (
+                
+                {console.log(teamState)}
+                    {teamState.map((player, index) => (
                         // <li>
                             <button 
                             value={index} 
                             onClick={handleChange2}>
                             
-                                {item[3]}<br />
-                                {item[11]}<br />
-                                {item[5]}<br />
-                                {item[6]}<br />
+                                {player.player}<br />
+                                {player.position}<br />
+                                {moneyFunctions.moneyFormatter(player['2017-18'])}<br />
+                                
                             </button>
                         // </li>
                         
-                    ))}<br/>
+                    ))}
+                    <br/>
                
         </div>
     )

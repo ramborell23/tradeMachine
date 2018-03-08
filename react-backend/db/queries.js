@@ -6,8 +6,15 @@ var word ;
 function getAllPlayers() {
     return db.any('select * from players')
 }
+
 function getAllMoney() {
     return db.any('select * from player_salaries')
+}
+
+function getSalariesByTeam(teamAbbriv) {
+    let temp = teamAbbriv.toUpperCase()
+    console.log(temp)
+    return db.many('SELECT * FROM  player_salaries WHERE tm=$1', [temp])
 }
 
 function getPlayerByFirstName(firstname) {
@@ -15,6 +22,7 @@ function getPlayerByFirstName(firstname) {
     console.log(firstname)
     return db.many('SELECT * FROM players where firstname=$1', [firstname])
 }
+
 function getPlayerByLastName(lastname) {
     lastname = lastname[0].toUpperCase() + lastname.slice(1).toLowerCase()
     console.log(lastname)
@@ -32,7 +40,7 @@ function getPlayerWithName(firstname) {
 //TEAMS
 
 function getAllTeams() {
-    return db.any('select * from teams')
+    return db.any('SELECT abbreviation, teamid, teamname, teamlogo FROM  teams')
 }
 
 function getTeamByCityName(location) {
@@ -74,5 +82,6 @@ module.exports = {
     getPlayersByTeam,
     getTeamByTeamName,
     getAllMoney,
+    getSalariesByTeam,
 
 };

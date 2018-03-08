@@ -25,7 +25,7 @@ const TradeList = ({ teamTradeArr, handleCloseButton }) => {
                 {/* { teamTradeArr} */}
                 {teamTradeArr.map((player, index) =>
                     <li key={player[0]}>
-                                {player.player}<br />
+                                {player.player}{''}
                                 {player.position}<br />
                                 {moneyFunctions.moneyFormatter(player['2017-18'])}<br />
                                 

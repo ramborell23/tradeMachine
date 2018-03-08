@@ -15,6 +15,19 @@ router.get('/all', (req, res, next) => {
     });
 });
 
+router.get('/salary/:team', (req, res, next) => {
+  var name = req.params.team  
+  db.getSalariesByTeam(name)
+  .then((data) => {
+    res.send({data});
+  })
+  .catch((err) => {
+    console.log(err)
+    return next(err);
+  });
+});
+
+
 router.get('/home', (req, res, next) => {
   db.getAllPlayers()
     .then((data) => {

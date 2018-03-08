@@ -1,53 +1,41 @@
 
 import React, { Component } from 'react';
 import { Route, Link, Switch } from "react-router-dom";
+import moneyFunctions from './moneyFunctions'
 
-
-const TeamBoard = ({ teamsArr, value , handleChange,handleChange2, teamState }) => {
+const TeamBoard = ({ teamsArr, tradeArr,teamTradeArr2, value , handleChange,teamState,handleChange2 }) => {
     return (
         <div className=''><br />
             {/* <label> */}
-                <select 
-                    
+                <select       
                     // value={value}
                     name='teamArraySelect'
                     onChange={handleChange}>
                     {teamsArr.map(option => (
-                        <option value={option}>{option}</option>
+                        <option value={option.abbreviation}>{option.teamname}</option>
                     ))}
                 </select>
-                <br/>
-            
+                <br/>   
                 Players<br />
                 {/* <ul> */}
-                    {teamState.map((item, index) => (
+                
+                {console.log(teamState)}
+                    {teamState.map((player, index) => (
                         // <li>
                             <button 
                             value={index} 
                             onClick={handleChange2}>
                             
-                                {/* {item[0]}<br />
-                                {item[1]}<br />
-                                {item[2]}<br /> */}
-                                {item[3]}<br />
-                                {item[4]}<br />
+                                {player.player}<br />
+                                {player.position}<br />
+                                {moneyFunctions.moneyFormatter(player['2017-18'])}<br />
+                                
                             </button>
                         // </li>
                         
-                    ))}<br/>
-                    {/* {''} Trading {''} */}
-                    {/* {teamTradeArr2.map( player => {
-                    <ul>
-                        <li>
-                            {player[0]}
-                        </li>
-                    </ul>
-
-                    })} */}
-                {/* </ul> */}
-            {/* </label> */}
-            {/* <br />
-            <br /> */}
+                    ))}
+                    <br/>
+               
         </div>
     )
 }
