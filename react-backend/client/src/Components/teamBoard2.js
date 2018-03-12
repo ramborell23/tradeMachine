@@ -5,10 +5,9 @@ import moneyFunctions from './moneyFunctions'
 
 const TeamBoard2 = ({ teamsArr, tradeArr,teamTradeArr2, value , handleChange,teamState,handleChange2 }) => {
     return (
-        <div className=''><br />
+        <div className='list_of_players'><br />
             {/* <label> */}
                 <select 
-                    
                     // value={value}
                     name='teamArraySelect2'
                     onChange={handleChange}>
@@ -29,7 +28,8 @@ const TeamBoard2 = ({ teamsArr, tradeArr,teamTradeArr2, value , handleChange,tea
                             
                                 {player.player}<br />
                                 {player.position}<br />
-                                {moneyFunctions.moneyFormatter(player['2017-18'])}<br />
+                                {/* {console.log(moneyFunctions.moneyFormatter(player))} */}
+                                {moneyFunctions.moneyFormatter(player['_2017_18'])}<br />
                                 
                             </button>
                         // </li>

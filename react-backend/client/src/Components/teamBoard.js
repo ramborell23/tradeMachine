@@ -28,7 +28,7 @@ const TeamBoard = ({ teamsArr, tradeArr,teamTradeArr2, value , handleChange,team
                             
                                 {player.player}<br />
                                 {player.position}<br />
-                                {moneyFunctions.moneyFormatter(player['2017-18'])}<br />
+                                {moneyFunctions.moneyFormatter(player['_2017_18'])}<br />
                                 
                             </button>
                         // </li>

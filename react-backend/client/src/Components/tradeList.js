@@ -10,7 +10,7 @@ var currencyFormatter = require('currency-formatter');
 const TradeList = ({ teamTradeArr, handleCloseButton }) => {
     let startingNum = 0
     let totalOfContracts = teamTradeArr.map(element => {
-        return (startingNum + Number((element['2017-18']).slice(1)) )
+        return (startingNum + Number((element['_2017_18']).slice(1)) )
     });
     const reducer = (accumulator, currentValue) => accumulator + currentValue;
     totalOfContracts = totalOfContracts.reduce(reducer,0)
@@ -27,7 +27,7 @@ const TradeList = ({ teamTradeArr, handleCloseButton }) => {
                     <li key={player[0]}>
                                 {player.player}<br />
                                 {player.position}<br />
-                                {moneyFunctions.moneyFormatter(player['2017-18'])}<br />
+                                {moneyFunctions.moneyFormatter(player['_2017_18'])}<br />
                                 
                         <button id={index} onClick={handleCloseButton} className="close">x</button></li>
                 )}

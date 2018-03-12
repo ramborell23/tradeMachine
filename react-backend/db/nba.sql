@@ -570,12 +570,12 @@ CREATE TABLE player_salaries
     Player VARCHAR(51),
     Position VARCHAR(51),
     Tm VARCHAR(13),
-    "2017-18" VARCHAR(13),
-    "2018-19" VARCHAR(13),
-    "2019-20" VARCHAR(13),
-    "2020-21" VARCHAR(13),
-    "2021-22" VARCHAR(13),
-    "2022-23" VARCHAR(13),
+    _2017_18 VARCHAR(13),
+    _2018_19 VARCHAR(13),
+    _2019_20 VARCHAR(13),
+    _2020_21 VARCHAR(13),
+    _2021_22 VARCHAR(13),
+    _2022_23 VARCHAR(13),
     "Signed Using" VARCHAR(43),
     Option_ VARCHAR(13),
     Option_Year VARCHAR(13),
@@ -586,7 +586,7 @@ CREATE TABLE player_salaries
 
 -- Please GO back and check from 1- 250 of players who are RFA and not list as so
 COPY player_salaries
-(Rk ,Player,Position,Tm,"2017-18","2018-19","2019-20","2020-21","2021-22","2022-23","Signed Using",Option_, Option_Year,Guaranteed) 
+(Rk ,Player,Position,Tm, _2017_18, _2018_19, _2019_20, _2020_21, _2021_22, _2022_23, "Signed Using", Option_, Option_Year, Guaranteed) 
 FROM '/Users/c4q/Documents/tradeMachine/react-backend/db/playersalaries.csv' DELIMITER ',' CSV HEADER;
 -- ALTER TABLE players
 --   ADD contracts INT;
@@ -597,18 +597,18 @@ CREATE TABLE team_salaries
 (
     Rk VARCHAR(3),
     Tm VARCHAR(31),
-    "2017-18" VARCHAR(13),
-    "2018-19" VARCHAR(13),
-    "2019-20" VARCHAR(13),
-    "2020-21" VARCHAR(13),
-    "2021-22" VARCHAR(13),
-    "2022-23" VARCHAR(13),
+    _2017_18 VARCHAR(13),
+    _2018_19 VARCHAR(13),
+    _2019_20 VARCHAR(13),
+    _2020_21 VARCHAR(13),
+    _2021_22 VARCHAR(13),
+    _2022_23 VARCHAR(13),
     "Signed Using" VARCHAR(43),
     Guaranteed VARCHAR(13)
 );
 
 COPY team_salaries
-(Rk, Tm,"2017-18","2018-19","2019-20","2020-21","2021-22","2022-23") 
+(Rk, Tm, _2017_18, _2018_19, _2019_20, _2020_21, _2021_22, _2022_23) 
 FROM '/Users/c4q/Documents/tradeMachine/react-backend/db/teamsalaries.csv' DELIMITER ',' CSV HEADER;
 
 DROP TABLE draft_rights;
@@ -673,7 +673,6 @@ VALUES
     ( 'PHI', 'LAL', 1, 2018 ,'No', 'L.A. Lakers'' 2018 1st round pick to Philadelphia (via Phoenix) or to Boston (via Phoenix to Philadelphia) protected for selections 1 and 6-30; if this pick falls on any of its protected selections and is therefore retained by Philadelphia, then Boston will instead receive the more favorable of Philadelphia''s 2019 1st round pick protected for selection 1 and Sacramento''s 2019 1st round pick protected for selection 1 (via Philadelphia) and Philadelphia will receive the less favorable or the protected of these two picks [L.A. Lakers-Phoenix, 7/11/2012; Milwaukee-Philadelphia-Phoenix, 2/19/2015; Philadelphia-Sacramento, 7/9/2015; Boston-Philadelphia, 6/19/2017]; the 2019 pick conveyance is included in "2019 first round draft pick from Philadelphia or Sacramento" on Boston Incoming'),
     ( 'BKN', 'LAL', 2, 2018 ,'Yes', 'Orlando will receive the more favorable of its 2018 2nd round pick and the L.A. Lakers'' 2018 2nd round pick and Brooklyn will receive the less favorable of these two picks (via Orlando to Toronto) [L.A. Lakers-Orlando, 8/10/2012; Orlando-Toronto, 5/25/2017; Brooklyn-Toronto, 7/13/2017]'),
 --    START FROM HERE
-
 
     ( 'MEM', 'MEM', 1, 2018 ,'Yes', 'Memphis will receive the most favorable of its 2018 2nd round pick, Charlotte''s 2018 2nd round pick and Miami''s 2018 2nd round pick and Orlando will receive the second most favorable (via Memphis to Phoenix) and Houston will receive the least favorable (via Memphis) of these three picks [Charlotte-Memphis-Miami, 2/16/2016; Houston-Memphis, 6/22/2017; Memphis-Phoenix, 9/22/2017; Orlando-Phoenix, 2/8/2018]'),
     ( 'MEM', 'MEM', 2, 2018 ,'No', ''),

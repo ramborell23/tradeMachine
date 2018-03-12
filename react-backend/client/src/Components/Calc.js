@@ -102,9 +102,12 @@ class Calc extends React.Component {
             users: [],
             logo: [],
             //
-
+            teamName : '',
+            teamLogo : 'http://logok.org/wp-content/uploads/2015/01/NBA-logo-880x655.png',
             team2Name : '',
-            team2Logo : '',
+            holdName2 : '',
+            holdlogo2:'',
+            team2Logo : 'http://logok.org/wp-content/uploads/2015/01/NBA-logo-880x655.png',
         }
         this.teamsArray2 = this.teamsArray
     }
@@ -129,6 +132,22 @@ class Calc extends React.Component {
 
 
 
+    handleInputteamArraySelect = e => {
+        const {logo} = this.state
+        const rightPhoto = logo.filter(team =>{
+            if(team.abbreviation === e.target.value){
+                console.log(team)
+                this.setState({
+                    teamArraySelect: e.target.value,
+                    teamName : team.teamname,
+                    teamLogo : team.teamlogo,
+                })
+            } else{
+                console.log("WOWNOT")
+            }
+            console.log(this.state.teamLogo)
+        })
+    }
     handleInputteamArraySelect2 = e => {
         const {logo} = this.state
         const rightPhoto = logo.filter(team =>{
@@ -136,8 +155,8 @@ class Calc extends React.Component {
                 console.log(team)
                 this.setState({
                     teamArraySelect2: e.target.value,
-                    team2Name : team.teamname,
-                    team2Logo : team.teamlogo,
+                    holdName2 : team.teamname,
+                    holdlogo2 : team.teamlogo,
                 })
             } else{
                 console.log("WOWNOT")
@@ -178,7 +197,6 @@ class Calc extends React.Component {
         console.log('Team Trade 2', teamState)
         let player = teamState[e.target.value]
         // console.log(teamTradeArr2)
-
         if (teamTradeArr) {
             console.log('76t8tfghjvkgjkg8yi')
 
@@ -192,13 +210,13 @@ class Calc extends React.Component {
     }
     handleAddToTrade2 = e => {
         const { teamState2, teamTradeArr2 } = this.state
-        console.log('Team Trade 2', teamState2)
+        // console.log('Team Trade 2', teamState2)
         let player = teamState2[e.target.value]
-        // teamTradeArr2.push(player)
-        console.log('Team Trade 34342', teamState2)
-        console.log('Check this out ', typeof player)
-        console.log('Check this out 2 ', player)
-        console.log('pop:    ', teamState2[player])
+        // // teamTradeArr2.push(player)
+        // console.log('Team Trade 34342', teamState2)
+        // console.log('Check this out ', typeof player)
+        // console.log('Check this out 2 ', player)
+        // console.log('pop:    ', teamState2[player])
         // console.log(teamTradeArr2)
 
         if (teamTradeArr2) {
@@ -231,15 +249,19 @@ class Calc extends React.Component {
                 console.log(err);
             });
     };
+
     getTeamRoster2 = () => {
-        const { teamArraySelect2 } = this.state
+        const { teamArraySelect2 ,holdlogo2, team2Name} = this.state
         axios
             .get(`http://localhost:3100/players/salary/${teamArraySelect2}`)
             .then(response => {
                 console.log('WE HAVE A RESPONSE:===>', response.data)
                 this.setState({
                     teamState2: response.data.data,
-                    teamTradeArr2: []
+                    teamTradeArr2: [],
+                    team2Logo: holdlogo2,
+                    team2Name: team2Name,
+
                 });
             })
             .catch(err => {
@@ -251,7 +273,8 @@ class Calc extends React.Component {
     render() {
         const { modeState, teamState, teamArraySelect, 
                 teamArraySelect2, playerSelect, teamState2, 
-                teamTradeArr, teamTradeArr2, users, logo,team2Logo, team2Name } = this.state
+                teamTradeArr, teamTradeArr2, users, logo,
+                teamName, teamLogo, team2Logo, team2Name } = this.state
         console.log("logo ==>>>>", logo)
         console.log("teamArraySelect2 ==>>>>", teamArraySelect2)
         var str = 'abcdefghijkl';
@@ -275,14 +298,17 @@ class Calc extends React.Component {
                             onClick={this.getTeamRoster}
                         >NBA
                                 </button>
-                        Team 1<br />
+                       <br />
+                       {teamName}<br />
+                        <img className='teamLogo' src={teamLogo} alt='team logo' >
+                        </img>
                     </label>
                     <TeamBoard
                         teamsArr={logo}
                         teamState={teamState}
                         // name='teamArraySelect2'
                         value={teamArraySelect}
-                        handleChange={this.handleBrandSelection}
+                        handleChange={this.handleInputteamArraySelect}
                         handleChange2={this.handleAddToTrade}
                     />
                 </div>
@@ -311,7 +337,6 @@ class Calc extends React.Component {
                         </img>
                     </label>
                     <TeamBoard2
-                    
                         teamsArr={logo}
                         teamState={teamState2}
                         name='teamArraySelect2'

@@ -6,6 +6,7 @@ var currencyFormatter = require('currency-formatter');
 
 
 const moneyFormatter = (amount) => {
+    console.log(typeof amount)
     let temp  = Number(amount.slice(1))
     //  temp  = "0"+ temp
     //  temp =  temp.match(/.{1,3}/g)
