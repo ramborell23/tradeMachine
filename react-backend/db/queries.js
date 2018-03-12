@@ -40,7 +40,8 @@ function getPlayerWithName(firstname) {
 //TEAMS
 
 function getAllTeams() {
-    return db.any('SELECT abbreviation, teamid, teamname, teamlogo FROM  teams')
+    return db.any('SELECT abbreviation, teamname, teamid, _2017_18 ,_2018_19, teamlogo FROM  teams JOIN team_salaries ON teams.teamname = team_salaries.tm')
+    
 }
 
 function getTeamByCityName(location) {

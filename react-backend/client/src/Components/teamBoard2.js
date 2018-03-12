@@ -7,6 +7,7 @@ const TeamBoard2 = ({ teamsArr, tradeArr,teamTradeArr2, value , handleChange,tea
     return (
         <div className='list_of_players'><br />
             {/* <label> */}
+            
                 <select 
                     // value={value}
                     name='teamArraySelect2'

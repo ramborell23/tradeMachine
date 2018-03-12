@@ -10,6 +10,9 @@ import TeamBoard2 from './teamBoard2'
 import TradeList from './tradeList'
 import TradeList2 from './tradeList'
 import './calc.css';
+import moneyFunctions from './moneyFunctions'
+
+
 
 const axios = require("axios");
 
@@ -104,9 +107,16 @@ class Calc extends React.Component {
             //
             teamName : '',
             teamLogo : 'http://logok.org/wp-content/uploads/2015/01/NBA-logo-880x655.png',
-            team2Name : '',
+            holdTeamCap:'',
+            holdName : '',
+            holdlogo:'',
+            teamCap:'',
+
+            holdTeamCap2:'',
             holdName2 : '',
             holdlogo2:'',
+            teamCap2:'',
+            team2Name : '',
             team2Logo : 'http://logok.org/wp-content/uploads/2015/01/NBA-logo-880x655.png',
         }
         this.teamsArray2 = this.teamsArray
@@ -139,8 +149,10 @@ class Calc extends React.Component {
                 console.log(team)
                 this.setState({
                     teamArraySelect: e.target.value,
-                    teamName : team.teamname,
-                    teamLogo : team.teamlogo,
+                    holdName : team.teamname,
+                    holdlogo : team.teamlogo,
+                    holdTeamCap:team._2017_18
+
                 })
             } else{
                 console.log("WOWNOT")
@@ -157,6 +169,7 @@ class Calc extends React.Component {
                     teamArraySelect2: e.target.value,
                     holdName2 : team.teamname,
                     holdlogo2 : team.teamlogo,
+                    holdTeamCap2:team._2017_18
                 })
             } else{
                 console.log("WOWNOT")
@@ -234,14 +247,17 @@ class Calc extends React.Component {
     }
 
     getTeamRoster = () => {
-        const { teamArraySelect } = this.state
+        const { teamArraySelect,holdlogo,teamName, holdTeamCap } = this.state
         console.log(nameJoinForFetch(teamArraySelect))
         axios
             .get(`http://localhost:3100/players/salary/${teamArraySelect}`)
             .then(response => {
                 this.setState({
                     teamState: response.data.data,
-                    teamTradeArr: []
+                    teamTradeArr: [],
+                    teamLogo: holdlogo,
+                    teamName: teamName,
+                    teamCap:holdTeamCap,
                 });
             })
             .catch(err => {
@@ -251,7 +267,7 @@ class Calc extends React.Component {
     };
 
     getTeamRoster2 = () => {
-        const { teamArraySelect2 ,holdlogo2, team2Name} = this.state
+        const { teamArraySelect2 ,holdlogo2, team2Name, holdTeamCap2} = this.state
         axios
             .get(`http://localhost:3100/players/salary/${teamArraySelect2}`)
             .then(response => {
@@ -261,7 +277,7 @@ class Calc extends React.Component {
                     teamTradeArr2: [],
                     team2Logo: holdlogo2,
                     team2Name: team2Name,
-
+                    teamCap2:holdTeamCap2,
                 });
             })
             .catch(err => {
@@ -274,7 +290,7 @@ class Calc extends React.Component {
         const { modeState, teamState, teamArraySelect, 
                 teamArraySelect2, playerSelect, teamState2, 
                 teamTradeArr, teamTradeArr2, users, logo,
-                teamName, teamLogo, team2Logo, team2Name } = this.state
+                teamName, teamLogo, team2Logo, team2Name , teamCap2, teamCap} = this.state
         console.log("logo ==>>>>", logo)
         console.log("teamArraySelect2 ==>>>>", teamArraySelect2)
         var str = 'abcdefghijkl';
@@ -285,21 +301,21 @@ class Calc extends React.Component {
         let gsw = users.filter(person => {
             return person.tm === 'GSW'
         })
-        // console.log("CAVS TEAM ", cavs)
-        // console.log("GSW TEAM ", gsw)
         console.log(this.state.team2Logo)
 
         return (
+            <div >
             <div className='page'>
                 <div className='main_container'><br />
                     <label>
                         <button
                             value='NBA'
                             onClick={this.getTeamRoster}
-                        >NBA
+                            >NBA
                                 </button>
                        <br />
-                       {teamName}<br />
+                       {/* {teamName}<br /> */}
+                            {moneyFunctions.moneyFormatter(teamCap)}<br/>
                         <img className='teamLogo' src={teamLogo} alt='team logo' >
                         </img>
                     </label>
@@ -333,6 +349,7 @@ class Calc extends React.Component {
                             NBA
                         </button>
                         {team2Name}<br />
+                        {moneyFunctions.moneyFormatter(teamCap2)}<br/>
                         <img className='teamLogo' src={team2Logo} alt='team logo' >
                         </img>
                     </label>
@@ -344,11 +361,15 @@ class Calc extends React.Component {
                         handleChange={this.handleInputteamArraySelect2}
                         handleChange2={this.handleAddToTrade2}
                     />
-                    {/* <br />
-                    <br />
-                    <br />
-                    <br /> */}
                 </div>
+                <br/>
+                
+            
+            </div>
+            <div className='result_div'>
+                Here
+            </div>
+
             </div>
 
         )

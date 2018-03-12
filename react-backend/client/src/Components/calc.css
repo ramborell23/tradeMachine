@@ -43,7 +43,8 @@
 .page {
     /* margin-left: 2em; */
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
 }
 
 .mode_div {
@@ -105,3 +106,7 @@ ul li:hover {
     height: 7em;
     width: 10em;
 } */
+
+.result_div{
+    text-align: center
+}

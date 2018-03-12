@@ -12,9 +12,11 @@ const TradeList = ({ teamTradeArr, handleCloseButton }) => {
     let totalOfContracts = teamTradeArr.map(element => {
         return (startingNum + Number((element['_2017_18']).slice(1)) )
     });
+
     const reducer = (accumulator, currentValue) => accumulator + currentValue;
     totalOfContracts = totalOfContracts.reduce(reducer,0)
     totalOfContracts = currencyFormatter.format(totalOfContracts, { code: 'USD' })
+
     console.log('totalOfContracts', totalOfContracts)
     return (
         <div>
