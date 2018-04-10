@@ -20,20 +20,21 @@ const TeamBoard = ({ teamsArr, tradeArr,teamTradeArr2, value , handleChange,team
                 {/* <ul> */}
                 
                 {console.log(teamState)}
-                    {teamState.map((player, index) => (
-                        // <li>
-                            <button 
-                            value={index} 
-                            onClick={handleChange2}>
-                            
-                                {player.player}<br />
-                                {player.position}<br />
-                                {moneyFunctions.moneyFormatter(player['_2017_18'])}<br />
-                                
-                            </button>
-                        // </li>
-                        
-                    ))}
+                {teamState.map((player, index) => (
+                // <br/>
+                // <li>
+                <button
+                    className=''
+                    value={index}
+                    onClick={handleChange2}>
+                    {player.player}{' - '}
+                    {player.position}<br />
+                    {/* {console.log(moneyFunctions.moneyFormatter(player))} */}
+                    {moneyFunctions.moneyFormatter(player['_2017_18'])}<br />
+                    {/* <br/> */}
+                </button>
+                // </li>
+            ))}
                     <br/>
                
         </div>

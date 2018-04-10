@@ -10,6 +10,8 @@ import TeamBoard2 from './teamBoard2'
 import TradeList from './tradeList'
 import TradeList2 from './tradeList'
 import './calc.css';
+import '/Users/c4q/Documents/tradeMachine/react-backend/client/src/Stylesheets/western.css';
+import '/Users/c4q/Documents/tradeMachine/react-backend/client/src/Stylesheets/eastern.css';
 import moneyFunctions from './moneyFunctions'
 
 
@@ -105,19 +107,24 @@ class Calc extends React.Component {
             users: [],
             logo: [],
             //
-            teamName : '',
-            teamLogo : 'http://logok.org/wp-content/uploads/2015/01/NBA-logo-880x655.png',
-            holdTeamCap:'',
-            holdName : '',
-            holdlogo:'',
-            teamCap:'',
+            teamName: '',
+            teamLogo: 'http://logok.org/wp-content/uploads/2015/01/NBA-logo-880x655.png',
+            holdTeamCap: '',
+            holdName: '',
+            holdlogo: '',
+            teamCap: '',
+            holdStyling: '',
+            styling: '',
 
-            holdTeamCap2:'',
-            holdName2 : '',
-            holdlogo2:'',
-            teamCap2:'',
-            team2Name : '',
-            team2Logo : 'http://logok.org/wp-content/uploads/2015/01/NBA-logo-880x655.png',
+
+            holdTeamCap2: '',
+            holdName2: '',
+            holdlogo2: '',
+            holdStyling2: '',
+            teamCap2: '',
+            team2Name: '',
+            team2Logo: 'http://logok.org/wp-content/uploads/2015/01/NBA-logo-880x655.png',
+            styling2: '',
         }
         this.teamsArray2 = this.teamsArray
     }
@@ -143,38 +150,39 @@ class Calc extends React.Component {
 
 
     handleInputteamArraySelect = e => {
-        const {logo} = this.state
-        const rightPhoto = logo.filter(team =>{
-            if(team.abbreviation === e.target.value){
+        const { logo } = this.state
+        const rightPhoto = logo.filter(team => {
+            if (team.abbreviation === e.target.value) {
                 console.log(team)
                 this.setState({
                     teamArraySelect: e.target.value,
-                    holdName : team.teamname,
-                    holdlogo : team.teamlogo,
-                    holdTeamCap:team._2017_18
+                    holdName: team.teamname,
+                    holdlogo: team.teamlogo,
+                    holdTeamCap: team._2017_18,
+                    holdStyling: team.abbreviation
 
                 })
-            } else{
+            } else {
                 console.log("WOWNOT")
             }
-            console.log(this.state.teamLogo)
         })
     }
     handleInputteamArraySelect2 = e => {
-        const {logo} = this.state
-        const rightPhoto = logo.filter(team =>{
-            if(team.abbreviation === e.target.value){
+        const { logo } = this.state
+        const rightPhoto = logo.filter(team => {
+            if (team.abbreviation === e.target.value) {
                 console.log(team)
                 this.setState({
                     teamArraySelect2: e.target.value,
-                    holdName2 : team.teamname,
-                    holdlogo2 : team.teamlogo,
-                    holdTeamCap2:team._2017_18
+                    holdName2: team.teamname,
+                    holdlogo2: team.teamlogo,
+                    holdTeamCap2: team._2017_18,
+                    holdStyling2: team.abbreviation
+
                 })
-            } else{
+            } else {
                 console.log("WOWNOT")
             }
-            console.log(this.state.team2Logo)
         })
     }
     handleInput = e => {
@@ -247,7 +255,7 @@ class Calc extends React.Component {
     }
 
     getTeamRoster = () => {
-        const { teamArraySelect,holdlogo,teamName, holdTeamCap } = this.state
+        const { teamArraySelect, holdlogo, teamName, holdTeamCap, holdStyling } = this.state
         console.log(nameJoinForFetch(teamArraySelect))
         axios
             .get(`http://localhost:3100/players/salary/${teamArraySelect}`)
@@ -257,7 +265,8 @@ class Calc extends React.Component {
                     teamTradeArr: [],
                     teamLogo: holdlogo,
                     teamName: teamName,
-                    teamCap:holdTeamCap,
+                    teamCap: holdTeamCap,
+                    styling: holdStyling
                 });
             })
             .catch(err => {
@@ -267,7 +276,7 @@ class Calc extends React.Component {
     };
 
     getTeamRoster2 = () => {
-        const { teamArraySelect2 ,holdlogo2, team2Name, holdTeamCap2} = this.state
+        const { teamArraySelect2, holdlogo2, team2Name, holdTeamCap2, holdStyling2 } = this.state
         axios
             .get(`http://localhost:3100/players/salary/${teamArraySelect2}`)
             .then(response => {
@@ -277,7 +286,9 @@ class Calc extends React.Component {
                     teamTradeArr2: [],
                     team2Logo: holdlogo2,
                     team2Name: team2Name,
-                    teamCap2:holdTeamCap2,
+                    teamCap2: holdTeamCap2,
+                    styling2: holdStyling2
+
                 });
             })
             .catch(err => {
@@ -286,11 +297,15 @@ class Calc extends React.Component {
             });
     };
 
+
+
+
+
     render() {
-        const { modeState, teamState, teamArraySelect, 
-                teamArraySelect2, playerSelect, teamState2, 
-                teamTradeArr, teamTradeArr2, users, logo,
-                teamName, teamLogo, team2Logo, team2Name , teamCap2, teamCap} = this.state
+        const { modeState, teamState, teamArraySelect,
+            teamArraySelect2, playerSelect, teamState2,
+            teamTradeArr, teamTradeArr2, users, logo,
+            teamName, teamLogo, team2Logo, team2Name, teamCap2, teamCap, styling2, styling } = this.state
         console.log("logo ==>>>>", logo)
         console.log("teamArraySelect2 ==>>>>", teamArraySelect2)
         var str = 'abcdefghijkl';
@@ -303,73 +318,94 @@ class Calc extends React.Component {
         })
         console.log(this.state.team2Logo)
 
+        let validTrade = (teamTradeArr, teamTradeArr2) => {
+            let total = moneyFunctions.totalOfContractsNumber(teamTradeArr) - moneyFunctions.totalOfContractsNumber(teamTradeArr2)
+            console.log(total)
+            if (total < 1000000000) {
+                return 'Trade is Valid!'
+            } else {
+                return 'Trade is Invalid!'
+            }
+        }
+
+
         return (
             <div >
-            <div className='page'>
-                <div className='main_container'><br />
-                    <label>
-                        <button
-                            value='NBA'
-                            onClick={this.getTeamRoster}
+                <div className='page'>
+                    <div className={'maincolor' + styling}><br />
+                        <label>
+                            <button
+                                value='NBA'
+                                onClick={this.getTeamRoster}
                             >NBA
                                 </button>
-                       <br />
-                       {/* {teamName}<br /> */}
-                            {moneyFunctions.moneyFormatter(teamCap)}<br/>
-                        <img className='teamLogo' src={teamLogo} alt='team logo' >
-                        </img>
-                    </label>
-                    <TeamBoard
-                        teamsArr={logo}
-                        teamState={teamState}
-                        // name='teamArraySelect2'
-                        value={teamArraySelect}
-                        handleChange={this.handleInputteamArraySelect}
-                        handleChange2={this.handleAddToTrade}
-                    />
-                </div>
-                <div className='main_container'>
-                    <TradeList
-                        teamTradeArr={teamTradeArr}
-                        handleCloseButton={this.handleRemoveFromList}
-                    />
-                </div>
-                <div className='main_container'>
-                    <TradeList2
-                        teamTradeArr={teamTradeArr2}
-                        handleCloseButton={this.handleRemoveFromList2}
-                    />
-                </div>
-                <div className='main_container'><br />
-                    <label>
-                        <button
-                            value='NBA'
-                            onClick={this.getTeamRoster2}
-                        >
-                            NBA
-                        </button>
-                        {team2Name}<br />
-                        {moneyFunctions.moneyFormatter(teamCap2)}<br/>
-                        <img className='teamLogo' src={team2Logo} alt='team logo' >
-                        </img>
-                    </label>
-                    <TeamBoard2
-                        teamsArr={logo}
-                        teamState={teamState2}
-                        name='teamArraySelect2'
-                        value={teamArraySelect2}
-                        handleChange={this.handleInputteamArraySelect2}
-                        handleChange2={this.handleAddToTrade2}
-                    />
-                </div>
-                <br/>
-                
-            
-            </div>
-            <div className='result_div'>
-                Here
-            </div>
+                            <br />
+                            {/* {teamName}<br /> */}
+                            {moneyFunctions.moneyFormatter(teamCap)}<br />
+                            <img className='teamLogo' src={teamLogo} alt='team logo' >
+                            </img>
+                        </label>
+                        <TeamBoard
+                            teamsArr={logo}
+                            teamState={teamState}
+                            // name='teamArraySelect2'
+                            value={teamArraySelect}
+                            handleChange={this.handleInputteamArraySelect}
+                            handleChange2={this.handleAddToTrade}
+                        />
+                    </div>
+                    <div className='main_container'>
+                        <TradeList
+                            teamTradeArr={teamTradeArr}
+                            handleCloseButton={this.handleRemoveFromList}
+                        />
+                    </div>
+                    <div className='main_container'>
 
+                        <TradeList2
+                            teamTradeArr={teamTradeArr2}
+                            handleCloseButton={this.handleRemoveFromList2}
+                        />
+                    </div>{console.log('CSS CHECK=====>>>', 'maincolor' + styling2)}
+                    <div className={'maincolor' + styling2}><br />
+                        <label>
+                            <button
+                                value='NBA'
+                                onClick={this.getTeamRoster2}
+                            >
+                                NBA
+                        </button>
+                            {team2Name}<br />
+                            {moneyFunctions.moneyFormatter(teamCap2)}<br />
+                            <img className='teamLogo' src={team2Logo} alt='team logo' >
+                            </img>
+                        </label>
+                        <TeamBoard2
+                            teamsArr={logo}
+                            teamState={teamState2}
+                            name='teamArraySelect2'
+                            value={teamArraySelect2}
+                            handleChange={this.handleInputteamArraySelect2}
+                            handleChange2={this.handleAddToTrade2}
+                        />
+                    </div>
+                    <br />
+
+
+                </div>
+                <div className='result_div'>
+
+                    {moneyFunctions.moneyFormatter(teamCap)}<br />
+                    {moneyFunctions.moneyFormatter(teamCap2)}<br />
+                    <br />
+                    {validTrade}
+                    <br />
+                    {moneyFunctions.tradeApproval(teamTradeArr,teamTradeArr2, teamCap, teamCap2)}
+                    <br />
+                    {moneyFunctions.totalOfContractsString(teamTradeArr).slice(0, -3)}
+                    <br />
+                    {moneyFunctions.totalOfContractsString(teamTradeArr2).slice(0, -3)}
+                </div>
             </div>
 
         )

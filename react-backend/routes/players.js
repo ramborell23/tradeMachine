@@ -64,27 +64,6 @@ router.get('/last/:lastname', (req, res, next) => {
   });
 });
 
-const homepage = `
-<html>
-  <head>
-    <title>NBA</title>
-    <link href="app.css" type="text/css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
-    <script src="app.js"></script>
-    </head>
-  <body>
-    <h1>NBA</h1>
-    <input type="text" name="string" placeholder="Search a team" id='box'>
-           <button id="upper">Upper</button>
-           <button id="lower">Lower</button>
-           <button id="length">Length</button>
-           <button id="reverse">Reverse</button>
-           <p id="modP">modified strong goes here</p>
-
-  </body>
-</html>
-`;
 
 
 

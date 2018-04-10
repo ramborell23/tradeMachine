@@ -708,9 +708,6 @@ VALUES
     ( 'WAS', 'WAS', 2, 2018 ,'No', '')
     ;
 
-
-
-
 DROP TABLE teams3;
 CREATE TABLE teams3
 (
