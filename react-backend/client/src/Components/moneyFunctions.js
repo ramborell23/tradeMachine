@@ -52,7 +52,7 @@ const tradeApproval = (arr, arr2, teamCap, teamCap2) => {
             if ((teamOneMaxCap >= num2) && (teamTwoMaxCap >= num)) {
                 return ('Trade Approved!!!!!!!!')
             } else {
-                return ('Trade Declined Maybe!!!!!!!!')
+                return ('Trade Declined!!!!!!!!')
             }
 
         } else if ((teamOneCap > softCap)) {
@@ -60,7 +60,7 @@ const tradeApproval = (arr, arr2, teamCap, teamCap2) => {
             if ((teamOneMaxCap >= num2)) {
                 return ('Trade Approved!!!!!!!!')
             } else {
-                return ('Trade Declined Maybe!!!!!!!!')
+                return ('Trade Declined!!!!!!!!')
             }
 
         } else if ((teamTwoCap > softCap)) {
@@ -68,11 +68,11 @@ const tradeApproval = (arr, arr2, teamCap, teamCap2) => {
             if ((teamTwoMaxCap >= num)) {
                 return ('Trade Approved!!!!!!!!')
             } else {
-                return ('Trade Declined Maybe!!!!!!!!')
+                return ('Trade Declined!!!!!!!!')
             }
 
         } else {
-            return ('Trade Declined Maybe!!!!!!!!')
+            return ('Trade Declined!!!!!!!!')
         }
     }
 }

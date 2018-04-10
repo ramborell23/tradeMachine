@@ -318,16 +318,17 @@ class Calc extends React.Component {
         })
         console.log(this.state.team2Logo)
 
-        let validTrade = (teamTradeArr, teamTradeArr2) => {
-            let total = moneyFunctions.totalOfContractsNumber(teamTradeArr) - moneyFunctions.totalOfContractsNumber(teamTradeArr2)
-            console.log(total)
-            if (total < 1000000000) {
-                return 'Trade is Valid!'
-            } else {
-                return 'Trade is Invalid!'
-            }
+        let validTrade = moneyFunctions.tradeApproval(teamTradeArr,teamTradeArr2, teamCap, teamCap2)
+        switch (validTrade) {
+            case 'Trade Approved!!!!!!!!':
+                validTrade = <h3 className='approval'>Appoved!!! </h3> 
+                break;
+                case 'Trade Declined!!!!!!!!':
+                validTrade = <h3 className='declined'> Declined!!!!</h3>
+                break;
+            default:
+                break;
         }
-
 
         return (
             <div >
@@ -394,13 +395,12 @@ class Calc extends React.Component {
 
                 </div>
                 <div className='result_div'>
-
                     {moneyFunctions.moneyFormatter(teamCap)}<br />
                     {moneyFunctions.moneyFormatter(teamCap2)}<br />
                     <br />
                     {validTrade}
                     <br />
-                    {moneyFunctions.tradeApproval(teamTradeArr,teamTradeArr2, teamCap, teamCap2)}
+                    {/* {validTrade.includes('approved') ? <span className='Appoved'>Appoved!!! </span> : validTrade.includes('Declined') ? <span className='declined'> Declined!!!!</span> :'fault'} */}
                     <br />
                     {moneyFunctions.totalOfContractsString(teamTradeArr).slice(0, -3)}
                     <br />

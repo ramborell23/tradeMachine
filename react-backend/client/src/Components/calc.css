@@ -116,3 +116,11 @@ ul li:hover {
 .player_name{
     font-weight: bold
 }
+
+.approval{
+    color:green;
+    
+}
+.declined{
+    color:red;
+}
