@@ -226,16 +226,13 @@ class Calc extends React.Component {
     handleAddToTrade2 = e => {
         const { teamState2, teamTradeArr2 } = this.state
         let player = teamState2[e.target.value]
-        if (true) {
-            for (var i = 0; i < teamTradeArr2.length; i++) {
-                console.log('II', teamTradeArr2[i][teamTradeArr2.length - 1])
-                console.log('popopoopopopopopop')
-            }
+        if (teamTradeArr2.includes(player)){
+            console.log('Player is already being traded')
+        }else{
             this.setState({
                 teamTradeArr2: [...teamTradeArr2, player]
             })
         }
-
     }
 
     getTeamRoster = () => {
@@ -291,14 +288,14 @@ class Calc extends React.Component {
             teamName, teamLogo, team2Logo, team2Name, teamCap2, teamCap, styling2, styling } = this.state
         const softCap = 99000000
 
-        
 
-        let validTrade = moneyFunctions.tradeApproval(teamTradeArr,teamTradeArr2, teamCap, teamCap2)
+
+        let validTrade = moneyFunctions.tradeApproval(teamTradeArr, teamTradeArr2, teamCap, teamCap2)
         switch (validTrade) {
             case 'Trade Approved!!!!!!!!':
-                validTrade = <h3 className='approval'>Appoved!!! </h3> 
+                validTrade = <h3 className='approval'>Appoved!!! </h3>
                 break;
-                case 'Trade Declined!!!!!!!!':
+            case 'Trade Declined!!!!!!!!':
                 validTrade = <h3 className='declined'> Declined!!!!</h3>
                 break;
             default:
@@ -311,9 +308,9 @@ class Calc extends React.Component {
 
                     <div className={'maincolor' + styling}><br />
                         <label>
-                          
+
                             <br />
-                            Cap Space <br/> {moneyFunctions.moneyFormatterForCap( teamCap, softCap)}<br />
+                            Cap Space <br /> {moneyFunctions.moneyFormatterForCap(teamCap, softCap)}<br />
                             <img className='teamLogo' src={teamLogo} alt='team logo' >
                             </img>
                         </label>
@@ -323,7 +320,7 @@ class Calc extends React.Component {
                             value={teamArraySelect}
                             handleChange={this.handleInputteamArraySelect}
                             handleChange2={this.handleAddToTrade}
-                            handleToGetTeam = {this.getTeamRoster}
+                            handleToGetTeam={this.getTeamRoster}
                         />
                     </div>
                     <div className='main_container'>
@@ -342,11 +339,10 @@ class Calc extends React.Component {
                     <div className={'maincolor' + styling2}><br />
                         <label>
                             {team2Name}<br />
-                            Cap Space <br/> {moneyFunctions.moneyFormatterForCap( teamCap2, softCap)}<br />
+                            Cap Space <br /> {moneyFunctions.moneyFormatterForCap(teamCap2, softCap)}<br />
                             <img className='teamLogo' src={team2Logo} alt='team logo' >
                             </img>
                         </label>
-                          
                         <TeamBoard2
                             teamsArr={logo}
                             teamState={teamState2}
@@ -362,7 +358,7 @@ class Calc extends React.Component {
 
                 </div>
                 <div className='result_div'>
-                  
+
                 </div>
             </div>
 
