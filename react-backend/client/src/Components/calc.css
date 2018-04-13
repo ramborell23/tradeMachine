@@ -119,8 +119,11 @@ ul li:hover {
 
 .approval{
     color:green;
+    text-align: center
     
 }
 .declined{
     color:red;
+    text-align: center
+
 }

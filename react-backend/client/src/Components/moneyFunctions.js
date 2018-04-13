@@ -6,6 +6,16 @@ const moneyFormatter = (amount) => {
     temp = currencyFormatter.format(temp, { code: 'USD' })
     return (temp.slice(0, -3))
 }
+const moneyFormatterForCap = (amount, temp2) => {
+    let temp = Number(amount.slice(1))
+    temp = temp2 - temp
+    if (temp === 99000000){
+        return ''
+    } else {
+        temp = currencyFormatter.format(temp, { code: 'USD' })
+        return (temp.slice(0, -3))
+    }
+}
 
 const totalOfContractsString = (teamTradeArr) => {
     let startingNum = 0
@@ -37,12 +47,6 @@ const tradeApproval = (arr, arr2, teamCap, teamCap2) => {
     let luxuryTax = 119000000
     let teamOneCap = Number(teamCap.slice(1))
     let teamTwoCap = Number(teamCap2.slice(1))
-    console.log('Is team one over the cap', teamOneCap > softCap)
-    console.log('Is team two over the cap', teamTwoCap > softCap)
-    console.log('Team one Giving up this much salary', num)
-    console.log('Here our teamOneMaxCap', teamOneMaxCap)
-    console.log('Team two Giving up this much salary', num2)
-    console.log('Here our teamTwoMaxCap', teamTwoMaxCap)
     if (num === 0 || num2 === 0) {
         return ''
     } else {
@@ -86,4 +90,5 @@ module.exports = {
     totalOfContractsString,
     totalOfContractsNumber,
     tradeApproval,
+    moneyFormatterForCap,
 };
