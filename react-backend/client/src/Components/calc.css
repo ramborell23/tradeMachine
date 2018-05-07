@@ -103,9 +103,10 @@ ul li:hover {
 
 
 .list_of_players{
-    /* height: 7em;
-    width: 10em; */
+    height: 15em;
+    width:15em;
     overflow: scroll;
+    padding-left: 1.5em;
 } 
 
 .result_div{
@@ -119,11 +120,15 @@ ul li:hover {
 
 .approval{
     color:green;
-    text-align: center
-    
+    text-align: center 
 }
+
 .declined{
     color:red;
     text-align: center
+}
 
+.board_button{
+    width:85%;
+    width:85%;
 }

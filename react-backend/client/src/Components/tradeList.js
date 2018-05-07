@@ -17,9 +17,10 @@ const TradeList = ({ teamTradeArr, handleCloseButton }) => {
                 {/* { teamTradeArr} */}
                 {teamTradeArr.map((player, index) =>
                     <li key={player[0]}>
-                                {player.player}<br />
-                                {player.position}<br />
-                                {moneyFunctions.moneyFormatter(player['_2017_18'])}<br />      
+                        < img  className='buttonphoto2' src ={`${player.photo}`} alt = 'Player Photo'/>
+                        {player.player}<br />
+                        {player.position}<br />
+                        {moneyFunctions.moneyFormatter(player['_2017_18'])}<br />      
                         <button id={index} onClick={handleCloseButton} className="close">x</button></li>
                 )}
             </ul>

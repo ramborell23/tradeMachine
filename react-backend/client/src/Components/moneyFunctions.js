@@ -28,9 +28,16 @@ const totalOfContractsString = (teamTradeArr) => {
     return totalOfContracts = currencyFormatter.format(totalOfContracts, { code: 'USD' })
 }
 const totalOfContractsNumber = (teamTradeArr) => {
+    console.log('CHECK FOR CONTRACTS',teamTradeArr)
     let startingNum = 0
     let totalOfContracts = teamTradeArr.map(element => {
-        return (startingNum + Number((element['_2017_18']).slice(1)))
+        console.log('hitting')
+        let value = startingNum + Number((element['_2017_18']).slice(1))
+        if(value === undefined){
+            console.log("Error getting value of contract")
+            return 1000000
+        }
+        return value 
     });
 
     const reducer = (accumulator, currentValue) => accumulator + currentValue;

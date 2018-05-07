@@ -9,6 +9,8 @@ import TeamBoard from './teamBoard'
 import TeamBoard2 from './teamBoard2'
 import TradeList from './tradeList'
 import TradeList2 from './tradeList'
+import Modal from './Modal';
+import Modal2 from './Modal2';
 import './calc.css';
 import '/Users/c4q/Documents/tradeMachine/react-backend/client/src/Stylesheets/western.css';
 import '/Users/c4q/Documents/tradeMachine/react-backend/client/src/Stylesheets/eastern.css';
@@ -57,8 +59,8 @@ const teams = {
 };
 
 class Calc extends React.Component {
-    constructor() {
-        super()
+    constructor(props) {
+        super(props)
         this.teamsArray = ['',
             'Atlanta Hawks',
             'Boston Celtics',
@@ -95,6 +97,10 @@ class Calc extends React.Component {
         this.names = ["FanDuel", "DraftKings", "NBA"]
         this.state = {
             modeState: '',
+            isOpen: false,
+            isOpen2: false,
+            playerStats:[],
+            playerImg:'',
             // teamState: '',
             // teamState2: '',
             teamArraySelect: '',
@@ -147,6 +153,28 @@ class Calc extends React.Component {
     }
 
 
+    toggleModal = () => {
+        this.setState({
+            isOpen: !this.state.isOpen
+        });
+    }
+
+    toggleModal2 = () => {
+        this.setState({
+            isOpen2: !this.state.isOpen2
+        });
+    }
+
+    handlePlayerStatsAndModal = (e)=>{
+        this.setState({
+            playerImg: e.target.id
+        })
+        console.log('OUR MODAL CHECK',e.target.id)
+        {this.getPlayerStats(e)}
+        {setTimeout(this.toggleModal2(),19000)}
+        {setTimeout(console.log('MODAL CHECK'),9000)}
+        console.log('OUR MODAL CHECK',this.getPlayerStats)
+    }
 
     handleInputteamArraySelect = e => {
         const { logo } = this.state
@@ -176,7 +204,6 @@ class Calc extends React.Component {
                     holdlogo2: team.teamlogo,
                     holdTeamCap2: team._2017_18,
                     holdStyling2: team.abbreviation
-
                 })
             } else {
                 console.log("WOWNOT")
@@ -189,12 +216,7 @@ class Calc extends React.Component {
         })
     }
 
-    handleBrandSelection = e => {
-        this.setState({
-            [e.target.name]: e.target.value
-        })
-    }
-
+  
     handleRemoveFromList = e => {
         const { teamTradeArr } = this.state
         let place = e.target.id
@@ -214,27 +236,51 @@ class Calc extends React.Component {
     handleAddToTrade = e => {
         const { teamState, teamTradeArr } = this.state
         let player = teamState[e.target.value]
-        if (teamTradeArr) {
-            console.log('76t8tfghjvkgjkg8yi')
-
+        if (teamTradeArr.includes(player)) {
+            console.log('Player is already being traded')
+        } else if(player=== undefined){
+            console.log('Player is undefined')
+        }else  {
             this.setState({
                 teamTradeArr: [...teamTradeArr, player]
             })
         }
-
     }
+
+
     handleAddToTrade2 = e => {
         const { teamState2, teamTradeArr2 } = this.state
         let player = teamState2[e.target.value]
-        if (teamTradeArr2.includes(player)){
+        if (teamTradeArr2.includes(player)) {
             console.log('Player is already being traded')
-        }else{
+        } else if(player=== undefined){
+            console.log('Player is undefined')
+        }else  {
             this.setState({
                 teamTradeArr2: [...teamTradeArr2, player]
             })
         }
     }
 
+    getPlayerStats = (e) => {
+        const { playerStats} = this.state
+        let playerName = e.target.name.toLowerCase()
+        playerName = playerName.split(' ').reverse()
+        console.log('We have our name here',playerName)
+        axios
+            .get(`http://nba-players.herokuapp.com/players-stats/${playerName[0]}/${playerName[1]}`)
+            .then(response => {
+                console.log('Response', response.data)
+                this.setState({
+                    playerStats: response.data,
+                });
+                console.log(this.state.playerStats)
+            })
+            .catch(err => {
+                console.log("error fetching stats");
+                console.log(err);
+            });
+    };
     getTeamRoster = () => {
         const { teamArraySelect, holdlogo, teamName, holdTeamCap, holdStyling } = this.state
         console.log(nameJoinForFetch(teamArraySelect))
@@ -268,11 +314,10 @@ class Calc extends React.Component {
                     team2Name: team2Name,
                     teamCap2: holdTeamCap2,
                     styling2: holdStyling2
-
                 });
             })
             .catch(err => {
-                console.log("error fetching image");
+                console.log("error fetching team");
                 console.log(err);
             });
     };
@@ -285,7 +330,7 @@ class Calc extends React.Component {
         const { modeState, teamState, teamArraySelect,
             teamArraySelect2, playerSelect, teamState2,
             teamTradeArr, teamTradeArr2, users, logo,
-            teamName, teamLogo, team2Logo, team2Name, teamCap2, teamCap, styling2, styling } = this.state
+            teamName, teamLogo, team2Logo, team2Name, teamCap2, teamCap, styling2, styling, playerImg } = this.state
         const softCap = 99000000
 
 
@@ -303,14 +348,12 @@ class Calc extends React.Component {
         }
         return (
             <div >
-                {validTrade}
+                {/* {validTrade} */}
                 <div className='page'>
-
                     <div className={'maincolor' + styling}><br />
                         <label>
-
                             <br />
-                            Cap Space <br /> {moneyFunctions.moneyFormatterForCap(teamCap, softCap)}<br />
+                            Cap Space Remaining<br /> {moneyFunctions.moneyFormatterForCap(teamCap, softCap)}<br />
                             <img className='teamLogo' src={teamLogo} alt='team logo' >
                             </img>
                         </label>
@@ -321,6 +364,8 @@ class Calc extends React.Component {
                             handleChange={this.handleInputteamArraySelect}
                             handleChange2={this.handleAddToTrade}
                             handleToGetTeam={this.getTeamRoster}
+                            getPlayerStats={this.handlePlayerStatsAndModal}
+
                         />
                     </div>
                     <div className='main_container'>
@@ -339,9 +384,8 @@ class Calc extends React.Component {
                     <div className={'maincolor' + styling2}><br />
                         <label>
                             {team2Name}<br />
-                            Cap Space <br /> {moneyFunctions.moneyFormatterForCap(teamCap2, softCap)}<br />
-                            <img className='teamLogo' src={team2Logo} alt='team logo' >
-                            </img>
+                            Cap Space Remaining<br /> {moneyFunctions.moneyFormatterForCap(teamCap2, softCap)}<br />
+                            <img className='teamLogo' src={team2Logo} alt='team logo' />
                         </label>
                         <TeamBoard2
                             teamsArr={logo}
@@ -351,15 +395,34 @@ class Calc extends React.Component {
                             handleChange={this.handleInputteamArraySelect2}
                             handleChange2={this.handleAddToTrade2}
                             handleToGetTeam={this.getTeamRoster2}
+                            getPlayerStats={this.handlePlayerStatsAndModal}
                         />
                     </div>
                     <br />
-
-
                 </div>
                 <div className='result_div'>
 
                 </div>
+                <button onClick={this.toggleModal}>
+                    Test Trade
+                </button>
+                <button onClick={this.getPlayerStats}>
+                Test Stats
+                </button>
+                <Modal show={this.state.isOpen}
+                    onClose={this.toggleModal}>
+                    Here's some content for the modal
+                    {validTrade}
+                </Modal>
+                <Modal2 show={this.state.isOpen2}
+                    onClose={this.toggleModal2}>
+                    <img className='modal_photo' src ={playerImg}alt ='Player Image'/><br/>
+                    Player Stats:<br/>
+                    Name :{this.state.playerStats.name}<br/>
+                    Points :{this.state.playerStats.points_per_game}<br/>
+                    Assists :{this.state.playerStats.assists_per_game}<br/>
+                    Rebounds :{this.state.playerStats.rebounds_per_game}<br/>
+                </Modal2>
             </div>
 
         )

@@ -3,11 +3,11 @@ import React, { Component } from 'react';
 import { Route, Link, Switch } from "react-router-dom";
 import moneyFunctions from './moneyFunctions'
 
-const TeamBoard = ({ teamsArr, tradeArr, value, handleChange, teamState, handleChange2, handleToGetTeam }) => {
+const TeamBoard = ({ teamsArr, tradeArr, value, handleChange, teamState, handleChange2, handleToGetTeam, photo, getPlayerStats }) => {
     return (
-        <div className=''><br />
+        <div >
+            <br />
             <select
-                // value={value}
                 name='teamArraySelect'
                 onChange={handleChange}>
                 {teamsArr.map((option, index) => (
@@ -22,25 +22,32 @@ const TeamBoard = ({ teamsArr, tradeArr, value, handleChange, teamState, handleC
                 Get Team
             </button>
             <br />
-            Players<br />
-
+            Players
+            <br />
+            <div className='list_of_players'>
             {console.log(teamState)}
             {teamState.map((player, index) => (
-
                 <button
-                    key={index}
-                    className=''
-                    value={index}
-                    onClick={handleChange2}>
+                key={index}
+                className='board_button'
+                value={index}
+                onClick={handleChange2}
+                >
+                <img className='buttonphoto' src = {`${player.photo}`} alt='Player Photo'/>
                     {player.player}{' - '}
                     {player.position}<br />
                     {moneyFunctions.moneyFormatter(player['_2017_18'])}<br />
-                    {/* <br/> */}
+                    <button 
+                    onClick={getPlayerStats}
+                    name={player.player}
+                    id={player.photo}
+                    >
+                    Stats
+                    </button>
                 </button>
-                // </li>
             ))}
+            </div>
             <br />
-
         </div>
     )
 }
