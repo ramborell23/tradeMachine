@@ -2,25 +2,49 @@
 var currencyFormatter = require('currency-formatter');
 
 const moneyFormatter = (amount) => {
-    let temp = Number(amount.slice(1))
+    let temp = Number(amount)
     temp = currencyFormatter.format(temp, { code: 'USD' })
     return (temp.slice(0, -3))
 }
-const moneyFormatterForCap = (amount, temp2) => {
-    let temp = Number(amount.slice(1))
-    temp = temp2 - temp
-    if (temp === 99000000){
+
+const moneyFormatter2 = (amount) => {
+    let temp = Number(amount)
+    temp = currencyFormatter.format(temp, { code: 'USD' })
+    return (temp.slice(0, -3))
+}
+
+const moneyFormatterForCapString = (teamCap, softCap) => {
+    let newTeamCap = Number(teamCap)
+    console.log('newTeamCap newTeamCap',teamCap)
+    newTeamCap = softCap - newTeamCap
+    if (newTeamCap === 99000000){
         return ''
     } else {
-        temp = currencyFormatter.format(temp, { code: 'USD' })
-        return (temp.slice(0, -3))
+        newTeamCap = currencyFormatter.format(newTeamCap, { code: 'USD' })
+        return (newTeamCap.slice(0, -3))
     }
 }
+
+const moneyFormatterForCapNumber = (amount, softCap) => {
+    let temp = Number(amount)
+    softCap = softCap - temp
+    if (softCap === 99000000){
+        return ''
+    } else {
+        return softCap
+    }
+}
+const capNumberAfterTrade = (teamCap, releaseContracts, receivingContracts) => {
+    let nums = [teamCap , releaseContracts].sort()
+    let total  = (teamCap - receivingContracts) 
+    total = total + releaseContracts
+    return total
+} 
 
 const totalOfContractsString = (teamTradeArr) => {
     let startingNum = 0
     let totalOfContracts = teamTradeArr.map(element => {
-        return (startingNum + Number((element['_2017_18']).slice(1)))
+        return (startingNum + Number((element['_2017_18'])))
     });
 
     const reducer = (accumulator, currentValue) => accumulator + currentValue;
@@ -28,13 +52,10 @@ const totalOfContractsString = (teamTradeArr) => {
     return totalOfContracts = currencyFormatter.format(totalOfContracts, { code: 'USD' })
 }
 const totalOfContractsNumber = (teamTradeArr) => {
-    console.log('CHECK FOR CONTRACTS',teamTradeArr)
     let startingNum = 0
     let totalOfContracts = teamTradeArr.map(element => {
-        console.log('hitting')
-        let value = startingNum + Number((element['_2017_18']).slice(1))
+        let value = startingNum + Number((element['_2017_18']))
         if(value === undefined){
-            console.log("Error getting value of contract")
             return 1000000
         }
         return value 
@@ -52,14 +73,13 @@ const tradeApproval = (arr, arr2, teamCap, teamCap2) => {
     let teamTwoMaxCap = num2 * 1.25 + 100000
     let softCap = 99000000
     let luxuryTax = 119000000
-    let teamOneCap = Number(teamCap.slice(1))
-    let teamTwoCap = Number(teamCap2.slice(1))
+    let teamOneCap = Number(teamCap)
+    let teamTwoCap = Number(teamCap2)
     if (num === 0 || num2 === 0) {
         return ''
     } else {
         console.log('We start here', (teamOneCap > softCap),(teamTwoCap > softCap) )
         if ((teamOneCap > softCap) && (teamTwoCap > softCap)) {
-            console.log('Trying a trade with both over the cap')
             if ((teamOneMaxCap >= num2) && (teamTwoMaxCap >= num)) {
                 return ('Trade Approved!!!!!!!!')
             } else {
@@ -67,7 +87,6 @@ const tradeApproval = (arr, arr2, teamCap, teamCap2) => {
             }
 
         } else if ((teamOneCap > softCap)) {
-            console.log('Trying a trade with team one over the cap')
             if ((teamOneMaxCap >= num2)) {
                 return ('Trade Approved!!!!!!!!')
             } else {
@@ -75,7 +94,6 @@ const tradeApproval = (arr, arr2, teamCap, teamCap2) => {
             }
 
         } else if ((teamTwoCap > softCap)) {
-            console.log('Trying a trade with team two over the cap')
             if ((teamTwoMaxCap >= num)) {
                 return ('Trade Approved!!!!!!!!')
             } else {
@@ -94,8 +112,11 @@ const tradeApproval = (arr, arr2, teamCap, teamCap2) => {
 module.exports = {
     //Player Functions
     moneyFormatter,
+    moneyFormatter2,
     totalOfContractsString,
     totalOfContractsNumber,
     tradeApproval,
-    moneyFormatterForCap,
+    moneyFormatterForCapString,
+    moneyFormatterForCapNumber,
+    capNumberAfterTrade
 };

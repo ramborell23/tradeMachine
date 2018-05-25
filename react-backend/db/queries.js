@@ -37,6 +37,12 @@ function getPlayerWithName(firstname) {
     return db.many(`SELECT * FROM players WHERE firstname LIKE %firstname=$1% OR lastname LIKE %lastname=$2%`, [firstname, lastname])
 }
 
+
+function getPlayerContracts(playerName) {
+    console.log(playerName)
+    return db.any('select * from player_salaries WHERE player=$1',[playerName])
+}
+
 //TEAMS
 
 function getAllTeams() {
@@ -71,12 +77,21 @@ function getPlayersByTeam(location) {
     return db.many('SELECT firstname,lastname,teamname,playerid FROM players JOIN teams ON players.teamid=teams.teamid where location=$1', [word])
 }
 
+function getTeamDraftPicks  (teamName)  {
+    return db.many('SELECT * FROM draft_picks WHERE current_owner =$1', [teamName])
+}
+
+function getAllDraftPicks  ()  {
+    return db.many('SELECT * FROM draft_picks')
+}
+
 module.exports = {
     //Player Functions
     getAllPlayers,
     getPlayerByFirstName,
     getPlayerWithName,
     getPlayerByLastName,
+    getPlayerContracts,
     //Team Functions
     getAllTeams,
     getTeamByCityName,
@@ -84,5 +99,6 @@ module.exports = {
     getTeamByTeamName,
     getAllMoney,
     getSalariesByTeam,
-
+    getTeamDraftPicks,
+    getAllDraftPicks,
 };

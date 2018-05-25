@@ -14,6 +14,19 @@ router.get('/', (req, res, next) => {
     });
 });
 
+router.get('/draftpicks/:team', (req, res, next) => {
+  var teamName = req.params.team 
+  console.log(teamName) 
+  db.getTeamDraftPicks(teamName)
+  .then((data) => {
+    res.send({data});
+  })
+  .catch((err) => {
+    console.log(err)
+    return next(err);
+  });
+});
+
 
 // router.get('/home', (req, res, next) => {
 //   db.getAllTeams()

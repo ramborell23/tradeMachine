@@ -15,6 +15,12 @@ import './calc.css';
 import '/Users/c4q/Documents/tradeMachine/react-backend/client/src/Stylesheets/western.css';
 import '/Users/c4q/Documents/tradeMachine/react-backend/client/src/Stylesheets/eastern.css';
 import moneyFunctions from './moneyFunctions'
+var Highcharts = require('highcharts');
+
+// Load module after Highcharts is loaded
+require('highcharts/modules/exporting')(Highcharts);
+
+
 
 
 
@@ -61,52 +67,23 @@ const teams = {
 class Calc extends React.Component {
     constructor(props) {
         super(props)
-        this.teamsArray = ['',
-            'Atlanta Hawks',
-            'Boston Celtics',
-            'Brooklyn Nets',
-            'Charlotte Hornets',
-            'Chicago Bulls',
-            'Cleveland Cavelers',
-            'Dallas Mavericks',
-            'Denver Nuggets',
-            'Detroit Pistons',
-            'Golden State Warriors',
-            'Houston Rockets',
-            'Indiana Pacers',
-            'Los Angeles Clippers',
-            'Los Angeles Lakers',
-            'Memphis Grizzles',
-            'Miami Heat',
-            'Milwaukee Bucks',
-            'Minniesota Timberwolves',
-            'New Orleans Pelicans',
-            'New York Knicks',
-            'Oklahoma City Thunder',
-            'Orlando Magic',
-            'Philedelphia 76ers',
-            'Phoenix Suns',
-            'Portland Trail Blazers',
-            'Sacramento Kings',
-            'San Antonio Spurs',
-            'Toronto Raptors',
-            'Utah Jazz',
-            'Washington Wizards',
-        ]
-
         this.names = ["FanDuel", "DraftKings", "NBA"]
         this.state = {
             modeState: '',
             isOpen: false,
             isOpen2: false,
-            playerStats:[],
-            playerImg:'',
+            isOpen3: false,
+            playerStats: [],
+            playerContract: [],
+            playerImg: '',
             // teamState: '',
             // teamState2: '',
             teamArraySelect: '',
             teamArraySelect2: '',
             teamState: [],
             teamState2: [],
+            teamOneDraftPick: [],
+            teamTwoDraftPick: [],
             playerSelect: '',
             teamTradeArr: [],
             teamTradeArr2: [],
@@ -136,13 +113,13 @@ class Calc extends React.Component {
     }
 
     componentDidMount() {
-        fetch('http://localhost:3100/players/all')
-            .then(res => res.json())
-            .then((users) => {
-                let data = users.data;
-                this.setState({ users: data })
-            }
-            );
+        // fetch('http://localhost:3100/players/all')
+        //     .then(res => res.json())
+        //     .then((users) => {
+        //         let data = users.data;
+        //         this.setState({ users: data })
+        //     }
+        //     );
         fetch('http://localhost:3100/teams')
             .then(res => res.json())
             .then((users) => {
@@ -164,16 +141,42 @@ class Calc extends React.Component {
             isOpen2: !this.state.isOpen2
         });
     }
+    toggleModal3 = () => {
+        this.setState({
+            isOpen3: !this.state.isOpen3
+        });
+    }
 
-    handlePlayerStatsAndModal = (e)=>{
+    handlePlayerStatsAndModal = (e) => {
+        const { isOpen2 } = this.state
         this.setState({
             playerImg: e.target.id
         })
-        console.log('OUR MODAL CHECK',e.target.id)
-        {this.getPlayerStats(e)}
-        {setTimeout(this.toggleModal2(),19000)}
-        {setTimeout(console.log('MODAL CHECK'),9000)}
-        console.log('OUR MODAL CHECK',this.getPlayerStats)
+        { this.getPlayerStats(e) }
+        { setTimeout(function () {
+                console.log('Break for Modal to open')
+                this.setState({
+                    isOpen2: !isOpen2
+                });
+            }.bind(this), 150)
+        }
+        console.log('OUR MODAL CHECK', this.getPlayerStats)
+    }
+
+    handlePlayerContractsAndModal = (e) => {
+        const { isOpen3 } = this.state
+        this.setState({
+            playerImg: e.target.id
+        })
+        { this.getPlayerContract(e) }
+        { setTimeout(function () {
+                console.log('Break for Modal to open')
+                this.setState({
+                    isOpen3: !isOpen3
+                });
+            }.bind(this), 350)
+        }
+        console.log('OUR MODAL CHECK', this.getPlayerStats)
     }
 
     handleInputteamArraySelect = e => {
@@ -194,6 +197,7 @@ class Calc extends React.Component {
             }
         })
     }
+
     handleInputteamArraySelect2 = e => {
         const { logo } = this.state
         const rightPhoto = logo.filter(team => {
@@ -210,13 +214,14 @@ class Calc extends React.Component {
             }
         })
     }
+
     handleInput = e => {
         this.setState({
             [e.target.name]: e.target.value
         })
     }
 
-  
+
     handleRemoveFromList = e => {
         const { teamTradeArr } = this.state
         let place = e.target.id
@@ -238,9 +243,12 @@ class Calc extends React.Component {
         let player = teamState[e.target.value]
         if (teamTradeArr.includes(player)) {
             console.log('Player is already being traded')
-        } else if(player=== undefined){
+        } else if (player === undefined) {
             console.log('Player is undefined')
-        }else  {
+            console.log(teamState)
+            console.log(e.target.value)
+            console.log(e.target)
+        } else {
             this.setState({
                 teamTradeArr: [...teamTradeArr, player]
             })
@@ -253,9 +261,10 @@ class Calc extends React.Component {
         let player = teamState2[e.target.value]
         if (teamTradeArr2.includes(player)) {
             console.log('Player is already being traded')
-        } else if(player=== undefined){
+        } else if (player === undefined) {
             console.log('Player is undefined')
-        }else  {
+            console.log(teamState2[e.target.value])
+        } else {
             this.setState({
                 teamTradeArr2: [...teamTradeArr2, player]
             })
@@ -263,10 +272,10 @@ class Calc extends React.Component {
     }
 
     getPlayerStats = (e) => {
-        const { playerStats} = this.state
+        const { playerStats } = this.state
         let playerName = e.target.name.toLowerCase()
         playerName = playerName.split(' ').reverse()
-        console.log('We have our name here',playerName)
+        console.log('We have our name here', playerName)
         axios
             .get(`http://nba-players.herokuapp.com/players-stats/${playerName[0]}/${playerName[1]}`)
             .then(response => {
@@ -281,6 +290,26 @@ class Calc extends React.Component {
                 console.log(err);
             });
     };
+
+
+    getPlayerContract = (e) => {
+        const { playerStats } = this.state
+        let playerName = e.target.name
+        console.log('We have our name here', playerName)
+        axios
+            .get(`http://localhost:3100/players/contract/${playerName}`)
+            .then(response => {
+                this.setState({
+                    playerContract: response.data.data[0],
+                });
+                console.log(this.state.playerContract)
+            })
+            .catch(err => {
+                console.log("error fetching stats");
+                console.log(err);
+            });
+    };
+
     getTeamRoster = () => {
         const { teamArraySelect, holdlogo, teamName, holdTeamCap, holdStyling } = this.state
         console.log(nameJoinForFetch(teamArraySelect))
@@ -295,6 +324,36 @@ class Calc extends React.Component {
                     teamCap: holdTeamCap,
                     styling: holdStyling
                 });
+            })
+            .catch(err => {
+                console.log("error fetching team");
+                console.log(err);
+            });
+            axios
+            .get(`http://localhost:3100/teams/draftpicks/${teamArraySelect}`)
+            .then(response => {
+                this.setState({
+                    teamOneDraftPick: response.data.data,
+                });
+                console.log('First Draft pics',this.state.teamOneDraftPick)
+            })
+            .catch(err => {
+                console.log("error fetching team");
+                console.log(err);
+            });
+
+    };
+
+    getTeamDraftPicks = () => {
+        const { teamArraySelect} = this.state
+        console.log(teamArraySelect)
+        axios
+            .get(`http://localhost:3100/teams/draftpicks/${teamArraySelect}`)
+            .then(response => {
+                this.setState({
+                    teamOneDraftPick: response.data.data,
+                });
+                console.log('First Draft pics',this.state.teamOneDraftPick)
             })
             .catch(err => {
                 console.log("error fetching team");
@@ -330,11 +389,13 @@ class Calc extends React.Component {
         const { modeState, teamState, teamArraySelect,
             teamArraySelect2, playerSelect, teamState2,
             teamTradeArr, teamTradeArr2, users, logo,
-            teamName, teamLogo, team2Logo, team2Name, teamCap2, teamCap, styling2, styling, playerImg } = this.state
+            teamName, teamLogo, team2Logo, team2Name, 
+            teamCap2, teamCap, styling2, styling, playerImg, playerContract } = this.state
         const softCap = 99000000
 
-
-
+        console.log('playerContract',playerContract)
+        let diffInMoneyAftTrade = moneyFunctions.capNumberAfterTrade(moneyFunctions.moneyFormatterForCapNumber(teamCap, softCap), moneyFunctions.totalOfContractsNumber(teamTradeArr), moneyFunctions.totalOfContractsNumber(teamTradeArr2))
+        let diffInMoneyAftTrade2 = moneyFunctions.capNumberAfterTrade(moneyFunctions.moneyFormatterForCapNumber(teamCap2, softCap), moneyFunctions.totalOfContractsNumber(teamTradeArr2), moneyFunctions.totalOfContractsNumber(teamTradeArr))
         let validTrade = moneyFunctions.tradeApproval(teamTradeArr, teamTradeArr2, teamCap, teamCap2)
         switch (validTrade) {
             case 'Trade Approved!!!!!!!!':
@@ -353,7 +414,7 @@ class Calc extends React.Component {
                     <div className={'maincolor' + styling}><br />
                         <label>
                             <br />
-                            Cap Space Remaining<br /> {moneyFunctions.moneyFormatterForCap(teamCap, softCap)}<br />
+                            Cap Space Remaining<br /> {moneyFunctions.moneyFormatterForCapString(teamCap, softCap)}<br />
                             <img className='teamLogo' src={teamLogo} alt='team logo' >
                             </img>
                         </label>
@@ -364,8 +425,9 @@ class Calc extends React.Component {
                             handleChange={this.handleInputteamArraySelect}
                             handleChange2={this.handleAddToTrade}
                             handleToGetTeam={this.getTeamRoster}
+                            handleToGetTeamDraftPIcks={this.getTeamDraftPicks}
                             getPlayerStats={this.handlePlayerStatsAndModal}
-
+                            getPlayerSalaries={this.handlePlayerContractsAndModal}
                         />
                     </div>
                     <div className='main_container'>
@@ -384,7 +446,7 @@ class Calc extends React.Component {
                     <div className={'maincolor' + styling2}><br />
                         <label>
                             {team2Name}<br />
-                            Cap Space Remaining<br /> {moneyFunctions.moneyFormatterForCap(teamCap2, softCap)}<br />
+                            Cap Space Remaining<br /> {moneyFunctions.moneyFormatterForCapString(teamCap2, softCap)}<br />
                             <img className='teamLogo' src={team2Logo} alt='team logo' />
                         </label>
                         <TeamBoard2
@@ -406,22 +468,39 @@ class Calc extends React.Component {
                 <button onClick={this.toggleModal}>
                     Test Trade
                 </button>
-                <button onClick={this.getPlayerStats}>
-                Test Stats
-                </button>
+
+
                 <Modal show={this.state.isOpen}
                     onClose={this.toggleModal}>
-                    Here's some content for the modal
-                    {validTrade}
+                    <br />
+                    {validTrade}<br />
+                    <span className='modal_text'>{teamArraySelect}   ------   {teamArraySelect2}</span><br />
+                    <span className='modal_text'>{moneyFunctions.moneyFormatter2(diffInMoneyAftTrade)}   ------   {moneyFunctions.moneyFormatter2(diffInMoneyAftTrade2)}</span>
                 </Modal>
+
                 <Modal2 show={this.state.isOpen2}
                     onClose={this.toggleModal2}>
-                    <img className='modal_photo' src ={playerImg}alt ='Player Image'/><br/>
-                    Player Stats:<br/>
-                    Name :{this.state.playerStats.name}<br/>
-                    Points :{this.state.playerStats.points_per_game}<br/>
-                    Assists :{this.state.playerStats.assists_per_game}<br/>
-                    Rebounds :{this.state.playerStats.rebounds_per_game}<br/>
+                    <img className='modal_photo' src={playerImg} alt='Player Image' /><br />
+                    Player Stats:<br />
+                    Name : {this.state.playerStats.name}<br />
+                    Points : {this.state.playerStats.points_per_game}<br />
+                    Assists : {this.state.playerStats.assists_per_game}<br />
+                    Rebounds : {this.state.playerStats.rebounds_per_game}<br />
+                </Modal2>
+                <Modal2 show={this.state.isOpen3}
+                    onClose={this.toggleModal3}>
+                    <img className='modal_photo' src={playerImg} alt='Player Image' /><br />
+                   Contract Modal<br/>
+                   Name : {this.state.playerContract.player}<br />
+                   2017-18 : {playerContract._2017_18}<br />
+                   2018-19 : {playerContract._2018_19}<br />
+                  {playerContract._2019_20 === null ? '' :  `2019-20 : ${playerContract._2019_20}`}<br />
+                   Option : {playerContract.option_}<br />
+                   Option Year: {playerContract.option_year}<br />
+                   <div>
+                   </div>
+                   {}
+
                 </Modal2>
             </div>
 

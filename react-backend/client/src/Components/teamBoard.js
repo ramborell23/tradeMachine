@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Route, Link, Switch } from "react-router-dom";
 import moneyFunctions from './moneyFunctions'
 
-const TeamBoard = ({ teamsArr, tradeArr, value, handleChange, teamState, handleChange2, handleToGetTeam, photo, getPlayerStats }) => {
+const TeamBoard = ({ teamsArr, tradeArr, value, handleChange, teamState, handleChange2, handleToGetTeam, photo, getPlayerStats, getPlayerSalaries, handleToGetTeamDraftPIcks }) => {
     return (
         <div >
             <br />
@@ -17,9 +17,14 @@ const TeamBoard = ({ teamsArr, tradeArr, value, handleChange, teamState, handleC
                     </option>
                 ))}
             </select>
+            <br/>
             <button
                 onClick={handleToGetTeam}>
                 Get Team
+            </button>
+            <button
+                onClick={handleToGetTeamDraftPIcks}>
+                Get Draft Picks
             </button>
             <br />
             Players
@@ -43,6 +48,13 @@ const TeamBoard = ({ teamsArr, tradeArr, value, handleChange, teamState, handleC
                     id={player.photo}
                     >
                     Stats
+                    </button>
+                    <button
+                    onClick={getPlayerSalaries}
+                    name={player.player}
+                    id={player.photo}
+                    >
+                    $
                     </button>
                 </button>
             ))}

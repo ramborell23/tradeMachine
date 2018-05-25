@@ -63,6 +63,18 @@ router.get('/last/:lastname', (req, res, next) => {
     return next(err);
   });
 });
+router.get('/contract/:playername', (req, res, next) => {
+  let playername = req.params.playername  
+  console.log(playername)
+  db.getPlayerContracts(playername)
+  .then((data) => {
+    res.send({data: data});
+  })
+  .catch((err) => {
+    console.log(err)
+    return next(err);
+  });
+});
 
 
 

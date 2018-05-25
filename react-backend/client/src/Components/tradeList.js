@@ -12,7 +12,6 @@ const TradeList = ({ teamTradeArr, handleCloseButton }) => {
         <div>
             {''} Trading {''}<br/>
             Total:{' '}{moneyFunctions.totalOfContractsString(teamTradeArr).slice(0,-3)}
-            {console.log('the right team==>', teamTradeArr)}
             <ul>
                 {/* { teamTradeArr} */}
                 {teamTradeArr.map((player, index) =>

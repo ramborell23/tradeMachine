@@ -16,6 +16,10 @@
     width: 25%;
     float: left
 }
+.modal_text{
+    color: blue;
+    /* text-align: center; */
+}
 .modal_photo{
     height: 55%;
     width: 50%;
@@ -66,7 +70,7 @@
     border: solid 0.3em rgb(136,139,141);
     background: linear-gradient(to bottom right,rgb(0,120,140)
     , rgb(29,17,96));
-    color: rgb(29,17,96)    ;
+    color: rgb(255, 255, 255);
     height: 30%;
     width: 30%;
     display: flex;

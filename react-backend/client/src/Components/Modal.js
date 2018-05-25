@@ -34,7 +34,6 @@ class Modal extends React.Component {
       <div className="backdrop backdropStyle" style={backdropStyle}  >
         <div className="modal modalStyle" style={modalStyle}>
           {this.props.children}
-
           <div className="footer">
             <button onClick={this.props.onClose}>
               Close

@@ -5,7 +5,9 @@
   "dependencies": {
     "axios": "^0.18.0",
     "currency-formatter": "^1.4.2",
+    "highcharts": "^6.1.0",
     "material-ui": "^0.20.0",
+    "rc-tabs": "^9.2.5",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2",

@@ -52,9 +52,9 @@
 .maincolorHOU{
     /* border: purple solid 0.3em; */
     border: solid 0.3em rgb(0,0,0);
-    background: linear-gradient(to bottom right,rgb(206,17,65)
-    , rgb(206,17,65));
-    color: rgb(253,185,39);
+    background: linear-gradient(to bottom right,rgb(0,0,0)
+    , rgb(216, 22, 22));
+    color: rgb(255, 255, 255);
     height: 30%;
     width: 30%;
     display: flex;
