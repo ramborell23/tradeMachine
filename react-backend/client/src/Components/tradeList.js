@@ -12,7 +12,7 @@ const TradeList = ({ teamTradeArr, handleCloseButton }) => {
         <div>
             {''} Trading {''}<br/>
             Total:{' '}{moneyFunctions.totalOfContractsString(teamTradeArr).slice(0,-3)}
-            <ul>
+            <ul className='trade_list'>
                 {/* { teamTradeArr} */}
                 {teamTradeArr.map((player, index) =>
                     <li key={player[0]}>

@@ -12,19 +12,19 @@ import TradeList2 from './tradeList'
 import Modal from './Modal';
 import Modal2 from './Modal2';
 import './calc.css';
-import '/Users/c4q/Documents/tradeMachine/react-backend/client/src/Stylesheets/western.css';
-import '/Users/c4q/Documents/tradeMachine/react-backend/client/src/Stylesheets/eastern.css';
+import '../Stylesheets/western.css';
+import '../Stylesheets/eastern.css';
 import moneyFunctions from './moneyFunctions'
-var Highcharts = require('highcharts');
+// var Highcharts = require('highcharts');
 
 // Load module after Highcharts is loaded
-require('highcharts/modules/exporting')(Highcharts);
-
-
-
-
+// require('highcharts/modules/exporting')(Highcharts);
 
 const axios = require("axios");
+
+
+
+
 
 const nameJoinForFetch = teamStateName => {
     const newName = teamStateName.split(' ').join('')
@@ -88,7 +88,7 @@ class Calc extends React.Component {
             teamTradeArr: [],
             teamTradeArr2: [],
             users: [],
-            logo: [],
+            arrOfNBATeams: [],
             //
             teamName: '',
             teamLogo: 'http://logok.org/wp-content/uploads/2015/01/NBA-logo-880x655.png',
@@ -124,7 +124,7 @@ class Calc extends React.Component {
             .then(res => res.json())
             .then((users) => {
                 let data = users.data;
-                this.setState({ logo: ['', ...data] })
+                this.setState({ arrOfNBATeams: ['', ...data] })
             }
             );
     }
@@ -180,8 +180,8 @@ class Calc extends React.Component {
     }
 
     handleInputteamArraySelect = e => {
-        const { logo } = this.state
-        const rightPhoto = logo.filter(team => {
+        const { arrOfNBATeams } = this.state
+        const rightPhoto = arrOfNBATeams.filter(team => {
             if (team.abbreviation === e.target.value) {
                 console.log(team)
                 this.setState({
@@ -199,8 +199,8 @@ class Calc extends React.Component {
     }
 
     handleInputteamArraySelect2 = e => {
-        const { logo } = this.state
-        const rightPhoto = logo.filter(team => {
+        const { arrOfNBATeams } = this.state
+        const rightPhoto = arrOfNBATeams.filter(team => {
             if (team.abbreviation === e.target.value) {
                 this.setState({
                     teamArraySelect2: e.target.value,
@@ -230,6 +230,7 @@ class Calc extends React.Component {
             teamTradeArr: [...teamTradeArr]
         })
     }
+
     handleRemoveFromList2 = e => {
         const { teamTradeArr2 } = this.state
         let place = e.target.id
@@ -238,6 +239,7 @@ class Calc extends React.Component {
             teamTradeArr2: [...teamTradeArr2]
         })
     }
+
     handleAddToTrade = e => {
         const { teamState, teamTradeArr } = this.state
         let player = teamState[e.target.value]
@@ -291,7 +293,6 @@ class Calc extends React.Component {
             });
     };
 
-
     getPlayerContract = (e) => {
         const { playerStats } = this.state
         let playerName = e.target.name
@@ -312,7 +313,6 @@ class Calc extends React.Component {
 
     getTeamRoster = () => {
         const { teamArraySelect, holdlogo, teamName, holdTeamCap, holdStyling } = this.state
-        console.log(nameJoinForFetch(teamArraySelect))
         axios
             .get(`http://localhost:3100/players/salary/${teamArraySelect}`)
             .then(response => {
@@ -382,13 +382,10 @@ class Calc extends React.Component {
     };
 
 
-
-
-
     render() {
         const { modeState, teamState, teamArraySelect,
             teamArraySelect2, playerSelect, teamState2,
-            teamTradeArr, teamTradeArr2, users, logo,
+            teamTradeArr, teamTradeArr2, users, arrOfNBATeams,
             teamName, teamLogo, team2Logo, team2Name, 
             teamCap2, teamCap, styling2, styling, playerImg, playerContract } = this.state
         const softCap = 99000000
@@ -407,9 +404,14 @@ class Calc extends React.Component {
             default:
                 break;
         }
+
+
+
+        // Test TRADE LOGIC
+
+
         return (
             <div >
-                {/* {validTrade} */}
                 <div className='page'>
                     <div className={'maincolor' + styling}><br />
                         <label>
@@ -419,7 +421,7 @@ class Calc extends React.Component {
                             </img>
                         </label>
                         <TeamBoard
-                            teamsArr={logo}
+                            teamsArr={arrOfNBATeams}
                             teamState={teamState}
                             value={teamArraySelect}
                             handleChange={this.handleInputteamArraySelect}
@@ -450,7 +452,7 @@ class Calc extends React.Component {
                             <img className='teamLogo' src={team2Logo} alt='team logo' />
                         </label>
                         <TeamBoard2
-                            teamsArr={logo}
+                            teamsArr={arrOfNBATeams}
                             teamState={teamState2}
                             name='teamArraySelect2'
                             value={teamArraySelect2}
@@ -499,7 +501,7 @@ class Calc extends React.Component {
                    Option Year: {playerContract.option_year}<br />
                    <div>
                    </div>
-                   {}
+               
 
                 </Modal2>
             </div>

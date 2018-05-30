@@ -49,6 +49,9 @@ function getAllTeams() {
     return db.any('SELECT abbreviation, teamname, teamid, _2017_18 ,_2018_19, teamlogo FROM  teams JOIN team_salaries ON teams.teamname = team_salaries.tm')
     
 }
+function getTeamCap(teamname) {
+    return db.any('SELECT abbreviation, teamname, teamid, _2017_18 ,_2018_19, teamlogo FROM  teams JOIN team_salaries ON teams.teamname = team_salaries.tm WHERE abbreviation = $1', [teamname])
+}
 
 function getTeamByCityName(location) {
     location = location[0].toUpperCase() + location.slice(1).toLowerCase()
@@ -85,6 +88,17 @@ function getAllDraftPicks  ()  {
     return db.many('SELECT * FROM draft_picks')
 }
 
+
+//Free Agent Queries
+function getPotentialFreeAgents()  {
+    return db.many(`SELECT * FROM player_salaries WHERE _2018_19 IS  NULL OR option_year = '2018'`)
+}
+
+function getSpecificTeam(teamName)  {
+    return db.many(`SELECT * FROM teams JOIN player_salaries ON teams.abbreviation=player_salaries.tm WHERE abbreviation = $1`,[teamName])
+}
+
+
 module.exports = {
     //Player Functions
     getAllPlayers,
@@ -98,7 +112,13 @@ module.exports = {
     getPlayersByTeam,
     getTeamByTeamName,
     getAllMoney,
+    getTeamCap,
+    
     getSalariesByTeam,
     getTeamDraftPicks,
     getAllDraftPicks,
+    // Free Agent functions
+    getPotentialFreeAgents,
+    getSpecificTeam,
+
 };

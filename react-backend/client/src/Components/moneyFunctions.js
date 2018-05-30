@@ -67,41 +67,45 @@ const totalOfContractsNumber = (teamTradeArr) => {
 }
 
 const tradeApproval = (arr, arr2, teamCap, teamCap2) => {
-    let num = totalOfContractsNumber(arr)
-    let num2 = totalOfContractsNumber(arr2)
-    let teamOneMaxCap = num * 1.25 + 100000
-    let teamTwoMaxCap = num2 * 1.25 + 100000
+    let teamOneTotalContracts = totalOfContractsNumber(arr)
+    let teamTwoTotalContracts = totalOfContractsNumber(arr2)
+    let teamOneMaxCap = teamOneTotalContracts * 1.25 + 100000
+    let teamTwoMaxCap = teamTwoTotalContracts * 1.25 + 100000
     let softCap = 99000000
     let luxuryTax = 119000000
     let teamOneCap = Number(teamCap)
     let teamTwoCap = Number(teamCap2)
-    if (num === 0 || num2 === 0) {
+    if (teamOneTotalContracts === 0 || teamTwoTotalContracts === 0) {
         return ''
     } else {
         console.log('We start here', (teamOneCap > softCap),(teamTwoCap > softCap) )
         if ((teamOneCap > softCap) && (teamTwoCap > softCap)) {
-            if ((teamOneMaxCap >= num2) && (teamTwoMaxCap >= num)) {
-                return ('Trade Approved!!!!!!!!')
+            if ((teamOneMaxCap >= teamTwoTotalContracts) && (teamTwoMaxCap >= teamOneTotalContracts)) {
+                return (`League Approved!!!!!!!!`)
             } else {
-                return ('Trade Declined!!!!!!!!')
+                return (`League Denied!!!!!!!! ${ teamOneMaxCap >= teamTwoTotalContracts ? `Team One is approved`: `Team One is NOT approved ${teamOneMaxCap} ${teamTwoTotalContracts}`}
+               ----- ${teamTwoMaxCap >= teamOneTotalContracts  ? `Team two is approved`: `Team two is NOT approved ${teamTwoMaxCap} ${teamOneTotalContracts}`}
+                ${teamTwoMaxCap}`)
             }
 
         } else if ((teamOneCap > softCap)) {
-            if ((teamOneMaxCap >= num2)) {
-                return ('Trade Approved!!!!!!!!')
+            if ((teamOneMaxCap >= teamTwoTotalContracts)) {
+                return (`League Approved!!!!!!!!`)
             } else {
-                return ('Trade Declined!!!!!!!!')
+                return (`League Denied!!!!!!!! ${teamTwoTotalContracts}
+                ${teamOneMaxCap}`)
             }
 
         } else if ((teamTwoCap > softCap)) {
-            if ((teamTwoMaxCap >= num)) {
-                return ('Trade Approved!!!!!!!!')
+            if ((teamTwoMaxCap >= teamOneTotalContracts)) {
+                return (`League Approved!!!!!!!!`)
             } else {
-                return ('Trade Declined!!!!!!!!')
+                return (`League Denied!!!!!!!! ${teamOneTotalContracts}
+                ${teamTwoMaxCap}`)
             }
 
         } else {
-            return ('Trade Declined!!!!!!!!')
+            return (`League Denied!!!!!!!!`)
         }
     }
 }

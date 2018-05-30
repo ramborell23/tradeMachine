@@ -145,7 +145,7 @@ Rk,Player,Position,Team,Salary,Salary,Salary,Salary,Salary,Salary,Signed Using,O
 144,C.J. Miles,SF,TOR,7936509,8333333,8730158,,,,MLE,Player,2018,16269842,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2778.png&w=350&h=254
 145,Cristiano Felicio,C,CHI,7843500,8470980,8156500,7529020,,,Cap space,,,32000000,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3113587.png&w=350&h=254
 146,Shaun Livingston,PG,GSW,7692308,8307692,7692308,,,,Bird Rights,,,18000000,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2393.png&w=350&h=254
-147,Cory Joseph,PG,IND,7630000,7945000,,,,,Cap Space,Player,2018,7630000,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/6446.png&w=350&h=254
+147,Cory Joseph,PG,IND,7630000,7945000,,,,,Cap Space,,2018,7630000,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/6446.png&w=350&h=254
 148,P.J. Tucker,SF,HOU,7590035,7969537,8349039,7969537,,,MLE,,,26477799,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3033.png&w=350&h=254
 149,Corey Brewer,SG,LAL,7579366,,,,,,Cap Space,,,7579366,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3191.png&w=350&h=254
 150,Andrew Wiggins,SF,MIN,7574322,25250000,27270000,29290000,31310000,,1st Round Pick,,,154024322,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3059319.png&w=350&h=254
@@ -161,7 +161,7 @@ Rk,Player,Position,Team,Salary,Salary,Salary,Salary,Salary,Salary,Signed Using,O
 160,Jeremy Lamb,SG,CHA,7000000,7488372,,,,,Rookie scale extension,,,14488372,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/6603.png&w=350&h=254
 161,Boban Marjanovic,C,LAC,7000000,7000000,,,,,Cap Space,,,14000000,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4376.png&w=350&h=254
 162,Jae Crowder,SF,UTA,6796117,7305825,7815533,,,,Bird Rights,,,21917475,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/6581.png&w=350&h=254
-163,Jabari Parker,SF,MIL,6782392,8851021,,,,,1st Round Pick,Team,2018,6782392,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3056600.png&w=350&h=254
+163,Jabari Parker,SF,MIL,6782392,8851021,,,,,1st Round Pick,RFA,2018,6782392,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3056600.png&w=350&h=254
 164,Langston Galloway,PG,DET,6666667,7000000,7333333,,,,MLE,,,21000000,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2530572.png&w=350&h=254
 165,Lance Thomas,SF,NYK,6655325,7119650,7583975,,,,Cap Space,,,13774975,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/6485.png&w=350&h=254
 166,Ed Davis,PF,POR,6352531,,,,,,Cap Space,,,6352531,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4259.png&w=350&h=254
@@ -188,7 +188,7 @@ Rk,Player,Position,Team,Salary,Salary,Salary,Salary,Salary,Salary,Signed Using,O
 187,D'Angelo Russell,PG,BKN,5562360,7019698,,,,,1st round pick,Team,2019,12582058,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3136776.png&w=350&h=254
 188,Brandon Ingram,SF,LAL,5519400,5757120,7265485,,,,1st Round pick,Team,2019,11276520,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3913176.png
 189,Patrick Beverley,PG,LAC,5513514,5027028,,,,,Bird Rights,,,5513514,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3964.png&w=350&h=254
-190,Aaron Gordon,PF,ORL,5504420,,,,,,1st Round Pick,Team,2018,5504420,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3064290.png&w=350&h=254
+190,Aaron Gordon,PF,ORL,5504420,,,,,,1st Round Pick,RFA,2018,5504420,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3064290.png&w=350&h=254
 191,Deron Williams,PG,BKN,5500000,5500000,5500000,,,,,,,16500000,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2798.png&w=350&h=254
 192,Josh Smith,SF,DET,5400000,5400000,5400000,,,,,,,16200000,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2411.png&w=350&h=254
 193,Thabo Sefolosha,SF,UTA,5250000,5250000,,,,,Cap space,,,5250000,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3028.png&w=350&h=254
@@ -203,14 +203,14 @@ Rk,Player,Position,Team,Salary,Salary,Salary,Salary,Salary,Salary,Signed Using,O
 202,Greg Monroe,C,BOS,5000000,,,,,,Disabled Player Exception,,,5000000,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4260.png&w=350&h=254
 203,Mike Muscala,PF,ATL,5000000,5000000,,,,,Cap space,Player,2018,5000000,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2490089.png&w=350&h=254
 204,Jahlil Okafor,C,BKN,4995120,,,,,,1st round pick,,,4995120,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3135048.png
-205,Dante Exum,PG,UTA,4992385,,,,,,1st Round Pick,Team,2018,4992385,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3102528.png&w=350&h=254
+205,Dante Exum,PG,UTA,4992385,,,,,,1st Round Pick,RFA,2018,4992385,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3102528.png&w=350&h=254
 206,Alexis Ajinca,C,NOP,4961798,5285394,,,,,Early Bird Rights,,,10247192,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3410.png&w=350&h=254
 207,Jaylen Brown,SF,BOS,4956480,5169960,6534829,,,,1st Rd pick,Team,2019,10126440,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3917376.png&w=350&h=254
 208,Jameer Nelson,PG,DEN,4736050,,,,,,,,,4736050,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2439.png&w=350&h=254
 209,Kyle Singler,SF,OKC,4666500,4996000,5333500,,,,Bird Rights,Team,2019,9662500,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/6469.png&w=350&h=254
 210,Justin Holiday,SG,CHI,4615385,4384616,,,,,MLE,,,9000001,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2284101.png&w=350&h=254
 211,De Aaron Fox,PG,SAC,4609200,5407920,6392760,8099627,,,1st Round Pick,Team,2019,10017120,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4066259.png&w=350&h=254
-212,Marcus Smart,PG,BOS,4538020,,,,,,1st Round Pick,Team,2018,4538020,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2990992.png&w=350&h=254
+212,Marcus Smart,PG,BOS,4538020,,,,,,1st Round Pick,RFA,2018,4538020,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2990992.png&w=350&h=254
 213,Kristaps Porzingis,PF,NYK,4503600,5697054,,,,,1st round pick,Team,2019,10200654,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3102531.png&w=350&h=254
 214,Dragan Bender,PF,PHX,4468800,4661280,5896519,,,,1st Round pick,Team,2019,9130080,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4011991.png
 215,Devin Harris,PG,DEN,4402546,,,,,,Cap Space,,,4402546,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2382.png&w=350&h=254
@@ -221,35 +221,35 @@ Rk,Player,Position,Team,Salary,Salary,Salary,Salary,Salary,Salary,Signed Using,O
 220,Nerlens Noel,C,DAL,4187599,,,,,,1st Round Pick,,,4187599,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2991280.png&w=350&h=254
 221,Jonathan Isaac,SF,ORL,4186320,4969080,5806440,7362566,,,1st Round Pick,Team,2019,9155400,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4065654.png&w=350&h=254
 222,Lance Stephenson,SG,IND,4180000,4360000,,,,,Cap space,Team,2018,4180000,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4244.png&w=350&h=254
-223,Julius Randle,PF,LAL,4149242,,,,,,1st Round Pick,Team,2018,4149242,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3064514.png&w=350&h=254
+223,Julius Randle,PF,LAL,4149242,,,,,,1st Round Pick,RFA,2018,4149242,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3064514.png&w=350&h=254
 224,Kyle O'Quinn,C,NYK,4087500,4256250,,,,,Bird Rights,Player,2018,4087500,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/6615.png&w=350&h=254
 225,Mario Hezonja,SG,ORL,4078320,,,,,,1st round pick,,,4078320,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2995706.png&w=350&h=254
 226,Kris Dunn,PG,CHI,4046760,4221000,5348007,,,,1st Round pick,Team,2019,8267760,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2991139.png&w=350&h=254
 227,Jonas Jerebko,PF,UTA,4000000,4200000,,,,,Cap space,,,4000000,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3998.png&w=350&h=254
-228,Nemanja Bjelica,,MIN,3949999,,,,,,MLE,Team,2018,3949999,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4269.png&w=350&h=254
+228,Nemanja Bjelica,,MIN,3949999,,,,,,MLE,RFA,2018,3949999,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4269.png&w=350&h=254
 229,J.J. Barea,PG,DAL,3903900,3710850,,,,,Cap Space,,,7614750,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3055.png&w=350&h=254
 230,Quincy Pondexter,SF,CHI,3853931,,,,,,,,,3853931,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4253.png&w=350&h=254
 231,Lauri Markkanen,PF,CHI,3821640,4536120,5300400,6731508,,,1st Round Pick,Team,2019,8357760,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4066336.png&w=350&h=254
-232,Nik Stauskas,SG,BKN,3807146,,,,,,1st Round Pick,Team,2018,3807146,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2991042.png&w=350&h=254
+232,Nik Stauskas,SG,BKN,3807146,,,,,,1st Round Pick,RFA,2018,3807146,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2991042.png&w=350&h=254
 233,Willie Cauley-Stein,C,SAC,3704160,4696875,,,,,1st round pick,Team,2019,8401035,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2991282.png&w=350&h=254
 234,Buddy Hield,SG,SAC,3675480,3833760,4861208,,,,1st Round pick,Team,2019,7509240,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2990984.png
 235,Will Barton,SG,DEN,3533333,,,,,,Bird Rights,,,3533333,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/6579.png
-236,Noah Vonleh,PF,CHI,3505233,,,,,,1st Round Pick,Team,2018,3505233,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3078284.png&w=350&h=254
+236,Noah Vonleh,PF,CHI,3505233,,,,,,1st Round Pick,RFA,2018,3505233,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3078284.png&w=350&h=254
 237,Frank Ntilikina,PG,NYK,3501120,4155720,4855800,6176578,,,1st Round Pick,Team,2019,7656840,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4230547.png&w=350&h=254
 238,Nene Hilario,C,HOU,3477600,3651480,3825360,,,,Non-Bird Rights,,,10954440,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1713.png&w=350&h=254
 239,Zaza Pachulia,C,GSW,3477600,,,,,,,,,3477600,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2016.png&w=350&h=254
 240,Troy Daniels,PG,PHX,3408520,3258540,,,,,Cap Space,,,6667060,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2489530.png&w=350&h=254
 241,Emmanuel Mudiay,PG,NYK,3381480,4294480,,,,,1st round pick,Team,2019,7675960,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3892818.png&w=350&h=254
 242,Jamal Murray,PG,DEN,3355320,3499800,4444746,,,,1st Round pick,Team,2019,6855120,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3936299.png&w=350&h=254
-243,Elfrid Payton,PG,PHX,3332340,,,,,,1st Round Pick,Team,2018,3332340,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2583639.png&w=350&h=254
+243,Elfrid Payton,PG,PHX,3332340,,,,,,1st Round Pick,RFA,2018,3332340,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2583639.png&w=350&h=254
 244,Rajon Rondo,PG,NOP,3300000,,,,,,MLE,,,3300000,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3026.png&w=350&h=254
-245,Doug McDermott,SF,DAL,3294994,,,,,,1st Round Pick,Team,2018,3294994,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2528588.png&w=350&h=254
+245,Doug McDermott,SF,DAL,3294994,,,,,,1st Round Pick,RFA,2018,3294994,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2528588.png&w=350&h=254
 246,Jodie Meeks,SG,WAS,3290000,3454500,,,,,Bi-annual Exception,Player,2018,3290000,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4003.png&w=350&h=254
 247,Tyreke Evans,SG,MEM,3290000,,,,,,Bi-annual Exception,,,3290000,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3983.png&w=350&h=254
 248,Tarik Black,C,HOU,3290000,,,,,,Bi-annual Exception,,,3290000,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2528393.png&w=350&h=254
 249,Anthony Tolliver,PF,DET,3290000,,,,,,Bi-annual Exception,,,3290000,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3276.png&w=350&h=254
 250,Dennis Smith,PG,DAL,3218280,3819960,4463640,5686677,,,1st Round Pick,Team,2019,7038240,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4065697.png&w=350&h=254
-251,Zach LaVine,PG,CHI,3202217,,,,,,1st Round Pick,Team,2018,3202217,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3064440.png&w=350&h=254
+251,Zach LaVine,PG,CHI,3202217,,,,,,1st Round Pick,RFA,2018,3202217,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3064440.png&w=350&h=254
 252,Ekpe Udoh,PF,UTA,3200000,3360000,,,,,Room Exception,,,3200000,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4261.png&w=350&h=254
 253,T.J. Warren,SF,PHX,3152931,11750000,10810000,11750000,12690000,,1st Round Pick,,,50152931,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2982334.png&w=350&h=254
 254,Stanley Johnson,SF,DET,3097800,3940402,,,,,1st round pick,Team,2019,7038202,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3134881.png&w=350&h=254
@@ -259,8 +259,8 @@ Rk,Player,Position,Team,Salary,Salary,Salary,Salary,Salary,Salary,Signed Using,O
 258,Seth Curry,PG,DAL,3028410,,,,,,Room exception,,,3028410,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2326307.png&w=350&h=254
 259,Mindaugas Kuzminskas,SF,NYK,3025035,,,,,,,,,3025035,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3138120.png&w=350&h=254
 260,Tomas Satoransky,PG,WAS,3000000,3129187,,,,,Cap Space,Team,2019,6129187,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/6621.png&w=350&h=254
-262,Lucas Nogueira,C,TOR,2947305,,,,,,1st Round Pick,Team,2018,2947305,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3032980.png&w=350&h=254
-263,Jusuf Nurkic,C,POR,2947305,,,,,,1st Round Pick,Team,2018,2947305,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3102530.png&w=350&h=254
+262,Lucas Nogueira,C,TOR,2947305,,,,,,1st Round Pick,RFA,2018,2947305,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3032980.png&w=350&h=254
+263,Jusuf Nurkic,C,POR,2947305,,,,,,1st Round Pick,RFA,2018,2947305,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3102530.png&w=350&h=254
 264,Malik Monk,SG,CHA,2904480,3447480,4028400,5345687,,,1st Round Pick,Team,2019,6351960,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4066262.png&w=350&h=254
 265,Frank Kaminsky,PF,CHA,2847600,3627842,,,,,1st round pick,Team,2019,6475442,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2579294.png&w=350&h=254
 266,Andrew Nicholson,PF,POR,2844429,2844429,2844429,2844429,2844429,,,,,19911003,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/6614.png&w=350&h=254
@@ -383,7 +383,7 @@ Rk,Player,Position,Team,Salary,Salary,Salary,Salary,Salary,Salary,Signed Using,O
 384,Larry Nance,PF,CLE,1471382,2272391,,,,,1st Round pick,RFA,2019,3743773,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2580365.png&w=350&h=254
 385,Troy Williams,SF,NYK,74159,,,,,,,,,74159,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3078286.png&w=350&h=254
 386,Chris McCullough,PF,WAS,1471382,,,,,,1st Round pick,,,1471382,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3153165.png&w=350&h=254
-387,Raul Neto,PG,UTA,1471382,,,,,,,Team,2018,1471382,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2968361.png
+387,Raul Neto,PG,UTA,1471382,,,,,,,RFA,2018,1471382,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2968361.png
 388,Pat Connaughton,SG,POR,1471382,,,,,,Minimum Salary,RFA,2018,1471382,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2578239.png&w=350&h=254
 389,Richaun Holmes,PF,PHI,1471382,1600520,,,,,Cap Space,Team,2018,1471382,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2993370.png&w=350&h=254
 390,T.J. McConnell,PG,PHI,1471382,1600520,,,,,Minimum Salary,Team,2018,1471382,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2530530.png&w=350&h=254

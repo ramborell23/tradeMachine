@@ -3,15 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@glidejs/glide": "^3.0.4",
     "axios": "^0.18.0",
     "currency-formatter": "^1.4.2",
     "highcharts": "^6.1.0",
     "material-ui": "^0.20.0",
+    "newsapi": "^2.2.2",
     "rc-tabs": "^9.2.5",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "1.1.1"
+    "react-scripts": "1.1.1",
+    "react-slick": "^0.23.1",
+    "slick-carousel": "^1.8.1"
   },
   "scripts": {
     "start": "react-scripts start",

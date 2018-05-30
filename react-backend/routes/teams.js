@@ -4,6 +4,12 @@ var db = require('../db/queries');
 
 router.use(express.static('public'))
 
+router.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 router.get('/', (req, res, next) => {
   db.getAllTeams()
     .then((data) => {
@@ -51,9 +57,20 @@ router.get('/location/:firstname', (req, res, next) => {
   });
 });
 
-router.get('/teamname/:name', (req, res, next) => {
+router.get('/:name', (req, res, next) => {
   var name = req.params.name  
-  db.getTeamByTeamName(name)
+  db.getSpecificTeam(name)
+  .then((data) => {
+    res.send({data: data});
+  })
+  .catch((err) => {
+    console.log(err)
+    return next(err);
+  });
+});
+router.get('/salary/:name', (req, res, next) => {
+  var name = req.params.name  
+  db.getTeamCap(name)
   .then((data) => {
     res.send({data: data});
   })
