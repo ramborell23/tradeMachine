@@ -97,6 +97,11 @@ function getPotentialFreeAgents()  {
 function getSpecificTeam(teamName)  {
     return db.many(`SELECT * FROM teams JOIN player_salaries ON teams.abbreviation=player_salaries.tm WHERE abbreviation = $1`,[teamName])
 }
+function getFreeAgentInfo(playerName)  {
+    console.log('playername checl 1', playerName)
+    return db.many(`SELECT * FROM player_salaries WHERE player = $1`,[playerName])
+}
+
 
 
 module.exports = {
@@ -106,6 +111,7 @@ module.exports = {
     getPlayerWithName,
     getPlayerByLastName,
     getPlayerContracts,
+
     //Team Functions
     getAllTeams,
     getTeamByCityName,
@@ -113,12 +119,13 @@ module.exports = {
     getTeamByTeamName,
     getAllMoney,
     getTeamCap,
-    
     getSalariesByTeam,
     getTeamDraftPicks,
     getAllDraftPicks,
+    
     // Free Agent functions
     getPotentialFreeAgents,
     getSpecificTeam,
+    getFreeAgentInfo,
 
 };

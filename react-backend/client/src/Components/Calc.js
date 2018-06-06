@@ -16,12 +16,15 @@ import '../Stylesheets/western.css';
 import '../Stylesheets/eastern.css';
 import moneyFunctions from './moneyFunctions'
 // var Highcharts = require('highcharts');
+import FusionCharts from 'fusioncharts';
+import Charts from 'fusioncharts/fusioncharts.charts';
+import ReactFC from 'react-fusioncharts';
+Charts(FusionCharts);
 
 // Load module after Highcharts is loaded
 // require('highcharts/modules/exporting')(Highcharts);
 
 const axios = require("axios");
-
 
 
 
@@ -153,7 +156,8 @@ class Calc extends React.Component {
             playerImg: e.target.id
         })
         { this.getPlayerStats(e) }
-        { setTimeout(function () {
+        {
+            setTimeout(function () {
                 console.log('Break for Modal to open')
                 this.setState({
                     isOpen2: !isOpen2
@@ -169,7 +173,8 @@ class Calc extends React.Component {
             playerImg: e.target.id
         })
         { this.getPlayerContract(e) }
-        { setTimeout(function () {
+        {
+            setTimeout(function () {
                 console.log('Break for Modal to open')
                 this.setState({
                     isOpen3: !isOpen3
@@ -329,13 +334,13 @@ class Calc extends React.Component {
                 console.log("error fetching team");
                 console.log(err);
             });
-            axios
+        axios
             .get(`http://localhost:3100/teams/draftpicks/${teamArraySelect}`)
             .then(response => {
                 this.setState({
                     teamOneDraftPick: response.data.data,
                 });
-                console.log('First Draft pics',this.state.teamOneDraftPick)
+                console.log('First Draft pics', this.state.teamOneDraftPick)
             })
             .catch(err => {
                 console.log("error fetching team");
@@ -345,7 +350,7 @@ class Calc extends React.Component {
     };
 
     getTeamDraftPicks = () => {
-        const { teamArraySelect} = this.state
+        const { teamArraySelect } = this.state
         console.log(teamArraySelect)
         axios
             .get(`http://localhost:3100/teams/draftpicks/${teamArraySelect}`)
@@ -353,7 +358,7 @@ class Calc extends React.Component {
                 this.setState({
                     teamOneDraftPick: response.data.data,
                 });
-                console.log('First Draft pics',this.state.teamOneDraftPick)
+                console.log('First Draft pics', this.state.teamOneDraftPick)
             })
             .catch(err => {
                 console.log("error fetching team");
@@ -386,11 +391,11 @@ class Calc extends React.Component {
         const { modeState, teamState, teamArraySelect,
             teamArraySelect2, playerSelect, teamState2,
             teamTradeArr, teamTradeArr2, users, arrOfNBATeams,
-            teamName, teamLogo, team2Logo, team2Name, 
+            teamName, teamLogo, team2Logo, team2Name,
             teamCap2, teamCap, styling2, styling, playerImg, playerContract } = this.state
         const softCap = 99000000
 
-        console.log('playerContract',playerContract)
+        console.log('playerContract', playerContract)
         let diffInMoneyAftTrade = moneyFunctions.capNumberAfterTrade(moneyFunctions.moneyFormatterForCapNumber(teamCap, softCap), moneyFunctions.totalOfContractsNumber(teamTradeArr), moneyFunctions.totalOfContractsNumber(teamTradeArr2))
         let diffInMoneyAftTrade2 = moneyFunctions.capNumberAfterTrade(moneyFunctions.moneyFormatterForCapNumber(teamCap2, softCap), moneyFunctions.totalOfContractsNumber(teamTradeArr2), moneyFunctions.totalOfContractsNumber(teamTradeArr))
         let validTrade = moneyFunctions.tradeApproval(teamTradeArr, teamTradeArr2, teamCap, teamCap2)
@@ -406,7 +411,7 @@ class Calc extends React.Component {
         }
 
 
-
+        console.log('styling2', styling2)
         // Test TRADE LOGIC
 
 
@@ -489,21 +494,45 @@ class Calc extends React.Component {
                     Assists : {this.state.playerStats.assists_per_game}<br />
                     Rebounds : {this.state.playerStats.rebounds_per_game}<br />
                 </Modal2>
-                <Modal2 show={this.state.isOpen3}
+
+
+                <Modal2 
+                    show={this.state.isOpen3}
                     onClose={this.toggleModal3}>
                     <img className='modal_photo' src={playerImg} alt='Player Image' /><br />
-                   Contract Modal<br/>
-                   Name : {this.state.playerContract.player}<br />
-                   2017-18 : {playerContract._2017_18}<br />
-                   2018-19 : {playerContract._2018_19}<br />
-                  {playerContract._2019_20 === null ? '' :  `2019-20 : ${playerContract._2019_20}`}<br />
-                   Option : {playerContract.option_}<br />
-                   Option Year: {playerContract.option_year}<br />
-                   <div>
-                   </div>
-               
-
+                    <div className='player_chart'>
+                        Contract Modal<br />
+                        Name : {this.state.playerContract.player}<br />
+                        2017-18 : {playerContract._2017_18}<br />
+                        2018-19 : {playerContract._2018_19}<br />
+                        {playerContract._2019_20 === null ? '' : `2019-20 : ${playerContract._2019_20}`}<br />
+                        Option : {playerContract.option_}<br />
+                        Option Year: {playerContract.option_year}<br />
+                        <br />
+                        <br />
+                        {/* <Chart
+                            data={[
+                                {
+                                    label: "Series 1",
+                                    data: [[0, 1]]
+                                },
+                                {
+                                    label: "Series 2",
+                                    data: [[0, 3]]
+                                }
+                            ]}
+                        >
+                            <Axis primary type="time" />
+                            <Axis type="linear" />
+                            <Series type={Bar} />
+                        </Chart> */}
+                    </div>
                 </Modal2>
+                <br/>
+                {moneyFunctions.moneyFormatter2(8199698.65384615)}<br/>
+               { moneyFunctions.moneyFormatter2(10505991.2)}<br/>
+                {moneyFunctions.moneyFormatter2(12493652.2647059)}
+                {/* <ReactFC {...chartConfigs} /> */}
             </div>
 
         )

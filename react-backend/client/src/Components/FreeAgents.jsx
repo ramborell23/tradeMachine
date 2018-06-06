@@ -1,8 +1,16 @@
 import React, { Component } from 'react';
 import { Route, Link, Switch } from "react-router-dom";
 import moneyFunctions from './moneyFunctions'
-import '../Stylesheets/freeAgents.css';
 import freeAgentsFunctions from '../Functions/freeAgentsFunctions'
+import '../Stylesheets/freeAgents.css';
+import '../Stylesheets/western.css';
+import '../Stylesheets/eastern.css';
+import PlayerPage from "./playerPage";
+import FreeAgentsList from "./FreeAgentsList";
+import { LineChart, PieChart, Line, Pie, Legend, Tooltip } from 'recharts';
+// const { PieChart,  } = Recharts;
+// var PieChart = require("react-chartjs").Line;
+// var myPieChart = new Chart(ctx[0]).Pie(data, options);
 
 const axios = require("axios");
 
@@ -12,17 +20,20 @@ class FreeAgents extends React.Component {
         this.state = {
             arrOfNBATeams: [],
             arrOfFreeAgents: [],
-            arrOfFreeAgentChoices : ['','Unrestricted','Restricted','Player','Team'],
-            teamArraySelect: '',
+            arrOfFreeAgentChoices: ['', 'Unrestricted', 'Restricted', 'Player', 'Team'],
             typeOfFreeAgentSelect: '',
-            teamState: false,
+            arrOfPositions: ['', 'PG', 'SG', 'SF', 'PF', 'C'],
+            freeAgentPositionSelect: '',
+            teamArraySelect: '',
+            teamState: [{ abbriviation: 'Home', player: '' }, { abbriviation: 'Home', player: '' }, { abbriviation: 'Home', player: '' }],
             teamCap: false,
             teamName: false,
-            // teamTradeArr: [],
-            // teamLogo: holdlogo,
-            // teamName: teamName,
-            // teamCap: holdTeamCap,
-            // styling: holdStyling
+            arrOfTeamAssetsChoices: ['', 'Team Draft picks', 'Upcoming Free Agents'],
+            teamDraftPicks: [],
+            teamAssetsSelect: '',
+
+            // teamAssets:[]
+
         }
     }
 
@@ -49,131 +60,178 @@ class FreeAgents extends React.Component {
     handleTypeOfFreeAgentSelect = (e) => {
         const { } = this.state
         this.setState({
-            typeOfFreeAgentSelect: e.target.value,
+            [e.target.name]: e.target.value,
+        })
+    }
+    handleAssets = (e) => {
+        const { teamAssetsSelect } = this.state
+        this.setState({
+            teamAssetsSelect: e.target.value,
         })
     }
 
-    handleGetTeam = ()=>{
-       
-            const { teamArraySelect, holdlogo, teamName, holdTeamCap, holdStyling } = this.state
-            axios
-                .get(`http://localhost:3100/teams/${teamArraySelect}`)
-                .then(response => {
-                    this.setState({
-                        teamState: response.data.data,
-                        teamTradeArr: [],
-                        // teamLogo: holdlogo,
-                        // teamName: response.data.data[0].teamname,
-                        // teamCap: response.data.data[0]._2017_18,
-                        // styling: holdStyling
-                    });
-                })
-                .catch(err => {
-                    console.log("error fetching team");
-                    console.log(err);
+    handleGetTeam = () => {
+        const { teamArraySelect, holdlogo, teamName, holdTeamCap, holdStyling, teamDraftPicks } = this.state
+        axios
+            .get(`http://localhost:3100/teams/${teamArraySelect}`)
+            .then(response => {
+                this.setState({
+                    teamState: response.data.data,
+                    teamTradeArr: [],
                 });
-            axios
-                .get(`http://localhost:3100/teams/salary/${teamArraySelect}`)
-                .then(response => {
-                    console.log('LPLOLOLOLO',response.data.data[0])
-                    this.setState({
-                        // teamState: response.data.data,
-                        // teamTradeArr: [],
-                        teamLogo: response.data.data[0].teamlogo,
-                        teamName: response.data.data[0].teamname,
-                        teamCap: response.data.data[0]._2017_18,
-                        styling: holdStyling
-                    });
-                })
-                .catch(err => {
-                    console.log("error fetching team");
-                    console.log(err);
+            })
+            .catch(err => {
+                console.log("error fetching team");
+                console.log(err);
+            });
+        axios
+            .get(`http://localhost:3100/teams/salary/${teamArraySelect}`)
+            .then(response => {
+                this.setState({
+                    teamLogo: response.data.data[0].teamlogo,
+                    teamName: response.data.data[0].teamname,
+                    teamCap: response.data.data[0]._2017_18,
+                    styling: holdStyling
                 });
+            })
+            .catch(err => {
+                console.log("error fetching team");
+                console.log(err);
+            });
+        axios
+            .get(`http://localhost:3100/teams/draftpicks/${teamArraySelect}`)
+            .then(response => {
+                this.setState({
+                    // teamState: response.data.data,
+                    teamDraftPicks: response.data.data,
+                });
+            })
+            .catch(err => {
+                console.log("error fetching team");
+                console.log(err);
+            });
     }
 
-    render() {
-        const { arrOfNBATeams, teamArraySelect, arrOfFreeAgents,arrOfFreeAgentChoices,
-            typeOfFreeAgentSelect, teamState, teamCap, teamName} = this.state
-        console.log('teamCap', teamCap)
-        console.log('Team State',teamState)
-        let positionTable = {}
-        for(var i = 0; i < teamState.length; i++ ){
-            if(positionTable.hasOwnProperty(teamState[i].position)){
-                positionTable[teamState[i].position] += 1 
-            } else {
-                positionTable[teamState[i].position] = 1 
-            }
-            console.log(teamState[i].position)
-        }
-        console.log('Our table ',positionTable)
-        let newArrOfFreeAgents = freeAgentsFunctions.filterFreeAgents(typeOfFreeAgentSelect, arrOfFreeAgents)
-
+    renderDogWithBreed = props => {
+        const { player } = props.match.params;
+        console.log(player)
         return (
             <div>
-                Free Agents Home
-                <br />
-                <br />
-                <br />
-                <div className='free_team_container'>
-                    Team Hold
-                    
-                   {teamState ? <img className='free_team_pic' src={teamState[0].teamlogo} alt='team logo'/>:''}
-                   <br/>
-                   {teamName ? teamName:''}
-                   <br/>
-                   {teamCap ? `Total of contracts : ${moneyFunctions.moneyFormatter(teamCap)}`:''}
+                {/* <h3>Free Agent Home232</h3> */}
+                 
+                <PlayerPage
+                    player={player}
+                />
+       </div>
+
+        )
+    };
+
+    renderBreeds = () => {
+        const { arrOfNBATeams, teamArraySelect, arrOfFreeAgents, arrOfFreeAgentChoices,
+            typeOfFreeAgentSelect, teamState, teamCap, teamName, arrOfPositions, freeAgentPositionSelect,
+            teamDraftPicks, arrOfTeamAssetsChoices, teamAssetsSelect } = this.state;
+        return (
+            <div>
+                {/* <h2> Free Agents Home </h2> */}
+                <FreeAgentsList
+                    arrOfNBATeams={arrOfNBATeams}
+                    teamArraySelect={teamArraySelect}
+                    arrOfFreeAgents={arrOfFreeAgents}
+                    arrOfFreeAgentChoices={arrOfFreeAgentChoices}
+                    typeOfFreeAgentSelect={typeOfFreeAgentSelect}
+                    teamState={teamState}
+                    teamCap={teamCap}
+                    teamName={teamName}
+                    arrOfPositions={arrOfPositions}
+                    freeAgentPositionSelect={freeAgentPositionSelect}
+                    teamDraftPicks={teamDraftPicks}
+                    arrOfTeamAssetsChoices={arrOfTeamAssetsChoices}
+                    teamAssetsSelect={teamAssetsSelect}
+                />
+            </div>
+        );
+    };
+
+
+    render() {
+        const { breed } = this.props;
+
+        const { arrOfNBATeams, teamArraySelect, arrOfFreeAgents, arrOfFreeAgentChoices,
+            typeOfFreeAgentSelect, teamState, teamCap, teamName, arrOfPositions, freeAgentPositionSelect,
+            teamDraftPicks, arrOfTeamAssetsChoices, teamAssetsSelect } = this.state
+        let newArrOfFreeAgents = freeAgentsFunctions.filterFreeAgents(typeOfFreeAgentSelect, arrOfFreeAgents)
+        newArrOfFreeAgents = freeAgentsFunctions.filterFreeAgentsByPosition(freeAgentPositionSelect, newArrOfFreeAgents)
+        const teamUpcomingFreeAgents = (arrofPlayers) => {
+            let freeAgents = arrofPlayers.filter(player => {
+                return player._2018_19 === null
+            })
+            return freeAgents
+        }
+        // console.log('teamCap', teamCap)
+        // console.log('Team State', teamState)
+        // console.log('Team State', teamDraftPicks)
+        let teamAssets = []
+        function setTeamAssets(teamAssetsSelect) {
+        }
+        if (teamAssetsSelect === 'Team Draft picks') {
+            teamAssets = teamDraftPicks
+        } else if (teamAssetsSelect === 'Upcoming Free Agents') {
+            teamAssets = teamUpcomingFreeAgents(teamState)
+        }
+        // setTeamAssets(teamAssetsSelect)
+        console.log('teamAssetsSelect', teamAssetsSelect)
+        console.log('e.target.value', )
+        console.log('teamAssets', teamAssets)
+        console.log('teamDraftPicks', teamDraftPicks)
+        console.log('teamUpcomingFreeAgents(teamState)', teamUpcomingFreeAgents(teamState))
+
+        const playersUnderContractNextYear = (arrofPlayers) => {
+            let playersUnderContract = arrofPlayers.filter(player => {
+                return player._2018_19 !== null
+            })
+            return playersUnderContract
+        }
+      
+        let data = []
+        return (
+            <div className='free_select_container'>
+                {/* <div className='free_select_item'> */}
+                <label className='free_select_item free_filter_text'>
+                <h2 className=''>2018 Potential Free Agents</h2>
+                    <label className=''>Filter By:<br/></label>
                     <br/>
-                    C {' '}:{' '} {positionTable.C}<br/>
-                    PF {' '}:{' '} {positionTable.PF}<br/>
-                    SF {' '}:{' '} {positionTable.SF}<br/>
-                    SG {' '}:{' '} {positionTable.SG}<br/>
-                    PG {' '}:{' '} {positionTable.PG}<br/>
-
-                  {teamState ?<div> Highest Paid Player : {teamState[0].player}<img src={teamState[0].photo} alt='player'/></div>: ''}
-                </div>
-
-                <div>
-                </div>
-                <button 
-                onClick={this.handleGetTeam}>
-                Get Team
-                </button>
-                <select
-                    name='teamArraySelect'
-                    onChange={this.handleTeamSelect}>
-                    {arrOfNBATeams.map((option, index) => (
-                        <option
-                            key={index}
-                            value={option.abbreviation}>{option.teamname}
-                        </option>
-                    ))}
-                </select>
-                Type of Free Agent:
+                <label className=''>Type of Free Agent : </label>
                 <select
                     name='typeOfFreeAgentSelect'
                     onChange={this.handleTypeOfFreeAgentSelect}>
                     {arrOfFreeAgentChoices.map((option, index) => (
                         <option
-                            key={index}
-                            value={option}>{option}
+                        key={index}
+                        value={option}>{option}
                         </option>
                     ))}
                 </select>
-                <br />
-                <br />
-                <div className='main_freeAgents_container'>
-                    
-                        {newArrOfFreeAgents.map((option, index) => (
-                            <label className='freeagent_player' >
-                                <img className='freeagent_pic' src={option.photo} alt='player photo' />
-                                <h3>{option.player}</h3>{' '}
-                                {option.position}{' '}
-                                Last Team {' '}: {' '}{option.tm}{' '}
-                                Last Contract {' '}: {' '}{moneyFunctions.moneyFormatter2(option._2017_18)}{' '}
-                            </label>
-                        ))}
-                   
-                </div>
+                <br/>
+                {''}Position : {' '}
+                <select
+                    name='freeAgentPositionSelect'
+                    onChange={this.handleTypeOfFreeAgentSelect}>
+                    {arrOfPositions.map((option, index) => (
+                        <option
+                        key={index}
+                        value={option}>{option}
+                        </option>
+                    ))}
+                </select>
+                    </label>
+                    {/* </div> */}
+
+                
+                <Switch>
+                    <Route exact path="/freeagents" render={this.renderBreeds} />
+                    <Route exact path="/freeagents/:player" render={this.renderDogWithBreed} />
+                </Switch>
             </div>
         )
     }

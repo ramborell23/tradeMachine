@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Link, Switch } from "react-router-dom";
+
 // import Glide from '@glidejs/glide'
 // new Glide('.glide', {
 //     autoplay: 4000
@@ -47,7 +48,7 @@ import { Route, Link, Switch } from "react-router-dom";
     handleApiCheck = () => {
         const { nameSearchInput } = this.state
         newsapi.v2.everything({
-            sources: 'fox-sports, espn, bleacher-report, usa-today, the-new-york-times, abc-news, associated-press, talksport',
+            sources: 'fox-sports, espn, bleacher-report, usa-today, the-new-york-times,  associated-press, talksport',
             q: nameSearchInput,
             // category: 'Sports',
             from: '2018-05-20',

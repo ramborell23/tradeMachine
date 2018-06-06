@@ -66,47 +66,54 @@ const totalOfContractsNumber = (teamTradeArr) => {
     return totalOfContracts
 }
 
-const tradeApproval = (arr, arr2, teamCap, teamCap2) => {
-    let teamOneTotalContracts = totalOfContractsNumber(arr)
-    let teamTwoTotalContracts = totalOfContractsNumber(arr2)
+const tradeApproval = (arrOfTeam, arrOfTeam2, teamCap, teamCap2) => {
+    let teamOneTotalContracts = totalOfContractsNumber(arrOfTeam)
+    let teamTwoTotalContracts = totalOfContractsNumber(arrOfTeam2)
     let teamOneMaxCap = teamOneTotalContracts * 1.25 + 100000
     let teamTwoMaxCap = teamTwoTotalContracts * 1.25 + 100000
     let softCap = 99000000
     let luxuryTax = 119000000
     let teamOneCap = Number(teamCap)
     let teamTwoCap = Number(teamCap2)
+
     if (teamOneTotalContracts === 0 || teamTwoTotalContracts === 0) {
         return ''
     } else {
         console.log('We start here', (teamOneCap > softCap),(teamTwoCap > softCap) )
-        if ((teamOneCap > softCap) && (teamTwoCap > softCap)) {
-            if ((teamOneMaxCap >= teamTwoTotalContracts) && (teamTwoMaxCap >= teamOneTotalContracts)) {
-                return (`League Approved!!!!!!!!`)
-            } else {
-                return (`League Denied!!!!!!!! ${ teamOneMaxCap >= teamTwoTotalContracts ? `Team One is approved`: `Team One is NOT approved ${teamOneMaxCap} ${teamTwoTotalContracts}`}
-               ----- ${teamTwoMaxCap >= teamOneTotalContracts  ? `Team two is approved`: `Team two is NOT approved ${teamTwoMaxCap} ${teamOneTotalContracts}`}
-                ${teamTwoMaxCap}`)
-            }
+        if((teamOneCap + teamOneTotalContracts) < luxuryTax){
+            if(teamOneTotalContracts < 6533333){
+                let teamOneMaxIncoming = teamOneTotalContracts * 1.25 + 100000
 
-        } else if ((teamOneCap > softCap)) {
-            if ((teamOneMaxCap >= teamTwoTotalContracts)) {
-                return (`League Approved!!!!!!!!`)
-            } else {
-                return (`League Denied!!!!!!!! ${teamTwoTotalContracts}
-                ${teamOneMaxCap}`)
             }
-
-        } else if ((teamTwoCap > softCap)) {
-            if ((teamTwoMaxCap >= teamOneTotalContracts)) {
-                return (`League Approved!!!!!!!!`)
-            } else {
-                return (`League Denied!!!!!!!! ${teamOneTotalContracts}
-                ${teamTwoMaxCap}`)
-            }
-
-        } else {
-            return (`League Denied!!!!!!!!`)
         }
+        // if ((teamOneCap > softCap) && (teamTwoCap > softCap)) {
+        //     if ((teamOneMaxCap >= teamTwoTotalContracts) && (teamTwoMaxCap >= teamOneTotalContracts)) {
+        //         return (`League Approved!!!!!!!!`)
+        //     } else {
+        //         return (`League Denied!!!!!!!! ${ teamOneMaxCap >= teamTwoTotalContracts ? `Team One is approved`: `Team One is NOT approved ${teamOneMaxCap} ${teamTwoTotalContracts}`}
+        //        ----- ${teamTwoMaxCap >= teamOneTotalContracts  ? `Team two is approved`: `Team two is NOT approved ${teamTwoMaxCap} ${teamOneTotalContracts}`}
+        //         ${teamTwoMaxCap}`)
+        //     }
+
+        // } else if ((teamOneCap > softCap)) {
+        //     if ((teamOneMaxCap >= teamTwoTotalContracts)) {
+        //         return (`League Approved!!!!!!!!`)
+        //     } else {
+        //         return (`League Denied!!!!!!!! ${teamTwoTotalContracts}
+        //         ${teamOneMaxCap}`)
+        //     }
+
+        // } else if ((teamTwoCap > softCap)) {
+        //     if ((teamTwoMaxCap >= teamOneTotalContracts)) {
+        //         return (`League Approved!!!!!!!!`)
+        //     } else {
+        //         return (`League Denied!!!!!!!! ${teamOneTotalContracts}
+        //         ${teamTwoMaxCap}`)
+        //     }
+
+        // } else {
+        //     return (`League Denied!!!!!!!!`)
+        // }
     }
 }
 

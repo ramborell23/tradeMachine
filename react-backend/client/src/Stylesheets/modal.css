@@ -8,11 +8,19 @@
     padding: 50;
 }
 
-.modalStyle  {
+/* .modalStyle  {
     background-color: '#fff';
     border-radius: 5;
-    max-width: 500;
-    min-height: 300;
+    max-width: 500px;
+    max-height: 100%;
+    overflow-y: auto;    
     margin: 0 auto;
-    padding: 30;
-  };
+    /* padding: 30; */
+    /* overflow: auto; */
+ 
+  /* }; */ 
+
+  .player_chart{
+    overflow: auto;
+
+  }

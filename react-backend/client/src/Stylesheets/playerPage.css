@@ -1,0 +1,23 @@
+
+
+.photo_contract_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* padding-bottom: 2em; */
+}
+.player_page_photo{
+    width:35%;
+    height:35%;
+}
+
+.player_page_name{
+    text-align: center;
+}
+.free_back_button{
+    display:block;
+  height:35px;
+  width: 60px;
+  border-radius: 50%;
+  border: 1px solid red;
+}

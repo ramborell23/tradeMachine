@@ -26,6 +26,8 @@ class Modal2 extends React.Component {
       borderRadius: 5,
       maxWidth: 500,
       minHeight: 300,
+      maxHeight: 300,
+      overflowY: 'auto',
       margin: '0 auto',
       padding: 30
     };

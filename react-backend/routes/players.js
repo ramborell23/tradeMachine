@@ -46,30 +46,30 @@ router.get('/home', (req, res, next) => {
 });
 
 
-router.get('/first/:firstname', (req, res, next) => {
-  var name = req.params.firstname  
-  db.getPlayerByFirstName(name)
-  .then((data) => {
-    res.send({data: data});
-  })
-  .catch((err) => {
-    console.log(err)
-    return next(err);
-  });
-});
+// router.get('/first/:firstname', (req, res, next) => {
+//   var name = req.params.firstname  
+//   db.getPlayerByFirstName(name)
+//   .then((data) => {
+//     res.send({data: data});
+//   })
+//   .catch((err) => {
+//     console.log(err)
+//     return next(err);
+//   });
+// });
 
 
-router.get('/last/:lastname', (req, res, next) => {
-  var name = req.params.lastname  
-  db.getPlayerByLastName(name)
-  .then((data) => {
-    res.send({data: data});
-  })
-  .catch((err) => {
-    console.log(err)
-    return next(err);
-  });
-});
+// router.get('/last/:lastname', (req, res, next) => {
+//   var name = req.params.lastname  
+//   db.getPlayerByLastName(name)
+//   .then((data) => {
+//     res.send({data: data});
+//   })
+//   .catch((err) => {
+//     console.log(err)
+//     return next(err);
+//   });
+// });
 
 router.get('/contract/:playername', (req, res, next) => {
   let playername = req.params.playername  
@@ -90,6 +90,21 @@ router.get('/freeAgents/', (req, res, next) => {
     res.send({data: data});
   })
   .catch((err) => {
+    console.log(err)
+    return next(err);
+  });
+});
+
+router.get('/freeAgents/:name', (req, res, next) => {
+  let playername = req.params.name  
+  console.log('playername checl 1', playername)
+  db.getFreeAgentInfo(playername)
+  .then((data) => {
+    console.log('playername checl 1', playername)
+    res.send({data: data});
+  })
+  .catch((err) => {
+    console.log('playername checl 1', playername)
     console.log(err)
     return next(err);
   });

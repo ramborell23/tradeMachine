@@ -12,6 +12,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+
+      <div className="navbar">
         <Link to='/'>
             Home
         </Link>{' | '}
@@ -27,6 +29,7 @@ class App extends Component {
         <Link to='/news'>
           NBA News
         </Link>{' | '}
+      </div>
          <br/>
          <br/>
         <Route  exact path='/' component={Home}></Route>
