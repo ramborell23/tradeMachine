@@ -26,23 +26,7 @@ import { Route, Link, Switch } from "react-router-dom";
         componentDidMount() {
         // new Glide('.glide').mount()
         // axios
-        newsapi.v2.sources({
-            // sources: 'fox-sports, espn, bleacher-report, google-news,talksport, usa-today,the-new-york-times',
-            // q: 'Sport',
-            category: 'sports',
-            from: '2018-05-20',
-            to: '2018-05-25',
-            language: 'en',
-            // country: 'us'
-        }).then(response => {
-            console.log(response);
-            /*
-              {
-                status: "ok",
-                articles: [...]
-              }
-            */
-        });
+       
     }
 
     handleApiCheck = () => {

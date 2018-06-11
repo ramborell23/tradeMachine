@@ -17,47 +17,45 @@ const TeamBoard = ({ teamsArr, tradeArr, value, handleChange, teamState, handleC
                     </option>
                 ))}
             </select>
-            <br/>
+
             <button
                 onClick={handleToGetTeam}>
                 Get Team
             </button>
-            <button
-                onClick={handleToGetTeamDraftPIcks}>
-                Get Draft Picks
-            </button>
+
             <br />
             Players
             <br />
             <div className='list_of_players'>
-            {console.log(teamState)}
-            {teamState.map((player, index) => (
-                <button
-                key={index}
-                className='board_button'
-                value={index}
-                onClick={handleChange2}
-                >
-                <img className='buttonphoto' src = {`${player.photo}`} alt='Player Photo'/>
-                    {player.player}{' - '}
-                    {player.position}<br />
-                    {moneyFunctions.moneyFormatter(player['_2017_18'])}<br />
-                    <button 
-                    onClick={getPlayerStats}
-                    name={player.player}
-                    id={player.photo}
-                    >
-                    Stats
-                    </button>
+                {console.log(teamState)}
+                {teamState.map((player, index) => (
                     <button
-                    onClick={getPlayerSalaries}
-                    name={player.player}
-                    id={player.photo}
+                        key={index}
+                        className='board_button'
+                        value={index}
+                        onClick={handleChange2}
                     >
-                    $
+                        <img className='buttonphoto' src={`${player.photo}`} alt='Player Photo' />
+                        {player.player}{' - '}
+                        {player.position}<br />
+                        {moneyFunctions.moneyFormatter(player['_2017_18'])}<br />
+                        <button
+                            onClick={getPlayerStats}
+                            name={player.player}
+                            id={player.photo}
+                        >
+                            Stats
+                        </button>
+
+                        <button
+                            onClick={getPlayerSalaries}
+                            name={player.player}
+                            id={player.photo}
+                        >
+                            $
+                        </button>
                     </button>
-                </button>
-            ))}
+                ))}
             </div>
             <br />
         </div>

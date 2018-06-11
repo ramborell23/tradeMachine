@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Fugaz+One');
+
 .main_container {
     height: 30%;
     width: 30%;
@@ -96,40 +98,51 @@
     background: #bbb;
 }
 
-
-.teamLogo{
-    height: 4wem;
-    width:5em ;
+.teamLogo {
+    height: 4em;
+    width: 5em;
 }
 
-
-.list_of_players{
+.list_of_players {
     height: 15em;
-    width:15em;
+    width: 15em;
     overflow: scroll;
     padding-left: 1.5em;
-} 
+}
 
-.result_div{
+.result_div {
     text-align: center
 }
 
-
-.player_name{
+.player_name {
     font-weight: bold
 }
 
-.approval{
-    color:green;
-    text-align: center 
-}
-
-.declined{
-    color:red;
+.approval {
+    color: green;
     text-align: center
 }
 
-.board_button{
-    width:85%;
-    width:85%;
+.declined {
+    color: red;
+    text-align: center
+}
+
+.board_button {
+    width: 85%;
+    width: 85%;
+}
+
+.player_chart {
+    /* overflow: auto; */
+    text-align: center;
+    /* background-color: blue */
+}
+
+.home_title {
+    font-family: 'Fugaz One', cursive;
+    font-size: 3em;
+    margin-bottom: 1em;
+    color: #C58A56;
+    text-align: center;
 }

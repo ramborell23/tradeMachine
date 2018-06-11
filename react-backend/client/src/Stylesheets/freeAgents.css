@@ -4,6 +4,8 @@
 .freeagent_pic{
     height: 6em;
     width: 8em;
+    /* text-align: center; */
+    padding-left: 3.5em;
 }
 
 
@@ -27,6 +29,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    text-align: center;
+    background-color: white;
+    border-radius: 10%;
+
 
 }
 

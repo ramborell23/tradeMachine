@@ -41,7 +41,7 @@ class PlayerPage extends React.Component {
         let config = {
             headers: { "Authorization": "Basic " + btoa("rell23" + ":" + "Great22!") }
         };
-        let playerName = player
+        let playerName = player.replace(/[^a-zA-Z ]/g, "")
         playerName = playerName.split(' ').join('-').toLowerCase()
         console.log(playerName)
         console.log('Our player Page check ', player)

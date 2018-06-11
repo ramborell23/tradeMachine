@@ -13,7 +13,6 @@ Rk,Player,Position,Team,Salary,Salary,Salary,Salary,Salary,Salary,Signed Using,O
 12,Carmelo Anthony,SF,OKC,26243760,27928140,,,,,Bird Rights,Player,2018,26243760,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1975.png&w=350&h=254
 13,Damian Lillard,PG,POR,26153057,27977689,29802321,31626953,,,1st Round Pick,,,115560020,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/6606.png&w=350&h=254
 14,Jrue Holiday,PG,NOP,25686667,26131111,26131111,26131111,27020000,,Bird Rights,Player,2021,104080000,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3995.png&w=350&h=254
-15,Chris Bosh,PF,MIA,25289390,26837720,,,,,,,,52127110,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1977.png&w=350&h=254
 16,Kevin Durant,SF,GSW,25000000,26250000,,,,,Non-Bird Rights,Player,2018,25000000,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3202.png&w=350&h=254
 17,Otto Porter,SF,WAS,24773250,26011913,27250576,28489239,,,Bird Rights,Player,2020,78035739,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2594922.png&w=350&h=254
 18,Chris Paul,PG,HOU,24599495,,,,,,Bird Rights,,,24599495,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2779.png&w=350&h=254
@@ -68,7 +67,6 @@ Rk,Player,Position,Team,Salary,Salary,Salary,Salary,Salary,Salary,Signed Using,O
 67,Reggie Jackson,PG,DET,16000000,17043478,18086956,,,,Bird Rights,,,51130434,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/6443.png&w=350&h=254
 68,Pau Gasol,C,SAS,16000000,16000000,16000000,,,,,,,38700000,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/996.png&w=350&h=254
 69,Tobias Harris,SF,LAC,16000000,14800000,,,,,Bird Rights,,,30800000,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/6440.png&w=350&h=254
-70,Dwyane Wade,SG,CHI,15550000,,,,,,,,,15550000,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1987.png&w=350&h=254
 71,Dennis Schroder,PG,ATL,15500000,15500000,15500000,15500000,,,1st Round Pick,,,62000000,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3032979.png&w=350&h=254
 72,Jonas Valanciunas,C,TOR,15460675,16539326,17617977,,,,1st Round Pick,Player,2019,32000001,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/6477.png
 73,Tony Parker,PG,SAS,15453126,,,,,,Bird Rights,,,15453126,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1015.png&w=350&h=254
@@ -397,171 +395,4 @@ Rk,Player,Position,Team,Salary,Salary,Salary,Salary,Salary,Salary,Signed Using,O
 398,Caleb Swanigan,PF,POR,1465920,1740000,2033160,3665787,,,1st Round Pick,Team,2019,3205920,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3906671.png&w=350&h=254
 399,Furkan Korkmaz,SG,PHI,1465920,1740000,2033160,3665787,,,1st Round Pick,Team,2019,3205920,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3929325.png&w=350&h=254
 400,Willy Hernangomez,C,CHA,1435750,1544951,1701735,,,,Cap Space,,,2980701,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2999409.png&w=350&h=254
-
-
-
-401,Kyle Kuzma\kuzmaky01,LAL,$1423560,$1689840,$1974600,$3562178,,,1st Round Pick,$3113400,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3134907.png
-402,Tony Bradley\bradlto01,UTA,$1414920,$1679520,$1962360,$3542060,,,1st Round Pick,$3094440
-403,Derrick White\whitede01,SAS,$1404600,$1667160,$1948080,$3516284,,,1st Round Pick,$3071760
-404,Josh Hart\hartjo01,LAL,$1394520,$1655160,$1934160,$3491159,,,1st Round Pick,$3049680
-405,Timothe Luwawu-Cabarrot\luwawti01,PHI,$1386600,$1544951,$2529684,,,,1st Round pick,$2931551
-406,Kevin Martin\martike02,MIN,$1360305,$1360305,,,,,,$2720610
-407,Brice Johnson\johnsbr02,MEM,$1331160,,,,,,1st Round pick,$1331160
-408,Pascal Siakam\siakapa01,TOR,$1312611,$1544951,$2351839,,,,1st Round pick,$2857562
-409,Dejounte Murray\murrade01,SAS,$1312611,$1544951,$2321735,,,,1st Round pick,$2857562
-410,Skal Labissiere\labissk01,SAC,$1312611,$1544951,$2338847,,,,1st Round pick,$2857562,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3936296.png&w=350&h=254
-411,A.J. Hammons\hammoaj01,MIA,$1312611,$1544951,,,,,,$2857562
-412,Deyonta Davis\davisde01,MEM,$1312611,$1544951,,,,,Cap Space,$2857562
-413,Chinanu Onuaku\onuakch01,HOU,$1312611,$1544951,,,,,Minimum Salary,$2857562
-414,Damian Jones\jonesda03,GSW,$1312611,$1544951,$2305057,,,,1st Round pick,$2857562
-415,Wayne Selden\seldewa01,MEM,$1312611,$1544951,,,,,,$2085087
-416,Cheick Diallo\diallch01,NOP,$1312611,$1544951,,,,,Minimum Salary,$1812611
-417,Joel Bolomboy\bolomjo01,UTA,$1312611,,,,,,,$1312611
-418,Bryn Forbes\forbebr01,SAS,$1312611,,,,,,Minimum Salary,$1312611
-419,Davis Bertans\bertada01,SAS,$1312611,,,,,,Minimum Salary,$1312611
-420,Jake Layman\laymaja01,POR,$1312611,$1544951,,,,,Cap Space,$1312611
-421,Tyler Ulis\ulisty01,PHX,$1312611,$1544951,$1676735,,,,Cap Space,$1312611
-422,Marcus Georges-Hunt\georgma01,MIN,$1312611,,,,,,Minimum Salary,$1312611
-423,Malcolm Brogdon\brogdma01,MIL,$1312611,$1544951,,,,,Cap Space,$1312611
-424,Rodney McGruder\mcgruro01,MIA,$1312611,$1544951,,,,,Minimum Salary,$1312611
-425,Andrew Harrison\harrian01,MEM,$1312611,$1544951,,,,,Cap Space,$1312611
-426,Ivica Zubac\zubaciv01,LAL,$1312611,$1544951,,,,,Cap Space,$1312611
-427,Patrick McCaw\mccawpa01,GSW,$1312611,,,,,,Minimum Salary,$1312611
-428,Dorian Finney-Smith\finnedo01,DAL,$1312611,$1544951,,,,,Minimum Salary,$1312611
-429,Yogi Ferrell\ferreyo01,DAL,$1312611,,,,,,Minimum Salary,$1312611
-430,Treveon Graham\grahatr01,CHA,$1312611,,,,,,Minimum Salary,$1312611
-431,David Nwaba\nwabada01,CHI,$1312611,,,,,,Minimum Salary,$1312611
-432,Paul Zipser\zipsepa01,CHI,$1312611,$1544951,$1676735,,,,Cap Space,$1312611,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3893023.png&w=350&h=254
-433,Isaiah Whitehead\whiteis01,BKN,$1312611,$1544951,$1676735,,,,Cap Space,$1312611
-434,Okaro White\whiteok01,ATL,$1312611,,,,,,,$1312611
-435,Nicolas Brussino\brussni01,ATL,$1312611,,,,,,,$1312611
-436,Diamond Stone\stonedi01,ATL,$1312611,,,,,,,$1312611
-437,Sheldon Mac\mcclesh01,ATL,$1312611,,,,,,,$1312611
-438,Isaiah Taylor\taylois01,ATL,$1312611,$1544951,,,,,Minimum Salary,$1312611
-439,Kay Felder\feldeka01,CHI,$1312611,$1544951,,,,,,$456529
-440,Fred VanVleet\vanvlfr01,TOR,$1312611,,,,,,,
-441,Derrick Jones\jonesde02,PHX,$1312611,,,,,,,
-442,Chasson Randle\randlch01,NYK,$1312611,,,,,,,
-443,Stephen Zimmerman\zimmest01,LAL,$1312611,,,,,,,
-444,Semi Ojeleye\ojelese01,BOS,$1291892,$1378242,$1618520,$1752950,,,,$2193857,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3056602.png&w=350&h=254
-445,Frank Mason\masonfr01,SAC,$1184385,$1378242,$1618520,,,,,$2562627
-446,Abdel Nader\naderab01,BOS,$1167333,$1378242,$1618520,$1752950,,,,$1617333
-447,Damyean Dotson\dotsoda01,NYK,$1100000,$1378242,$1618520,,,,Minimum Salary,$2478242
-448,Paul Pierce\piercpa01,LAC,$1096080,,,,,,,$1096080
-449,Isaiah Canaan\canaais01,PHX,$1069308,,,,,,,$1069308
-450,Wesley Iwundu\iwundwe01,ORL,$1050000,$1378242,$1618520,,,,,$2428242
-451,Livio Jean-Charles\jeancli01,SAS,$1035200,,,,,,,$1035200
-452,Justin Hamilton\hamilju01,TOR,$1000000,$1000000,$1000000,,,,,$3000000
-453,Gerald Henderson\hendege02,PHI,$1000000,,,,,,,$1000000
-454,Rade Zagorac\zagorra01,MEM,$950000,$1378242,,,,,,$2328242
-455,Ivan Rabb\rabbiv01,MEM,$950000,$1378242,$1618520,,,,MLE,$2328242
-456,Ike Anigbogu\anigbik01,IND,$950000,$1378242,$1618520,,,,Cap space,$1640000
-457,Gerald Green\greenge01,HOU,$947248,,,,,,Minimum Salary,$947248
-458,Jason Thompson\thompja02,GSW,$945126,$945126,,,,,,$1890252
-459,Martell Webster\webstma02,WAS,$830000,$830000,,,,,,$1660000
-460,Frank Jackson\jacksfr01,NOP,$815615,$1378242,$1618520,,,,MLE,$2699857
-461,Jordan Bell\belljo01,GSW,$815615,$1378252,,,,,Minimum Salary,$2193867,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3064427.png&w=350&h=254
-462,Dakari Johnson\johnsda04,OKC,$815615,$1378242,,,,,,$2193857
-463,Sterling Brown\brownst02,MIL,$815615,$1378242,$1618520,,,,MLE,$2193857
-464,Dillon Brooks\brookdi01,MEM,$815615,$1378242,$1618520,,,,MLE,$2193857
-465,Jawun Evans\evansja01,LAC,$815615,$1378242,$1618520,,,,MLE,$2193857
-466,Sindarius Thornwell\thornsi01,LAC,$815615,$1378242,$1618520,,,,MLE,$2193857
-467,Dwayne Bacon\bacondw01,CHA,$815615,$1378242,$1618520,,,,MLE,$2193857
-468,Tyler Dorsey\dorsety01,ATL,$815615,$1378242,,,,,Minimum Salary,$2193857
-469,Davon Reed\reedda01,PHX,$815615,$1378242,$1618520,,,,Minimum Salary,$1504736
-470,Royce O'Neale\onealro01,UTA,$815615,$1378242,$1618520,,,,Cap space,$815615
-471,Alfonzo McKinnie\mckinal01,TOR,$815615,$1378242,,,,,Minimum Salary,$815615
-472,Brandon Paul\paulbr01,SAS,$815615,$1378242,,,,,Minimum Salary,$815615
-473,Khem Birch\birchkh01,ORL,$815615,$1378242,,,,,Minimum Salary,$815615
-474,Thomas Bryant\bryanth01,LAL,$815615,$1378242,,,,,Minimum Salary,$815615
-475,Zhou Qi\qizh01,HOU,$815615,$1378242,$1618520,$1752950,,,MLE,$815615
-476,Maxi Kleber\klebima01,DAL,$815615,$1378242,,,,,Minimum Salary,$815615
-477,Daniel Theis\theisda01,BOS,$815615,$1378242,,,,,Minimum Salary,$815615
-478,Sean Kilpatrick\kilpase01,MIL,$789725,,,,,,,$789725
-479,Trey Burke\burketr01,NYK,$784160,$1795015,,,,,Minimum Salary,$784160,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2579260.png
-480,Alex Poythress\poythal01,IND,$778668,$1544951,,,,,Two-Way Converted,$778668
-481,Joe Johnson\johnsjo02,HOU,$749905,,,,,,,
-482,Dwight Buycks\buyckdw01,DET,$748160,$1600520,,,,,Two-Way Converted,$748160
-483,Tyler Cavanaugh\cavanty01,ATL,$679919,$1378242,,,,,Two-Way Converted,$729919
-484,Carlos Delfino\delfica01,LAC,$650000,$650000,,,,,,$1300000
-485,Caron Butler\butleca01,SAC,$517220,$517220,,,,,,$1034440
-486,Jordan Farmar\farmajo01,LAC,$510921,,,,,,,$510921
-487,Leandro Barbosa\barbole01,PHX,$500000,,,,,,,$500000
-488,Tibor Pleiss\pleisti01,PHI,$500000,,,,,,,$500000
-489,Michael Gbinije\gbinimi01,DET,$500000,,,,,,,$500000
-490,Aaron Gray\grayaa01,DET,$452059,,,,,,,$452059
-491,Festus Ezeli\ezelife01,POR,$333334,$333333,$333333,,,,,$1000000
-492,C.J. Watson\watsocj01,ORL,$333334,$333333,$333333,,,,,$1000000
-493,Gal Mekel\mekelga01,DAL,$315760,,,,,,,$315760
-494,Miroslav Raduljica\radulmi01,LAC,$300000,$300000,,,,,,$600000
-495,Cameron Oliver\oliveca01,HOU,$300000,,,,,,,$300000
-496,Ramon Sessions\sessira01,WAS,$263124,,,,,,,
-497,Jordan Crawford\crawfjo02,NOP,$250000,,,,,,,$250000
-498,Emeka Okafor\okafoem01,NOP,$239204,,,,,,10-Day Contract,$239204
-499,Isaiah Canaan\canaais01,CHI,$200000,,,,,,,$200000
-500,Rakeem Christmas\chrisra01,IND,$172552,,,,,,,$172552
-501,DeAndre Liggins\liggide01,NOP,$172238,,,,,,,$172238,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/6453.png&w=350&h=254
-502,Rashad Vaughn\vaughra01,ORL,$166258,,,,,,,
-503,Troy Williams\willitr02,NYK,$148318,,,,,,,
-504,Carrick Felix\felixca01,WAS,$140902,,,,,,,$140902
-505,Brandon Rush\rushbr01,POR,$119602,,,,,,,
-506,K.J. McDaniels\mcdankj01,TOR,$100000,,,,,,,$100000
-507,Marshall Plumlee\plumlma02,NYK,$100000,,,,,,,$100000
-508,Georges Niang\niangge01,IND,$100000,,,,,,,$100000
-509,Quinn Cook\cookqu01,ATL,$100000,,,,,,,$100000
-510,Demetrius Jackson\jacksde01,BOS,$92858,$92857,$92857,$92857,$92857,,,$650000
-511,Kyle Collinsworth\colliky01,DAL,$92160,,,,,,,$142160
-512,Josh Gray\grayjo01,PHX,$92160,,,,,,,$92160
-513,Naz Mitrou-Long\mitrona01,UTA,$92160,,,,,,,$50000
-514,Shaquille Harrison\harrish01,PHX,$92160,,,,,,,
-515,Walt Lemon Jr.\lemonwa01,NOP,$92160,,,,,,,
-516,Antonius Cleveland\clevean01,ATL,$92160,,,,,,,
-517,Mike James\jamesmi02,PHX,$87552,,,,,,,$87552
-518,Sean Kilpatrick\kilpase01,LAC,$86119,,,,,,,
-519,Jarell Eddie\eddieja01,BOS,$83129,,,,,,,$83129
-520,Jarell Eddie\eddieja01,CHI,$83129,,,,,,10-Day Contract,$17224
-521,Demetrius Jackson\jacksde01,HOU,$74159,,,,,,,$124159
-522,Georgios Papagiannis\papagge01,POR,$74159,,,,,,,
-523,Travis Wear\weartr01,LAL,$74159,,,,,,,
-524,Scotty Hopson\hopsosc01,DAL,$74159,,,,,,,
-525,Isaiah Canaan\canaais01,HOU,$53465,,,,,,,$53465
-526,Tyler Cavanaugh\cavanty01,ATL,$50000,,,,,,,$729919
-527,Kyle Collinsworth\colliky01,DAL,$50000,,,,,,,$142160
-528,Demetrius Jackson\jacksde01,HOU,$50000,,,,,,,$124159
-529,Michael Young\youngmi02,WAS,$50000,,,,,,,$50000
-530,Daniel Ochefu\ochefda01,WAS,$50000,,,,,,,$50000
-531,Nate Wolters\woltena01,UTA,$50000,,,,,,,$50000
-532,Naz Mitrou-Long\mitrona01,UTA,$50000,,,,,,,$50000
-533,Eric Griffin\griffer01,UTA,$50000,,,,,,,$50000
-534,Jacob Pullen\pulleja01,PHI,$50000,,,,,,,$50000
-535,James Michael McAdoo\mcadoja01,PHI,$50000,,,,,,,$50000
-536,Nigel Hayes\hayesni01,NYK,$50000,,,,,,,$50000
-537,Jalen Moore\mooreja02,MIL,$50000,,,,,,,$50000
-538,Gary Payton\paytoga02,MIL,$50000,,,,,,,$50000
-539,Matt Williams\willima05,MIA,$50000,,,,,,,$50000
-540,Vince Hunter\huntevi01,MEM,$50000,,,,,,,$50000
-541,Vander Blue\blueva01,LAL,$50000,,,,,,,$50000
-542,V.J. Beachem\beachvj01,LAL,$50000,,,,,,,$50000
-543,Briante Weber\weberbr01,LAL,$50000,,,,,,,$50000
-544,Jamil Wilson\wilsoja02,LAC,$50000,,,,,,,$50000
-545,Briante Weber\weberbr01,HOU,$50000,,,,,,,$50000
-546,Luis Montero\montelu01,DET,$50000,,,,,,,$50000
-547,Gian Clavell\clavegi01,DAL,$50000,,,,,,,$50000
-548,Antonius Cleveland\clevean01,DAL,$50000,,,,,,,$50000
-549,Diamond Stone\stonedi01,CHI,$50000,,,,,,,$50000
-550,Yakuba Ouattara\ouattya01,BKN,$50000,,,,,,,$50000
-551,Jeremy Evans\evansje01,ATL,$50000,,,,,,,$50000
-552,Nigel Hayes\hayesni01,LAL,$46080,,,,,,,$46080
-553,Nigel Hayes\hayesni01,TOR,$46080,,,,,,,
-554,Rodney Purvis\purviro01,ORL,$46080,,,,,,,
-555,Xavier Rathan-Mayes\rathaxa01,MEM,$46080,,,,,,,
-556,Trey McKinney-Jones\mckintr01,IND,$46080,,,,,,,
-557,Marcus Thornton\thornma02,CLE,$46080,,,,,,,
-558,Jaylen Morris\morrija01,ATL,$46080,,,,,,,
-559,DeAndre Liggins\liggide01,ATL,$26773,,,,,,,$26773
-560,Quinn Cook\cookqu01,NOP,$25000,,,,,,,$25000
-561,Axel Toupane\toupaax01,NOP,$25000,,,,,,,$25000
-562,Chris Johnson\johnsch04,HOU,$25000,,,,,,,$25000
-563,Beno Udrih\udrihbe01,DET,$25000,,,,,,,$25000
-564,Joel Bolomboy\bolomjo01,MIL,$22248,,,,,,,$22248
-565,Jarell Eddie\eddieja01,CHI,$17224,,,,,,,$17224
+401,Kyle Kuzma,PF,LAL,1423560,1689840,1974600,3562178,,,1st Round Pick,,,3113400,http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3134907.png

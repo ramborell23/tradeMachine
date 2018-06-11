@@ -13,6 +13,7 @@ class App extends Component {
     return (
       <div className="App">
 
+      <h3 className='home_title'>Basketball Today</h3>
       <div className="navbar">
         <Link to='/'>
             Home
@@ -25,12 +26,8 @@ class App extends Component {
         </Link>{' | '}
         <Link to='/draft'>
           Draft
-        </Link>{' | '}
-        <Link to='/news'>
-          NBA News
-        </Link>{' | '}
+        </Link>
       </div>
-         <br/>
          <br/>
         <Route  exact path='/' component={Home}></Route>
         <Route  path='/tradeMachine' component={Calc}></Route>

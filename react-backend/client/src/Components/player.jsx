@@ -77,13 +77,11 @@ const Player = ({ playerInformation, playerStats, articles }) => (
   <div style={styles.container}>
     {/* <Link to='/freeagents'> <button > Back </button></Link> */}
     <h2 className='player_page_name'>{playerInformation.player}</h2><br />
-    <div className='photo_contract_container'>
+    <div className={`photo_contract_container maincolor2${playerInformation.tm}`}>
       <img className='player_page_photo' src={playerInformation.photo} alt='' />
       <div>
         {playerInformation.tm}<br />
         {playerInformation.position}<br />
-        {/* {playerStats[0].team['City']}<br /> */}
-        {/* {console.log(playerStats[0].team)}<br /> */}
         {playerInformation._2017_18 === null ? '' : <label>17-18 Salary:{' '}{moneyFunctions.moneyFormatter2(playerInformation._2017_18)}<br /></label>}
         {playerInformation._2018_19 === null ? '' : <label>18-19 Salary:{' '}{moneyFunctions.moneyFormatter2(playerInformation._2018_19)}<br /></label>}
         {playerInformation.option_ === null ? '' : <label>Type Of Option:{' '}{playerInformation.option_}<br /></label>}

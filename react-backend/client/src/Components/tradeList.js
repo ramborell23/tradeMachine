@@ -10,10 +10,8 @@ var currencyFormatter = require('currency-formatter');
 const TradeList = ({ teamTradeArr, handleCloseButton }) => {
     return (
         <div>
-            {''} Trading {''}<br/>
-            Total:{' '}{moneyFunctions.totalOfContractsString(teamTradeArr).slice(0,-3)}
+            {teamTradeArr.length === 0 ?'':`Total : ${moneyFunctions.totalOfContractsString(teamTradeArr).slice(0,-3)}`}
             <ul className='trade_list'>
-                {/* { teamTradeArr} */}
                 {teamTradeArr.map((player, index) =>
                     <li key={player[0]}>
                         < img  className='buttonphoto2' src ={`${player.photo}`} alt = 'Player Photo'/>

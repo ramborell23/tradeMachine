@@ -16,7 +16,7 @@ class Draft extends React.Component {
     componentDidMount() {
         newsapi.v2.everything({
             sources: 'fox-sports, espn, bleacher-report, usa-today, the-new-york-times, abc-news, associated-press, talksport',
-            q: 'NBA draft',
+            q: 'NBA draft prospect',
             // category: 'Sports',
             // from: '2018-05-28',
             // to: '2018-05-26',
@@ -42,10 +42,8 @@ class Draft extends React.Component {
     render() {
         return (
             <div>
-                Draft Home
-
                 <br />
-                <br />
+                
                 <ScrollUpButton ContainerClassName="ScrollUpButton__Container" TransitionClassName="ScrollUpButton__Toggled"
                     StopPosition={0}
                     TransitionBtnPosition={2150}>

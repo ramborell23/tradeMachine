@@ -1,9 +1,15 @@
+.freeagent_player{
+    /* padding-left: 3em; */
+    /* border-radius: 15%;  */
+    text-align: center;
+}
 
 
 .photo_contract_container{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    /* background-color: red; */
     /* padding-bottom: 2em; */
 }
 .player_page_photo{
@@ -21,3 +27,297 @@
   border-radius: 50%;
   border: 1px solid red;
 }
+
+.maincolorATL{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(37,40,42);
+    background-color: rgb(224,58,62);
+    color: rgb(255,255,255);
+    height: 30%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.maincolor2BOS{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(37,40,42);
+    background: linear-gradient(to bottom right,rgb(0,130,72)
+    , rgb(255,255,255));
+    color: rgb(0,0,0);
+    height: 30%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.maincolor2BKN{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(37,40,42);
+    background: linear-gradient(to bottom right,rgb(0,0,0)
+    , rgb(255,255,255));
+    color: rgb(0,0,0);
+    height: 30%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.maincolor2CHA{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(136,139,141);
+    background: linear-gradient(to bottom right,rgb(0,120,140)
+    , rgb(29,17,96));
+    color: rgb(255, 255, 255);
+  
+}
+.maincolor2CHI{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(0,0,0);
+    background: linear-gradient(to bottom right,rgb(206,17,65)
+    , rgb(0,0,0));
+    color: rgb(0,0,0)    ;
+ 
+}
+
+.maincolor2CLE{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(0,0,0);
+    background: linear-gradient(to bottom right,rgb(111,38,51)
+    , rgb(255,184,28));
+    color: rgb(0,0,0)    ;
+}
+
+.maincolor2DET{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(0,0,0);
+    background: linear-gradient(to bottom right,rgb(12,76,147)
+    , rgb(12,76,147));
+    color: rgb(255,255,255);
+}
+
+.maincolor2IND{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(190,192,194);
+    background: linear-gradient(to bottom right,rgb(253,187,48)
+    , rgb(0,45,98));
+    color: rgb(255,255,255);
+  
+}
+
+.maincolor2MIA{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(0,0,0);
+    background: linear-gradient(to bottom right,rgb(152,0,46)
+    , rgb(152,0,46));
+    color: rgb(255,255,255);
+}
+
+.maincolor2MIL{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(0,0,0);
+    background: linear-gradient(to bottom left,rgb(0,71,27)
+    , rgb(238,225,198));
+    color: rgb(255,255,255);
+}
+
+.maincolor2NYK{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(0,0,0);
+    background: linear-gradient(to  right,rgb(0,107,182)
+    , rgb(245,132,38));
+    color: rgb(255,255,255);
+}
+
+
+.maincolor2ORL{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(0,0,0);
+    background: rgb(11,119,189);
+    color: rgb(194,204,210);
+
+}
+
+.maincolor2PHI{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(0,0,0);
+    background: rgb(0,107,182);
+    color: rgb(255,255,255);
+   
+}
+
+.maincolor2TOR{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(0,0,0);
+    background: rgb(205,17,65);
+    color: rgb(255,255,255);
+    
+}
+
+.maincolor2WAS{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(0,0,0);
+    background: linear-gradient(to  right,rgb(227,24,55)
+    , rgb(0,43,92));
+    color: rgb(194,204,210);
+    
+}
+
+
+
+
+
+.maincolor2DAL{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(0,0,0);
+    background: linear-gradient(to bottom right,rgb(0,125,197)
+    , rgb(196,206,212));
+    color: rgb(255,255,255)    ;
+    
+}
+.maincolor2DEN{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(0,0,0);
+    background: linear-gradient(to bottom right,rgb(80,145,205)
+    , rgb(0,40,94) );
+    color: rgb(253,185,39);
+    
+}
+
+.maincolor2GSW{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(0,0,0);
+    background: linear-gradient(to bottom right,rgb(255,205,52)
+    , rgb(255,205,52));
+    color: rgb(36,62,144);
+    
+}
+
+
+.maincolor2HOU{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(0,0,0);
+    background: linear-gradient(to bottom right,rgb(0,0,0)
+    , rgb(216, 22, 22));
+    color: rgb(255, 255, 255);
+   
+}
+
+
+
+.maincolor2LAC{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(190,192,194);
+    background: linear-gradient(to bottom right,rgb(237,23,76)
+    , rgb(237,23,76));
+    color: rgb(255,255,255);
+    
+  
+}
+
+.maincolor2LAL{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(85,37,131);
+    background: linear-gradient(to bottom right,rgb(85,37,131)
+    , rgb(253,185,39));
+    color: rgb(255,255,255);
+  
+}
+
+
+.maincolorMIN{
+    /* bordr: purple solid 0.2em; */
+    border: solid 0.2em rgb(0,0,0);
+    background: linear-gradient(to bottom right,rgb(0,43,92)
+    , rgb(0,80,131));
+    color: rgb(198,207,212);
+  
+}
+
+
+.maincolor2MEM{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(85,37,131);
+    background: linear-gradient(to bottom right,rgb(0,40,94)
+    , rgb(97,137,185));
+    color: rgb(255,255,255);
+   
+}
+
+
+.maincolor2NOP{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(180,151,90);
+    background: linear-gradient(to bottom right,rgb(0,22,65)
+    , rgb(225,58,62) );
+    color: rgb(255,255,255);
+    
+}
+
+.maincolor2OKC{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(180,151,90);
+    background: linear-gradient(to bottom right,rgb(0,122,193)
+    , rgb(0,45,98));
+    color: rgb(255,255,255);
+}
+
+
+.maincolor2PHX{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(180,151,90);
+    background: linear-gradient(to bottom right,rgb(229,96,32)
+    , rgb(29,17,96));
+    color: rgb(249,160,27);
+    
+}
+
+
+.maincolor2POR{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(196,206,212);
+    background: linear-gradient(to bottom right,rgb(225,58,62)
+    , rgb(0,0,0));
+    color: rgb(196,206,212);
+   
+}
+
+
+.maincolor2PHX{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(180,151,90);
+    background: linear-gradient(to bottom right,rgb(229,96,32)
+    , rgb(29,17,96));
+    color: rgb(249,160,27);
+    
+}
+
+.maincolor2SAC{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(99,114,122);
+    background:rgb(90,45,129);
+    color: rgb(255,255,255);
+    
+}
+
+.maincolor2SAS{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(0,0,0);
+    background: linear-gradient(to bottom right,rgb(196,206,212)
+    , rgb(196,206,212));
+    color: rgb(255,255,255);
+    
+}
+.maincolor2UTA{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(0,0,0);
+    background: linear-gradient(to bottom right,rgb(12,35,64)
+    , rgb(0,71,27));
+    color: rgb(249,160,27);
+    
+}
+
+
+

@@ -25,8 +25,8 @@ class Modal2 extends React.Component {
       backgroundColor: '#fff',
       borderRadius: 5,
       maxWidth: 500,
-      minHeight: 300,
-      maxHeight: 300,
+      minHeight: 400,
+      maxHeight: 400,
       overflowY: 'auto',
       margin: '0 auto',
       padding: 30
@@ -36,7 +36,6 @@ class Modal2 extends React.Component {
       <div className="backdrop backdropStyle" style={backdropStyle}  >
         <div className="modal modalStyle" style={modalStyle}>
           {this.props.children}
-
           <div className="footer">
             <button onClick={this.props.onClose}>
               Close

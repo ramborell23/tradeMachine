@@ -15,9 +15,9 @@ const moneyFormatter2 = (amount) => {
 
 const moneyFormatterForCapString = (teamCap, softCap) => {
     let newTeamCap = Number(teamCap)
-    console.log('newTeamCap newTeamCap',teamCap)
+    console.log('newTeamCap newTeamCap', teamCap)
     newTeamCap = softCap - newTeamCap
-    if (newTeamCap === 99000000){
+    if (newTeamCap === 99000000) {
         return ''
     } else {
         newTeamCap = currencyFormatter.format(newTeamCap, { code: 'USD' })
@@ -28,18 +28,18 @@ const moneyFormatterForCapString = (teamCap, softCap) => {
 const moneyFormatterForCapNumber = (amount, softCap) => {
     let temp = Number(amount)
     softCap = softCap - temp
-    if (softCap === 99000000){
+    if (softCap === 99000000) {
         return ''
     } else {
         return softCap
     }
 }
 const capNumberAfterTrade = (teamCap, releaseContracts, receivingContracts) => {
-    let nums = [teamCap , releaseContracts].sort()
-    let total  = (teamCap - receivingContracts) 
+    let nums = [teamCap, releaseContracts].sort()
+    let total = (teamCap - receivingContracts)
     total = total + releaseContracts
     return total
-} 
+}
 
 const totalOfContractsString = (teamTradeArr) => {
     let startingNum = 0
@@ -55,10 +55,10 @@ const totalOfContractsNumber = (teamTradeArr) => {
     let startingNum = 0
     let totalOfContracts = teamTradeArr.map(element => {
         let value = startingNum + Number((element['_2017_18']))
-        if(value === undefined){
+        if (value === undefined) {
             return 1000000
         }
-        return value 
+        return value
     });
 
     const reducer = (accumulator, currentValue) => accumulator + currentValue;
@@ -71,20 +71,54 @@ const tradeApproval = (arrOfTeam, arrOfTeam2, teamCap, teamCap2) => {
     let teamTwoTotalContracts = totalOfContractsNumber(arrOfTeam2)
     let teamOneMaxCap = teamOneTotalContracts * 1.25 + 100000
     let teamTwoMaxCap = teamTwoTotalContracts * 1.25 + 100000
-    let softCap = 99000000
-    let luxuryTax = 119000000
+    let softCap = 99093000
+    let luxuryTax = 119266000
     let teamOneCap = Number(teamCap)
     let teamTwoCap = Number(teamCap2)
+
+    let teamOneApproved;
+    let teamTwoApproved;
 
     if (teamOneTotalContracts === 0 || teamTwoTotalContracts === 0) {
         return ''
     } else {
-        console.log('We start here', (teamOneCap > softCap),(teamTwoCap > softCap) )
-        if((teamOneCap + teamOneTotalContracts) < luxuryTax){
-            if(teamOneTotalContracts < 6533333){
-                let teamOneMaxIncoming = teamOneTotalContracts * 1.25 + 100000
+
+        if ((teamOneCap + teamTwoTotalContracts) < luxuryTax) { //New Cap would be under the Luxury tax
+            console.log('New Cap under luxury tax team one ')
+            if (teamOneTotalContracts <= 6533333) {     //Outgoing Salary
+                teamOneApproved = teamTwoTotalContracts <= teamOneTotalContracts * 1.75 + 100000
+                
+            } else if (6533334 < teamOneTotalContracts <= 19600000) {
+                teamOneApproved = teamTwoTotalContracts <= teamOneTotalContracts + 5000000
+                
+            } else if (teamOneTotalContracts > 19600000) {
+                teamOneApproved = teamTwoTotalContracts <= teamOneTotalContracts * 1.25 + 100000
+                
+            }
+        } else if ((teamOneCap + teamTwoTotalContracts) > luxuryTax) { //New Cap would be over the Luxury tax
+            teamOneApproved = teamTwoTotalContracts <= teamOneTotalContracts * 1.25 + 100000
+        }
+        
+        
+        if ((teamTwoCap + teamOneTotalContracts) < luxuryTax) { //New Cap would be under the Luxury tax
+            console.log('New Cap under luxury tax team two ')
+            if (teamTwoTotalContracts <= 6533333) {     //Outgoing Salary
+                teamTwoApproved = teamOneTotalContracts <= teamTwoTotalContracts * 1.75 + 100000
+                
+            } else if (6533334 < teamOneTotalContracts <= 19600000) {
+                teamTwoApproved = teamOneTotalContracts <= teamTwoTotalContracts + 5000000
+
+            } else if (teamOneTotalContracts > 19600000) {
+                teamTwoApproved = teamOneTotalContracts <= teamTwoTotalContracts * 1.25 + 100000
 
             }
+        } else if ((teamTwoCap + teamTwoTotalContracts) > luxuryTax) { //New Cap would be over the Luxury tax
+            teamTwoApproved = teamOneTotalContracts <= teamTwoTotalContracts * 1.25 + 100000
+        }
+        if(teamOneApproved && teamTwoApproved){
+            return (`League Approved!!!!!!!!`)
+        }else{
+            return (`League Denied!!!!!!!!`)
         }
         // if ((teamOneCap > softCap) && (teamTwoCap > softCap)) {
         //     if ((teamOneMaxCap >= teamTwoTotalContracts) && (teamTwoMaxCap >= teamOneTotalContracts)) {
