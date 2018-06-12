@@ -14,6 +14,7 @@ import Modal2 from './Modal2';
 import './calc.css';
 import '../Stylesheets/western.css';
 import '../Stylesheets/eastern.css';
+import '../Stylesheets/modal.css';
 import moneyFunctions from './moneyFunctions'
 // var Highcharts = require('highcharts');
 import FusionCharts from 'fusioncharts';
@@ -87,7 +88,7 @@ class Calc extends React.Component {
                     RebPerGame: {
                         '#text': 'points per game'
                     },
-                    
+
                 },
             playerInfo:
                 {
@@ -248,7 +249,7 @@ class Calc extends React.Component {
     handleRemoveFromList = e => {
         const { teamTradeArr } = this.state
         let place = e.target.id
-        console.log('place',place)
+        console.log('place', place)
         teamTradeArr.splice(place, 1)
         this.setState({
             teamTradeArr: [...teamTradeArr]
@@ -408,28 +409,28 @@ class Calc extends React.Component {
             teamArraySelect2, playerSelect, teamState2,
             teamTradeArr, teamTradeArr2, users, arrOfNBATeams,
             teamName, teamLogo, team2Logo, team2Name,
-            teamCap2, teamCap, styling2, styling, playerImg, playerContract,playerInfo } = this.state
+            teamCap2, teamCap, styling2, styling, playerImg, playerContract, playerInfo } = this.state
         const softCap = 99000000
 
         let diffInMoneyAftTrade = moneyFunctions.capNumberAfterTrade(moneyFunctions.moneyFormatterForCapNumber(teamCap, softCap), moneyFunctions.totalOfContractsNumber(teamTradeArr), moneyFunctions.totalOfContractsNumber(teamTradeArr2))
         let diffInMoneyAftTrade2 = moneyFunctions.capNumberAfterTrade(moneyFunctions.moneyFormatterForCapNumber(teamCap2, softCap), moneyFunctions.totalOfContractsNumber(teamTradeArr2), moneyFunctions.totalOfContractsNumber(teamTradeArr))
         let validTrade = moneyFunctions.tradeApproval(teamTradeArr, teamTradeArr2, teamCap, teamCap2)
         let deniedTeam = ' ';
-        function showTeamThatsDenied(){
-            if ( ((moneyFunctions.totalOfContractsNumber(teamTradeArr) * 1.25 + 100000) -  moneyFunctions.totalOfContractsNumber(teamTradeArr2)) < 0){
+        function showTeamThatsDenied() {
+            if (((moneyFunctions.totalOfContractsNumber(teamTradeArr) * 1.25 + 100000) - moneyFunctions.totalOfContractsNumber(teamTradeArr2)) < 0) {
                 deniedTeam = teamArraySelect
-                console.log('denied 404',deniedTeam)
-            } else if (((moneyFunctions.totalOfContractsNumber(teamTradeArr2) * 1.25 + 100000) - moneyFunctions.totalOfContractsNumber(teamTradeArr)) < 0){
-                deniedTeam=teamArraySelect2
-                console.log('denied¿Team 404',deniedTeam)
+                console.log('denied 404', deniedTeam)
+            } else if (((moneyFunctions.totalOfContractsNumber(teamTradeArr2) * 1.25 + 100000) - moneyFunctions.totalOfContractsNumber(teamTradeArr)) < 0) {
+                deniedTeam = teamArraySelect2
+                console.log('denied¿Team 404', deniedTeam)
             } else {
                 deniedTeam = ''
             }
         }
         showTeamThatsDenied()
-        let approvalMessage = validTrade === `` ? 'League Approved!!!!!!!!': 'League Denied!!!!!!!!'
-        console.log('denied¿Team',deniedTeam)
-        console.log('deniedTeam3333',teamArraySelect2)
+        let approvalMessage = validTrade === `` ? 'League Approved!!!!!!!!' : 'League Denied!!!!!!!!'
+        console.log('denied¿Team', deniedTeam)
+        console.log('deniedTeam3333', teamArraySelect2)
 
         switch (validTrade) {
             case 'Trade Approved!!!!!!!!':
@@ -469,14 +470,14 @@ class Calc extends React.Component {
                     </div>
                     <div className='main_container'>
                         {/* {teamTradeArr.length === 0 ? '' : `Trading to ${teamTradeArr2.length===0 ? '':teamTradeArr[0].tm}`} */}
-                        {teamTradeArr.length === 0 ? '' : `${teamTradeArr2.length===0 ? '':'Trading to ' + teamTradeArr2[0].tm}`}
+                        {teamTradeArr.length === 0 ? '' : `${teamTradeArr2.length === 0 ? '' : 'Trading to ' + teamTradeArr2[0].tm}`}
                         <TradeList
                             teamTradeArr={teamTradeArr}
                             handleCloseButton={this.handleRemoveFromList}
-                            />
+                        />
                     </div>
                     <div className='main_container'>
-                            {teamTradeArr2.length === 0 ? '' : `${teamTradeArr.length===0 ? '':'Trading to ' + teamTradeArr[0].tm}`}
+                        {teamTradeArr2.length === 0 ? '' : `${teamTradeArr.length === 0 ? '' : 'Trading to ' + teamTradeArr[0].tm}`}
                         <TradeList2
                             teamTradeArr={teamTradeArr2}
                             handleCloseButton={this.handleRemoveFromList2}
@@ -513,10 +514,38 @@ class Calc extends React.Component {
                     onClose={this.toggleModal}>
                     <br />
 
-                   {teamTradeArr.length===0 || teamTradeArr2.length ===0 ? '' :approvalMessage } 
-                   {deniedTeam}{' '}{validTrade}<br />
+                    {teamTradeArr.length === 0 || teamTradeArr2.length === 0 ? '' : approvalMessage}
+                    <br/>
+                    {deniedTeam}{' '}{validTrade}<br />
                     <span className='modal_text'>{teamArraySelect}   ------   {teamArraySelect2}</span><br />
                     <span className='modal_text'>{moneyFunctions.moneyFormatter2(diffInMoneyAftTrade)}   ------   {moneyFunctions.moneyFormatter2(diffInMoneyAftTrade2)}</span>
+                    <br />
+                    <br />
+                    <br />
+                    <div className='modal_trade_container'>
+                        <div className='modal_list_one'>
+                            <ul>
+                                {teamTradeArr.map(player => (
+                                    <li>
+                                        {player.player}<img className='modal_trade_photo' src={player.photo} alt='' />
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                        <div className='modal_divider'>
+                        <i class="fas fa-arrow-left"></i>
+                        <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div className='modal_list_two'>
+                            <ul>
+                                {teamTradeArr2.map(player => (
+                                    <li>
+                                        {player.player}<img className='modal_trade_photo' src={player.photo} alt='' />
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
                 </Modal>
                 <Modal2 show={this.state.isOpen2}
                     onClose={this.toggleModal2}>

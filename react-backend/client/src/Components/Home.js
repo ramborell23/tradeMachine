@@ -28,8 +28,8 @@ class Home extends React.Component {
 
     componentDidMount() {
         newsapi.v2.everything({
-            sources: 'fox-sports,espn,bleacher-report,usa-today,the-new-york-times,associated-press,talksport',
-            q: 'NBA',
+            // sources: 'fox-sports,espn,bleacher-report,usa-today,the-new-york-times,associated-press,talksport',
+            q: '(NBA team OR NBA coach)',
             // category: 'Sports',
             // from: '2018-05-28',
             // to: '2018-05-26',
@@ -72,7 +72,9 @@ class Home extends React.Component {
                     {newArticles.map(article => (
                         <div className='home_news_item'>
                             <h2 className='home_news_headline'><a href={article.url} target="_blank">{article.title}</a></h2>
+                            <div>
                             <img className='home_article_image' src={article.urlToImage} alt='article picture' />
+                            </div>
                             <div className='home_news_description'>
                                 {article.description}
                             </div>
