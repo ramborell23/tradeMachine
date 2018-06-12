@@ -92,9 +92,9 @@ const tradeApproval = (arrOfTeam, arrOfTeam2, teamCap, teamCap2) => {
                 teamOneApproved = teamTwoTotalContracts <= teamOneTotalContracts + 5000000
                 
             } else if (teamOneTotalContracts > 19600000) {
-                teamOneApproved = teamTwoTotalContracts <= teamOneTotalContracts * 1.25 + 100000
-                
+                teamOneApproved = teamTwoTotalContracts <= teamOneTotalContracts * 1.25 + 100000 
             }
+
         } else if ((teamOneCap + teamTwoTotalContracts) > luxuryTax) { //New Cap would be over the Luxury tax
             teamOneApproved = teamTwoTotalContracts <= teamOneTotalContracts * 1.25 + 100000
         }
@@ -115,10 +115,18 @@ const tradeApproval = (arrOfTeam, arrOfTeam2, teamCap, teamCap2) => {
         } else if ((teamTwoCap + teamTwoTotalContracts) > luxuryTax) { //New Cap would be over the Luxury tax
             teamTwoApproved = teamOneTotalContracts <= teamTwoTotalContracts * 1.25 + 100000
         }
+        let amountTeamOneOverCap = (teamOneTotalContracts * 1.25 + 100000) -  teamTwoTotalContracts ;
+        let amountTeamTwoOverCap = (teamTwoTotalContracts * 1.25 + 100000) -  teamOneTotalContracts ;
+        console.log('TEAM one totsal',  teamOneTotalContracts)
+        console.log('TEAM TWO MAX ALLOWED',  teamOneTotalContracts * 1.25 + 100000)
+        console.log('TEAM TWO MAX ALLOWED',  teamTwoTotalContracts * 1.25 + 100000)
+        console.log('TEAM TWo needs to incoming by' , amountTeamOneOverCap)
+        console.log('TEAM TWo needs to incoming by' ,  amountTeamTwoOverCap)
+        let teamOverValue = [amountTeamOneOverCap, amountTeamTwoOverCap].sort()
         if(teamOneApproved && teamTwoApproved){
-            return (`League Approved!!!!!!!!`)
+            return (``)
         }else{
-            return (`League Denied!!!!!!!!`)
+            return (`needs to cut ${ moneyFormatter(teamOverValue[0])} from the incoming trade total. Or add ${ moneyFormatter(Math.abs(teamOverValue[0]))} to their outgoing trade total.`)
         }
         // if ((teamOneCap > softCap) && (teamTwoCap > softCap)) {
         //     if ((teamOneMaxCap >= teamTwoTotalContracts) && (teamTwoMaxCap >= teamOneTotalContracts)) {

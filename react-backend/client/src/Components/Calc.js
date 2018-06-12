@@ -137,7 +137,7 @@ class Calc extends React.Component {
     }
 
     componentDidMount() {
-        console.log(this.state.playerStats)
+        // console.log(this.state.playerStats)
         // fetch('http://localhost:3100/players/all')
         //     .then(res => res.json())
         //     .then((users) => {
@@ -309,7 +309,6 @@ class Calc extends React.Component {
                     playerStats: response.data.cumulativeplayerstats.playerstatsentry[0].stats,
                     playerInfo: response.data.cumulativeplayerstats.playerstatsentry[0].player,
                 });
-                console.log('PLAYER STATS',this.state.playerInfo)
             })
             .catch(err => {
                 console.log("error fetching stats");
@@ -327,7 +326,6 @@ class Calc extends React.Component {
                 this.setState({
                     playerContract: response.data.data[0],
                 });
-                console.log(this.state.playerContract)
             })
             .catch(err => {
                 console.log("error fetching stats");
@@ -359,7 +357,6 @@ class Calc extends React.Component {
                 this.setState({
                     teamOneDraftPick: response.data.data,
                 });
-                console.log('First Draft pics', this.state.teamOneDraftPick)
             })
             .catch(err => {
                 console.log("error fetching team");
@@ -414,11 +411,26 @@ class Calc extends React.Component {
             teamCap2, teamCap, styling2, styling, playerImg, playerContract,playerInfo } = this.state
         const softCap = 99000000
 
-        console.log('playerContract', playerContract)
-        console.log('playerInfo', playerInfo.FirstName)
         let diffInMoneyAftTrade = moneyFunctions.capNumberAfterTrade(moneyFunctions.moneyFormatterForCapNumber(teamCap, softCap), moneyFunctions.totalOfContractsNumber(teamTradeArr), moneyFunctions.totalOfContractsNumber(teamTradeArr2))
         let diffInMoneyAftTrade2 = moneyFunctions.capNumberAfterTrade(moneyFunctions.moneyFormatterForCapNumber(teamCap2, softCap), moneyFunctions.totalOfContractsNumber(teamTradeArr2), moneyFunctions.totalOfContractsNumber(teamTradeArr))
         let validTrade = moneyFunctions.tradeApproval(teamTradeArr, teamTradeArr2, teamCap, teamCap2)
+        let deniedTeam = ' ';
+        function showTeamThatsDenied(){
+            if ( ((moneyFunctions.totalOfContractsNumber(teamTradeArr) * 1.25 + 100000) -  moneyFunctions.totalOfContractsNumber(teamTradeArr2)) < 0){
+                deniedTeam = teamArraySelect
+                console.log('denied 404',deniedTeam)
+            } else if (((moneyFunctions.totalOfContractsNumber(teamTradeArr2) * 1.25 + 100000) - moneyFunctions.totalOfContractsNumber(teamTradeArr)) < 0){
+                deniedTeam=teamArraySelect2
+                console.log('denied¿Team 404',deniedTeam)
+            } else {
+                deniedTeam = ''
+            }
+        }
+        showTeamThatsDenied()
+        let approvalMessage = validTrade === `` ? 'League Approved!!!!!!!!': 'League Denied!!!!!!!!'
+        console.log('denied¿Team',deniedTeam)
+        console.log('deniedTeam3333',teamArraySelect2)
+
         switch (validTrade) {
             case 'Trade Approved!!!!!!!!':
                 validTrade = <h3 className='approval'>Appoved!!! </h3>
@@ -430,7 +442,6 @@ class Calc extends React.Component {
                 break;
         }
 
-        console.log('Check TEAm StAte',teamState2)
         // Test TRADE LOGIC
 
 
@@ -497,10 +508,13 @@ class Calc extends React.Component {
                 <button onClick={this.toggleModal}>
                     Test Trade
                 </button>
+                {/* {(teamTwoTotalContracts * 1.25 + 100000) -  teamOneTotalContracts} */}
                 <Modal show={this.state.isOpen}
                     onClose={this.toggleModal}>
                     <br />
-                    {validTrade}<br />
+
+                   {teamTradeArr.length===0 || teamTradeArr2.length ===0 ? '' :approvalMessage } 
+                   {deniedTeam}{' '}{validTrade}<br />
                     <span className='modal_text'>{teamArraySelect}   ------   {teamArraySelect2}</span><br />
                     <span className='modal_text'>{moneyFunctions.moneyFormatter2(diffInMoneyAftTrade)}   ------   {moneyFunctions.moneyFormatter2(diffInMoneyAftTrade2)}</span>
                 </Modal>
