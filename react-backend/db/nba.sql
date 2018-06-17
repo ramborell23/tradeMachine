@@ -582,12 +582,8 @@ CREATE TABLE player_salaries
     Guaranteed VARCHAR(13),
     Photo VARCHAR(2083)
 );
-
-
-
 -- Please GO back and check from 1- 250 of players who are RFA and not list as so
-COPY player_salaries
-(Rk ,Player,Position,Tm, _2017_18, _2018_19, _2019_20, _2020_21, _2021_22, _2022_23, "Signed Using", Option_, Option_Year, Guaranteed,Photo) 
+COPY player_salaries(Rk ,Player,Position,Tm, _2017_18, _2018_19, _2019_20, _2020_21, _2021_22, _2022_23, "Signed Using", Option_, Option_Year, Guaranteed,Photo) 
 FROM '/Users/c4q/Documents/tradeMachine/react-backend/db/playersalaries.csv' DELIMITER ',' CSV HEADER;
 -- ALTER TABLE players
 --   ADD contracts INT;
@@ -607,10 +603,10 @@ CREATE TABLE team_salaries
     "Signed Using" VARCHAR(43),
     Guaranteed VARCHAR(13)
 );
-
-COPY team_salaries
-(Rk, Tm, _2017_18, _2018_19, _2019_20, _2020_21, _2021_22, _2022_23) 
+COPY team_salaries(Rk, Tm, _2017_18, _2018_19, _2019_20, _2020_21, _2021_22, _2022_23) 
 FROM '/Users/c4q/Documents/tradeMachine/react-backend/db/teamsalaries.csv' DELIMITER ',' CSV HEADER;
+
+
 
 DROP TABLE draft_rights;
 CREATE TABLE draft_rights
@@ -625,10 +621,70 @@ CREATE TABLE draft_rights
     Current_Team VARCHAR(33),
     Country VARCHAR(43)
 );
-
-COPY draft_rights
-(Current_NBA_Team,Player,Non,Yr,Rnd,Pk,Original_Draft_Team,Current_Team,Country) 
+COPY draft_rights(Current_NBA_Team,Player,Non,Yr,Rnd,Pk,Original_Draft_Team,Current_Team,Country) 
 FROM '/Users/c4q/Documents/tradeMachine/react-backend/db/draftrights.csv' DELIMITER ',' CSV HEADER;
+
+
+DROP TABLE draft_order;
+CREATE TABLE draft_order
+(
+    DRAFT_POSITION VARCHAR(3),
+    TEAM VARCHAR(41),
+    ORIGINAL_LOTTERY_POSITION VARCHAR(13),
+    Abbreviation VARCHAR(13)
+);
+COPY draft_order(DRAFT_POSITION,TEAM,ORIGINAL_LOTTERY_POSITION,Abbreviation) 
+FROM '/Users/c4q/Documents/tradeMachine/react-backend/db/draftorder.csv' DELIMITER ',' CSV HEADER;
+
+DROP TABLE draft_prospects;
+CREATE TABLE draft_prospects
+(
+    Rk  VARCHAR(31),
+    Player VARCHAR(31),
+    SCHOOL_Team VARCHAR(53),
+    YEAR VARCHAR(5),
+    POS VARCHAR(5),
+    PosRk VARCHAR(31),
+    HT VARCHAR(13),
+    WT VARCHAR(31)
+);
+COPY draft_prospects(Rk,PLAYER,	SCHOOL_Team,YEAR,POS, PosRK,HT,WT) 
+FROM '/Users/c4q/Documents/tradeMachine/react-backend/db/prospects.csv' DELIMITER ',' CSV HEADER;
+
+DROP TABLE teamrecords;
+CREATE TABLE teamrecords
+(
+    Rk  VARCHAR(31),
+    Team VARCHAR(31),
+    Overall VARCHAR(53),
+    Home VARCHAR(5),
+    Road VARCHAR(5),
+    E VARCHAR(31),
+    W VARCHAR(13),
+    A VARCHAR(31),
+    C VARCHAR(31),
+    SE VARCHAR(31),
+    NW VARCHAR(31),
+    P VARCHAR(31),
+    SW VARCHAR(31),
+    Pre VARCHAR(31),
+    Post VARCHAR(31),
+    ≤3 VARCHAR(31),
+    ≥10 VARCHAR(31),
+    Oct VARCHAR(31),
+    Nov VARCHAR(31),
+    Dec VARCHAR(31),
+    Jan VARCHAR(31),
+    Feb VARCHAR(31),
+    Mar VARCHAR(31),
+    Apr VARCHAR(31),
+    Conference VARCHAR(31),
+    Abbreviation VARCHAR(31)
+);
+COPY teamrecords(Rk,Team,Overall,Home,Road,E,W,A,C,SE,NW,P,SW,Pre,Post,≤3,≥10,Oct,Nov,Dec,Jan,Feb,Mar,Apr,Conference,Abbreviation) 
+FROM '/Users/c4q/Documents/tradeMachine/react-backend/db/teamrecords.csv' DELIMITER ',' CSV HEADER;
+
+
 
 
 DROP TABLE draft_picks;
@@ -642,7 +698,6 @@ CREATE TABLE draft_picks
     Swap VARCHAR(25),
     Pick_Details VARCHAR(1055)
 );
-
 INSERT INTO  draft_picks  ( Current_Owner, Original_Owner, Round, Year, Swap ,Pick_Details)
 VALUES
     ( 'ATL', 'ATL', 1, 2018 ,'No', ''),
@@ -654,7 +709,7 @@ VALUES
     ( 'CHA', 'CHA', 1, 2018 ,'No', ''),
     ( 'ORL', 'CHA', 2, 2018 ,'Yes', 'Memphis will receive the most favorable of its 2018 2nd round pick, Charlotte''s 2018 2nd round pick and Miami''s 2018 2nd round pick and Orlando will receive the second most favorable (via Memphis to Phoenix) and Houston will receive the least favorable (via Memphis) of these three picks [Charlotte-Memphis-Miami, 2/16/2016; Houston-Memphis, 6/22/2017; Memphis-Phoenix, 9/22/2017; Orlando-Phoenix, 2/8/2018]'),
     ( 'CHI', 'CHI', 1, 2018 ,'No', ''),
-    ( 'NYC', 'CHI', 2, 2018 ,'No', 'TChicago''s 2018 2nd round pick to New York (via Oklahoma City) [Chicago-Oklahoma City, 2/23/2017; New York-Oklahoma City, 9/25/2017]'),
+    ( 'NYC', 'CHI', 2, 2018 ,'No', 'Chicago''s 2018 2nd round pick to New York (via Oklahoma City) [Chicago-Oklahoma City, 2/23/2017; New York-Oklahoma City, 9/25/2017]'),
     ( 'LAL', 'CLE', 1, 2018 ,'No', 'Cleveland''s 1st round pick to the L.A. Lakers protected for selections 1-3 in 2018 and 1-10 in 2023; if Cleveland has not conveyed a 1st round pick to the L.A. Lakers by 2023, then Cleveland will instead convey its 2023 2nd round pick to the L.A. Lakers [Cleveland-L.A. Lakers, 2/8/2018]'),
     ( 'CHA', 'CLE', 2, 2018 ,'Yes', 'Philadelphia will receive the more favorable of Cleveland''s 2018 2nd round pick and Brooklyn''s 2018 2nd round pick and Charlotte will receive the less favorable of these two picks (via Philadelphia''s right to swap Cleveland for Brooklyn) [Cleveland-Philadelphia, 9/26/2014; Brooklyn-Philadelphia, 12/11/2014; Brooklyn-Charlotte, 6/25/2015]'),
     ( 'DAL', 'DAL', 1, 2018 ,'No', ''),

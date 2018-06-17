@@ -110,7 +110,7 @@ const Player = ({ playerInformation, playerStats, articles }) => (
     <br />
     <br />
     <br />
-    {/* <div className='home_news_container'>
+    <div className='home_news_container'>
       {articles.map(article => (
         <div className='home_news_item'>
           <h2 className='home_news_headline'><a href={article.url} target="_blank">{article.title}</a></h2>
@@ -129,7 +129,7 @@ const Player = ({ playerInformation, playerStats, articles }) => (
           {article.source.name}
         </div>
       ))}
-    </div> */}
+    </div>
     {/* {playerInformation.tm}<br/> */}
     {/* {imageURL ? <img style={styles.img} alt="" src={imageURL} /> : "loading..."} */}
   </div>

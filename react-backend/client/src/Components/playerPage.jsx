@@ -76,9 +76,9 @@ class PlayerPage extends React.Component {
         const { player } = this.props;
         this.getPlayer();
         newsapi.v2.everything({
-            sources: 'fox-sports,espn,bleacher-report,usa-today,the-new-york-times,associated-press,talksport',
-            q: player+'',
-            // category: 'Sports',
+            // sources: 'fox-sports,espn,bleacher-report,usa-today,the-new-york-times,associated-press,talksport',
+            q: player,
+            category: 'Sports',
             // from: '2018-05-28',
             // to: '2018-05-26',
             pageSize: 10,

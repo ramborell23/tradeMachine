@@ -3,7 +3,7 @@
 .main_container {
     height: 30%;
     width: 30%;
-    border: green 0.2em solid;
+    border: transparent 0.2em solid;
     display: flex;
     flex-direction: column;
     text-align: center;

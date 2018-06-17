@@ -1,0 +1,310 @@
+.team_page_select {
+    display: flex;
+    justify-content: center;
+}
+
+.team_record_div {
+    /* border: black 1px outset; */
+    height: 55%;
+    width: 13%;
+    position: fixed;
+    left:2em;
+    bottom:2em;
+    text-align: center;
+}
+
+.side_nav_pic{
+    width:15%;
+    padding-top: 1em;
+    padding-left: 1em;
+    position: fixed;
+    /* float: left;  */
+}
+
+
+.maincolor3ATL{
+    background-color: rgb(224,58,62);
+    color: rgb(255,255,255);
+    margin-top: -17em;
+    padding-top: 16em;
+}
+
+.maincolor3BOS{
+    background: linear-gradient(to bottom right,rgb(0,130,72)
+    , rgb(255,255,255));
+    color: rgb(0,0,0);
+    margin-top: -17em;
+    padding-top: 16em;
+}
+
+.maincolor3BKN{
+    background: linear-gradient(to bottom right,rgb(0,0,0)
+    , rgb(255,255,255));
+    color: rgb(0,0,0);
+    margin-top: -17em;
+    padding-top: 16em;
+    
+}
+.maincolor3CHA{
+    background: linear-gradient(to bottom right,rgb(0,120,140)
+    , rgb(29,17,96));
+    color: rgb(255, 255, 255);
+    margin-top: -17em;
+    padding-top: 16em;
+    
+}
+.maincolor3CHI{
+    background: linear-gradient(to bottom right,rgb(206,17,65)
+    , rgb(0,0,0));
+    color: rgb(0,0,0)    ;
+    margin-top: -17em;
+    padding-top: 16em;
+    
+}
+
+.maincolor3CLE{
+    background: linear-gradient(to bottom right,rgb(111,38,51)
+    , rgb(255,184,28));
+    color: rgb(0,0,0)    ;
+    margin-top: -17em;
+    padding-top: 16em;
+}
+
+.maincolor3DET{
+    background: linear-gradient(to bottom right,rgb(12,76,147)
+    , rgb(12,76,147));
+    color: rgb(255,255,255);
+    margin-top: -17em;
+    padding-top: 16em;
+}
+
+.maincolor3IND{
+    background: linear-gradient(to bottom right,rgb(253,187,48)
+    , rgb(0,45,98));
+    color: rgb(255,255,255);
+    margin-top: -17em;
+    padding-top: 16em;
+    
+}
+
+.maincolor3MIA{
+    background: linear-gradient(to bottom right,rgb(152,0,46)
+    , rgb(152,0,46));
+    color: rgb(255,255,255);
+    margin-top: -17em;
+    padding-top: 16em;
+}
+
+.maincolor3MIL{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(0,0,0);
+    background: linear-gradient(to bottom left,rgb(0,71,27)
+    , rgb(238,225,198));
+    color: rgb(255,255,255);
+    margin-top: -17em;
+    padding-top: 16em;
+}
+
+.maincolor3NYK{
+    background: linear-gradient(to  right,rgb(0,107,182)
+    , rgb(245,132,38));
+    color: rgb(255,255,255);
+    margin-top: -17em;
+    padding-top: 16em;
+}
+
+
+.maincolor3ORL{
+    background: rgb(11,119,189);
+    color: rgb(194,204,210);
+    margin-top: -17em;
+    padding-top: 16em;
+    
+}
+
+.maincolor3PHI{    border: solid 0.2em rgb(0,0,0);
+    background: rgb(0,107,182);
+    color: rgb(255,255,255);
+    margin-top: -17em;
+    padding-top: 16em;
+    
+}
+
+.maincolor3TOR{
+    background: rgb(205,17,65);
+    color: rgb(255,255,255);
+    margin-top: -17em;
+    padding-top: 16em;
+    
+}
+
+.maincolor3WAS{
+    background: linear-gradient(to  right,rgb(227,24,55)
+    , rgb(0,43,92));
+    color: rgb(194,204,210);
+    margin-top: -17em;
+    padding-top: 16em;
+    
+}
+
+
+
+
+
+.maincolor3DAL{
+    background: linear-gradient(to bottom right,rgb(0,125,197)
+    , rgb(196,206,212));
+    color: rgb(255,255,255)    ;
+    margin-top: -17em;
+    padding-top: 16em;
+    
+}
+.maincolor3DEN{
+    background: linear-gradient(to bottom right,rgb(80,145,205)
+    , rgb(0,40,94) );
+    color: rgb(253,185,39);
+    margin-top: -17em;
+    padding-top: 16em;
+    
+}
+
+.maincolor3GSW{
+    background: linear-gradient(to bottom right,rgb(255,205,52)
+    , rgb(255,205,52));
+    color: rgb(36,62,144);
+    margin-top: -17em;
+    padding-top: 16em;
+    
+}
+
+
+.maincolor3HOU{
+    background: linear-gradient(to bottom right,rgb(0,0,0)
+    , rgb(216, 22, 22));
+    color: rgb(255, 255, 255);
+    margin-top: -17em;
+    padding-top: 16em;
+    
+}
+
+
+
+.maincolor3LAC{
+    background: linear-gradient(to bottom right,rgb(237,23,76)
+    , rgb(237,23,76));
+    color: rgb(255,255,255);
+    margin-top: -17em;
+    padding-top: 16em;
+    
+    
+}
+
+.maincolor3LAL{
+    background: linear-gradient(to bottom right,rgb(85,37,131)
+    , rgb(253,185,39));
+    color: rgb(255,255,255);
+    margin-top: -17em;
+    padding-top: 16em;
+    
+}
+
+
+.maincolor3MIN{
+    background: linear-gradient(to bottom right,rgb(0,43,92)
+    , rgb(0,80,131));
+    color: rgb(198,207,212);
+    margin-top: -17em;
+    padding-top: 16em;
+    
+}
+
+
+.maincolor3MEM{
+    background: linear-gradient(to bottom right,rgb(0,40,94)
+    , rgb(97,137,185));
+    color: rgb(255,255,255);
+    margin-top: -17em;
+    padding-top: 16em;
+    
+}
+
+
+.maincolor3NOP{
+    background: linear-gradient(to bottom right,rgb(0,22,65)
+    , rgb(225,58,62) );
+    color: rgb(255,255,255);
+    margin-top: -17em;
+    padding-top: 16em;
+    
+}
+
+.maincolor3OKC{
+    background: linear-gradient(to bottom right,rgb(0,122,193)
+    , rgb(0,45,98));
+    color: rgb(255,255,255);
+    margin-top: -17em;
+    padding-top: 16em;
+}
+
+
+.maincolor3PHX{
+    /* border: purple solid 0.2em; */
+    background: linear-gradient(to bottom right,rgb(229,96,32)
+    , rgb(29,17,96));
+    color: rgb(249,160,27);
+    margin-top: -17em;
+    padding-top: 16em;
+    
+}
+
+
+.maincolor3POR{
+    background: linear-gradient(to bottom right,rgb(225,58,62)
+    , rgb(0,0,0));
+    color: rgb(196,206,212);
+    margin-top: -17em;
+    padding-top: 16em;
+    
+}
+
+
+.maincolor3PHX{
+    /* border: purple solid 0.2em; */
+    background: linear-gradient(to bottom right,rgb(229,96,32)
+    , rgb(29,17,96));
+    color: rgb(249,160,27);
+    margin-top: -17em;
+    padding-top: 16em;
+    
+}
+
+.maincolor3SAC{
+    /* border: purple solid 0.2em; */
+    background:rgb(90,45,129);
+    color: rgb(255,255,255);
+    margin-top: -17em;
+    padding-top: 16em;
+    
+}
+
+.maincolor3SAS{
+    /* border: purple solid 0.2em; */
+    background: linear-gradient(to bottom right,rgb(196,206,212)
+    , rgb(196,206,212));
+    color: rgb(255,255,255);
+    margin-top: -17em;
+    padding-top: 16em;
+    
+}
+.maincolor3UTA{
+    /* border: purple solid 0.2em; */
+    background: linear-gradient(to bottom right,rgb(12,35,64)
+    , rgb(0,71,27));
+    color: rgb(249,160,27);
+    margin-top: -17em;
+    padding-top: 16em;
+    
+}
+
+
+

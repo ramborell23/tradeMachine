@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@glidejs/glide": "^3.0.4",
+    "@shopify/draggable": "^1.0.0-beta.7",
     "axios": "^0.18.0",
     "chart.js": "^1.1.1",
     "currency-formatter": "^1.4.2",
@@ -15,6 +16,8 @@
     "react": "^16.4.0",
     "react-chartjs": "^1.2.0",
     "react-charts": "^1.0.5",
+    "react-dnd": "^4.0.5",
+    "react-dnd-html5-backend": "^4.0.5",
     "react-dom": "^16.4.0",
     "react-fusioncharts": "^1.0.5",
     "react-router-dom": "^4.2.2",

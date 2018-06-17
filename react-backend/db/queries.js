@@ -83,6 +83,9 @@ function getPlayersByTeam(location) {
 function getTeamDraftPicks  (teamName)  {
     return db.many('SELECT * FROM draft_picks WHERE current_owner =$1', [teamName])
 }
+function getTeamInfo (teamName)  {
+    return db.many('SELECT * FROM teams JOIN teamrecords ON teams.abbreviation=teamrecords.abbreviation WHERE teams.teamname =$1', [teamName])
+}
 
 function getAllDraftPicks  ()  {
     return db.many('SELECT * FROM draft_picks')
@@ -98,10 +101,16 @@ function getSpecificTeam(teamName)  {
     return db.many(`SELECT * FROM teams JOIN player_salaries ON teams.abbreviation=player_salaries.tm WHERE abbreviation = $1`,[teamName])
 }
 function getFreeAgentInfo(playerName)  {
-    console.log('playername checl 1', playerName)
     return db.many(`SELECT * FROM player_salaries WHERE player = $1`,[playerName])
 }
 
+// Draft Queries
+function getDraftOrder()  {
+    return db.many(`SELECT * FROM draft_order`)
+}
+function getAllDraftProspects(playerName)  {
+    return db.many(`SELECT * FROM draft_prospects`)
+}
 
 
 module.exports = {
@@ -114,6 +123,7 @@ module.exports = {
 
     //Team Functions
     getAllTeams,
+    getTeamInfo,
     getTeamByCityName,
     getPlayersByTeam,
     getTeamByTeamName,
@@ -128,4 +138,6 @@ module.exports = {
     getSpecificTeam,
     getFreeAgentInfo,
 
+    getDraftOrder,
+    getAllDraftProspects,
 };

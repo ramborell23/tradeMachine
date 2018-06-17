@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Link, Switch } from "react-router-dom";
 
-// import Glide from '@glidejs/glide'
-// new Glide('.glide', {
-//     autoplay: 4000
-//   })
+
   
   const NewsAPI = require('newsapi');
   const newsapi = new NewsAPI('e61cdae783b64c829b1f09b8fd0a4010');
@@ -23,11 +20,7 @@ import { Route, Link, Switch } from "react-router-dom";
             }
         }
         
-        componentDidMount() {
-        // new Glide('.glide').mount()
-        // axios
        
-    }
 
     handleApiCheck = () => {
         const { nameSearchInput } = this.state

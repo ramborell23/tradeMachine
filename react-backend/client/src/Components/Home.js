@@ -29,7 +29,7 @@ class Home extends React.Component {
     componentDidMount() {
         newsapi.v2.everything({
             // sources: 'fox-sports,espn,bleacher-report,usa-today,the-new-york-times,associated-press,talksport',
-            q: '(NBA team OR NBA coach)',
+            q: '(NBA team OR NBA player OR NBA offseason OR NBA season ) NOT (handball OR hockey OR bogeys OR CFL OR MLB OR football OR inning OR network)',
             // category: 'Sports',
             // from: '2018-05-28',
             // to: '2018-05-26',
@@ -56,9 +56,15 @@ class Home extends React.Component {
         const { articles } = this.state
         console.log('MY ARTICLES', articles)
         console.log('MY ARTICLES', articles[0])
-        let newArticles =  articles.filter(article => {
-            return article.source.id !== 'abc-news'
-        })
+       function articleCleanup(articles){
+           let newArticleArr = []
+            for(var i = 0; i< articles.length;i++){
+                for( var j = 1; i< articles.length; j++){
+                    console.log('j',articles[i])
+                }
+            }
+       }
+    //    articleCleanup(articles)
         return (
             <div>
                 <ScrollUpButton ContainerClassName="ScrollUpButton__Container" TransitionClassName="ScrollUpButton__Toggled">
@@ -68,8 +74,15 @@ class Home extends React.Component {
                         {/* <i class="fas fa-arrow-up"></i> */}
                         
                 </ScrollUpButton>
+
+                <label className='sidenav' >
+                   
+                    <svg  class="scroll_arrow"  viewBox="0 0 32 32" >
+                        <path class="path1" d="M27.414 12.586l-10-10c-0.781-0.781-2.047-0.781-2.828 0l-10 10c-0.781 0.781-0.781 2.047 0 2.828s2.047 0.781 2.828 0l6.586-6.586v19.172c0 1.105 0.895 2 2 2s2-0.895 2-2v-19.172l6.586 6.586c0.39 0.39 0.902 0.586 1.414 0.586s1.024-0.195 1.414-0.586c0.781-0.781 0.781-2.047 0-2.828z"></path>
+                    </svg>
+                </label>
                 <div className='home_news_container'>
-                    {newArticles.map(article => (
+                    {articles.map(article => (
                         <div className='home_news_item'>
                             <h2 className='home_news_headline'><a href={article.url} target="_blank">{article.title}</a></h2>
                             <div>

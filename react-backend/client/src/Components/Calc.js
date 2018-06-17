@@ -138,14 +138,7 @@ class Calc extends React.Component {
     }
 
     componentDidMount() {
-        // console.log(this.state.playerStats)
-        // fetch('http://localhost:3100/players/all')
-        //     .then(res => res.json())
-        //     .then((users) => {
-        //         let data = users.data;
-        //         this.setState({ users: data })
-        //     }
-        //     );
+  
         fetch('http://localhost:3100/teams')
             .then(res => res.json())
             .then((users) => {

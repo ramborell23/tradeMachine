@@ -97,14 +97,23 @@ router.get('/freeAgents/', (req, res, next) => {
 
 router.get('/freeAgents/:name', (req, res, next) => {
   let playername = req.params.name  
-  console.log('playername checl 1', playername)
   db.getFreeAgentInfo(playername)
   .then((data) => {
-    console.log('playername checl 1', playername)
     res.send({data: data});
   })
   .catch((err) => {
-    console.log('playername checl 1', playername)
+    console.log(err)
+    return next(err);
+  });
+});
+
+router.get('/draftprospects', (req, res, next) => {
+  let playername = req.params.name  
+  db.getAllDraftProspects()
+  .then((data) => {
+    res.send({data: data});
+  })
+  .catch((err) => {
     console.log(err)
     return next(err);
   });

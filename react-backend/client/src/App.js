@@ -4,6 +4,8 @@ import { Route, Link, Switch } from "react-router-dom";
 import Calc from './Components/Calc'
 import FreeAgents from './Components/FreeAgents'
 import Draft from './Components/Draft'
+import DraftBoard from './Components/DraftBoard'
+import TeamsPage from './Components/TeamsPage'
 import News from './Components/News'
 import Home from './Components/Home'
 
@@ -18,6 +20,9 @@ class App extends Component {
         <Link to='/'>
             Home
         </Link>{' | '}
+        <Link to='/teamspage'>
+            Teams Page
+        </Link>{' | '}
         <Link to='/tradeMachine'>
             Trade Machine
         </Link>{' | '}
@@ -25,14 +30,19 @@ class App extends Component {
             Free Agents
         </Link>{' | '}
         <Link to='/draft'>
-          Draft
+          Draft News
+        </Link>
+        <Link to='/draftboard'>
+          Draft Board
         </Link>
       </div>
          <br/>
         <Route  exact path='/' component={Home}></Route>
+        <Route  path='/teamspage' component={TeamsPage}></Route>
         <Route  path='/tradeMachine' component={Calc}></Route>
         <Route  path='/freeagents' component={FreeAgents}></Route>
         <Route  path='/draft' component={Draft}></Route>
+        <Route  path='/draftboard' component={DraftBoard}></Route>
         <Route  path='/news' component={News}></Route>
       </div>
     );

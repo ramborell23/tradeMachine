@@ -57,17 +57,18 @@ router.get('/location/:firstname', (req, res, next) => {
   });
 });
 
-router.get('/:name', (req, res, next) => {
-  var name = req.params.name  
-  db.getSpecificTeam(name)
-  .then((data) => {
-    res.send({data: data});
-  })
-  .catch((err) => {
-    console.log(err)
-    return next(err);
-  });
-});
+// router.get('/:name', (req, res, next) => {
+//   var name = req.params.name  
+//   db.getSpecificTeam(name)
+//   .then((data) => {
+//     res.send({data: data});
+//   })
+//   .catch((err) => {
+//     console.log(err)
+//     return next(err);
+//   });
+// });
+
 router.get('/salary/:name', (req, res, next) => {
   var name = req.params.name  
   db.getTeamCap(name)
@@ -79,6 +80,31 @@ router.get('/salary/:name', (req, res, next) => {
     return next(err);
   });
 });
+
+router.get('/draft/draftorder', (req, res, next) => {
+  // var name = req.params.name  
+  db.getDraftOrder()
+  .then((data) => {
+    res.send({data: data});
+  })
+  .catch((err) => {
+    console.log(err)
+    return next(err);
+  });
+});
+
+router.get('/team/:name', (req, res, next) => {
+    var name = req.params.name  
+    db.getTeamInfo(name)
+    .then((data) => {
+      res.send({data: data});
+    })
+    .catch((err) => {
+      console.log(err)
+      return next(err);
+    });
+  });
+
 
 
 

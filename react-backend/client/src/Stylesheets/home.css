@@ -66,6 +66,22 @@
     opacity: 0;
     right: -75px;
 }
+.sidenav{
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    border: 5px solid black;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    width: 50px;
+    -webkit-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+    -webkit-transition-property: opacity, right;
+    transition-property: opacity, right;
+    cursor: pointer;
+    opacity: 0;
+    left: -75px;
+}
 /* .scroll_arrow{
     height: 152px;
     color: red;
@@ -96,19 +112,24 @@
     color: #C58A56;
     font-size: 17px;
     text-align: center;
-    padding: 0.8em;
+    padding: 0.3em;
+    /* border-radius: 50%; */
     /* float: left; */
 }
 
 .navbar a:hover {
-    background-color: #C58A56;
-    color: white;
+    /* background-color: #C58A56; */
+    /* color: white; */
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
 }
 
 .navbar a:active {
     /* background-color: #4CAF50; */
     color: white;
 }
+
 
 @media screen and (max-width: 418px) {
     .home_title{
