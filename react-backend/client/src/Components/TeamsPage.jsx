@@ -72,7 +72,7 @@ class PlayerPage extends React.Component {
         });
         newsapi.v2.everything({
             // sources: 'fox-sports,espn,bleacher-report,usa-today,the-new-york-times,associated-press,talksport',
-            q: `${teamSelect} AND (NBA OR team) NOT (handball OR pbs OR gothic CFL OR bogey OR NFL OR soccer OR NHL) NOT U.S. Open `,
+            q: `${teamSelect} AND (NBA OR team) NOT (handball OR pbs OR gothic OR housing OR comic OR CFL OR bogey OR NFL OR soccer OR NHL) NOT U.S. Open `,
             // category: 'Sports',
             // from: '2018-06-16',
             // to: '2018-05-26',
@@ -95,9 +95,7 @@ class PlayerPage extends React.Component {
 
     render() {
         const {teams, teamInfo,teamSelect, teamNews, } = this.state;
-        // console.log('teamInfo', teamInfo)
         console.log('teamSelect', teamInfo)
-        // const { playerInformation } = this.props;
         return (
             <div className={`maincolor3${this.state.teamInfo[0].abbreviation}`}>
                   <ScrollUpButton ContainerClassName="ScrollUpButton__Container" TransitionClassName="ScrollUpButton__Toggled">
@@ -164,7 +162,7 @@ class PlayerPage extends React.Component {
                                 {' '}<label className='home_article_author'>
                                 {article.author}
                                 <br />
-                                {article.publishedAt}
+                                {article.publishedAt.slice(0,10)}
                             </label>
                             </label>
                         </div>

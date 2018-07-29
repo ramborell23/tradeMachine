@@ -499,9 +499,11 @@ class Calc extends React.Component {
                 <div className='result_div'>
 
                 </div>
-                <button onClick={this.toggleModal}>
+                <div className='trade_button'>
+                <button  onClick={this.toggleModal}>
                     Test Trade
                 </button>
+                </div>
                 {/* {(teamTwoTotalContracts * 1.25 + 100000) -  teamOneTotalContracts} */}
                 <Modal show={this.state.isOpen}
                     onClose={this.toggleModal}>
@@ -519,7 +521,7 @@ class Calc extends React.Component {
                         <div className='modal_list_one'>
                             <ul>
                                 {teamTradeArr.map(player => (
-                                    <li>
+                                    <li className='traded_player_modal'>
                                         {player.player}<img className='modal_trade_photo' src={player.photo} alt='' />
                                     </li>
                                 ))}
@@ -532,7 +534,7 @@ class Calc extends React.Component {
                         <div className='modal_list_two'>
                             <ul>
                                 {teamTradeArr2.map(player => (
-                                    <li>
+                                    <li className='traded_player_modal'>
                                         {player.player}<img className='modal_trade_photo' src={player.photo} alt='' />
                                     </li>
                                 ))}

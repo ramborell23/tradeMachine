@@ -16,7 +16,7 @@ class Draft extends React.Component {
     componentDidMount() {
         newsapi.v2.everything({
             // sources: 'fox-sports, espn, bleacher-report, usa-today, the-new-york-times, abc-news, associated-press, talksport',
-            q: 'NBA draft prospect',
+            q: '(NBA draft prospect) NOT (NFL)',
             // category: 'Sports',
             // from: '2018-05-28',
             // to: '2018-05-26',

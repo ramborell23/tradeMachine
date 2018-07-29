@@ -7,7 +7,7 @@ import '../Stylesheets/home.css';
 import ScrollUpButton from "react-scroll-up-button";
 
 const NewsAPI = require('newsapi');
-const newsapi = new NewsAPI('e61cdae783b64c829b1f09b8fd0a4010');
+const newsapi = new NewsAPI('2c4a28a57b254bdaac2f7affd9544da1');
 
 
 var settings = {
@@ -29,7 +29,7 @@ class Home extends React.Component {
     componentDidMount() {
         newsapi.v2.everything({
             // sources: 'fox-sports,espn,bleacher-report,usa-today,the-new-york-times,associated-press,talksport',
-            q: '(NBA team OR NBA player OR NBA offseason OR NBA season ) NOT (handball OR hockey OR bogeys OR CFL OR MLB OR football OR inning OR network)',
+            q: '(NBA team OR NBA player OR NBA offseason OR NBA season ) NOT (handball OR hockey OR bogeys OR CFL OR MLB OR football OR inning OR network OR DL )',
             // category: 'Sports',
             // from: '2018-05-28',
             // to: '2018-05-26',
@@ -42,12 +42,7 @@ class Home extends React.Component {
                 articles: [...response.articles]
             })
             console.log(response);
-            /*
-              {
-                status: "ok",
-                articles: [...]
-              }
-            */
+          
         });
     }
 

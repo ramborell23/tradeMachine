@@ -8,6 +8,7 @@ import DraftBoard from './Components/DraftBoard'
 import TeamsPage from './Components/TeamsPage'
 import News from './Components/News'
 import Home from './Components/Home'
+console.log('Got thru',process.env.REACT_APP_YOUTUBE_API_KEY);
 
 
 class App extends Component {

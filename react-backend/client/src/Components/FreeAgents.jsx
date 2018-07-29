@@ -7,7 +7,6 @@ import '../Stylesheets/western.css';
 import '../Stylesheets/eastern.css';
 import PlayerPage from "./playerPage";
 import FreeAgentsList from "./FreeAgentsList";
-import { LineChart, PieChart, Line, Pie, Legend, Tooltip } from 'recharts';
 // const { PieChart,  } = Recharts;
 // var PieChart = require("react-chartjs").Line;
 // var myPieChart = new Chart(ctx[0]).Pie(data, options);

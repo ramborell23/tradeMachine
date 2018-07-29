@@ -1,3 +1,8 @@
+
+.home_title{
+    color: blue;
+}
+
 .team_page_select {
     display: flex;
     justify-content: center;
@@ -308,3 +313,15 @@
 
 
 
+
+@media screen and (max-width: 418px) {
+    .side_nav_pic{
+        width:8%;
+        padding-top: 1em;
+        padding-left: 0.5em;
+        position: fixed;
+        /* float: left;  */
+    }
+     
+    
+}

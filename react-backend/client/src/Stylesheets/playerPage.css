@@ -9,8 +9,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    /* background-color: red; */
-    /* padding-bottom: 2em; */
+
 }
 .player_page_photo{
     width:35%;

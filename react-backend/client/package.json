@@ -8,6 +8,7 @@
     "axios": "^0.18.0",
     "chart.js": "^1.1.1",
     "currency-formatter": "^1.4.2",
+    "dotenv": "^6.0.0",
     "fusioncharts": "^3.12.2",
     "highcharts": "^6.1.0",
     "material-ui": "^0.20.0",

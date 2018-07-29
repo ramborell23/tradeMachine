@@ -8,26 +8,13 @@ import '../Stylesheets/freeAgents.css';
 import { DragDropContext } from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
 import freeAgentsFunctions from '../Functions/freeAgentsFunctions'
+const dotenv = require('dotenv');
+dotenv.load()
 
-// import { Droppable } from '@shopify/draggable';
-// import Youtube from './youtube';
 
-const youtubeKey = 'AIzaSyAThL2zpWuPbvEElHGU1OJ4Y4wlUm3xVOQ'
+const youtubeKey = `mmmb`
 const axios = require("axios");
-// const droppable = new Droppable(document.querySelectorAll('ul'), {
-//     draggable: 'li',
-//     dropzone: '#dropzone'
-// });
-
-const draggable = new Draggable(document.querySelectorAll('ul'), {
-    draggable: 'li'
-});
-
-// droppable.on('droppable:dropped', () => console.log('droppable:dropped'));
-// droppable.on('droppable:returned', () => console.log('droppable:returned'));
-draggable.on('drag:start', () => console.log('drag:start'));
-draggable.on('drag:move', () => console.log('drag:move'));
-draggable.on('drag:stop', () => console.log('drag:stop'));
+console.log(process.env.REACT_APP_YOUTUBE_API_KEY);
 
 class DraftBoard extends React.Component {
     constructor() {
@@ -40,6 +27,7 @@ class DraftBoard extends React.Component {
             selectedVideo: '',
             arrOfPositions: ['', 'PG', 'SG', 'SF', 'PF', 'C'],
             freeAgentPositionSelect: '',
+            youTubeKey: '',
 
         };
     }
@@ -48,9 +36,9 @@ class DraftBoard extends React.Component {
         axios
             .get(`http://localhost:3100/players/draftprospects`)
             .then(response => {
-                console.log(response.data.data)
                 this.setState({
-                    arrOfDraftProspects: [...response.data.data]
+                    arrOfDraftProspects: [...response.data.data],
+                    youTubeKey: response.data.youTubeKey
                 });
             })
             .catch(err => {
@@ -60,7 +48,6 @@ class DraftBoard extends React.Component {
             axios
             .get(`http://localhost:3100/teams/draft/draftorder`)
             .then(response => {
-                console.log(response.data.data)
                 this.setState({
                     draftOrder: [...response.data.data]
                 });
@@ -79,10 +66,11 @@ class DraftBoard extends React.Component {
         });
     }
     seaechPlayerOnYT = (e) => {
+        const {youTubeKey} = this.state
         let playerName = e.target.id
         console.log(playerName)
         axios
-            .get(`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=${playerName} scouting&key=${youtubeKey}`)
+            .get(`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=${playerName} scouting&key=${youTubeKey}`)
             .then(response => {
                 console.log(response.data.items)
                 this.setState({
@@ -110,11 +98,9 @@ class DraftBoard extends React.Component {
     }
     render() {
         const { arrOfDraftProspects, playerVideos, selectedVideo, arrOfPositions, freeAgentPositionSelect,
-            draftOrder } = this.state;
-        console.log(draftOrder)
+            draftOrder, youTubeKey } = this.state;
         let newArrOfFreeAgents = freeAgentsFunctions.filterFreeAgentsByPosition(freeAgentPositionSelect, arrOfDraftProspects)
-        // console.log(playerVideos)
-        console.log(freeAgentPositionSelect)
+        console.log(youTubeKey);
 
         function sortedArrOfPlayerPos(freeAgentPositionSelect, arrOfDraftProspects) {
             if (freeAgentPositionSelect === 'C') {
@@ -148,7 +134,8 @@ class DraftBoard extends React.Component {
             }
         }
         let newArrPlay = sortedArrOfPlayerPos(freeAgentPositionSelect, arrOfDraftProspects)
-        console.log(newArrPlay)
+        // console.log(youtubeKey)
+        // console.log(process.env)
         return (
             <div>
                 Basketball Today Rankings
@@ -211,7 +198,7 @@ class DraftBoard extends React.Component {
                     <div>
                         {selectedVideo === '' ? 'SELECT VIDEO HERE' : <iframe id="player" type="text/html"
                             src={`http://www.youtube.com/embed/${selectedVideo}?enablejsapi=1&origin=http://example.com`}
-                            frameborder="0"></iframe>}
+                            frameborder="0" allowFullScreen></iframe>}
                     </div>
                     {/* <br/>
                     <br/> */}
