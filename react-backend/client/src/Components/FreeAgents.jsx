@@ -1,10 +1,9 @@
-import React, { Component } from 'react';
-import { Route, Link, Switch } from "react-router-dom";
-import moneyFunctions from './moneyFunctions'
-import freeAgentsFunctions from '../Functions/freeAgentsFunctions'
+import React from 'react';
+import { Route, Switch } from "react-router-dom";
+// import moneyFunctions from './moneyFunctions'
 import '../Stylesheets/freeAgents.css';
-import '../Stylesheets/western.css';
-import '../Stylesheets/eastern.css';
+// import '../Stylesheets/western.css';
+// import '../Stylesheets/eastern.css';
 import PlayerPage from "./playerPage";
 import FreeAgentsList from "./FreeAgentsList";
 // const { PieChart,  } = Recharts;
@@ -51,26 +50,25 @@ class FreeAgents extends React.Component {
             });
     }
     handleTeamSelect = (e) => {
-        const { } = this.state
         this.setState({
             teamArraySelect: e.target.value,
         })
     }
     handleTypeOfFreeAgentSelect = (e) => {
-        const { } = this.state
         this.setState({
             [e.target.name]: e.target.value,
         })
     }
-    handleAssets = (e) => {
-        const { teamAssetsSelect } = this.state
-        this.setState({
-            teamAssetsSelect: e.target.value,
-        })
-    }
+
+    // handleAssets = (e) => {
+    //     const { teamAssetsSelect } = this.state
+    //     this.setState({
+    //         teamAssetsSelect: e.target.value,
+    //     })
+    // }
 
     handleGetTeam = () => {
-        const { teamArraySelect, holdlogo, teamName, holdTeamCap, holdStyling, teamDraftPicks } = this.state
+        const { teamArraySelect, holdStyling } = this.state
         axios
             .get(`http://localhost:3100/teams/${teamArraySelect}`)
             .then(response => {
@@ -154,13 +152,12 @@ class FreeAgents extends React.Component {
 
 
     render() {
-        const { breed } = this.props;
 
-        const { arrOfNBATeams, teamArraySelect, arrOfFreeAgents, arrOfFreeAgentChoices,
-            typeOfFreeAgentSelect, teamState, teamCap, teamName, arrOfPositions, freeAgentPositionSelect,
-            teamDraftPicks, arrOfTeamAssetsChoices, teamAssetsSelect } = this.state
-        let newArrOfFreeAgents = freeAgentsFunctions.filterFreeAgents(typeOfFreeAgentSelect, arrOfFreeAgents)
-        newArrOfFreeAgents = freeAgentsFunctions.filterFreeAgentsByPosition(freeAgentPositionSelect, newArrOfFreeAgents)
+        const {  arrOfFreeAgentChoices,
+            teamState, arrOfPositions,
+            teamDraftPicks,  teamAssetsSelect } = this.state
+        // let newArrOfFreeAgents = freeAgentsFunctions.filterFreeAgents(typeOfFreeAgentSelect, arrOfFreeAgents)
+        // newArrOfFreeAgents = freeAgentsFunctions.filterFreeAgentsByPosition(freeAgentPositionSelect, newArrOfFreeAgents)
         const teamUpcomingFreeAgents = (arrofPlayers) => {
             let freeAgents = arrofPlayers.filter(player => {
                 return player._2018_19 === null
@@ -171,8 +168,7 @@ class FreeAgents extends React.Component {
         // console.log('Team State', teamState)
         // console.log('Team State', teamDraftPicks)
         let teamAssets = []
-        function setTeamAssets(teamAssetsSelect) {
-        }
+        
         if (teamAssetsSelect === 'Team Draft picks') {
             teamAssets = teamDraftPicks
         } else if (teamAssetsSelect === 'Upcoming Free Agents') {
@@ -184,15 +180,7 @@ class FreeAgents extends React.Component {
         console.log('teamAssets', teamAssets)
         console.log('teamDraftPicks', teamDraftPicks)
         console.log('teamUpcomingFreeAgents(teamState)', teamUpcomingFreeAgents(teamState))
-
-        const playersUnderContractNextYear = (arrofPlayers) => {
-            let playersUnderContract = arrofPlayers.filter(player => {
-                return player._2018_19 !== null
-            })
-            return playersUnderContract
-        }
       
-        let data = []
         return (
             <div className='free_select_container'>
                 {/* <div className='free_select_item'> */}

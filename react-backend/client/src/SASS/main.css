@@ -1,0 +1,869 @@
+.maincolorWAS, .maincolorUTA, .maincolorTOR, .maincolorSAS, .maincolorSAC, .maincolorPOR, .maincolorPHX, .maincolorPHI, .maincolorORL, .maincolorOKC, .maincolorNYK, .maincolorNOP, .maincolorMIN, .maincolorMIL, .maincolorMIA, .maincolorMEM, .maincolorLAL, .maincolorLAC, .maincolorIND, .maincolorHOU, .maincolorGSW, .maincolorDET, .maincolorDEN, .maincolorDAL, .maincolorCLE, .maincolorCHI, .maincolorCHA, .maincolorBKN, .maincolorBOS, .maincolorATL, .maincolor {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.home_news_container .home_news_item .home_news_headline a, .home_news_container .home_news_item .home_news_headline, .navbar a {
+  text-decoration: none;
+}
+
+.navbar {
+  text-align: center;
+  margin-top: 2em;
+  border: black 1px solid;
+  overflow: hidden;
+  background-color: #333;
+  width: 55%;
+  margin: 0 auto;
+  font-family: "Barlow", sans-serif;
+  border-radius: 10px 10px;
+  padding: 0.6em;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.678);
+}
+.navbar a {
+  color: #C58A56;
+  font-size: 17px;
+  text-align: center;
+  padding: 0.3em;
+}
+.navbar a:active {
+  color: white;
+}
+
+.home_news_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.home_news_container .home_news_item {
+  width: 50%;
+  border: 1px black inset;
+  padding: 2em;
+  margin-bottom: 3em;
+  border-radius: 10%;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.678);
+  background-color: white;
+}
+.home_news_container .home_news_item .home_news_headline {
+  text-align: center;
+  font-family: "Barlow", sans-serif;
+}
+.home_news_container .home_news_item .home_news_headline a {
+  color: black;
+}
+.home_news_container .home_news_item .home_article_image {
+  height: 45%;
+  width: 95%;
+  text-align: center;
+  margin-left: 5%;
+  margin-bottom: 1em;
+  /* box-shadow: 10px 10px grey; */
+  /*  */
+}
+.home_news_container .home_news_item .home_news_description {
+  font-family: "Questrial", sans-serif;
+}
+.home_news_container .home_news_item .home_article_author {
+  /* padding: 2em; */
+  /* margin: 0.2em; */
+  font-size: 0.8em;
+}
+
+.ScrollUpButton__Container {
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+  -webkit-transition-property: opacity, right;
+  transition-property: opacity, right;
+  background-color: white;
+  border-radius: 50%;
+  border: 5px solid black;
+  height: 50px;
+  position: fixed;
+  bottom: 20px;
+  width: 50px;
+  cursor: pointer;
+  opacity: 0;
+  right: -75px;
+}
+
+.ScrollUpButton__Toggled {
+  opacity: 1;
+  right: 20px;
+}
+
+.sidenav {
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+  -webkit-transition-property: opacity, right;
+  transition-property: opacity, right;
+  background-color: white;
+  border-radius: 50%;
+  border: 5px solid black;
+  height: 50px;
+  position: fixed;
+  bottom: 20px;
+  width: 50px;
+  cursor: pointer;
+  opacity: 0;
+  left: -75px;
+}
+
+.scroll_arrow {
+  height: 520px;
+}
+
+@media screen and (max-width: 418px) {
+  .home_title {
+    margin: 8px;
+  }
+
+  .navbar {
+    margin-bottom: 15px;
+    margin-top: 1px;
+    justify-content: center;
+    width: 75%;
+    border-radius: 10px 10px;
+    padding: 0em;
+  }
+  .navbar a {
+    text-align: center;
+    float: none;
+    border: #C58A56 solid 2px;
+    font-size: 1em;
+    border: none;
+    /* display: block; */
+    padding: 0.5em;
+    margin-bottom: 2em;
+    /* background-color: red; */
+  }
+
+  .home_news_item {
+    width: 70%;
+    height: 10%;
+    border: 1px black inset;
+    padding: 1em;
+    font-size: 0.5em;
+    /* margin-bottom: 3em; */
+    border-radius: 10%;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.678);
+    background-color: white;
+  }
+  .home_news_item .home_article_image {
+    width: 75%;
+    height: 12%;
+    text-align: center;
+    margin-left: 40px;
+    margin-bottom: 1em;
+    /* box-shadow: 10px 10px grey; */
+    /*  */
+  }
+  .home_news_item .home_news_description {
+    font-weight: 550;
+  }
+  .home_news_item .article_credit {
+    margin-left: 17px;
+  }
+  .home_news_item .article_credit .home_article_author {
+    font-weight: 550;
+  }
+
+  .ScrollUpButton__Container {
+    height: 20px;
+    width: 20px;
+    border: 2px solid black;
+    margin-left: 15px;
+    right: 5px;
+  }
+  .ScrollUpButton__Container .scroll_arrow {
+    height: 20px;
+  }
+}
+.maincolorWAS, .maincolorUTA, .maincolorTOR, .maincolorSAS, .maincolorSAC, .maincolorPOR, .maincolorPHX, .maincolorPHI, .maincolorORL, .maincolorOKC, .maincolorNYK, .maincolorNOP, .maincolorMIN, .maincolorMIL, .maincolorMIA, .maincolorMEM, .maincolorLAL, .maincolorLAC, .maincolorIND, .maincolorHOU, .maincolorGSW, .maincolorDET, .maincolorDEN, .maincolorDAL, .maincolorCLE, .maincolorCHI, .maincolorCHA, .maincolorBKN, .maincolorBOS, .maincolorATL, .maincolor {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.navbar a, .home_news_container .home_news_item .home_news_headline, .home_news_container .home_news_item .home_news_headline a {
+  text-decoration: none;
+}
+
+/*
+Every team has white in its's color scheme.  
+Therfore, white will only be included in the Brooklyn Nets color scheme
+because it's one of their two primary colors.
+*/
+.buttonphoto {
+  border-radius: 50%;
+  height: 35%;
+  width: 33%;
+  float: left;
+}
+
+.buttonphoto2 {
+  border-radius: 50%;
+  height: 25%;
+  width: 25%;
+  float: left;
+}
+
+.modal_text {
+  color: blue;
+  /* text-align: center; */
+}
+
+.modal_photo {
+  height: 55%;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page {
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+}
+
+.maincolor {
+  border: solid 2px #26282a;
+  background-color: white;
+}
+
+.maincolorATL {
+  border: solid 2px #26282a;
+  background: linear-gradient(to bottom right, #e14434, #e14434);
+  color: white;
+}
+
+.maincolorBOS {
+  border: solid 2px #8b6f4e;
+  background: linear-gradient(to bottom right, #007a33, black);
+  color: black;
+}
+
+.maincolorBKN {
+  border: solid 2px black;
+  background: linear-gradient(to bottom right, black, white);
+  color: black;
+}
+
+.maincolorCHA {
+  border: solid 2px #a1a1a4;
+  background: linear-gradient(to bottom right, #00788c, #1d1160);
+  color: white;
+}
+
+.maincolorCHI {
+  border: solid 2px #061922;
+  background: linear-gradient(to bottom right, #ce1141, #061922);
+  color: white;
+}
+
+.maincolorCLE {
+  border: solid 2px #061922;
+  background: linear-gradient(to bottom left, #6f263d, #6f263d);
+  color: #ffb81c;
+}
+
+.maincolorDAL {
+  border: solid 2px #bbc4ca;
+  border-radius: 3%;
+  background: linear-gradient(to bottom right, #0053bc, #002b5c);
+  color: #bbc4ca;
+}
+
+.maincolorDEN {
+  border: solid 2px #ffc627;
+  background: linear-gradient(to bottom right, #0d2240, #0d2240);
+  color: #ffc627;
+}
+
+.maincolorDET {
+  border: solid 2px #c8102e;
+  background: linear-gradient(to bottom right, #1d428a, #002d62);
+  color: white;
+}
+
+.maincolorGSW {
+  border: solid 2px #006bb6;
+  background: linear-gradient(to bottom left, #fdb927, #fdb927, #fdb927, #006bb6, #006bb6, #006bb6);
+  color: #26282a;
+}
+
+.maincolorHOU {
+  border: solid 2px #061922;
+  background: linear-gradient(to right bottom, #ce1141, #061922);
+  color: white;
+}
+
+.maincolorIND {
+  border: solid 2px #fdbb30;
+  background: linear-gradient(to top left, #fdbb30, #fdbb30, #002d62, #002d62);
+  color: white;
+}
+
+.maincolorLAC {
+  border: solid 2px #1d4294;
+  background: linear-gradient(to bottom right, #c8102e);
+  color: white;
+}
+
+.maincolorLAL {
+  border: solid 2px #552582;
+  background: linear-gradient(to bottom right, #552582, #552582, #552582, #fdb927, #fdb927);
+  color: white;
+}
+
+.maincolorMEM {
+  border: solid 2px #12173f;
+  background: linear-gradient(to bottom right, #12173f, #12173f, #5d76a9);
+  color: white;
+}
+
+.maincolorMIA {
+  border: solid 2px black;
+  background: linear-gradient(to bottom left, #98002e, #061922);
+  color: white;
+}
+
+.maincolorMIL {
+  border: solid 2px black;
+  background: linear-gradient(to bottom left, #00471b, #00471b, #f0ebd2);
+  color: white;
+}
+
+.maincolorMIN {
+  border: solid 2px #0c2340;
+  background: linear-gradient(to left, #0c2340, #236192);
+  color: #c6cfd4;
+}
+
+.maincolorNOP {
+  border: solid 2px #b4975a;
+  background: linear-gradient(to bottom right, #001641, #001641, #e13a3e);
+  color: #b4975a;
+}
+
+.maincolorNYK {
+  border: solid 2px #231f20;
+  background: linear-gradient(to top, #006bb6, #006bb6, #f58426, #f58426, #f58426, #f58426);
+  color: white;
+}
+
+.maincolorOKC {
+  border: solid 2px #002d62;
+  background: linear-gradient(to bottom right, #007ac1, #002d62);
+  color: white;
+}
+
+.maincolorORL {
+  border: solid 2px #061922;
+  background: linear-gradient(to bottom left, #007dc5, #007dc5, #007dc5, #061922);
+  color: #c4ced4;
+}
+
+.maincolorPHI {
+  border: solid 2px black;
+  background: linear-gradient(to bottom left, #006bb6, #002b5c);
+  color: white;
+}
+
+.maincolorPHX {
+  border: solid 2px #b4975a;
+  background: linear-gradient(to top, #1d1160, #1d1160, #1d1160, #b95915, #b95915, #e55f20);
+  color: white;
+}
+
+.maincolorPOR {
+  border: solid 2px #061922;
+  background: linear-gradient(to bottom left, #e03a3e, #e03a3e, #e03a3e, #061922, #061922);
+  color: white;
+}
+
+.maincolorSAC {
+  border: solid 2px #061922;
+  background: #5b2b82;
+  color: white;
+}
+
+.maincolorSAS {
+  border: solid 2px #061922;
+  background: linear-gradient(to top, #061922, #061922, #061922, #c4ced3);
+  color: white;
+}
+
+.maincolorTOR {
+  border: solid 2px #061922;
+  background: linear-gradient(to bottom, #ce1141, #ce1141, #ce1141, #061922);
+  color: white;
+}
+
+.maincolorUTA {
+  border: solid 2px black;
+  background: linear-gradient(to bottom right, #002b5c, #00471b);
+  color: #f9a01b;
+}
+
+.maincolorWAS {
+  border: solid 2px black;
+  background: linear-gradient(to bottom, #e31837, #e31837, #e31837, #e31837, #e31837, #c4ced4, #002b5c, #002b5c, #002b5c, #002b5c, #002b5c);
+  color: white;
+  border-radius: 3%;
+}
+
+.maincolor2ATL {
+  /* border: purple solid 0.2em; */
+  border: solid 0.2em #25282a;
+  background-color: #e03a3e;
+  color: white;
+}
+
+.maincolor2BOS {
+  /* border: purple solid 0.2em; */
+  border: solid 0.2em #25282a;
+  background: linear-gradient(to bottom right, #008248, white);
+  color: black;
+}
+
+.maincolor2BKN {
+  /* border: purple solid 0.2em; */
+  border: solid 0.2em #25282a;
+  background: linear-gradient(to bottom right, black, white);
+  color: black;
+}
+
+.maincolor2CHA {
+  /* border: purple solid 0.2em; */
+  border: solid 0.2em #888b8d;
+  background: linear-gradient(to bottom right, #00788c, #1d1160);
+  color: white;
+}
+
+.maincolor2CHI {
+  /* border: purple solid 0.2em; */
+  border: solid 0.2em black;
+  background: linear-gradient(to bottom right, #ce1141, black);
+  color: black;
+}
+
+.maincolor2CLE {
+  /* border: purple solid 0.2em; */
+  border: solid 0.2em black;
+  background: linear-gradient(to bottom right, #6f2633, #ffb81c);
+  color: black;
+}
+
+.maincolor2DET {
+  /* border: purple solid 0.2em; */
+  border: solid 0.2em black;
+  background: linear-gradient(to bottom right, #0c4c93, #0c4c93);
+  color: white;
+}
+
+.maincolor2IND {
+  /* border: purple solid 0.2em; */
+  border: solid 0.2em #bec0c2;
+  background: linear-gradient(to bottom right, #fdbb30, #002d62);
+  color: white;
+}
+
+.maincolor2MIA {
+  /* border: purple solid 0.2em; */
+  border: solid 0.2em black;
+  background: linear-gradient(to bottom right, #98002e, #98002e);
+  color: white;
+}
+
+.maincolor2MIL {
+  /* border: purple solid 0.2em; */
+  border: solid 0.2em black;
+  background: linear-gradient(to bottom left, #00471b, #eee1c6);
+  color: white;
+}
+
+.maincolor2NYK {
+  /* border: purple solid 0.2em; */
+  border: solid 0.2em black;
+  background: linear-gradient(to right, #006bb6, #f58426);
+  color: white;
+}
+
+.maincolor2ORL {
+  /* border: purple solid 0.2em; */
+  border: solid 0.2em black;
+  background: #0b77bd;
+  color: #c2ccd2;
+}
+
+.maincolor2PHI {
+  /* border: purple solid 0.2em; */
+  border: solid 0.2em black;
+  background: #006bb6;
+  color: white;
+}
+
+.maincolor2TOR {
+  /* border: purple solid 0.2em; */
+  border: solid 0.2em black;
+  background: #cd1141;
+  color: white;
+}
+
+.maincolor2WAS {
+  /* border: purple solid 0.2em; */
+  border: solid 0.2em black;
+  background: linear-gradient(to right, #e31837, #002b5c);
+  color: #c2ccd2;
+}
+
+.maincolor2DAL {
+  /* border: purple solid 0.2em; */
+  border: solid 0.2em black;
+  background: linear-gradient(to bottom right, #007dc5, #c4ced4);
+  color: white;
+}
+
+.maincolor2DEN {
+  /* border: purple solid 0.2em; */
+  border: solid 0.2em black;
+  background: linear-gradient(to bottom right, #5091cd, #00285e);
+  color: #fdb927;
+}
+
+.maincolor2GSW {
+  /* border: purple solid 0.2em; */
+  border: solid 0.2em black;
+  background: linear-gradient(to bottom right, #ffcd34, #ffcd34);
+  color: #243e90;
+}
+
+.maincolor2HOU {
+  /* border: purple solid 0.2em; */
+  border: solid 0.2em black;
+  background: linear-gradient(to bottom right, black, #d81616);
+  color: white;
+}
+
+.maincolor2LAC {
+  /* border: purple solid 0.2em; */
+  border: solid 0.2em #bec0c2;
+  background: linear-gradient(to bottom right, #ed174c, #ed174c);
+  color: white;
+}
+
+.maincolor2LAL {
+  /* border: purple solid 0.2em; */
+  border: solid 0.2em #552583;
+  background: linear-gradient(to bottom right, #552583, #fdb927);
+  color: white;
+}
+
+.maincolor2MIN {
+  /* bordr: purple solid 0.2em; */
+  border: solid 0.2em black;
+  background: linear-gradient(to bottom right, #002b5c, #005083);
+  color: #c6cfd4;
+}
+
+.maincolor2MEM {
+  /* border: purple solid 0.2em; */
+  border: solid 0.2em #552583;
+  background: linear-gradient(to bottom right, #00285e, #6189b9);
+  color: white;
+}
+
+.maincolor2NOP {
+  /* border: purple solid 0.2em; */
+  border: solid 0.2em #b4975a;
+  background: linear-gradient(to bottom right, #001641, #e13a3e);
+  color: white;
+}
+
+.maincolor2OKC {
+  /* border: purple solid 0.2em; */
+  border: solid 0.2em #b4975a;
+  background: linear-gradient(to bottom right, #007ac1, #002d62);
+  color: white;
+}
+
+.maincolor2PHX {
+  /* border: purple solid 0.2em; */
+  border: solid 0.2em #b4975a;
+  background: linear-gradient(to bottom right, #e56020, #1d1160);
+  color: #f9a01b;
+}
+
+.maincolor2POR {
+  /* border: purple solid 0.2em; */
+  border: solid 0.2em #c4ced4;
+  background: linear-gradient(to bottom right, #e13a3e, black);
+  color: #c4ced4;
+}
+
+.maincolor2PHX {
+  /* border: purple solid 0.2em; */
+  border: solid 0.2em #b4975a;
+  background: linear-gradient(to bottom right, #e56020, #1d1160);
+  color: #f9a01b;
+}
+
+.maincolor2SAC {
+  /* border: purple solid 0.2em; */
+  border: solid 0.2em #63727a;
+  background: #5a2d81;
+  color: white;
+}
+
+.maincolor2SAS {
+  /* border: purple solid 0.2em; */
+  border: solid 0.2em black;
+  background: linear-gradient(to bottom right, #c4ced4, #c4ced4);
+  color: white;
+}
+
+.maincolor2UTA {
+  /* border: purple solid 0.2em; */
+  border: solid 0.2em black;
+  background: linear-gradient(to bottom right, #0c2340, #00471b);
+  color: #f9a01b;
+}
+
+.maincolor3ATL {
+  background-color: #e03a3e;
+  color: white;
+  margin-top: -17em;
+  padding-top: 16em;
+}
+
+.maincolor3BOS {
+  background: linear-gradient(to bottom right, #008248, white);
+  color: black;
+  margin-top: -17em;
+  padding-top: 16em;
+}
+
+.maincolor3BKN {
+  background: linear-gradient(to bottom right, black, white);
+  color: black;
+  margin-top: -17em;
+  padding-top: 16em;
+}
+
+.maincolor3CHA {
+  background: linear-gradient(to bottom right, #00788c, #1d1160);
+  color: white;
+  margin-top: -17em;
+  padding-top: 16em;
+}
+
+.maincolor3CHI {
+  background: linear-gradient(to bottom right, #ce1141, black);
+  color: black;
+  margin-top: -17em;
+  padding-top: 16em;
+}
+
+.maincolor3CLE {
+  background: linear-gradient(to bottom right, #6f2633, #ffb81c);
+  color: black;
+  margin-top: -17em;
+  padding-top: 16em;
+}
+
+.maincolor3DET {
+  background: linear-gradient(to bottom right, #0c4c93, #0c4c93);
+  color: white;
+  margin-top: -17em;
+  padding-top: 16em;
+}
+
+.maincolor3IND {
+  background: linear-gradient(to bottom right, #fdbb30, #002d62);
+  color: white;
+  margin-top: -17em;
+  padding-top: 16em;
+}
+
+.maincolor3MIA {
+  background: linear-gradient(to bottom right, #98002e, #98002e);
+  color: white;
+  margin-top: -17em;
+  padding-top: 16em;
+}
+
+.maincolor3MIL {
+  /* border: purple solid 0.2em; */
+  border: solid 0.2em black;
+  background: linear-gradient(to bottom left, #00471b, #eee1c6);
+  color: white;
+  margin-top: -17em;
+  padding-top: 16em;
+}
+
+.maincolor3NYK {
+  background: linear-gradient(to right, #006bb6, #f58426);
+  color: white;
+  margin-top: -17em;
+  padding-top: 16em;
+}
+
+.maincolor3ORL {
+  background: #0b77bd;
+  color: #c2ccd2;
+  margin-top: -17em;
+  padding-top: 16em;
+}
+
+.maincolor3PHI {
+  border: solid 0.2em black;
+  background: #006bb6;
+  color: white;
+  margin-top: -17em;
+  padding-top: 16em;
+}
+
+.maincolor3TOR {
+  background: #cd1141;
+  color: white;
+  margin-top: -17em;
+  padding-top: 16em;
+}
+
+.maincolor3WAS {
+  background: linear-gradient(to right, #e31837, #002b5c);
+  color: #c2ccd2;
+  margin-top: -17em;
+  padding-top: 16em;
+}
+
+.maincolor3DAL {
+  background: linear-gradient(to bottom right, #007dc5, #c4ced4);
+  color: white;
+  margin-top: -17em;
+  padding-top: 16em;
+}
+
+.maincolor3DEN {
+  background: linear-gradient(to bottom right, #5091cd, #00285e);
+  color: #fdb927;
+  margin-top: -17em;
+  padding-top: 16em;
+}
+
+.maincolor3GSW {
+  background: linear-gradient(to bottom right, #ffcd34, #ffcd34);
+  color: #243e90;
+  margin-top: -17em;
+  padding-top: 16em;
+}
+
+.maincolor3HOU {
+  background: linear-gradient(to bottom right, black, #d81616);
+  color: white;
+  margin-top: -17em;
+  padding-top: 16em;
+}
+
+.maincolor3LAC {
+  background: linear-gradient(to bottom right, #ed174c, #ed174c);
+  color: white;
+  margin-top: -17em;
+  padding-top: 16em;
+}
+
+.maincolor3LAL {
+  background: linear-gradient(to bottom right, #552583, #fdb927);
+  color: white;
+  margin-top: -17em;
+  padding-top: 16em;
+}
+
+.maincolor3MIN {
+  background: linear-gradient(to bottom right, #002b5c, #005083);
+  color: #c6cfd4;
+  margin-top: -17em;
+  padding-top: 16em;
+}
+
+.maincolor3MEM {
+  background: linear-gradient(to bottom right, #00285e, #6189b9);
+  color: white;
+  margin-top: -17em;
+  padding-top: 16em;
+}
+
+.maincolor3NOP {
+  background: linear-gradient(to bottom right, #001641, #e13a3e);
+  color: white;
+  margin-top: -17em;
+  padding-top: 16em;
+}
+
+.maincolor3OKC {
+  background: linear-gradient(to bottom right, #007ac1, #002d62);
+  color: white;
+  margin-top: -17em;
+  padding-top: 16em;
+}
+
+.maincolor3PHX {
+  /* border: purple solid 0.2em; */
+  background: linear-gradient(to bottom right, #e56020, #1d1160);
+  color: #f9a01b;
+  margin-top: -17em;
+  padding-top: 16em;
+}
+
+.maincolor3POR {
+  background: linear-gradient(to bottom right, #e13a3e, black);
+  color: #c4ced4;
+  margin-top: -17em;
+  padding-top: 16em;
+}
+
+.maincolor3PHX {
+  /* border: purple solid 0.2em; */
+  background: linear-gradient(to bottom right, #e56020, #1d1160);
+  color: #f9a01b;
+  margin-top: -17em;
+  padding-top: 16em;
+}
+
+.maincolor3SAC {
+  /* border: purple solid 0.2em; */
+  background: #5a2d81;
+  color: white;
+  margin-top: -17em;
+  padding-top: 16em;
+}
+
+.maincolor3SAS {
+  /* border: purple solid 0.2em; */
+  background: linear-gradient(to bottom right, #c4ced4, #c4ced4);
+  color: white;
+  margin-top: -17em;
+  padding-top: 16em;
+}
+
+.maincolor3UTA {
+  /* border: purple solid 0.2em; */
+  background: linear-gradient(to bottom right, #0c2340, #00471b);
+  color: #f9a01b;
+  margin-top: -17em;
+  padding-top: 16em;
+}
+
+@media screen and (max-width: 418px) {
+  .side_nav_pic {
+    width: 8%;
+    padding-top: 1em;
+    padding-left: 0.5em;
+    position: fixed;
+    /* float: left;  */
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,10 +1,6 @@
 
 
-import React, { Component } from 'react';
-import { Route, Link, Switch } from "react-router-dom";
-// import FanDuel from './FanDuel'
-// import DraftKings from './DraftKings'
-// import NBA from './NBA'
+import React from 'react';
 import TeamBoard from './teamBoard'
 import TeamBoard2 from './teamBoard2'
 import TradeList from './tradeList'
@@ -12,14 +8,14 @@ import TradeList2 from './tradeList'
 import Modal from './Modal';
 import Modal2 from './Modal2';
 import './calc.css';
-import '../Stylesheets/western.css';
-import '../Stylesheets/eastern.css';
-import '../Stylesheets/modal.css';
+// import '../Stylesheets/western.css';
+// import '../Stylesheets/eastern.css';
+// import '../Stylesheets/modal.css';
+import "../SASS/main.css";
 import moneyFunctions from './moneyFunctions'
 // var Highcharts = require('highcharts');
 import FusionCharts from 'fusioncharts';
 import Charts from 'fusioncharts/fusioncharts.charts';
-import ReactFC from 'react-fusioncharts';
 Charts(FusionCharts);
 
 // Load module after Highcharts is loaded
@@ -27,46 +23,6 @@ Charts(FusionCharts);
 
 const axios = require("axios");
 
-
-
-
-const nameJoinForFetch = teamStateName => {
-    const newName = teamStateName.split(' ').join('')
-    return newName
-};
-
-const teams = {
-    AtlantaHawks: 1610612737,
-    BostonCeltics: 1610612738,
-    BrooklynNets: 1610612751,
-    CharlotteHornets: 1610612766,
-    ChicagoBulls: 1610612741,
-    ClevelandCavelers: 1610612739,
-    DallasMavericks: 1610612742,
-    DenverNuggets: 1610612743,
-    DetroitPistons: 1610612765,
-    GoldenStateWarriors: 1610612744,
-    HoustonRockets: 1610612745,
-    IndianaPacers: 1610612754,
-    LosAngelesClippers: 1610612746,
-    LosAngelesLakers: 1610612746,
-    MemphisGrizzles: 1610612763,
-    MiamiHeat: 1610612748,
-    MilwaukeeBucks: 1610612749,
-    MinniesotaTimberwolves: 1610612750,
-    NewOrleansPelicans: 1610612740,
-    NewYorkKnicks: 1610612752,
-    OklahomaCityThunder: 1610612760,
-    OrlandoMagic: 1610612753,
-    Philedelphia76ers: 1610612755,
-    PhoenixSuns: 1610612756,
-    PortlandTrailBlazers: 1610612757,
-    SacramentoKings: 1610612756,
-    SanAntonioSpurs: 1610612759,
-    TorontoRaptors: 1610612761,
-    UtahJazz: 1610612762,
-    WashingtonWizards: 1610612764,
-};
 
 class Calc extends React.Component {
     constructor(props) {
@@ -171,15 +127,17 @@ class Calc extends React.Component {
         this.setState({
             playerImg: e.target.id
         })
-        { this.getPlayerStats(e) }
-        {
+
+        this.getPlayerStats(e) 
+
+        
             setTimeout(function () {
                 console.log('Break for Modal to open')
                 this.setState({
                     isOpen2: !isOpen2
                 });
             }.bind(this), 150)
-        }
+        
     }
 
     handlePlayerContractsAndModal = (e) => {
@@ -187,15 +145,15 @@ class Calc extends React.Component {
         this.setState({
             playerImg: e.target.id
         })
-        { this.getPlayerContract(e) }
-        {
+        this.getPlayerContract(e) 
+        
             setTimeout(function () {
                 console.log('Break for Modal to open')
                 this.setState({
                     isOpen3: !isOpen3
                 });
             }.bind(this), 350)
-        }
+        
     }
 
     handleInputteamArraySelect = e => {
@@ -287,7 +245,6 @@ class Calc extends React.Component {
     }
 
     getPlayerStats = (e) => {
-        const { playerStats } = this.state
         let player = e.target.name
         let config = {
             headers: { "Authorization": "Basic " + btoa("rell23" + ":" + "Great22!") }
@@ -311,7 +268,6 @@ class Calc extends React.Component {
     };
 
     getPlayerContract = (e) => {
-        const { playerStats } = this.state
         let playerName = e.target.name
         console.log('We have our name here', playerName)
         axios
@@ -398,11 +354,11 @@ class Calc extends React.Component {
 
 
     render() {
-        const { modeState, teamState, teamArraySelect,
-            teamArraySelect2, playerSelect, teamState2,
-            teamTradeArr, teamTradeArr2, users, arrOfNBATeams,
-            teamName, teamLogo, team2Logo, team2Name,
-            teamCap2, teamCap, styling2, styling, playerImg, playerContract, playerInfo } = this.state
+        const {  teamState, teamArraySelect,
+            teamArraySelect2, teamState2,
+            teamTradeArr, teamTradeArr2, arrOfNBATeams,
+            teamLogo, team2Logo, team2Name,
+            teamCap2, teamCap, styling2, styling, playerImg, playerContract } = this.state
         const softCap = 99000000
 
         let diffInMoneyAftTrade = moneyFunctions.capNumberAfterTrade(moneyFunctions.moneyFormatterForCapNumber(teamCap, softCap), moneyFunctions.totalOfContractsNumber(teamTradeArr), moneyFunctions.totalOfContractsNumber(teamTradeArr2))
@@ -544,7 +500,7 @@ class Calc extends React.Component {
                 </Modal>
                 <Modal2 show={this.state.isOpen2}
                     onClose={this.toggleModal2}>
-                    <img className='modal_photo' src={playerImg} alt='Player Image' /><br />
+                    <img className='modal_photo' src={playerImg} alt='Player' /><br />
                     Player Stats:<br />
                     Name : {this.state.playerInfo.FirstName}{' '}{this.state.playerInfo.LastName}<br />
                     Points : {this.state.playerStats.PtsPerGame['#text']}<br />
@@ -557,7 +513,7 @@ class Calc extends React.Component {
                     className='contract_modal'
                     show={this.state.isOpen3}
                     onClose={this.toggleModal3}>
-                    <img className='modal_photo' src={playerImg} alt='Player Image' /><br />
+                    <img className='modal_photo' src={playerImg} alt='Player' /><br />
                     <div className='player_chart'>
                         <label className='player_chart'>
                             {this.state.playerContract.player}'s Remaining Contract:

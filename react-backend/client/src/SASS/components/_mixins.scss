@@ -1,0 +1,6 @@
+@mixin arrow-transition{
+    -webkit-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+    -webkit-transition-property: opacity, right;
+    transition-property: opacity, right;
+}

@@ -1,20 +1,16 @@
 import React from "react";
-import Player from "./player";
-import { Route, Link, Switch } from "react-router-dom";
 import Modal3 from './Modal3';
-import { Draggable } from '@shopify/draggable';
-import '../Stylesheets/draftBoard.css';
-import '../Stylesheets/freeAgents.css';
+// import '../Stylesheets/draftBoard.css';
+// import '../Stylesheets/freeAgents.css';
+import "../SASS/main.css";
 import { DragDropContext } from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
-import freeAgentsFunctions from '../Functions/freeAgentsFunctions'
 const dotenv = require('dotenv');
 dotenv.load()
 
 
-const youtubeKey = `mmmb`
 const axios = require("axios");
-console.log(process.env.REACT_APP_YOUTUBE_API_KEY);
+// console.log(process.env.REACT_APP_YOUTUBE_API_KEY);
 
 class DraftBoard extends React.Component {
     constructor() {
@@ -91,7 +87,6 @@ class DraftBoard extends React.Component {
         })
     }
     handleTypeOfFreeAgentSelect = (e) => {
-        const { } = this.state
         this.setState({
             [e.target.name]: e.target.value,
         })
@@ -99,7 +94,6 @@ class DraftBoard extends React.Component {
     render() {
         const { arrOfDraftProspects, playerVideos, selectedVideo, arrOfPositions, freeAgentPositionSelect,
             draftOrder, youTubeKey } = this.state;
-        let newArrOfFreeAgents = freeAgentsFunctions.filterFreeAgentsByPosition(freeAgentPositionSelect, arrOfDraftProspects)
         console.log(youTubeKey);
 
         function sortedArrOfPlayerPos(freeAgentPositionSelect, arrOfDraftProspects) {
@@ -154,8 +148,8 @@ class DraftBoard extends React.Component {
                     <div className='draft_page_container'>
                 <ul>
                 <div className='prospects_container'>
-                    {newArrPlay.map(player => (
-                        <div className='prospect_label'>
+                    {newArrPlay.map((player, index) => (
+                        <div key={index} className='prospect_label'>
                         <label >
                             #{player.rk}
                         </label>
@@ -180,8 +174,8 @@ class DraftBoard extends React.Component {
                 </ul>
 
                 <div className='draft_order_container'>
-                {draftOrder.map(pick =>(
-                    <div  className={`draft_order_label maincolor2${pick.abbreviation}`} >
+                {draftOrder.map((pick, index) =>(
+                            <div key={index} className={`draft_order_label maincolor2${pick.abbreviation}`} >
                         {pick.abbreviation}----
                         {pick.draft_position}----
                         {pick.team}
@@ -196,7 +190,7 @@ class DraftBoard extends React.Component {
                 >
 
                     <div>
-                        {selectedVideo === '' ? 'SELECT VIDEO HERE' : <iframe id="player" type="text/html"
+                        {selectedVideo === '' ? 'SELECT VIDEO HERE' : <iframe id="player" title='Video' type="text/html"
                             src={`http://www.youtube.com/embed/${selectedVideo}?enablejsapi=1&origin=http://example.com`}
                             frameborder="0" allowFullScreen></iframe>}
                     </div>

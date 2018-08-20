@@ -1,6 +1,5 @@
 
-import React, { Component } from 'react';
-import { Route, Link, Switch } from "react-router-dom";
+import React from 'react';
 import moneyFunctions from './moneyFunctions'
 
 const TeamBoard = ({ teamsArr, tradeArr, value, handleChange, teamState, handleChange2, handleToGetTeam, photo, getPlayerStats, getPlayerSalaries, handleToGetTeamDraftPIcks }) => {
@@ -35,7 +34,7 @@ const TeamBoard = ({ teamsArr, tradeArr, value, handleChange, teamState, handleC
                         value={index}
                         onClick={handleChange2}
                     >
-                        <img className='buttonphoto' src={`${player.photo}`} alt='Player Photo' />
+                        <img className='buttonphoto' src={`${player.photo}`} alt='Player' />
                         {player.player}{' - '}
                         {player.position}<br />
                         {moneyFunctions.moneyFormatter(player['_2017_18'])}<br />

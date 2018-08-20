@@ -1,0 +1,844 @@
+
+@import '../components/_variables';
+@import '../components/_placeholders';
+@import '../base/_colors';
+
+.buttonphoto{
+    border-radius: 50%;
+    height: 35%;
+    width: 33%;
+    float: left
+}
+
+.buttonphoto2{
+    border-radius: 50%;
+    height: 25%;
+    width: 25%;
+    float: left
+}
+.modal_text{
+    color: blue;
+    /* text-align: center; */
+}
+.modal_photo{
+    height: 55%;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.page{
+    padding: {
+        right:0.5em;
+        left:0.5em;
+    }
+}
+
+.maincolor{
+    @extend %teamdisplay;
+    border: $teamboarder $atl-hawks-charcoal;
+    background-color: white;
+}
+
+// Home colors
+.maincolorATL{
+    @extend %teamdisplay;
+    border: $teamboarder $atl-hawks-charcoal;
+    background: linear-gradient(to bottom right,$atl-hawks-red, $atl-hawks-red);
+    color: white;
+}
+
+.maincolorBOS{
+    @extend %teamdisplay;
+    border: $teamboarder $bos-celtics-gold;
+    background: linear-gradient(to bottom right,$bos-celtics-green, $bos-black);
+    color: black;
+}
+
+.maincolorBKN{
+    @extend %teamdisplay;
+    border: $teamboarder $bkn-black;
+    background: linear-gradient(to bottom right,$bkn-black, $bkn-white);
+    color: black;
+}
+
+
+.maincolorCHA{
+    @extend %teamdisplay;
+    border: $teamboarder $cha-gray;
+    background: linear-gradient(to bottom right,$cha-teal, $cha-hornets-purple);
+    color: white;
+}
+.maincolorCHI{
+    @extend %teamdisplay;
+    border: $teamboarder $chi-black;
+    background: linear-gradient(to bottom right,$chi-bulls-red, $chi-black);
+    color:white;
+}
+
+.maincolorCLE{  
+    @extend %teamdisplay;
+    border: $teamboarder $cle-black;
+    background: linear-gradient(to bottom left,$cle-cavaliers-wine, $cle-cavaliers-wine);
+    color: $cle-cavaliers-yellow;
+}
+
+.maincolorDAL{
+    @extend %teamdisplay;
+    border: $teamboarder $dal-navy-silver;
+    border-radius:3%; 
+    background: linear-gradient(to bottom right,$dal-royal-blue,$dal-navy-blue);
+    color: $dal-navy-silver;
+}
+
+.maincolorDEN{
+    @extend %teamdisplay;
+    border: $teamboarder $den-sunshine-yellow;
+    background: linear-gradient(to bottom right,$den-midnight-blue, $den-midnight-blue);
+    color: $den-sunshine-yellow;
+}
+
+
+.maincolorDET{
+    @extend %teamdisplay;
+    border: $teamboarder $det-red;
+    background: linear-gradient(to bottom right,$det-royal, $det-navy);
+    color: white;
+}
+
+.maincolorGSW{
+    @extend %teamdisplay;
+    border: $teamboarder $gsw-warriors-blue;
+    background: linear-gradient(to bottom left,$gsw-golden-yellow,$gsw-golden-yellow,$gsw-golden-yellow,$gsw-warriors-blue,$gsw-warriors-blue,$gsw-warriors-blue);
+    color: $gsw-slate;
+}
+
+
+.maincolorHOU{
+    @extend %teamdisplay;
+    border: $teamboarder $hou-black;
+    background: linear-gradient(to right bottom,$hou-red ,$hou-black);
+    color: rgb(255, 255, 255);
+}
+
+
+.maincolorIND{
+    @extend %teamdisplay;
+    border: $teamboarder $ind-yellow;
+    background: linear-gradient(to top left, $ind-yellow,$ind-yellow, $ind-pacers-blue,$ind-pacers-blue);
+    color: white;
+}
+
+.maincolorLAC{
+    @extend %teamdisplay;
+    border: $teamboarder $lac-blue;
+    background: linear-gradient(to bottom right,$lac-red);
+    color: white;
+}
+
+.maincolorLAL{
+    @extend %teamdisplay;
+    border: $teamboarder $lal-lakers-purple;
+    background: linear-gradient(to bottom right,$lal-lakers-purple,$lal-lakers-purple,$lal-lakers-purple, $lal-gold,$lal-gold);
+    color: white;
+}
+
+.maincolorMEM{
+    @extend %teamdisplay;
+    border: $teamboarder $mem-navy;
+    background: linear-gradient(to bottom right,$mem-navy,$mem-navy, $mem-blue);
+    color: white;
+}
+
+.maincolorMIA{
+    @extend %teamdisplay;
+    border: $teamboarder black;
+    background: linear-gradient(to bottom left,$mia-red, $mia-black);
+    color: white;
+}
+
+.maincolorMIL{
+    @extend %teamdisplay;
+    border: $teamboarder black;
+    background: linear-gradient(to bottom left,$mil-good-land-green ,$mil-good-land-green ,$mil-cream );
+    color: white;
+}
+
+.maincolorMIN{
+    @extend %teamdisplay;
+    border: $teamboarder $min-midnight-blue;
+    background: linear-gradient(to  left ,$min-midnight-blue, $min-lake-blue);
+    color: rgb(198,207,212);
+}
+
+
+
+.maincolorNOP{
+    @extend %teamdisplay;
+    border: $teamboarder $nop-pelicans-gold;
+    background: linear-gradient(to bottom right,$nop-pelicans-navy,$nop-pelicans-navy, $nop-pelicans-red);
+    color: $nop-pelicans-gold;
+}
+
+.maincolorNYK{
+    @extend %teamdisplay;
+    border: $teamboarder $nyk-knicks-black;
+    background: linear-gradient(to top,$nyk-knicks-blue,$nyk-knicks-blue, $nyk-knicks-orange, $nyk-knicks-orange, $nyk-knicks-orange, $nyk-knicks-orange);
+    color: white;
+}
+
+
+.maincolorOKC{
+    @extend %teamdisplay;
+    border: $teamboarder $okc-blue;
+    background: linear-gradient(to bottom right,$okc-thunder-blue, $okc-blue);
+    color: white;
+}
+
+.maincolorORL{
+    @extend %teamdisplay;
+    border: $teamboarder $orl-black;
+    background: linear-gradient(to bottom left, $orl-magic-blue,$orl-magic-blue,$orl-magic-blue,$orl-black);
+    color: $orl-silver;
+}
+
+.maincolorPHI{
+    @extend %teamdisplay;
+    border: $teamboarder black;
+    background: linear-gradient(to bottom left, $phi-blue,$phi-navy);
+    color: white;
+}
+
+
+.maincolorPHX{
+    @extend %teamdisplay;
+    border: $teamboarder rgb(180,151,90);
+    background: linear-gradient(to top ,$phx-purple, $phx-purple,$phx-purple,$phx-dark-orange, $phx-dark-orange,$phx-orange);
+    color: white;
+}
+
+
+.maincolorPOR{
+    @extend %teamdisplay;
+    border: $teamboarder $por-black;
+    background: linear-gradient(to bottom left,$por-red, $por-red,$por-red,$por-black, $por-black);
+    color: white;
+}
+
+
+.maincolorSAC{
+    @extend %teamdisplay;
+    border: $teamboarder $sac-black;
+    background:$sac-purple;
+    color: white;
+}
+
+.maincolorSAS{
+    @extend %teamdisplay;
+    border: $teamboarder $sas-black;
+    background: linear-gradient(to top ,$sas-black,$sas-black,$sas-black,$sas-silver);
+    color: white;
+}
+
+.maincolorTOR{
+    @extend %teamdisplay;
+    border: $teamboarder $tor-black;
+    background: linear-gradient(to bottom, $tor-red,$tor-red,$tor-red,$tor-black);
+    color: white;
+}
+
+.maincolorUTA{
+    @extend %teamdisplay;
+    border: $teamboarder black;
+    background: linear-gradient(to bottom right,$uta-navy, $uta-green);
+    color: $uta-yellow;
+}
+
+
+.maincolorWAS{
+    @extend %teamdisplay;
+    border: $teamboarder black;
+    background: linear-gradient(to  bottom ,$was-red,$was-red,$was-red,$was-red,$was-red,$was-silver, $was-navy-blue, $was-navy-blue, $was-navy-blue, $was-navy-blue,$was-navy-blue);
+    color: white;
+    border-radius:3%; 
+}
+
+
+
+
+//Players page
+
+
+
+.maincolor2ATL{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(37,40,42);
+    background-color: rgb(224,58,62);
+    color: rgb(255,255,255);
+}
+
+.maincolor2BOS{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(37,40,42);
+    background: linear-gradient(to bottom right,rgb(0,130,72)
+    , rgb(255,255,255));
+    color: rgb(0,0,0);
+}
+
+.maincolor2BKN{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(37,40,42);
+    background: linear-gradient(to bottom right,rgb(0,0,0)
+    , rgb(255,255,255));
+    color: rgb(0,0,0);
+ 
+}
+.maincolor2CHA{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(136,139,141);
+    background: linear-gradient(to bottom right,rgb(0,120,140)
+    , rgb(29,17,96));
+    color: rgb(255, 255, 255);
+  
+}
+.maincolor2CHI{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(0,0,0);
+    background: linear-gradient(to bottom right,rgb(206,17,65)
+    , rgb(0,0,0));
+    color: rgb(0,0,0)    ;
+ 
+}
+
+.maincolor2CLE{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(0,0,0);
+    background: linear-gradient(to bottom right,rgb(111,38,51)
+    , rgb(255,184,28));
+    color: rgb(0,0,0)    ;
+}
+
+.maincolor2DET{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(0,0,0);
+    background: linear-gradient(to bottom right,rgb(12,76,147)
+    , rgb(12,76,147));
+    color: rgb(255,255,255);
+}
+
+.maincolor2IND{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(190,192,194);
+    background: linear-gradient(to bottom right,rgb(253,187,48)
+    , rgb(0,45,98));
+    color: rgb(255,255,255);
+  
+}
+
+.maincolor2MIA{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(0,0,0);
+    background: linear-gradient(to bottom right,rgb(152,0,46)
+    , rgb(152,0,46));
+    color: rgb(255,255,255);
+}
+
+.maincolor2MIL{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(0,0,0);
+    background: linear-gradient(to bottom left,rgb(0,71,27)
+    , rgb(238,225,198));
+    color: rgb(255,255,255);
+}
+
+.maincolor2NYK{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(0,0,0);
+    background: linear-gradient(to  right,rgb(0,107,182)
+    , rgb(245,132,38));
+    color: rgb(255,255,255);
+}
+
+
+.maincolor2ORL{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(0,0,0);
+    background: rgb(11,119,189);
+    color: rgb(194,204,210);
+
+}
+
+.maincolor2PHI{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(0,0,0);
+    background: rgb(0,107,182);
+    color: rgb(255,255,255);
+   
+}
+
+.maincolor2TOR{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(0,0,0);
+    background: rgb(205,17,65);
+    color: rgb(255,255,255);
+    
+}
+
+.maincolor2WAS{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(0,0,0);
+    background: linear-gradient(to  right,rgb(227,24,55)
+    , rgb(0,43,92));
+    color: rgb(194,204,210);
+    
+}
+
+
+
+
+.maincolor2DAL{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(0,0,0);
+    background: linear-gradient(to bottom right,rgb(0,125,197)
+    , rgb(196,206,212));
+    color: rgb(255,255,255)    ;
+    
+}
+.maincolor2DEN{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(0,0,0);
+    background: linear-gradient(to bottom right,rgb(80,145,205)
+    , rgb(0,40,94) );
+    color: rgb(253,185,39);
+    
+}
+
+.maincolor2GSW{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(0,0,0);
+    background: linear-gradient(to bottom right,rgb(255,205,52)
+    , rgb(255,205,52));
+    color: rgb(36,62,144);
+    
+}
+
+
+.maincolor2HOU{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(0,0,0);
+    background: linear-gradient(to bottom right,rgb(0,0,0)
+    , rgb(216, 22, 22));
+    color: rgb(255, 255, 255);
+   
+}
+
+
+
+.maincolor2LAC{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(190,192,194);
+    background: linear-gradient(to bottom right,rgb(237,23,76)
+    , rgb(237,23,76));
+    color: rgb(255,255,255);
+    
+  
+}
+
+.maincolor2LAL{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(85,37,131);
+    background: linear-gradient(to bottom right,rgb(85,37,131)
+    , rgb(253,185,39));
+    color: rgb(255,255,255);
+  
+}
+
+
+.maincolor2MIN{
+    /* bordr: purple solid 0.2em; */
+    border: solid 0.2em rgb(0,0,0);
+    background: linear-gradient(to bottom right,rgb(0,43,92)
+    , rgb(0,80,131));
+    color: rgb(198,207,212);
+  
+}
+
+
+.maincolor2MEM{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(85,37,131);
+    background: linear-gradient(to bottom right,rgb(0,40,94)
+    , rgb(97,137,185));
+    color: rgb(255,255,255);
+   
+}
+
+
+.maincolor2NOP{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(180,151,90);
+    background: linear-gradient(to bottom right,rgb(0,22,65)
+    , rgb(225,58,62) );
+    color: rgb(255,255,255);
+    
+}
+
+.maincolor2OKC{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(180,151,90);
+    background: linear-gradient(to bottom right,rgb(0,122,193)
+    , rgb(0,45,98));
+    color: rgb(255,255,255);
+}
+
+
+.maincolor2PHX{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(180,151,90);
+    background: linear-gradient(to bottom right,rgb(229,96,32)
+    , rgb(29,17,96));
+    color: rgb(249,160,27);
+    
+}
+
+
+.maincolor2POR{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(196,206,212);
+    background: linear-gradient(to bottom right,rgb(225,58,62)
+    , rgb(0,0,0));
+    color: rgb(196,206,212);
+   
+}
+
+
+.maincolor2PHX{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(180,151,90);
+    background: linear-gradient(to bottom right,rgb(229,96,32)
+    , rgb(29,17,96));
+    color: rgb(249,160,27);
+    
+}
+
+.maincolor2SAC{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(99,114,122);
+    background:rgb(90,45,129);
+    color: rgb(255,255,255);
+    
+}
+
+.maincolor2SAS{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(0,0,0);
+    background: linear-gradient(to bottom right,rgb(196,206,212)
+    , rgb(196,206,212));
+    color: rgb(255,255,255);
+    
+}
+.maincolor2UTA{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(0,0,0);
+    background: linear-gradient(to bottom right,rgb(12,35,64)
+    , rgb(0,71,27));
+    color: rgb(249,160,27);
+    
+}
+
+
+
+// Team Page
+
+.maincolor3ATL{
+    background-color: rgb(224,58,62);
+    color: rgb(255,255,255);
+    margin-top: -17em;
+    padding-top: 16em;
+}
+
+.maincolor3BOS{
+    background: linear-gradient(to bottom right,rgb(0,130,72)
+    , rgb(255,255,255));
+    color: rgb(0,0,0);
+    margin-top: -17em;
+    padding-top: 16em;
+}
+
+.maincolor3BKN{
+    background: linear-gradient(to bottom right,rgb(0,0,0)
+    , rgb(255,255,255));
+    color: rgb(0,0,0);
+    margin-top: -17em;
+    padding-top: 16em;
+    
+}
+.maincolor3CHA{
+    background: linear-gradient(to bottom right,rgb(0,120,140)
+    , rgb(29,17,96));
+    color: rgb(255, 255, 255);
+    margin-top: -17em;
+    padding-top: 16em;
+    
+}
+.maincolor3CHI{
+    background: linear-gradient(to bottom right,rgb(206,17,65)
+    , rgb(0,0,0));
+    color: rgb(0,0,0)    ;
+    margin-top: -17em;
+    padding-top: 16em;
+    
+}
+
+.maincolor3CLE{
+    background: linear-gradient(to bottom right,rgb(111,38,51)
+    , rgb(255,184,28));
+    color: rgb(0,0,0)    ;
+    margin-top: -17em;
+    padding-top: 16em;
+}
+
+.maincolor3DET{
+    background: linear-gradient(to bottom right,rgb(12,76,147)
+    , rgb(12,76,147));
+    color: rgb(255,255,255);
+    margin-top: -17em;
+    padding-top: 16em;
+}
+
+.maincolor3IND{
+    background: linear-gradient(to bottom right,rgb(253,187,48)
+    , rgb(0,45,98));
+    color: rgb(255,255,255);
+    margin-top: -17em;
+    padding-top: 16em;
+    
+}
+
+.maincolor3MIA{
+    background: linear-gradient(to bottom right,rgb(152,0,46)
+    , rgb(152,0,46));
+    color: rgb(255,255,255);
+    margin-top: -17em;
+    padding-top: 16em;
+}
+
+.maincolor3MIL{
+    /* border: purple solid 0.2em; */
+    border: solid 0.2em rgb(0,0,0);
+    background: linear-gradient(to bottom left,rgb(0,71,27)
+    , rgb(238,225,198));
+    color: rgb(255,255,255);
+    margin-top: -17em;
+    padding-top: 16em;
+}
+
+.maincolor3NYK{
+    background: linear-gradient(to  right,rgb(0,107,182)
+    , rgb(245,132,38));
+    color: rgb(255,255,255);
+    margin-top: -17em;
+    padding-top: 16em;
+}
+
+
+.maincolor3ORL{
+    background: rgb(11,119,189);
+    color: rgb(194,204,210);
+    margin-top: -17em;
+    padding-top: 16em;
+    
+}
+
+.maincolor3PHI{    border: solid 0.2em rgb(0,0,0);
+    background: rgb(0,107,182);
+    color: rgb(255,255,255);
+    margin-top: -17em;
+    padding-top: 16em;
+    
+}
+
+.maincolor3TOR{
+    background: rgb(205,17,65);
+    color: rgb(255,255,255);
+    margin-top: -17em;
+    padding-top: 16em;
+}
+
+.maincolor3WAS{
+    background: linear-gradient(to  right,rgb(227,24,55)
+    , rgb(0,43,92));
+    color: rgb(194,204,210);
+    margin-top: -17em;
+    padding-top: 16em;
+    
+}
+
+
+.maincolor3DAL{
+    background: linear-gradient(to bottom right,rgb(0,125,197)
+    , rgb(196,206,212));
+    color: rgb(255,255,255)    ;
+    margin-top: -17em;
+    padding-top: 16em;
+    
+}
+.maincolor3DEN{
+    background: linear-gradient(to bottom right,rgb(80,145,205)
+    , rgb(0,40,94) );
+    color: rgb(253,185,39);
+    margin-top: -17em;
+    padding-top: 16em;
+    
+}
+
+.maincolor3GSW{
+    background: linear-gradient(to bottom right,rgb(255,205,52)
+    , rgb(255,205,52));
+    color: rgb(36,62,144);
+    margin-top: -17em;
+    padding-top: 16em;
+    
+}
+
+
+.maincolor3HOU{
+    background: linear-gradient(to bottom right,rgb(0,0,0)
+    , rgb(216, 22, 22));
+    color: rgb(255, 255, 255);
+    margin-top: -17em;
+    padding-top: 16em;
+    
+}
+
+
+
+.maincolor3LAC{
+    background: linear-gradient(to bottom right,rgb(237,23,76)
+    , rgb(237,23,76));
+    color: rgb(255,255,255);
+    margin-top: -17em;
+    padding-top: 16em;
+    
+    
+}
+
+.maincolor3LAL{
+    background: linear-gradient(to bottom right,rgb(85,37,131)
+    , rgb(253,185,39));
+    color: rgb(255,255,255);
+    margin-top: -17em;
+    padding-top: 16em;
+    
+}
+
+
+.maincolor3MIN{
+    background: linear-gradient(to bottom right,rgb(0,43,92)
+    , rgb(0,80,131));
+    color: rgb(198,207,212);
+    margin-top: -17em;
+    padding-top: 16em;
+    
+}
+
+
+.maincolor3MEM{
+    background: linear-gradient(to bottom right,rgb(0,40,94)
+    , rgb(97,137,185));
+    color: rgb(255,255,255);
+    margin-top: -17em;
+    padding-top: 16em;
+    
+}
+
+
+.maincolor3NOP{
+    background: linear-gradient(to bottom right,rgb(0,22,65)
+    , rgb(225,58,62) );
+    color: rgb(255,255,255);
+    margin-top: -17em;
+    padding-top: 16em;
+    
+}
+
+.maincolor3OKC{
+    background: linear-gradient(to bottom right,rgb(0,122,193)
+    , rgb(0,45,98));
+    color: rgb(255,255,255);
+    margin-top: -17em;
+    padding-top: 16em;
+}
+
+
+.maincolor3PHX{
+    /* border: purple solid 0.2em; */
+    background: linear-gradient(to bottom right,rgb(229,96,32)
+    , rgb(29,17,96));
+    color: rgb(249,160,27);
+    margin-top: -17em;
+    padding-top: 16em;
+    
+}
+
+
+.maincolor3POR{
+    background: linear-gradient(to bottom right,rgb(225,58,62)
+    , rgb(0,0,0));
+    color: rgb(196,206,212);
+    margin-top: -17em;
+    padding-top: 16em;
+}
+
+
+.maincolor3PHX{
+    /* border: purple solid 0.2em; */
+    background: linear-gradient(to bottom right,rgb(229,96,32)
+    , rgb(29,17,96));
+    color: rgb(249,160,27);
+    margin-top: -17em;
+    padding-top: 16em;
+}
+
+.maincolor3SAC{
+    /* border: purple solid 0.2em; */
+    background:rgb(90,45,129);
+    color: rgb(255,255,255);
+    margin-top: -17em;
+    padding-top: 16em;
+}
+
+.maincolor3SAS{
+    /* border: purple solid 0.2em; */
+    background: linear-gradient(to bottom right,rgb(196,206,212)
+    , rgb(196,206,212));
+    color: rgb(255,255,255);
+    margin-top: -17em;
+    padding-top: 16em;
+}
+
+.maincolor3UTA{
+    /* border: purple solid 0.2em; */
+    background: linear-gradient(to bottom right,rgb(12,35,64)
+    , rgb(0,71,27));
+    color: rgb(249,160,27);
+    margin-top: -17em;
+    padding-top: 16em;
+    
+}
+
+
+
+
+@media screen and (max-width: 418px) {
+    .side_nav_pic{
+        width:8%;
+        padding-top: 1em;
+        padding-left: 0.5em;
+        position: fixed;
+        /* float: left;  */
+    }
+     
+    
+}
+

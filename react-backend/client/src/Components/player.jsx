@@ -3,7 +3,7 @@ import ReactTable from "react-table";
 import 'react-table/react-table.css'
 import '../Stylesheets/table.css';
 import '../Stylesheets/playerPage.css';
-import { Route, Link, Switch } from "react-router-dom";
+import {  Link } from "react-router-dom";
 import moneyFunctions from './moneyFunctions'
 
 
@@ -16,14 +16,7 @@ const styles = {
   }
 };
 
-const data = [{
-  name: 'Tanner Linsley',
-  age: 26,
-  friend: {
-    name: 'Jason Maurer',
-    age: 23,
-  }
-}]
+
 const columns = [{
   Header: 'Points',
   id: 'points', // Required because our accessor is not a string
@@ -70,7 +63,6 @@ const columns = [{
   accessor: d => d.stats.TovPerGame['#text']// Custom value accessors!
 },
 ]
-let ip = 'friend.name'
 // let ii = 'd.stats.PtsPerGame['#text']'
 
 const Player = ({ playerInformation, playerStats, articles }) => (
@@ -114,7 +106,7 @@ const Player = ({ playerInformation, playerStats, articles }) => (
       {articles.map(article => (
         <div className='home_news_item'>
           <h2 className='home_news_headline'><a href={article.url} target="_blank">{article.title}</a></h2>
-          <img className='home_article_image' src={article.urlToImage} alt='article picture' />
+          <img className='home_article_image' src={article.urlToImage} alt='article' />
           <br />
           <label className='home_article_author'>
             <br />

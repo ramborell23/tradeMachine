@@ -1,10 +1,8 @@
 
-import React, { Component } from 'react';
-import { Route, Link, Switch } from "react-router-dom";
+import React from 'react';
 import moneyFunctions from './moneyFunctions'
 
 
-var currencyFormatter = require('currency-formatter');
 
 
 const TradeList = ({ teamTradeArr, handleCloseButton }) => {
@@ -14,7 +12,7 @@ const TradeList = ({ teamTradeArr, handleCloseButton }) => {
             <ul className='trade_list'>
                 {teamTradeArr.map((player, index) =>
                     <li key={player[0]}>
-                        < img  className='buttonphoto2' src ={`${player.photo}`} alt = 'Player Photo'/>
+                        < img  className='buttonphoto2' src ={`${player.photo}`} alt = 'Player'/>
                         {player.player}<br />
                         {player.position}<br />
                         {moneyFunctions.moneyFormatter(player['_2017_18'])}<br />      

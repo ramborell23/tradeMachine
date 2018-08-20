@@ -1,26 +1,18 @@
-import React, { Component } from 'react';
-import { Route, Link, Switch } from "react-router-dom";
+import React from 'react';
 
+const NewsAPI = require('newsapi');
+const newsapi = new NewsAPI('e61cdae783b64c829b1f09b8fd0a4010');
 
-  
-  const NewsAPI = require('newsapi');
-  const newsapi = new NewsAPI('e61cdae783b64c829b1f09b8fd0a4010');
-  
-//   const axios = require("axios");
-  var url = 'https://newsapi.org/v2/top-headlines?' +
-  'country=us&' +
-  'apiKey=e61cdae783b64c829b1f09b8fd0a4010';
-  
-  class News extends React.Component {
-      constructor() {
-          super()
-          this.state = {
-              nbaArticles: [],
-              nameSearchInput: '',
-            }
+class News extends React.Component {
+    constructor() {
+        super()
+        this.state = {
+            nbaArticles: [],
+            nameSearchInput: '',
         }
-        
-       
+    }
+
+
 
     handleApiCheck = () => {
         const { nameSearchInput } = this.state
@@ -75,14 +67,14 @@ import { Route, Link, Switch } from "react-router-dom";
                 <br />
                 <br />
                 <div>
-                <div class="glide">
-                    <div class="glide__track" data-glide-el="track">...</div>
+                    <div class="glide">
+                        <div class="glide__track" data-glide-el="track">...</div>
 
-                    <div class="glide__arrows" data-glide-el="controls">
-                        {/* <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                        <div class="glide__arrows" data-glide-el="controls">
+                            {/* <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
                         <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button> */}
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
         )

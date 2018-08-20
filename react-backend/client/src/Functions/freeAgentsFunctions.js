@@ -54,9 +54,7 @@ const filterFreeAgentsByPosition = (freeAgentValue, arrOfFreeAgents) =>{
     }  
 }
 
-const getSpecificTeam = (team)=>{
-    
-}
+
 const getTeamUpcomingFreeAgency = (team) =>{
     console.log(team.length)
     // let sortedArrOfPlayers = team.filter( player =>{

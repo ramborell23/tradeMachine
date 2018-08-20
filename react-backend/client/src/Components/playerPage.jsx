@@ -1,6 +1,6 @@
 import React from "react";
 import Player from "./player";
-import { Route, Link, Switch } from "react-router-dom";
+// import "../SASS/main.css";
 const NewsAPI = require('newsapi');
 const newsapi = new NewsAPI('e61cdae783b64c829b1f09b8fd0a4010');
 
@@ -39,7 +39,7 @@ class PlayerPage extends React.Component {
         let password = 'Great22!'
         const { player } = this.props;
         let config = {
-            headers: { "Authorization": "Basic " + btoa("rell23" + ":" + "Great22!") }
+            headers: { "Authorization": "Basic " + btoa(username + ":" + password) }
         };
         let playerName = player.replace(/[^a-zA-Z ]/g, "")
         playerName = playerName.split(' ').join('-').toLowerCase()

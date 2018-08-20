@@ -34,8 +34,8 @@ const moneyFormatterForCapNumber = (amount, softCap) => {
         return softCap
     }
 }
+
 const capNumberAfterTrade = (teamCap, releaseContracts, receivingContracts) => {
-    let nums = [teamCap, releaseContracts].sort()
     let total = (teamCap - receivingContracts)
     total = total + releaseContracts
     return total
@@ -69,9 +69,9 @@ const totalOfContractsNumber = (teamTradeArr) => {
 const tradeApproval = (arrOfTeam, arrOfTeam2, teamCap, teamCap2) => {
     let teamOneTotalContracts = totalOfContractsNumber(arrOfTeam)
     let teamTwoTotalContracts = totalOfContractsNumber(arrOfTeam2)
-    let teamOneMaxCap = teamOneTotalContracts * 1.25 + 100000
-    let teamTwoMaxCap = teamTwoTotalContracts * 1.25 + 100000
-    let softCap = 99093000
+    // let teamOneMaxCap = teamOneTotalContracts * 1.25 + 100000
+    // let teamTwoMaxCap = teamTwoTotalContracts * 1.25 + 100000
+    // let softCap = 99093000
     let luxuryTax = 119266000
     let teamOneCap = Number(teamCap)
     let teamTwoCap = Number(teamCap2)
@@ -88,7 +88,7 @@ const tradeApproval = (arrOfTeam, arrOfTeam2, teamCap, teamCap2) => {
             if (teamOneTotalContracts <= 6533333) {     //Outgoing Salary
                 teamOneApproved = teamTwoTotalContracts <= teamOneTotalContracts * 1.75 + 100000
                 
-            } else if (6533334 < teamOneTotalContracts <= 19600000) {
+            } else if (6533334 <= teamOneTotalContracts <= 19600000) {
                 teamOneApproved = teamTwoTotalContracts <= teamOneTotalContracts + 5000000
                 
             } else if (teamOneTotalContracts > 19600000) {
@@ -105,7 +105,7 @@ const tradeApproval = (arrOfTeam, arrOfTeam2, teamCap, teamCap2) => {
             if (teamTwoTotalContracts <= 6533333) {     //Outgoing Salary
                 teamTwoApproved = teamOneTotalContracts <= teamTwoTotalContracts * 1.75 + 100000
                 
-            } else if (6533334 < teamOneTotalContracts <= 19600000) {
+            } else if (6533334 <= teamOneTotalContracts <= 19600000) {
                 teamTwoApproved = teamOneTotalContracts <= teamTwoTotalContracts + 5000000
 
             } else if (teamOneTotalContracts > 19600000) {

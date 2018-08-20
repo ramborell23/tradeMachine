@@ -1,8 +1,7 @@
 import React from "react";
-import Player from "./player";
-import { Route, Link, Switch } from "react-router-dom";
 import '../Stylesheets/teamPage.css';
 import '../Stylesheets/playerPage.css';
+import "../SASS/main.css";
 import ScrollUpButton from "react-scroll-up-button";
 const NewsAPI = require('newsapi');
 const newsapi = new NewsAPI('e61cdae783b64c829b1f09b8fd0a4010');
@@ -94,15 +93,14 @@ class PlayerPage extends React.Component {
     }
 
     render() {
-        const {teams, teamInfo,teamSelect, teamNews, } = this.state;
+        const {teams, teamInfo, teamNews, } = this.state;
         console.log('teamSelect', teamInfo)
         return (
             <div className={`maincolor3${this.state.teamInfo[0].abbreviation}`}>
                   <ScrollUpButton ContainerClassName="ScrollUpButton__Container" TransitionClassName="ScrollUpButton__Toggled">
-                    <svg  class="scroll_arrow"  viewBox="0 0 32 32" >
-                        <path class="path1" d="M27.414 12.586l-10-10c-0.781-0.781-2.047-0.781-2.828 0l-10 10c-0.781 0.781-0.781 2.047 0 2.828s2.047 0.781 2.828 0l6.586-6.586v19.172c0 1.105 0.895 2 2 2s2-0.895 2-2v-19.172l6.586 6.586c0.39 0.39 0.902 0.586 1.414 0.586s1.024-0.195 1.414-0.586c0.781-0.781 0.781-2.047 0-2.828z"></path>
+                    <svg  className="scroll_arrow"  viewBox="0 0 32 32" >
+                        <path className="path1" d="M27.414 12.586l-10-10c-0.781-0.781-2.047-0.781-2.828 0l-10 10c-0.781 0.781-0.781 2.047 0 2.828s2.047 0.781 2.828 0l6.586-6.586v19.172c0 1.105 0.895 2 2 2s2-0.895 2-2v-19.172l6.586 6.586c0.39 0.39 0.902 0.586 1.414 0.586s1.024-0.195 1.414-0.586c0.781-0.781 0.781-2.047 0-2.828z"></path>
                     </svg>
-                        {/* <i class="fas fa-arrow-up"></i> */}
                         
                 </ScrollUpButton>
                
@@ -126,9 +124,9 @@ class PlayerPage extends React.Component {
                 </button>
                 </div>
                 <div className=''>
-                    {teamInfo.map(team =>(
-                       teamInfo.length === 0 ? '' : <label className=''>
-                            <img   className='side_nav_pic' src={team.teamlogo} alt=''/>
+                    {teamInfo.map((team, index) =>(
+                        teamInfo.length === 0 ? '' : <label key={index}  className=''>
+                            <img className='side_nav_pic' src={team.teamlogo} alt=''/>
                             {/* <br/>
                             <br/>
                             {team.team}
@@ -151,7 +149,7 @@ class PlayerPage extends React.Component {
                         <div className='home_news_item'>
                             <h2 className='home_news_headline'><a href={article.url} target="_blank">{article.title}</a></h2>
                             <div>
-                            <img className='home_article_image' src={article.urlToImage} alt='article picture' />
+                            <img className='home_article_image' src={article.urlToImage} alt='article' />
                             </div>
                             <div className='home_news_description'>
                                 {article.description}
