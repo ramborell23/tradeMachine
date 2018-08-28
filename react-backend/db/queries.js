@@ -1,6 +1,10 @@
 const pgp = require('pg-promise')({});
 
 const db = pgp("postgres://localhost/nba");
+// const db2 = pgp("postgres://localhost/btUsers");
+const authHelpers = require("../auth/helpers.js");
+const passport = require("../auth/local.js");
+
 const puppeteer = require("puppeteer");
 
 var word;
@@ -99,7 +103,7 @@ function getPotentialFreeAgents() {
     return db.many(`SELECT * FROM player_salaries WHERE _2018_19 IS  NULL OR option_year = '2018'`)
 }
 
-function getSpecificTeam(teamName) {
+const getSpecificTeam = (teamName) => {
     return db.many(`SELECT * FROM teams JOIN player_salaries ON teams.abbreviation=player_salaries.tm WHERE abbreviation = $1`, [teamName])
 }
 function getFreeAgentInfo(playerName) {
@@ -131,6 +135,44 @@ async function scrapeStats() {
     await browser.close();
     return data
 }
+
+/* ------------------------ POST REQUESTS QUERIES ------------------------ */
+
+const registerUser = (req, res, next) => {
+    const hash = authHelpers.createHash('HelloWorld')
+    console.log(req.body)
+    console.log(hash)
+    db.none(
+      "INSERT INTO Users (username, first_name, last_name, email,  password_digest) VALUES (${username}, ${firstName}, ${lastName},  ${email}, ${password})",
+      {
+        username: req.body.username,
+        firstName: req.body.firstName,
+        lastName: req.body.lastName,
+        email: req.body.email,
+        password: hash
+      }
+    )
+      .then(() => {
+        res
+          .status(200)
+          .json({
+            status: "success",
+            message: "Successfully registered user"
+          });
+      })
+      .catch(err => {
+        console.log(`Registration`, err);
+        res
+          .status(500)
+          .json({
+            message: `Registration Failed: ${err} `,
+            err
+          });
+      });
+}
+
+/* ------------------------ PUT REQUESTS QUERIES ------------------------ */
+
 
 
 //
@@ -164,5 +206,10 @@ module.exports = {
     getAllDraftProspects,
 
     //Stats test
-    scrapeStats
+    scrapeStats,
+
+
+
+    //Post Routes
+    registerUser
 };

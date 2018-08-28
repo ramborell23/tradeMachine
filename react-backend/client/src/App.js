@@ -8,6 +8,7 @@ import TeamsPage from './Components/TeamsPage'
 import NbaStats from "./Components/Tables/nbaStats.jsx";
 import News from './Components/News'
 import Home from './Components/Home'
+import "./SASS/main.css";
 console.log('Got thru', process.env.REACT_APP_YOUTUBE_API_KEY);
 
 

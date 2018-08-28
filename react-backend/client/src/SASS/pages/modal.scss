@@ -1,3 +1,24 @@
+ .backdropStyle{
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0,0,0,0.3);
+      padding: 50;
+    };
+
+    // The modal "window"
+    .modalStyle{
+      background-color: #fff;
+      border-radius: 5;
+      max-width: 500;
+      min-height: 300;
+      margin: 0 auto;
+      padding: 30;
+      overflow:'scroll';
+    };
+
 .backdropStyle {
   position: 'fixed';
   top: 0;
@@ -37,4 +58,28 @@
 .modal_list_two{
   max-height: 200px;
   overflow: scroll
+}
+
+.modal-header{
+    height: 70px;
+    background-color: blue;
+    padding: 0;
+}
+.modal-footer{
+    height: 70px;
+    background-color: black;
+    padding: 0;
+}
+
+.signup-inputs{
+    align-self: flex-end;
+    width: 185px;
+}
+
+.modalFlex{
+    display: flex;
+}
+
+.modal-words{
+    width: 50%;
 }

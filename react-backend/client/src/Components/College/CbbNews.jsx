@@ -12,24 +12,22 @@ class CbbNews extends React.Component{
     }
 
     componentDidMount(){
-        newsapi.v2.everything({
-            sources:
-              "fox-sports, espn, bleacher-report, usa-today, the-new-york-times,  associated-press, talksport",
-            q: 'College Basketball OR (NCAA rankings)',
-            // category: 'Sports',
-            from: "2018-05-20",
-            to: "2018-05-29",
-            pageSize: 20,
-            language: "en"
+        newsapi.v2
+          .everything({ // sources:
+            //   "fox-sports, espn, bleacher-report, usa-today, the-new-york-times,  associated-press, talksport"
+            //   ,
+              q: "NBA", 
+              // category: 'Sports',
+            pageSize: 100, 
+            language: "en" })
             // country: 'us'
-          })
           .then(response => {
-              this.setState({ cbbArticles: response.articles });
-              console.log("cbbArticles  cbbArticles", this.state.cbbArticles);
+            this.setState({ cbbArticles: response.articles });
+            console.log("cbbArticles  cbbArticles", this.state.cbbArticles);
             /*
               {
                 status: "ok",
-                articles: [...]
+                articles: [...] 
               }
             */
           });

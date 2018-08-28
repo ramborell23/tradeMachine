@@ -761,18 +761,31 @@ VALUES
     ( 'UTA', 'UTA', 1, 2018 ,'No', ''),
     ( 'UTA', 'UTA', 2, 2018 ,'No', ''),
     ( 'WAS', 'WAS', 1, 2018 ,'No', ''),
-    ( 'WAS', 'WAS', 2, 2018 ,'No', '')
-    ;
-
-DROP TABLE teams3;
-CREATE TABLE teams3
-(
-    id SERIAL UNIQUE,
-    name VARCHAR(90)
+    ( 'WAS', 'WAS', 2, 2018 ,'No', ''
 );
 
+
+Drop TABLE Users;
+-- CASCADE;
+CREATE TABLE Users
+(
+    id SERIAL UNIQUE,
+    first_name VARCHAR,
+    last_name VARCHAR,
+    username VARCHAR UNIQUE,
+    password_digest VARCHAR NOT NULL,
+    email VARCHAR,
+    PRIMARY KEY (id)
+);
+-- DROP TABLE teams3;
+-- CREATE TABLE teams3
+-- (
+--     id SERIAL UNIQUE,
+--     name VARCHAR(90)
+-- );
+
 -- Insert a row, ID will be automatically generated
-INSERT INTO teams3
-    (name)
-VALUES
-    ('Tottenham Hotspur');
+-- INSERT INTO teams3
+--     (name)
+-- VALUES
+--     ('Tottenham Hotspur');
