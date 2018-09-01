@@ -1,0 +1,23 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/node_modules/puppeteer/.local-chromium/mac-579032/chrome-mac/Chromium.app/Contents/Versions/70.0.3508.0/Chromium Framework.framework/Versions/A/Chromium
+
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
