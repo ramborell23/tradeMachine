@@ -125,13 +125,14 @@ function getAllDraftProspects(playerName) {
 async function scrapeStats() {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
-    await page.goto('https://www.basketball-reference.com/leagues/NBA_2018_per_game.html');
+    await page.goto('http://www.espn.com/nba/statistics/player/_/stat/scoring-per-game/sort/avgPoints/year/2018/seasontype/2');
     await page.screenshot({ path: 'example.png' });
-
+    
     const data = await page.evaluate(() => {
         const tds = Array.from(document.querySelectorAll('table tr'))
         return tds.map(td => td.innerText)
     });
+    console.log(data)
     await browser.close();
     return data
 }

@@ -8,6 +8,7 @@ router.use(express.static("public"));
 
 
 router.get('/', (req, res, next) => {
+    console.log('We hit the stats')
     db.scrapeStats()
         .then((data) => {
             res.send({ data });
