@@ -8,4 +8,4 @@ Basketball Today is a full stack web application that aggregates news and allows
 ELEVATE was built using ReactJS, HTML/CSS, and the following APIs and Packages:
 * [Sass](https://www.twilio.com/docs/api)
 * [News](http://react-autosuggest.js.org/)
-* [Plotly.js](https://plot.ly/javascript/)
+* [MySportsFeed](https://plot.ly/javascript/)
