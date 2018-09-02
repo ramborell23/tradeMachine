@@ -6,6 +6,7 @@ import Draft from './Components/Draft'
 import DraftBoard from './Components/DraftBoard'
 import TeamsPage from './Components/TeamsPage'
 import NbaStats from "./Components/Tables/nbaStats.jsx";
+import Stats from "./Components/NBA/Stats.jsx";
 import News from './Components/News'
 import Home from './Components/Home'
 import "./SASS/main.css";
@@ -35,7 +36,7 @@ class App extends Component {
             </div>} />
         <Route exact path="/nba" component={Home} />
         <Route path="/nba/teams" component={TeamsPage} />
-        <Route path="/nba/stats" component={NbaStats} />
+        <Route path="/nba/stats" component={Stats} />
         <Route path="/nba/tradeMachine" component={Calc} />
         <Route path="/nba/freeagents" component={FreeAgents} />
         <Route path="/nba/draft" component={Draft} />

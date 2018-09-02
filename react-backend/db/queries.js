@@ -125,16 +125,21 @@ function getAllDraftProspects(playerName) {
 async function scrapeStats() {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
-    await page.goto('http://www.espn.com/nba/statistics/player/_/stat/scoring-per-game/sort/avgPoints/year/2018/seasontype/2');
+    await page.goto('http://stats.nba.com/players/traditional/?sort=DD2&dir=-1');
     await page.screenshot({ path: 'example.png' });
-    
+
     const data = await page.evaluate(() => {
-        const tds = Array.from(document.querySelectorAll('table tr'))
+        const tds = Array.from(document.querySelectorAll('table'))
         return tds.map(td => td.innerText)
     });
     console.log(data)
     await browser.close();
     return data
+}
+
+
+const getAllPlayerStats = () => {
+    return db.many(`SELECT * FROM player_stats`);
 }
 
 /* ------------------------ POST REQUESTS QUERIES ------------------------ */
@@ -144,32 +149,32 @@ const registerUser = (req, res, next) => {
     console.log(req.body)
     console.log(hash)
     db.none(
-      "INSERT INTO Users (username, first_name, last_name, email,  password_digest) VALUES (${username}, ${firstName}, ${lastName},  ${email}, ${password})",
-      {
-        username: req.body.username,
-        firstName: req.body.firstName,
-        lastName: req.body.lastName,
-        email: req.body.email,
-        password: hash
-      }
+        "INSERT INTO Users (username, first_name, last_name, email,  password_digest) VALUES (${username}, ${firstName}, ${lastName},  ${email}, ${password})",
+        {
+            username: req.body.username,
+            firstName: req.body.firstName,
+            lastName: req.body.lastName,
+            email: req.body.email,
+            password: hash
+        }
     )
-      .then(() => {
-        res
-          .status(200)
-          .json({
-            status: "success",
-            message: "Successfully registered user"
-          });
-      })
-      .catch(err => {
-        console.log(`Registration`, err);
-        res
-          .status(500)
-          .json({
-            message: `Registration Failed: ${err} `,
-            err
-          });
-      });
+        .then(() => {
+            res
+                .status(200)
+                .json({
+                    status: "success",
+                    message: "Successfully registered user"
+                });
+        })
+        .catch(err => {
+            console.log(`Registration`, err);
+            res
+                .status(500)
+                .json({
+                    message: `Registration Failed: ${err} `,
+                    err
+                });
+        });
 }
 
 /* ------------------------ PUT REQUESTS QUERIES ------------------------ */
@@ -208,6 +213,7 @@ module.exports = {
 
     //Stats test
     scrapeStats,
+    getAllPlayerStats,
 
 
 

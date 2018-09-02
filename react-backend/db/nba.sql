@@ -651,6 +651,46 @@ CREATE TABLE draft_prospects
 COPY draft_prospects(Rk,PLAYER,	SCHOOL_Team,YEAR,POS, PosRK,HT,WT) 
 FROM '/Users/c4q/Documents/tradeMachine/react-backend/db/prospects.csv' DELIMITER ',' CSV HEADER;
 
+
+DROP TABLE player_stats;
+CREATE TABLE player_stats
+(
+   Rk INT,
+   Player VARCHAR,
+   Pos VARCHAR,
+   Age INT,
+   Tm VARCHAR,
+   G INT,
+   GS INT,
+   MP DECIMAL,
+   FG DECIMAL,
+   FGA DECIMAL,
+   "FG%" DECIMAL,
+   "3P" DECIMAL,
+   "3PA" DECIMAL,
+   "3P%" DECIMAL,
+   "2P" DECIMAL,
+   "2PA" DECIMAL,
+   "2P%" DECIMAL,
+   "eFG%" DECIMAL,
+   FT DECIMAL,
+   FTA DECIMAL,
+   "FT%" DECIMAL,
+   ORB DECIMAL,
+   DRB DECIMAL,
+   TRB DECIMAL,
+   AST DECIMAL,
+   STL DECIMAL,
+   BLK DECIMAL,
+   TOV DECIMAL,
+   PF DECIMAL,
+   "PS/G" DECIMAL
+);
+
+COPY 
+player_stats(Rk,Player,Pos,Age,Tm,G,GS,MP,FG,FGA,"FG%","3P","3PA","3P%","2P","2PA","2P%","eFG%",FT,FTA,"FT%",ORB,DRB,TRB,AST,STL,BLK,TOV,PF,"PS/G") 
+FROM '/Users/c4q/Documents/tradeMachine/react-backend/db/nbaplayersstats.csv' DELIMITER ',' CSV HEADER;
+
 DROP TABLE teamrecords;
 CREATE TABLE teamrecords
 (

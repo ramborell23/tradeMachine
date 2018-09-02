@@ -153,7 +153,7 @@ class FreeAgents extends React.Component {
 
     render() {
 
-        const {  arrOfFreeAgentChoices,
+        const { arrOfFreeAgentChoices, arrOfFreeAgents,
             teamState, arrOfPositions,
             teamDraftPicks,  teamAssetsSelect } = this.state
         // let newArrOfFreeAgents = freeAgentsFunctions.filterFreeAgents(typeOfFreeAgentSelect, arrOfFreeAgents)
@@ -164,7 +164,7 @@ class FreeAgents extends React.Component {
             })
             return freeAgents
         }
-        // console.log('teamCap', teamCap)
+        console.log("arrOfFreeAgents", arrOfFreeAgents);
         // console.log('Team State', teamState)
         // console.log('Team State', teamDraftPicks)
         let teamAssets = []
