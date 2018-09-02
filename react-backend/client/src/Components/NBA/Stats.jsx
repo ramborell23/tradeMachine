@@ -20,6 +20,7 @@ const columns = [
   {
     id: "player", // Required because our accessor is not a string
     Header: "Player",
+    // Pivot: false, // Custom value accessors!
     accessor: d => d.player // Custom value accessors!
   },
   {
@@ -65,7 +66,7 @@ const columns = [
   {
     id: "fgp", // Required because our accessor is not a string
     Header: "FG%",
-    accessor: d => d["fg%"] // Custom value accessors!
+    accessor: d => d["FG%"] // Custom value accessors!
   },
   {
     id: "3p", // Required because our accessor is not a string
@@ -74,7 +75,7 @@ const columns = [
   },
   {
     id: "3pa", // Required because our accessor is not a string
-    Header: "#PA",
+    Header: "3PA",
     accessor: d => d["3PA"] // Custom value accessors!
   },
   {
@@ -100,7 +101,7 @@ const columns = [
   {
     id: "efg%", // Required because our accessor is not a string
     Header: "eFG%",
-    accessor: d => d["eFG %"] // Custom value accessors!
+    accessor: d => d["eFG%"] // Custom value accessors!
   },
   {
     id: "ft", // Required because our accessor is not a string
@@ -110,7 +111,7 @@ const columns = [
   {
     id: "fta", // Required because our accessor is not a string
     Header: "FTA",
-    accessor: d => d.fast // Custom value accessors!
+    accessor: d => d.fta // Custom value accessors!
   },
   {
     id: "ft%", // Required because our accessor is not a string
