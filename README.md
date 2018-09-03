@@ -12,4 +12,4 @@ Basketball Today was built using ReactJS, HTML/CSS, and the following APIs and P
 
 * ![MySportsFeed logo](https://pbs.twimg.com/profile_images/779390458892001280/aFHAsc24_400x400.jpg)  [MySportsFeed API](https://www.mysportsfeeds.com/data-feeds/api-docs/)
 
-* ![React Table logo] (https://reactjsexample.com/content/images/2018/03/logo-react-table.png) [React Table] (https://react-table.js.org/#/story/readme)
+* ![React Table logo](https://reactjsexample.com/content/images/2018/03/logo-react-table.png) [React Table] (https://react-table.js.org/#/story/readme)
