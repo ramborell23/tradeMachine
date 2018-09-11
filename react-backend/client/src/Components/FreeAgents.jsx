@@ -2,8 +2,6 @@ import React from 'react';
 import { Route, Switch } from "react-router-dom";
 // import moneyFunctions from './moneyFunctions'
 import '../Stylesheets/freeAgents.css';
-// import '../Stylesheets/western.css';
-// import '../Stylesheets/eastern.css';
 import PlayerPage from "./playerPage";
 import FreeAgentsList from "./FreeAgentsList";
 // const { PieChart,  } = Recharts;

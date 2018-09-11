@@ -7,13 +7,8 @@ import TradeList from './tradeList'
 import TradeList2 from './tradeList'
 import Modal from './Modal';
 import Modal2 from './Modal2';
-import './calc.css';
-// import '../Stylesheets/western.css';
-// import '../Stylesheets/eastern.css';
-// import '../Stylesheets/modal.css';
 import "../SASS/main.css";
 import moneyFunctions from './moneyFunctions'
-// var Highcharts = require('highcharts');
 import FusionCharts from 'fusioncharts';
 import Charts from 'fusioncharts/fusioncharts.charts';
 Charts(FusionCharts);

@@ -1,7 +1,5 @@
 import React from "react";
 import Modal3 from './Modal3';
-// import '../Stylesheets/draftBoard.css';
-// import '../Stylesheets/freeAgents.css';
 import "../SASS/main.css";
 import { DragDropContext } from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
