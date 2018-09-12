@@ -86,7 +86,7 @@ class LandingPage extends Component {
                 <h3 className="home_title">Basketball Today</h3>
             </Link>
             <Route exact path="/" render={() => <div>
-                <div className="navbar">
+                <div className="navbar1">
                     <Link to="/nba">NBA</Link>
                     {" | "}
                     <Link to="/cbb">CBB</Link>
