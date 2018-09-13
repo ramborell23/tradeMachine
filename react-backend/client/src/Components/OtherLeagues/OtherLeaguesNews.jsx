@@ -1,6 +1,8 @@
 import React from 'react'
 const NewsAPI = require("newsapi");
 const newsapi = new NewsAPI("2c4a28a57b254bdaac2f7affd9544da1");
+const moment = require("moment");
+moment().format();
 
 class OtherLeagueNews extends React.Component{
     constructor(){
@@ -63,6 +65,13 @@ class OtherLeagueNews extends React.Component{
                       <br />
                     </label>
                   </label>
+                <label className="article_credit">
+                  <label className="home_article_author">
+                    <br />
+                    {moment(article.publishedAt).fromNow()}
+                    <br />
+                  </label>
+                </label>
                 </div>
               ))}
             </div>
