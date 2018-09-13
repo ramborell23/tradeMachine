@@ -11,7 +11,7 @@ class Wnba extends Component {
         return <div className="App">
             <br />
             <Route path="/wnba" render={() => <div>
-                  WNBA
+  
                   <div className="navbar">
                     <Link to="/wnba">Home</Link>
                     {" | "}

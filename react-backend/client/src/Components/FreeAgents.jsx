@@ -1,12 +1,9 @@
 import React from 'react';
 import { Route, Switch } from "react-router-dom";
 // import moneyFunctions from './moneyFunctions'
-import '../Stylesheets/freeAgents.css';
+
 import PlayerPage from "./playerPage";
 import FreeAgentsList from "./FreeAgentsList";
-// const { PieChart,  } = Recharts;
-// var PieChart = require("react-chartjs").Line;
-// var myPieChart = new Chart(ctx[0]).Pie(data, options);
 
 const axios = require("axios");
 

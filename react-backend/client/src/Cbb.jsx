@@ -12,7 +12,7 @@ class Cbb extends Component {
         return <div className="App">
             <br />
             <Route path="/cbb" render={() => <div>
-                  cbb
+                  
                   <div className="navbar">
                     <Link to="/cbb">Home</Link>
                     {" | "}
