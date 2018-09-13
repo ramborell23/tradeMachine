@@ -28,13 +28,14 @@
     "react-scroll-up-button": "^1.6.0",
     "react-slick": "^0.23.1",
     "react-table": "^6.8.6",
+    "react-test-renderer": "^16.5.0",
     "recharts": "^1.1.0",
     "slick-carousel": "^1.8.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "jest",
     "eject": "react-scripts eject"
   },
   "proxy": "http://localhost:3100",
