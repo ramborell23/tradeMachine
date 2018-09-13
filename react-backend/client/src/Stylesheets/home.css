@@ -25,8 +25,7 @@
     text-align: center;
     margin-left: 5%;
     margin-bottom: 1em;
-    /* box-shadow: 10px 10px grey; */
-    /*  */
+
 }
 
 .home_news_headline {
@@ -45,8 +44,6 @@
 }
 
 .home_article_author {
-    /* padding: 2em; */
-    /* margin: 0.2em; */
     font-size: .8em;
 }
 
