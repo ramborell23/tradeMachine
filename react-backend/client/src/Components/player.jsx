@@ -2,7 +2,7 @@ import React from "react";
 import ReactTable from "react-table";
 import 'react-table/react-table.css'
 import '../Stylesheets/table.css';
-import '../Stylesheets/playerPage.css';
+// import '../Stylesheets/playerPage.css';
 import {  Link } from "react-router-dom";
 import moneyFunctions from './moneyFunctions'
 

@@ -1,6 +1,6 @@
 import React from "react";
 // import '../Stylesheets/teamPage.css';
-import '../Stylesheets/playerPage.css';
+// import '../Stylesheets/playerPage.css';
 import "../SASS/main.css";
 import ScrollUpButton from "react-scroll-up-button";
 const NewsAPI = require('newsapi');

@@ -31,21 +31,24 @@ class FreeAgents extends React.Component {
     }
 
     componentDidMount() {
-        fetch('http://localhost:3100/teams')
-            .then(res => res.json())
-            .catch(function (error) {
-                console.log(error);
-            })
-            .then((users) => {
-                let data = users.data;
-                this.setState({ arrOfNBATeams: ['', ...data] })
-            });
-        fetch('http://localhost:3100/players/freeAgents')
-            .then(res => res.json())
-            .then((users) => {
-                let data = users.data;
-                this.setState({ arrOfFreeAgents: [...data] })
-            });
+        axios
+          .get("http://localhost:3100/teams")
+          .then(users => {
+            let data = users.data;
+            this.setState({ arrOfNBATeams: ["", ...data] });
+          })
+          .catch(function(error) {
+            console.log(error);
+          });
+          axios
+          .get("http://localhost:3100/players/freeAgents")
+          .then(users => {
+            let data = users.data;
+            this.setState({ arrOfFreeAgents: [...data] });
+          })
+          .catch(function(error) {
+            console.log(error);
+          });
     }
     handleTeamSelect = (e) => {
         this.setState({
