@@ -1,12 +1,16 @@
 // .my-datepicker-component {
   
 // }
-@import 'pages/home';
-
 @import 'base/_base';
+
+@import 'pages/draftboard';
+@import 'pages/freeAgents';
+@import 'pages/home';
 @import 'pages/modal';
+@import 'pages/playersPage';
 @import 'pages/teams';
-@import 'pages/tradeMachine';
+@import 'pages/tables';
 @import 'pages/teamsPage';
+@import 'pages/tradeMachine';
 // @import 'pages/eastern';
 // @import 'pages/western';

@@ -1,26 +1,5 @@
- .backdropStyle{
-      position: fixed;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background-color: rgba(0,0,0,0.3);
-      padding: 50;
-    };
-
-    // The modal "window"
-    .modalStyle{
-      background-color: #fff;
-      border-radius: 5;
-      max-width: 500;
-      min-height: 300;
-      margin: 0 auto;
-      padding: 30;
-      overflow:'scroll';
-    };
-
 .backdropStyle {
-  position: 'fixed';
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
@@ -29,57 +8,76 @@
   padding: 50;
 }
 
+// The modal "window"
+.modalStyle {
+  background-color: #fff;
+  border-radius: 5;
+  max-width: 500;
+  min-height: 300;
+  margin: 0 auto;
+  padding: 30;
+  overflow: "scroll";
+}
 
-.modal_trade_container{
+.backdropStyle {
+  position: "fixed";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 50;
+}
+
+.modal_trade_container {
   display: flex;
   flex-direction: row;
 }
 
-
-.modal_trade_photo{
+.modal_trade_photo {
   width: 25%;
 }
 
-.fas{
+.fas {
   /* color : red; */
   margin: auto;
   width: 30%;
   /* border: 3px solid green; */
   padding: 15px;
   font-size: 40px;
-  margin-top:20px;
+  margin-top: 20px;
 }
 
-.modal_list_one{
+.modal_list_one {
   max-height: 300px;
-  overflow: scroll
+  overflow: scroll;
 }
 
-.modal_list_two{
+.modal_list_two {
   max-height: 200px;
-  overflow: scroll
+  overflow: scroll;
 }
 
-.modal-header{
-    height: 70px;
-    background-color: blue;
-    padding: 0;
+.modal-header {
+  height: 70px;
+  background-color: blue;
+  padding: 0;
 }
-.modal-footer{
-    height: 70px;
-    background-color: black;
-    padding: 0;
-}
-
-.signup-inputs{
-    align-self: flex-end;
-    width: 185px;
+.modal-footer {
+  height: 70px;
+  background-color: black;
+  padding: 0;
 }
 
-.modalFlex{
-    display: flex;
+.signup-inputs {
+  align-self: flex-end;
+  width: 185px;
 }
 
-.modal-words{
-    width: 50%;
+.modalFlex {
+  display: flex;
+}
+
+.modal-words {
+  width: 50%;
 }

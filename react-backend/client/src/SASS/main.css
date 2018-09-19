@@ -1,3 +1,175 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #f5f3f3;
+}
+
+.prospect_yt_modal {
+  background-color: transparent;
+  /* border-radius: 50%; */
+  max-width: 800px;
+  max-height: 120px;
+  margin: 0 auto;
+  padding: 30px;
+  overflow: scroll;
+}
+
+#player {
+  width: 100%;
+  height: 300px;
+  align-items: center;
+}
+
+.modalStyle {
+  /* height: 400px;
+  max-height: 100%; */
+  /* width: 600px;
+  max-width: 100%; */
+  /* background-image: url("http://www.vilniauskrepsiniomokykla.lt/wp-content/uploads/2018/02/krepsinio-varzybos-isvykoje.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* color :whitesmoke */
+}
+
+.modal_logo {
+  height: 25%;
+  width: 25%;
+}
+
+.yt_image {
+  float: left;
+  padding-right: 13px;
+}
+
+.prospects_container {
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  align-items: flex-start;
+  /* width: 50%; */
+  height: 50%;
+}
+
+.draft_order_container {
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 45%;
+  height: 50%;
+}
+
+.prospect_label {
+  padding: 5px;
+  border: 2px black solid;
+  margin: 5px;
+}
+
+.prospect_ranking {
+  font-size: 3em;
+  float: left;
+  padding-right: 1em;
+}
+
+.draft_page_container {
+  display: flex;
+}
+
+.draft_order_label {
+  border: black 2px solid;
+  margin: 5px;
+}
+
+.freeagent_pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.main_freeAgents_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* flex-wrap: wrap; */
+  /* padding-left: 2em;
+  padding-right: 2em; */
+  height: 100%;
+  width: 100%;
+}
+
+.freeagent_player {
+  height: 25%;
+  width: 25%;
+  border: 0.2em black solid;
+  margin-bottom: 1em;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  background-color: white;
+  border-radius: 10%;
+  padding-bottom: 1em;
+  margin-right: 1em;
+}
+
+.free_team_pic {
+  height: 10%;
+  width: 10%;
+}
+
+.free_team_container {
+  border: 0.5px black solid;
+  width: 65%;
+  margin-left: 15%;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.free_team_container2 {
+  border: 0.5px black solid;
+  width: 100%;
+  /* margin-left: 15%; */
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.free_team_info_container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.free_highest_paid {
+  width: 10%;
+}
+
+.highest_paid_div {
+  width: 75%;
+}
+
+.free_select_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.free_select_item {
+  width: 50%;
+  /* padding: 13em; */
+  align-self: center;
+  /* padding-bottom: 2em; */
+}
+
+.free_filter_text {
+  /* align-self:center; */
+  text-align: center;
+  font-family: "Ultra", serif;
+}
+
 .maincolorWAS, .maincolorUTA, .maincolorTOR, .maincolorSAS, .maincolorSAC, .maincolorPOR, .maincolorPHX, .maincolorPHI, .maincolorORL, .maincolorOKC, .maincolorNYK, .maincolorNOP, .maincolorMIN, .maincolorMIL, .maincolorMIA, .maincolorMEM, .maincolorLAL, .maincolorLAC, .maincolorIND, .maincolorHOU, .maincolorGSW, .maincolorDET, .maincolorDEN, .maincolorDAL, .maincolorCLE, .maincolorCHI, .maincolorCHA, .maincolorBKN, .maincolorBOS, .maincolorATL, .maincolor {
   display: flex;
   flex-direction: column;
@@ -213,13 +385,6 @@ body {
     height: 20px;
   }
 }
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  background-color: #f5f3f3;
-}
-
 .backdropStyle {
   position: fixed;
   top: 0;
@@ -302,6 +467,35 @@ body {
 
 .modal-words {
   width: 50%;
+}
+
+.freeagent_player {
+  /* padding-left: 3em; */
+  /* border-radius: 15%;  */
+  text-align: center;
+}
+
+.photo_contract_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.player_page_photo {
+  width: 35%;
+  height: 35%;
+}
+
+.player_page_name {
+  text-align: center;
+}
+
+.free_back_button {
+  display: block;
+  height: 35px;
+  width: 60px;
+  border-radius: 50%;
+  border: 1px solid red;
 }
 
 .maincolorWAS, .maincolorUTA, .maincolorTOR, .maincolorSAS, .maincolorSAC, .maincolorPOR, .maincolorPHX, .maincolorPHI, .maincolorORL, .maincolorOKC, .maincolorNYK, .maincolorNOP, .maincolorMIN, .maincolorMIL, .maincolorMIA, .maincolorMEM, .maincolorLAL, .maincolorLAC, .maincolorIND, .maincolorHOU, .maincolorGSW, .maincolorDET, .maincolorDEN, .maincolorDAL, .maincolorCLE, .maincolorCHI, .maincolorCHA, .maincolorBKN, .maincolorBOS, .maincolorATL, .maincolor {
@@ -989,6 +1183,47 @@ because it's one of their two primary colors.
     /* float: left;  */
   }
 }
+.tableDiv {
+  padding-left: 1em;
+}
+
+.reactTable {
+  width: 95%;
+  height: 100%;
+  /* padding-bottom: 1em; */
+}
+
+/* 
+.slide_item{
+    text-align: center;
+} */
+.home_title {
+  color: blue;
+}
+
+.team_page_select {
+  display: flex;
+  justify-content: center;
+}
+
+.team_record_div {
+  /* border: black 1px outset; */
+  height: 55%;
+  width: 13%;
+  position: fixed;
+  left: 2em;
+  bottom: 2em;
+  text-align: center;
+}
+
+.side_nav_pic {
+  width: 15%;
+  padding-top: 1em;
+  padding-left: 1em;
+  position: fixed;
+  /* float: left;  */
+}
+
 /* @import url('https://fonts.googleapis.com/css?family=Fugaz+One'); */
 .main_container {
   height: 30%;
@@ -1141,33 +1376,6 @@ because it's one of their two primary colors.
 
 .trade_button {
   padding-bottom: 3em;
-}
-
-.home_title {
-  color: blue;
-}
-
-.team_page_select {
-  display: flex;
-  justify-content: center;
-}
-
-.team_record_div {
-  /* border: black 1px outset; */
-  height: 55%;
-  width: 13%;
-  position: fixed;
-  left: 2em;
-  bottom: 2em;
-  text-align: center;
-}
-
-.side_nav_pic {
-  width: 15%;
-  padding-top: 1em;
-  padding-left: 1em;
-  position: fixed;
-  /* float: left;  */
 }
 
 /*# sourceMappingURL=main.css.map */
