@@ -33,6 +33,9 @@ class FreeAgents extends React.Component {
     componentDidMount() {
         fetch('http://localhost:3100/teams')
             .then(res => res.json())
+            .catch(function (error) {
+                console.log(error);
+            })
             .then((users) => {
                 let data = users.data;
                 this.setState({ arrOfNBATeams: ['', ...data] })
@@ -110,11 +113,11 @@ class FreeAgents extends React.Component {
         return (
             <div>
                 {/* <h3>Free Agent Home232</h3> */}
-                 
+
                 <PlayerPage
                     player={player}
                 />
-       </div>
+            </div>
 
         )
     };
@@ -150,7 +153,7 @@ class FreeAgents extends React.Component {
 
         const { arrOfFreeAgentChoices, arrOfFreeAgents,
             teamState, arrOfPositions,
-            teamDraftPicks,  teamAssetsSelect } = this.state
+            teamDraftPicks, teamAssetsSelect } = this.state
         // let newArrOfFreeAgents = freeAgentsFunctions.filterFreeAgents(typeOfFreeAgentSelect, arrOfFreeAgents)
         // newArrOfFreeAgents = freeAgentsFunctions.filterFreeAgentsByPosition(freeAgentPositionSelect, newArrOfFreeAgents)
         const teamUpcomingFreeAgents = (arrofPlayers) => {
@@ -163,7 +166,7 @@ class FreeAgents extends React.Component {
         // console.log('Team State', teamState)
         // console.log('Team State', teamDraftPicks)
         let teamAssets = []
-        
+
         if (teamAssetsSelect === 'Team Draft picks') {
             teamAssets = teamDraftPicks
         } else if (teamAssetsSelect === 'Upcoming Free Agents') {
@@ -171,45 +174,45 @@ class FreeAgents extends React.Component {
         }
         // setTeamAssets(teamAssetsSelect)
         console.log('teamAssetsSelect', teamAssetsSelect)
-        console.log('e.target.value', )
+        console.log('e.target.value')
         console.log('teamAssets', teamAssets)
         console.log('teamDraftPicks', teamDraftPicks)
         console.log('teamUpcomingFreeAgents(teamState)', teamUpcomingFreeAgents(teamState))
-      
+
         return (
             <div className='free_select_container'>
                 {/* <div className='free_select_item'> */}
                 <label className='free_select_item free_filter_text'>
-                <h2 className=''>2018 Potential Free Agents</h2>
-                    <label className=''>Filter By:<br/></label>
-                    <br/>
-                <label className=''>Type of Free Agent : </label>
-                <select
-                    name='typeOfFreeAgentSelect'
-                    onChange={this.handleTypeOfFreeAgentSelect}>
-                    {arrOfFreeAgentChoices.map((option, index) => (
-                        <option
-                        key={index}
-                        value={option}>{option}
-                        </option>
-                    ))}
-                </select>
-                <br/>
-                {''}Position : {' '}
-                <select
-                    name='freeAgentPositionSelect'
-                    onChange={this.handleTypeOfFreeAgentSelect}>
-                    {arrOfPositions.map((option, index) => (
-                        <option
-                        key={index}
-                        value={option}>{option}
-                        </option>
-                    ))}
-                </select>
-                    </label>
-                    {/* </div> */}
+                    <h2 className=''>2018 Potential Free Agents</h2>
+                    <label className=''>Filter By:<br /></label>
+                    <br />
+                    <label className=''>Type of Free Agent : </label>
+                    <select
+                        name='typeOfFreeAgentSelect'
+                        onChange={this.handleTypeOfFreeAgentSelect}>
+                        {arrOfFreeAgentChoices.map((option, index) => (
+                            <option
+                                key={index}
+                                value={option}>{option}
+                            </option>
+                        ))}
+                    </select>
+                    <br />
+                    {''}Position : {' '}
+                    <select
+                        name='freeAgentPositionSelect'
+                        onChange={this.handleTypeOfFreeAgentSelect}>
+                        {arrOfPositions.map((option, index) => (
+                            <option
+                                key={index}
+                                value={option}>{option}
+                            </option>
+                        ))}
+                    </select>
+                </label>
+                {/* </div> */}
 
-                
+
                 <Switch>
                     <Route exact path="/freeagents" render={this.renderBreeds} />
                     <Route exact path="/freeagents/:player" render={this.renderDogWithBreed} />

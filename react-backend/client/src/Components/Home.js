@@ -9,7 +9,19 @@ const newsapi = new NewsAPI('2c4a28a57b254bdaac2f7affd9544da1');
 const moment = require("moment");
 moment().format();
 
-
+const styles = {
+  row: {
+    display: "flex",
+    justifyContent: "center"
+  },
+  avatar: {
+    margin: 10
+  },
+  bigAvatar: {
+    width: 60,
+    height: 160
+  }
+};
 class Home extends React.Component {
     constructor() {
         super()
@@ -88,7 +100,9 @@ class Home extends React.Component {
                       <br />
                       {moment(article.publishedAt).fromNow()}
                       <br />
-                      <ArticleOptions />
+                      <ArticleOptions 
+                      classes={styles}
+                      />
                     </label>
                   </label>
                 </div>

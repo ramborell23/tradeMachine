@@ -90,13 +90,14 @@ class Calc extends React.Component {
 
     componentDidMount() {
   
-        fetch('http://localhost:3100/teams')
-            .then(res => res.json())
-            .then((users) => {
-                let data = users.data;
-                this.setState({ arrOfNBATeams: ['', ...data] })
-            }
-            );
+        fetch("http://localhost:3100/teams")
+        .then(teams => {
+          let data = teams.data;
+          this.setState({ arrOfNBATeams: ["", ...data] });
+        })
+          .catch(function(error) {
+            console.log(error);
+          })
     }
 
 

@@ -96,8 +96,6 @@ body {
   font-family: "Questrial", sans-serif;
 }
 .home_news_container .home_news_item .home_article_author {
-  /* padding: 2em; */
-  /* margin: 0.2em; */
   font-size: 0.8em;
 }
 
@@ -142,6 +140,11 @@ body {
 
 .scroll_arrow {
   height: 520px;
+}
+
+.menuItemImage {
+  height: 30px;
+  width: 30px;
 }
 
 @media screen and (max-width: 418px) {
@@ -1138,6 +1141,33 @@ because it's one of their two primary colors.
 
 .trade_button {
   padding-bottom: 3em;
+}
+
+.home_title {
+  color: blue;
+}
+
+.team_page_select {
+  display: flex;
+  justify-content: center;
+}
+
+.team_record_div {
+  /* border: black 1px outset; */
+  height: 55%;
+  width: 13%;
+  position: fixed;
+  left: 2em;
+  bottom: 2em;
+  text-align: center;
+}
+
+.side_nav_pic {
+  width: 15%;
+  padding-top: 1em;
+  padding-left: 1em;
+  position: fixed;
+  /* float: left;  */
 }
 
 /*# sourceMappingURL=main.css.map */
