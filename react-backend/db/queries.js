@@ -4,10 +4,10 @@ const db = pgp("postgres://localhost/nba");
 // const db2 = pgp("postgres://localhost/btUsers");
 const authHelpers = require("../auth/helpers.js");
 const passport = require("../auth/local.js");
+const express = require("express");
 
 const puppeteer = require("puppeteer");
 
-var word;
 
 function getAllPlayers() {
     return db.any('select * from players')
@@ -148,7 +148,7 @@ const registerUser = (req, res, next) => {
     const hash = authHelpers.createHash('HelloWorld')
     console.log(req.body)
     console.log(hash)
-    db.none(
+    return db.none(
         "INSERT INTO Users (username, first_name, last_name, email,  password_digest) VALUES (${username}, ${firstName}, ${lastName},  ${email}, ${password})",
         {
             username: req.body.username,
@@ -158,23 +158,6 @@ const registerUser = (req, res, next) => {
             password: hash
         }
     )
-        .then(() => {
-            res
-                .status(200)
-                .json({
-                    status: "success",
-                    message: "Successfully registered user"
-                });
-        })
-        .catch(err => {
-            console.log(`Registration`, err);
-            res
-                .status(500)
-                .json({
-                    message: `Registration Failed: ${err} `,
-                    err
-                });
-        });
 }
 
 /* ------------------------ PUT REQUESTS QUERIES ------------------------ */

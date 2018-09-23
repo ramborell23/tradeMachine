@@ -58,7 +58,6 @@ class LandingPage extends Component {
           })
           .catch(err => {
             console.log(err);
-            this.setState({ message: "Error logging in" });
           });
     }
 

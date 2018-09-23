@@ -1197,6 +1197,11 @@ because it's one of their two primary colors.
 .slide_item{
     text-align: center;
 } */
+.MuiAvatar-root-05 {
+  height: 780px;
+  display: none;
+}
+
 .home_title {
   color: blue;
 }
