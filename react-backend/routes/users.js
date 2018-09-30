@@ -16,9 +16,8 @@ router.post("/newuser", (req, res, next) => {
     })
     .catch(err => {
       console.log(`Registration`, err);
-      res.status(500).json({
+      res.status(200).json({
         message: `Registration Failed: ${err} `,
-        err
       });
     });
 });

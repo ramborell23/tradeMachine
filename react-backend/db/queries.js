@@ -158,6 +158,12 @@ const registerUser = (req, res, next) => {
             password: hash
         }
     )
+        // .catch(err => {
+        //     // console.log(`Registration`, err);
+        //     res.status(500).json({
+        //         message: `Registration Failed: ${err} `,
+        //     });
+        // });
 }
 
 /* ------------------------ PUT REQUESTS QUERIES ------------------------ */

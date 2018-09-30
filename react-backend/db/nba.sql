@@ -814,7 +814,7 @@ CREATE TABLE Users
     last_name VARCHAR,
     username VARCHAR UNIQUE,
     password_digest VARCHAR NOT NULL,
-    email VARCHAR,
+    email VARCHAR UNIQUE,
     PRIMARY KEY (id)
 );
 -- DROP TABLE teams3;

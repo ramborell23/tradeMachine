@@ -55,7 +55,7 @@ const theme = createMuiTheme({
 
 function ArticleOptions(props) {
   const { classes } = props;
-  console.log(classes.bigAvatar)
+  // console.log(classes.bigAvatar)
   return (
     <MuiThemeProvider theme={theme}>
 

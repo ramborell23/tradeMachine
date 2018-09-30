@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Route, Link } from "react-router-dom";
 import Calc from './Components/Calc'
 import FreeAgents from './Components/FreeAgents'
-import Draft from './Components/Draft'
+import timeFunctions from "./Functions/timeFunctions";
 
 import App from "./App";
 import Cbb from "./Cbb";
@@ -29,6 +29,7 @@ class LandingPage extends Component {
             signupEmail: '',
             signupEmailCheck: '',
             isOpen: false,
+            returnedMessage: 'rr',
         }
     }
     handleModal = () => {
@@ -55,6 +56,9 @@ class LandingPage extends Component {
           })
           .then(res => {
             console.log(res);
+            this.setState({
+                returnedMessage : res.data.message
+            })
           })
           .catch(err => {
             console.log(err);
@@ -62,8 +66,9 @@ class LandingPage extends Component {
     }
 
     render() {
-        const { username, password, signupUsername, signupPassword, signupPasswordCheck, signupEmail, signupEmailCheck, isOpen } = this.state;
+        const { username, password, signupUsername, signupPassword, signupPasswordCheck, signupEmail, signupEmailCheck, isOpen, returnedMessage } = this.state;
         console.log("isOpen", isOpen);
+        console.log("returnedMessage", returnedMessage);
         const signupMessage = () => {
             if (signupUsername === "" || signupPassword === "" || signupPasswordCheck === "" || signupEmail === "" || signupEmailCheck === '') {
                 return ''
@@ -115,7 +120,11 @@ class LandingPage extends Component {
             onClose={this.handleModal}
             onSignup={this.handleSubmitNewUser}
             >
-                Signup Here!
+                Message<br/>
+                {timeFunctions.signupMessage(returnedMessage)}
+                {console.log(timeFunctions.signupMessage(returnedMessage))}
+                <br/>
+                    Signup Here!
                 <br />
                 <br />
                 <label className='modal-words'>First Name</label> <input className="signup-inputs" onChange={this.handleInput} type="text" name="firstName" /> {' '}
